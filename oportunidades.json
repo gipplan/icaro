@@ -1,1 +1,66 @@
-[]
+[
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Varejo",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "O Mercado Livre atingiu recorde histórico de vendas no Brasil no dia 7.7 de 2026, superando a Black Friday de 2025. O desempenho histórico foi impulsionado pela estreia de Anitta como embaixadora oficial, abrindo oportunidades para ações de branding com influenciadores e campanhas de PR integradas.",
+        "produtos": [
+            "Campanha",
+            "Influenciadores",
+            "Presença Digital"
+        ],
+        "link_noticia": "https://exame.com/negocios/7-7-vende-mais-que-black-friday-para-o-meli-sim-e-culpa-pode-ser-da-anitta/",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Aviação",
+        "marcas": [
+            "GOL/Smiles"
+        ],
+        "descricao": "A GOL iniciou em 8 de julho seus voos diretos entre o Rio de Janeiro (GIG) e Nova York (JFK), marcando o início de sua operação de longo curso com aeronaves A330. O marco oferece grande oportunidade para impulsionar a presença digital e campanhas de PR integradas sobre a expansão internacional.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Campanha",
+            "Presença Digital"
+        ],
+        "link_noticia": "https://kiosquedaaviacao.pt/gol-realiza-o-seu-3o-voo-para-nova-iorque-e-prepara-lisboa/",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia",
+        "marcas": [
+            "Samsung (B2B / B2C / LATAM)"
+        ],
+        "descricao": "A Samsung abriu no Brasil o pré-registro para o Galaxy Unpacked 2026, com descontos de até R$ 2 mil no Galaxy Z Fold 8 e Flip 8. A ação é ideal para campanhas de relacionamento com a imprensa e PR Stunt antes do evento global em Londres no dia 22 de julho, visando o público tech e early adopters.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Campanha",
+            "PR Stunt"
+        ],
+        "link_noticia": "https://www.tudocelular.com/samsung/noticias/n223696/samsung-libera-pre-registro-do-galaxy-z-fold-8.html",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Varejo",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "Segundo relatório do BTG Pactual de 13 de julho de 2026, a base de usuários ativos mensais da Shein no Brasil cresceu 34% no 2T26, liderando a expansão do e-commerce. O avanço demonstra a resiliência da marca no país e abre caminho para campanhas de Presença Digital e Assessoria de Imprensa.",
+        "produtos": [
+            "Presença Digital",
+            "Assessoria de Imprensa",
+            "Campanha"
+        ],
+        "link_noticia": "https://www.seudinheiro.com/2026/negocios/shein-com-ainda-mais-poder-de-fogo-por-que-o-ipo-da-asiatica-pode-tornar-a-vida-das-varejistas-brasileiras-ainda-mais-dificil/",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    }
+]
