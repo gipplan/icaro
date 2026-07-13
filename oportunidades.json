@@ -1,5 +1,55 @@
 [
     {
+        "data": "13/07/2026",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia e Sustentabilidade",
+        "marcas": [
+            "Engie",
+            "Siemens Energy"
+        ],
+        "descricao": "Com o avanço do marco regulatório do hidrogênio verde no Brasil, há oportunidade para Engie e Siemens Energy se posicionarem como pioneiras na transição energética, mitigando ruídos regulatórios e atraindo investimentos através de uma narrativa unificada de descarbonização.",
+        "produtos": [
+            "Thought Leadership",
+            "Relações Governamentais",
+            "Press Release"
+        ],
+        "link_noticia": "https://valor.globo.com/brasil/noticia/2024/06/25/camara-aprova-projeto-de-lei-que-cria-marco-legal-do-hidrogenio-verde.ghtml",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "data": "13/07/2026",
+        "agencia": "FleishmanHillard",
+        "setor": "Varejo e E-commerce",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "Diante das contínuas discussões tributárias sobre e-commerce internacional no Brasil, a Shein necessita fortalecer sua reputação institucional destacando a aceleração da sua produção nacional e parcerias com confecções locais.",
+        "produtos": [
+            "Gestão de Crise",
+            "Relações Institucionais",
+            "Auditoria de Imagem"
+        ],
+        "link_noticia": "https://g1.globo.com/economia/noticia/2024/06/27/lula-sanciona-lei-que-taxa-compras-internacionais-de-ate-us-50.ghtml",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "data": "13/07/2026",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Tecnologia e Serviços Financeiros",
+        "marcas": [
+            "Mercado Livre",
+            "Mercado Pago"
+        ],
+        "descricao": "O plano recorde de aportes do Mercado Livre no Brasil exige comunicação integrada com o Mercado Pago para consolidar a sinergia entre logística e soluções financeiras, impulsionando a autoridade de suas lideranças em inovação e inclusão financeira.",
+        "produtos": [
+            "Media Relations",
+            "Thought Leadership",
+            "Press Release"
+        ],
+        "link_noticia": "https://exame.com/negocios/mercado-livre-vai-investir-r-23-bilhoes-no-brasil-em-2024-maior-aporte-da-historia/",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
         "data": "24/10/2024",
         "agencia": "In Press Porter Novelli",
         "setor": "Tecnologia e Varejo",
