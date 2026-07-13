@@ -6,20 +6,24 @@ on:
     - cron: '0 10 * * *'
   workflow_dispatch: # Permite que você clique em um botão e force a atualização manual
 
+# Garante que o robô tem permissão para salvar o arquivo JSON no seu repositório
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    # 1. Copia os arquivos do repositório para a máquina virtual
+    # 1. Copia os arquivos do repositório para a máquina virtual (Atualizado para v4)
     - name: Checkout do código
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
-    # 2. Instala o ambiente Python
+    # 2. Instala o ambiente Python (Corrigido para python-version e atualizado para v5)
     - name: Configurar Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
-        python-node-version: '3.10'
+        python-version: '3.10'
 
     # 3. Instala as dependências necessárias para IA e Busca Segura
     - name: Instalar dependências
@@ -34,7 +38,7 @@ jobs:
       run: python gerar_oportunidades.py
 
     # 5. Salva o arquivo oportunidades.json gerado de volta no seu repositório público
-    - name: Commitar e Commitar alterações
+    - name: Commitar e enviar alterações
       run: |
         git config --global user.name "Í.C.A.R.O. Bot"
         git config --global user.email "bot@icaro.ai"
