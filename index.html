@@ -52,36 +52,10 @@
     </main>
 
     <script>
-        // Simulando a estrutura do seu arquivo oportunidades.json gerado pelo Gemini
-        const dadosOportunidades = [
-            {
-                data: "13/07/2026",
-                agencia: "FleishmanHillard",
-                setor: "Varejo Digital / Big Tech",
-                marcas: ["Shein", "Google"],
-                descricao: "Receita Federal deflagra operação piloto de fiscalização física e compliance de rotulagem em remessas internacionais nos aeroportos hub.",
-                produtos: ["Gestão de Crise", "Public Affairs"],
-                imagem: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&auto=format&fit=crop&q=60" // Exemplo de imagem segura
-            },
-            {
-                data: "13/07/2026",
-                agencia: "In Press Porter Novelli",
-                setor: "Energia / Óleo e Gás",
-                marcas: ["Naturgy", "Vibra", "RZK Energia"],
-                descricao: "ANP publica resolução revisando tarifas de transporte de gás e abrindo o mercado para comercializadores independentes.",
-                produtos: ["Thought Leadership", "Public Affairs"],
-                imagem: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=500&auto=format&fit=crop&q=60"
-            },
-            {
-                data: "12/07/2026",
-                agencia: "In Press Porter Novelli",
-                setor: "Fintechs / Setor Financeiro",
-                marcas: ["Mercado Pago", "Agrolend"],
-                descricao: "Banco Central e Receita Federal endurecem as portarias sobre split de pagamentos para o ambiente de testes do IVA Dual em agosto.",
-                produtos: ["Assessoria de Imprensa", "Gestão de Crise"],
-                imagem: "https://images.unsplash.com/photo-1563013544-824ae1d704d3?w=500&auto=format&fit=crop&q=60"
-            }
-        ];
+        
+  fetch('oportunidades.json')
+  .then(response => response.json())
+  .then(dados => renderizarTimeline(dados));
 
         function renderizarTimeline(dados) {
             const container = document.getElementById('timelineContainer');
