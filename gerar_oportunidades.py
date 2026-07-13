@@ -16,7 +16,7 @@ def obter_imagem_noticia_segura(termo_busca):
     
     return "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
 
-def执行_radar():
+def executar_radar():
     print("🚀 Inicializando o motor Í.C.A.R.O. com o novo SDK de 2026...")
     
     api_key = os.environ.get("GEMINI_API_KEY")
@@ -37,7 +37,7 @@ def执行_radar():
     - In Press Porter Novelli: Claro, Mercado Livre, Mercado Pago, Ambev, Prio, Vibra, Naturgy, Engie, Seara, PepsiCo, Prio, Gerdau, Einstein.
     - FleishmanHillard: Google, Shein, Stone, Mastercard, Samsung, Bayer, McKinsey, Cury Construtora.
 
-    Gere um array em formato JSON estrito, sem formatações adicionais ou blocos markdown (não use ```json), contendo as oportunidades reais encontradas.
+    Gere um array em formato JSON estrito, sem formatações adicionais ou blocks markdown (não use ```json), contendo as oportunidades reais encontradas.
     Cada objeto do array deve seguir rigorosamente este modelo:
     [
         {
