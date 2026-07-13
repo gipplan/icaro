@@ -72,12 +72,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- BOTÃO RECARREGAR FOTOS (Totalmente grátis e offline) -->
-                    <button onclick="mudarTodasAsImagens()" class="bg-white hover:bg-slate-50 text-slate-700 text-sm p-2 rounded-lg border border-slate-300 focus:outline-none focus:border-red-550 flex items-center gap-1 font-medium transition-all shadow-sm" title="Trocar fotos dos cards atuais">
-                        <span>🔄</span>
-                        <span class="hidden sm:inline">Mudar Fotos</span>
-                    </button>
                 </div>
             </div>
         </header>
@@ -177,16 +171,6 @@
                 });
         });
 
-        // FUNÇÃO QUE GIRA A CHAVE DAS IMAGENS LOCALMENTE (100% Grátis)
-        function mudarTodasAsImagens() {
-            // Sorteia um somador aleatório de 1 a 500
-            const novoOffset = Math.floor(Math.random() * 500) + 1;
-            sessionStorage.setItem("offset_imagens", novoOffset);
-            
-            // Re-renderiza a linha do tempo instantaneamente sem mexer no banco de dados
-            filtrarGeral();
-        }
-
         function inicializarDropdownClientes(dados) {
             const container = document.getElementById('clientesContainer');
             if (!container) return;
@@ -224,9 +208,6 @@
                 return;
             }
 
-            // Recupera o offset de imagem do navegador (padrão é 0 se nunca clicou no botão)
-            const offset = parseInt(sessionStorage.getItem("offset_imagens") || "0");
-
             dados.forEach(item => {
                 const descricaoCurta = item.descricao ? item.descricao.substring(0, 300) : "";
                 
@@ -237,16 +218,21 @@
                 const marcasTexto = item.marcas ? item.marcas.join(', ') : "Sem marcas";
                 const linkValidado = item.link_noticia || (item.marcas ? `https://news.google.com/search?q=${encodeURIComponent(item.marcas.join('+'))}+when:7d` : "#");
 
-                // Cálculo da Imagem com o Offset dinâmico
+                // ================================================================
+                // SISTEMA INTELIGENTE DE IMAGENS POR MARCA
+                // ================================================================
                 const marcaPrincipal = item.marcas && item.marcas.length > 0 ? item.marcas[0] : "business";
-                const seedMarca = (Math.abs(gerarHash(marcaPrincipal)) + offset) % 1000;
+                const seedMarca = Math.abs(gerarHash(marcaPrincipal)) % 1000;
                 
+                // Constrói um termo de busca limpo com base no nome do cliente e setor
                 const setorLimpo = item.setor ? item.setor.toLowerCase().split(' ')[0].replace(/[^a-z]/g, '') : "office";
                 const termoBusca = `${marcaPrincipal.toLowerCase().replace(/[^a-z0-9]/g, '')},${setorLimpo}`;
 
+                // Se a notícia tiver imagem válida usa ela, senão gera uma perfeita baseada na marca!
                 const imagemFinal = (item.imagem && item.imagem.startsWith('http') && !item.imagem.includes('placeholder')) 
                     ? item.imagem 
                     : `https://loremflickr.com/600/400/${encodeURIComponent(termoBusca)}/all?lock=${seedMarca}`;
+                // ================================================================
 
                 const card = `
                     <div class="mb-10 relative pl-6 md:pl-8 group">
