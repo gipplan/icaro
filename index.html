@@ -37,7 +37,7 @@
                     <span id="fallbackTitle" class="hidden text-2xl font-bold text-slate-800 mb-2">Grupo <span class="text-red-600">In</span> Press</span>
                     
                     <div class="pt-2">
-                        <h2 class="text-lg md:text-2xl font-bold text-slate-950 flex flex-wrap items-center justify-center gap-2 leading-none mb-2">
+                        <h2 class="text-sm md:text-2xl font-bold text-slate-950 flex flex-wrap items-center justify-center gap-2 leading-none mb-2">
                             <span class="text-red-600 font-black tracking-wider">I.C.A.R.O</span>
                             <span class="text-slate-300">|</span>
                             <span class="text-slate-800 font-extrabold">Oportunidades de PR em Tempo Real</span>
@@ -75,7 +75,7 @@
                         </div>
                     </div>
 
-                    <!-- Filtro 3: Serviço Sugerido (Novo Multi-Select) -->
+                    <!-- Filtro 3: Serviço Sugerido (Multi-Select) -->
                     <div class="relative inline-block text-left w-full sm:w-auto min-w-[200px]">
                         <button id="dropdownBtnServicos" onclick="toggleDropdown(event, 'dropdownMenuServicos')" class="w-full bg-white text-slate-750 text-sm p-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 flex justify-between items-center font-medium transition-all">
                             <span id="dropdownLabelServicos" class="truncate text-slate-400">Selecionar Serviços</span>
@@ -91,12 +91,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Botão de Recarregar Fotos -->
-                    <button onclick="mudarTodasAsImagens()" class="bg-white hover:bg-slate-50 text-slate-700 text-sm p-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-red-550 flex items-center justify-center gap-1 font-medium transition-all shadow-sm w-full sm:w-auto" title="Trocar fotos dos cards atuais">
-                        <span>🔄</span>
-                        <span class="inline">Mudar Fotos</span>
-                    </button>
                 </div>
             </div>
         </header>
@@ -152,7 +146,6 @@
             event.stopPropagation();
             const menus = ['dropdownMenu', 'dropdownMenuServicos'];
             
-            // Fecha o menu oposto e abre/fecha o selecionado
             menus.forEach(id => {
                 const menuElement = document.getElementById(id);
                 if (id === menuId) {
@@ -212,12 +205,6 @@
                 });
         });
 
-        function mudarTodasAsImagens() {
-            const novoOffset = Math.floor(Math.random() * 500) + 1;
-            sessionStorage.setItem("offset_imagens", novoOffset);
-            filtrarGeral();
-        }
-
         function inicializarDropdownClientes(dados) {
             const container = document.getElementById('clientesContainer');
             if (!container) return;
@@ -245,7 +232,6 @@
             `).join('');
         }
 
-        // NOVO DROPDOWN: Lê "produtos" (Serviços sugeridos) no JSON de forma dinâmica
         function inicializarDropdownServicos(dados) {
             const container = document.getElementById('servicosContainer');
             if (!container) return;
@@ -283,8 +269,6 @@
                 return;
             }
 
-            const offset = parseInt(sessionStorage.getItem("offset_imagens") || "0");
-
             dados.forEach(item => {
                 const descricaoCurta = item.descricao ? item.descricao.substring(0, 300) : "";
                 
@@ -296,7 +280,7 @@
                 const linkValidado = item.link_noticia || (item.marcas ? `https://news.google.com/search?q=${encodeURIComponent(item.marcas.join('+'))}+when:7d` : "#");
 
                 const marcaPrincipal = item.marcas && item.marcas.length > 0 ? item.marcas[0] : "business";
-                const seedMarca = (Math.abs(gerarHash(marcaPrincipal)) + offset) % 1000;
+                const seedMarca = Math.abs(gerarHash(marcaPrincipal)) % 1000;
                 
                 const setorLimpo = item.setor ? item.setor.toLowerCase().split(' ')[0].replace(/[^a-z]/g, '') : "office";
                 const termoBusca = `${marcaPrincipal.toLowerCase().replace(/[^a-z0-9]/g, '')},${setorLimpo}`;
@@ -348,13 +332,10 @@
             });
         }
 
-        // Sistema combinando filtros de Agência + Clientes (Multiselect) + Serviços (Multiselect)
         function filtrarGeral() {
-            // Agência
             const fAgencia = document.getElementById('filtroAgencia');
             const agencia = fAgencia ? fAgencia.value : "";
 
-            // Clientes Selecionados
             const checkboxesClientes = Array.from(document.querySelectorAll('#clientesContainer input:checked'));
             const clientesSelecionados = checkboxesClientes.map(cb => cb.value);
 
@@ -372,7 +353,6 @@
                 }
             }
 
-            // Serviços Selecionados
             const checkboxesServicos = Array.from(document.querySelectorAll('#servicosContainer input:checked'));
             const servicosSelecionados = checkboxesServicos.map(cb => cb.value);
 
@@ -390,7 +370,6 @@
                 }
             }
 
-            // Algoritmo de filtragem consolidado
             const dadosFiltrados = dadosOportunidades.filter(item => {
                 const bateAgencia = agencia === "" || item.agencia === agencia;
                 
