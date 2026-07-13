@@ -2,9 +2,14 @@ name: Executar Motor de Inteligência
 
 # Define quando o robô vai rodar
 on:
-  workflow_dispatch: # Permite que você clique no botão "Run workflow" manualmente
+  workflow_dispatch: # Permite rodar manualmente
+    inputs:
+      marca_alvo:
+        description: 'Marca para busca prioritária'
+        required: false
+        default: ''
   schedule:
-    - cron: '0 9 * * 1-5' # Roda automaticamente de segunda a sexta às 9h UTC (6h da manhã no Brasil)
+    - cron: '0 9 * * 1-5' # Roda de segunda a sexta às 9h UTC (6h da manhã no BR)
 
 jobs:
   build:
@@ -27,6 +32,7 @@ jobs:
       - name: Executar o motor Í.C.A.R.O.
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MARCA_ALVO: ${{ github.event.inputs.marca_alvo }} # Transmite a marca do site para o Python
         run: python gerar_oportunidades.py
 
       - name: Commitar e enviar alterações
