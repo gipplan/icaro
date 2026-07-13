@@ -2,7 +2,7 @@ import os
 import json
 import datetime
 from google import genai
-from google.genai import types  # Importa os tipos de configuração do novo SDK
+from google.genai import types
 from duckduckgo_search import DDGS
 
 def obter_imagem_noticia_segura(termo_busca):
@@ -15,7 +15,7 @@ def obter_imagem_noticia_segura(termo_busca):
     except Exception as e:
         print(f"⚠️ Nota: Não foi possível coletar imagem para '{termo_busca}': {e}")
     
-    return "[https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600)"
+    return "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
 
 def executar_radar():
     print("🚀 Inicializando o motor Í.C.A.R.O. com o SDK unificado...")
@@ -50,28 +50,54 @@ def executar_radar():
     }
     """
 
-    print("🧠 Solicitando análise de cenários ao Gemini (gemini-2.5-flash)...")
+    # LISTA DE CASCATA (FALLBACK)
+    # O código tentará rodar o primeiro. Se falhar, tenta o segundo, e assim por diante.
+    modelos_prioritarios = [
+        'gemini-2.0-pro-exp',            # 1. Prioridade Máxima: O modelo Pro mais avançado
+        'gemini-2.0-flash-thinking-exp', # 2. Prioridade Alta: Modelo com raciocínio profundo
+        'gemini-2.5-pro',                # 3. Backup Pro atualizado
+        'gemini-2.0-flash',              # 4. Backup rápido e super estável
+        'gemini-1.5-pro'                 # 5. Último recurso (legacy)
+    ]
+
+    print("🧠 Solicitando análise de cenários ao Gemini...")
+    
+    configuracao_json = types.GenerateContentConfig(
+        response_mime_type="application/json"
+    )
+
+    resposta = None
+    modelo_utilizado = None
+
+    # Loop de tentativa: itera pela lista de modelos até um dar certo
+    for modelo in modelos_prioritarios:
+        print(f"Tentando processamento com o modelo: {modelo}...")
+        try:
+            resposta = client.models.generate_content(
+                model=modelo,
+                contents=prompt_sistema,
+                config=configuracao_json
+            )
+            modelo_utilizado = modelo
+            print(f"✅ Sucesso! Conectado e processado usando o modelo: {modelo_utilizado}")
+            break  # Interrompe o loop de tentativas assim que obtém sucesso
+        except Exception as e:
+            print(f"⚠️ Modelo {modelo} indisponível ou falhou. Motivo: {e}")
+            continue # Pula para o próximo modelo da lista
+
+    # Se o loop terminar e a variável 'resposta' continuar vazia, significa que todos falharam
+    if not resposta:
+        print("❌ ERRO CRÍTICO: Nenhum dos modelos da lista de fallback conseguiu processar a requisição.")
+        exit(1)
+
+    # Processamento do JSON gerado
     try:
-        # Configura o motor para forçar a saída em JSON puro, sem markdown block
-        configuracao_json = types.GenerateContentConfig(
-            response_mime_type="application/json"
-        )
-        
-        resposta = client.models.generate_content(
-            model='gemini-2.5-flash',  # Modelo atualizado e suportado em 2026
-            contents=prompt_sistema,
-            config=configuracao_json
-        )
-        
-        # Como forçamos o tipo MIME, a resposta vem como string JSON pura
         conteudo_bruto = resposta.text.strip()
         oportunidades = json.loads(conteudo_bruto)
-        print(f"✅ Análise concluída. {len(oportunidades)} oportunidades identificadas.")
-        
+        print(f"✅ Análise de dados concluída. {len(oportunidades)} oportunidades estruturadas.")
     except Exception as e:
-        print(f"❌ ERRO ao processar ou decodificar o retorno da IA: {e}")
-        if 'resposta' in locals():
-            print(f"Retorno bruto obtido:\n{resposta.text}")
+        print(f"❌ ERRO ao decodificar o JSON gerado pelo modelo {modelo_utilizado}: {e}")
+        print(f"Retorno bruto obtido:\n{resposta.text}")
         exit(1)
 
     print("🖼️ Buscando imagens contextuais seguras via SafeSearch...")
