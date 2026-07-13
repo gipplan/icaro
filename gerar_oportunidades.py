@@ -31,9 +31,9 @@ def executar_radar():
         print(f"❌ ERRO CRÍTICO ao inicializar o cliente GenAI: {e}")
         exit(1)
 
-    # Coleta a data exata do dia em que a automação está rodando
     data_hoje = datetime.datetime.now().strftime("%d/%m/%Y")
 
+    # PROMPT CORRIGIDO: Estrutura de Array [] explicitamente declarada com {{ }} para não quebrar o Python
     prompt_sistema = f"""
     Você é um analista de inteligência de mercado focado em Relações Públicas e Comunicação Corporativa.
     Hoje é {data_hoje}.
@@ -42,21 +42,24 @@ def executar_radar():
     - FleishmanHillard: Google, Shein, Stone, Mastercard, Samsung, Bayer, McKinsey, Cury Construtora.
 
     Gere um array em formato JSON estrito contendo as oportunidades.
-    Cada objeto do array deve seguir rigorosamente este modelo:
-    {{
-        "data": "{data_hoje}",
-        "agencia": "Nome exato da Agência",
-        "setor": "Setor macro da oportunidade",
-        "marcas": ["Marca1", "Marca2"],
-        "descricao": "Texto analítico resumido com o gatilho e impacto de até 300 caracteres.",
-        "produtos": ["Serviço 1", "Serviço 2"],
-        "palavra_chave_imagem": "Termo em inglês simples e corporativo para buscar uma imagem conceitual da notícia",
-        "link_noticia": "URL real de uma matéria em portal de notícias confiável que valide e embase esta oportunidade"
-    }}
+    A sua resposta DEVE ser um array de objetos `[]`. Siga rigorosamente este formato:
+    [
+        {{
+            "data": "{data_hoje}",
+            "agencia": "Nome exato da Agência",
+            "setor": "Setor macro da oportunidade",
+            "marcas": ["Marca1", "Marca2"],
+            "descricao": "Texto analítico resumido com o gatilho e impacto de até 300 caracteres.",
+            "produtos": ["Serviço 1", "Serviço 2"],
+            "palavra_chave_imagem": "Termo em inglês simples e corporativo para buscar uma imagem conceitual da notícia",
+            "link_noticia": "URL real de uma matéria em portal de notícias confiável que valide e embase esta oportunidade"
+        }}
+    ]
 
     ATENÇÃO PARA AS REGRAS:
     1. "produtos" refere-se EXCLUSIVAMENTE aos serviços de PR e Comunicação que a NOSSA AGÊNCIA vai vender/oferecer para o cliente (Exemplos: Gestão de Crise, Media Training, Relações Governamentais, Press Release, Thought Leadership, Auditoria de Imagem). NÃO inclua os produtos comerciais vendidos pela marca.
     2. A "data" deve ser sempre exatamente {data_hoje}.
+    3. RETORNE APENAS O CÓDIGO JSON VÁLIDO.
     """
 
     print("🔍 Consultando a API do Google para descobrir os modelos liberados para a sua chave...")
@@ -105,10 +108,16 @@ def executar_radar():
 
     try:
         conteudo_bruto = resposta.text.strip()
+        
+        # Sistema de limpeza de segurança caso a IA mande formatação de texto ao redor do JSON
+        if conteudo_bruto.startswith("```"):
+            conteudo_bruto = conteudo_bruto.replace("```json", "").replace("```", "").strip()
+            
         oportunidades = json.loads(conteudo_bruto)
         print(f"✅ Análise de dados concluída. {len(oportunidades)} oportunidades estruturadas.")
     except Exception as e:
-        print(f"❌ ERRO ao decodificar o JSON: {e}")
+        print(f"❌ ERRO ao decodificar o JSON gerado pelo modelo {modelo_utilizado}: {e}")
+        print(f"Retorno bruto obtido pela IA que causou a falha:\n{resposta.text}")
         exit(1)
 
     print("🖼️ Buscando imagens contextuais...")
@@ -118,9 +127,8 @@ def executar_radar():
         if "palavra_chave_imagem" in op:
             del op["palavra_chave_imagem"]
         
-        # Garante fallback se a IA esquecer de mandar o link
         if "link_noticia" not in op or not op["link_noticia"]:
-            op["link_noticia"] = f"https://www.google.com/search?q=noticias+{'+'.join(op['marcas'])}"
+            op["link_noticia"] = f"[https://www.google.com/search?q=noticias](https://www.google.com/search?q=noticias)+{'+'.join(op.get('marcas', ['mercado']))}"
 
     print("💾 Gravando dados estruturados em oportunidades.json...")
     try:
