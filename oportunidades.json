@@ -1,5 +1,98 @@
 [
     {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Tecnologia e Delivery",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Apesar da eliminação precoce do Brasil na Copa, o iFood declarou sucesso em sua campanha de marketing, alcançando 185 milhões de pessoas. A manutenção do plano de comunicação mostra a maturidade da marca em PR esportivo, exigindo posicionamento digital contínuo para manter o engajamento.",
+        "produtos": [
+            "Campanha",
+            "Presença Digital",
+            "Influenciadores"
+        ],
+        "link_noticia": "https://www.mktesportivo.com/2026/07/ifood-afirma-ter-cumprido-metas-de-marketing-mesmo-apos-saida-do-brasil-da-copa/",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce e Varejo",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "O Mercado Livre bateu recorde de vendas histórico na campanha 7.7 no Brasil, superando a Black Friday 2025. O marco celebra a estreia de Anitta como nova embaixadora da marca, gerando forte tração de PR e aproximando consumidores offline do ambiente online com grande impacto institucional.",
+        "produtos": [
+            "Campanha",
+            "Influenciadores",
+            "Assessoria de Imprensa"
+        ],
+        "link_noticia": "https://mercadoeconsumo.com.br/13/07/2026/e-commerce/campanha-7-7-supera-a-black-friday-e-registra-maior-dia-de-vendas-da-historia-no-mercado-livre/",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Bebidas e Consumo",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "As ações da Ambev caíram após a eliminação precoce do Brasil na Copa do Mundo, o que frustrou as projeções de alta no consumo de cerveja para o terceiro trimestre de 2026. O cenário exige ações rápidas de PR e relações com investidores para atenuar o impacto da sazonalidade no mercado.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Mídia"
+        ],
+        "link_noticia": "https://www.infomoney.com.br/mercados/ambev-acao-cai-apos-brasil-eliminado-frustrar-expectativa-por-mais-vendas-de-cerveja/",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Mineração e Siderurgia",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "A Vale respondeu a ofício da CVM prestando esclarecimentos sobre a renúncia de Daniel Stieler da presidência do conselho e o contrato de não competição firmado. O fato exige comunicação corporativa de crise e governança estruturada para blindar a reputação e acalmar o mercado financeiro.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Posicionamento Executivo"
+        ],
+        "link_noticia": "https://br.advfn.com/noticias/vale-esclarece-saida-de-daniel-stieler-a-cvm-e-nega-acordo-para-viabilizar-renuncia-ao-conselho/",
+        "data": "13/07/2026",
+        "imagem": "https://s2-valor-investe.glbimg.com/jYQ2XrYEbQByv5erZzz1ZE_Qctc=/1600x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/b/G/wzEOQnTXGu5wnmQ9DVgQ/whatsapp-image-2025-02-17-at-16.06.05.jpeg"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia e Eletroeletrônicos",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "A Samsung anunciou que o próximo Galaxy Unpacked ocorrerá dia 22 de julho em Londres, focando em IA e novos dobráveis. Com o início do pré-registro no Brasil, a marca tem a oportunidade de liderar conversas sobre tecnologia por meio de forte presença digital e parcerias com influenciadores.",
+        "produtos": [
+            "Campanha",
+            "Presença Digital",
+            "Assessoria de Imprensa"
+        ],
+        "link_noticia": "https://news.samsung.com/br/convite-galaxy-unpacked-julho-2026-um-novo-formato-esta-prestes-a-se-desdobrar",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Varejo de Moda",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "A China aprovou o plano da Shein de realizar seu IPO em Hong Kong após barreiras no Ocidente. O aval do órgão regulador chinês encerra um ano de espera, exigindo forte posicionamento de relações institucionais e relações públicas para sustentar a narrativa de governança corporativa global.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Relações Governamentais"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/shein-obtem-a-aprovacao-da-china-para-ipo-em-hong-kong.shtml",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
         "agencia": "FleishmanHillard",
         "setor": "Tecnologia e Eletrônicos de Consumo",
         "marcas": [
