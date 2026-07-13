@@ -50,14 +50,12 @@ def executar_radar():
     }
     """
 
-    # LISTA DE CASCATA (FALLBACK)
-    # O código tentará rodar o primeiro. Se falhar, tenta o segundo, e assim por diante.
+   # LISTA DE CASCATA (FALLBACK) ATUALIZADA
     modelos_prioritarios = [
-        'gemini-2.0-pro-exp',            # 1. Prioridade Máxima: O modelo Pro mais avançado
-        'gemini-2.0-flash-thinking-exp', # 2. Prioridade Alta: Modelo com raciocínio profundo
-        'gemini-2.5-pro',                # 3. Backup Pro atualizado
-        'gemini-2.0-flash',              # 4. Backup rápido e super estável
-        'gemini-1.5-pro'                 # 5. Último recurso (legacy)
+        'gemini-2.5-pro',
+        'gemini-2.0-flash',
+        'gemini-1.5-pro-latest',
+        'gemini-1.5-flash-latest'
     ]
 
     print("🧠 Solicitando análise de cenários ao Gemini...")
