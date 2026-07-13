@@ -1,5 +1,67 @@
 [
     {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Tecnologia e Alimentação",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Após a saída precoce da Seleção na Copa do Mundo de 2026, o iFood readequou rapidamente suas campanhas, focando na experiência dos jogos decisivos. A marca confirmou em 13/07/2026 que bateu as metas de marketing, alcançando mais de 185 milhões de pessoas através de estratégias multiplataforma.",
+        "produtos": [
+            "Campanha",
+            "Presença Digital",
+            "Mídia"
+        ],
+        "link_noticia": "https://mktesportivo.com/2026/07/ifood-afirma-ter-cumprido-metas-de-marketing-mesmo-apos-saida-do-brasil-da-copa/",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Mineração e Siderurgia",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "As ações da Vale (VALE3) acumulam queda de mais de 6% em julho de 2026, sob forte pressão do mercado após o Morgan Stanley reduzir a projeção de preços do minério de ferro para o período de 2026 a 2028, alertando para excesso de oferta marítima e corte de recomendação da mineradora brasileira.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Posicionamento Executivo"
+        ],
+        "link_noticia": "https://exame.com/invest/vale-cai-mais-de-6-em-julho-por-que-as-acoes-estao-sob-pressao/",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia e Consumo",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "A Samsung iniciou no Brasil, em 10/07/2026, o pré-registro para os novos smartphones dobráveis antes do evento global Galaxy Unpacked em Londres. Consumidores brasileiros podem obter vouchers com até R$ 2.000 de desconto, intensificando as ações de conversão digital e relacionamento.",
+        "produtos": [
+            "Presença Digital",
+            "Influenciadores",
+            "Campanha"
+        ],
+        "link_noticia": "https://news.samsung.com/br/samsung-inicia-pre-registro-para-o-novo-galaxy-no-brasil",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia e Regulatório",
+        "marcas": [
+            "Google"
+        ],
+        "descricao": "Em 13/07/2026, o Ministério da Justiça notificou o Google e a Apple a prestarem esclarecimentos sobre o download de apps de apostas por menores de idade em suas lojas de aplicativos. O caso baseia-se no ECA Digital ('Lei Felca'), demandando uma resposta de crise e alinhamento regulatório.",
+        "produtos": [
+            "Relações Governamentais",
+            "Assessoria de Imprensa"
+        ],
+        "link_noticia": "https://odia.ig.com.br/brasil/2026/07/6877840-governo-notifica-apple-e-google-por-apps-de-apostas-para-menores.html",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
         "data": "13/07/2026",
         "agencia": "In Press Porter Novelli",
         "setor": "Energia e Sustentabilidade",
