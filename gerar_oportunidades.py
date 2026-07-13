@@ -31,42 +31,47 @@ def executar_radar():
         print(f"❌ ERRO CRÍTICO ao inicializar o cliente GenAI: {e}")
         exit(1)
 
-    prompt_sistema = """
+    # Coleta a data exata do dia em que a automação está rodando
+    data_hoje = datetime.datetime.now().strftime("%d/%m/%Y")
+
+    prompt_sistema = f"""
     Você é um analista de inteligência de mercado focado em Relações Públicas e Comunicação Corporativa.
-    Sua tarefa é analisar o mercado das últimas 24 horas e identificar riscos e oportunidades para a seguinte lista de clientes ativos:
+    Hoje é {data_hoje}.
+    Sua tarefa é analisar o mercado das últimas 24 horas e identificar riscos e oportunidades reais para a seguinte lista de clientes ativos:
     - In Press Porter Novelli: Claro, Mercado Livre, Mercado Pago, Ambev, Prio, Vibra, Naturgy, Engie, Seara, PepsiCo, Prio, Gerdau, Einstein.
     - FleishmanHillard: Google, Shein, Stone, Mastercard, Samsung, Bayer, McKinsey, Cury Construtora.
 
-    Gere um array em formato JSON estrito contendo as oportunidades reais encontradas.
+    Gere um array em formato JSON estrito contendo as oportunidades.
     Cada objeto do array deve seguir rigorosamente este modelo:
-    {
-        "data": "DD/MM/AAAA",
+    {{
+        "data": "{data_hoje}",
         "agencia": "Nome exato da Agência",
         "setor": "Setor macro da oportunidade",
         "marcas": ["Marca1", "Marca2"],
         "descricao": "Texto analítico resumido com o gatilho e impacto de até 300 caracteres.",
-        "produtos": ["Produto1", "Produto2"],
-        "palavra_chave_imagem": "Termo em inglês simples e corporativo para buscar uma imagem conceitual da notícia"
-    }
+        "produtos": ["Serviço 1", "Serviço 2"],
+        "palavra_chave_imagem": "Termo em inglês simples e corporativo para buscar uma imagem conceitual da notícia",
+        "link_noticia": "URL real de uma matéria em portal de notícias confiável que valide e embase esta oportunidade"
+    }}
+
+    ATENÇÃO PARA AS REGRAS:
+    1. "produtos" refere-se EXCLUSIVAMENTE aos serviços de PR e Comunicação que a NOSSA AGÊNCIA vai vender/oferecer para o cliente (Exemplos: Gestão de Crise, Media Training, Relações Governamentais, Press Release, Thought Leadership, Auditoria de Imagem). NÃO inclua os produtos comerciais vendidos pela marca.
+    2. A "data" deve ser sempre exatamente {data_hoje}.
     """
 
     print("🔍 Consultando a API do Google para descobrir os modelos liberados para a sua chave...")
     modelos_prioritarios = []
     
     try:
-        # Busca dinâmica: Pede para a API listar exatamente o que você tem permissão de usar
         for m in client.models.list():
             nome_limpo = m.name.replace('models/', '')
-            # Filtra apenas modelos de texto da família Gemini
             if 'gemini' in nome_limpo and ('flash' in nome_limpo or 'pro' in nome_limpo):
                 modelos_prioritarios.append(nome_limpo)
         print(f"✅ Modelos autorizados encontrados! Top 3: {modelos_prioritarios[:3]}")
     except Exception as e:
-        print(f"⚠️ Aviso: Não foi possível mapear dinamicamente. Usando versões fixas numéricas. Erro: {e}")
-        # Fallback de segurança com os nomes numéricos exatos para chaves novas
+        print(f"⚠️ Aviso: Não foi possível mapear dinamicamente. Erro: {e}")
         modelos_prioritarios = ['gemini-1.5-flash-002', 'gemini-1.5-pro-002', 'gemini-1.5-flash-8b']
 
-    # Se a API retornar vazio por algum motivo, garante que temos as versões base
     if not modelos_prioritarios:
         modelos_prioritarios = ['gemini-1.5-flash-002', 'gemini-1.5-pro-002']
 
@@ -79,7 +84,6 @@ def executar_radar():
     resposta = None
     modelo_utilizado = None
 
-    # O robô agora testa os modelos válidos encontrados até um funcionar
     for modelo in modelos_prioritarios:
         print(f"Tentando processamento com o modelo: {modelo}...")
         try:
@@ -104,16 +108,19 @@ def executar_radar():
         oportunidades = json.loads(conteudo_bruto)
         print(f"✅ Análise de dados concluída. {len(oportunidades)} oportunidades estruturadas.")
     except Exception as e:
-        print(f"❌ ERRO ao decodificar o JSON gerado pelo modelo {modelo_utilizado}: {e}")
-        print(f"Retorno bruto obtido:\n{resposta.text}")
+        print(f"❌ ERRO ao decodificar o JSON: {e}")
         exit(1)
 
-    print("🖼️ Buscando imagens contextuais seguras via SafeSearch...")
+    print("🖼️ Buscando imagens contextuais...")
     for op in oportunidades:
         termo = op.get("palavra_chave_imagem", "corporate business")
         op["imagem"] = obter_imagem_noticia_segura(termo)
         if "palavra_chave_imagem" in op:
             del op["palavra_chave_imagem"]
+        
+        # Garante fallback se a IA esquecer de mandar o link
+        if "link_noticia" not in op or not op["link_noticia"]:
+            op["link_noticia"] = f"https://www.google.com/search?q=noticias+{'+'.join(op['marcas'])}"
 
     print("💾 Gravando dados estruturados em oportunidades.json...")
     try:
