@@ -18,44 +18,28 @@
             
             <!-- FILTROS -->
             <div class="flex flex-wrap gap-3 bg-slate-800 p-3 rounded-lg w-full md:w-auto">
-                <!-- Filtro Agência -->
                 <select id="filtroAgencia" class="bg-slate-700 text-white text-sm p-2 rounded border border-slate-600 focus:outline-none focus:border-amber-400">
                     <option value="">Todas as Agências</option>
                     <option value="In Press Porter Novelli">In Press Porter Novelli</option>
                     <option value="FleishmanHillard">FleishmanHillard</option>
                 </select>
                 
-                <!-- Filtro Cliente -->
                 <input id="filtroCliente" type="text" placeholder="Buscar por cliente..." class="bg-slate-700 text-white text-sm p-2 rounded border border-slate-600 focus:outline-none focus:border-amber-400 placeholder-gray-400">
-                
-                <!-- Filtro Produto -->
-                <select id="filtroProduto" class="bg-slate-700 text-white text-sm p-2 rounded border border-slate-600 focus:outline-none focus:border-amber-400">
-                    <option value="">Todos os Produtos</option>
-                    <option value="Gestão de Crise">Gestão de Crise</option>
-                    <option value="Thought Leadership">Thought Leadership</option>
-                    <option value="Public Affairs">Public Affairs</option>
-                    <option value="Assessoria de Imprensa">Assessoria de Imprensa</option>
-                    <option value="Comunicação Interna">Comunicação Interna</option>
-                </select>
             </div>
         </div>
     </header>
 
     <!-- Container Principal -->
     <main class="max-w-4xl mx-auto px-4 py-10">
-        
         <!-- Linha da Timeline -->
         <div class="relative border-l-2 border-slate-300 ml-4 md:ml-32" id="timelineContainer">
             <p class="text-gray-500 pl-6 py-4">Carregando oportunidades em tempo real...</p>
         </div>
-
     </main>
 
     <script>
-        // Variável global escopo-script para armazenar os dados carregados dinamicamente
         let dadosOportunidades = [];
 
-        // Função responsável por renderizar os cartões na Timeline
         function renderizarTimeline(dados) {
             const container = document.getElementById('timelineContainer');
             container.innerHTML = '';
@@ -66,35 +50,34 @@
             }
 
             dados.forEach(item => {
-                // Garante que a descrição respeite o limite estrito de 300 caracteres
                 const descricaoCurta = item.descricao.substring(0, 300);
                 
-                // Mapeamento e criação das tags de produtos sugeridos
+                // Tags dos SERVIÇOS de PR a serem oferecidos
                 const tagsProdutos = item.produtos.map(p => `
                     <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded">${p}</span>
                 `).join(' ');
                 
-                // Estrutura HTML da ficha em formato de Timeline
+                // Trata a URL da notícia (fallback para Google Notícias caso a IA não retorne link válido)
+                const linkValidado = item.link_noticia || `https://www.google.com/search?q=noticias+${encodeURIComponent(item.marcas.join('+'))}`;
+
                 const card = `
                     <div class="mb-10 relative pl-6 md:pl-8 group">
                         <!-- Marcador Visual da Timeline -->
                         <div class="absolute -left-[9px] top-1.5 bg-slate-900 rounded-full h-4 w-4 border-2 border-white group-hover:bg-amber-500 transition-colors"></div>
                         
-                        <!-- Data Flutuante Lateral para Desktops -->
+                        <!-- Data Flutuante Lateral -->
                         <div class="hidden md:block absolute -left-32 top-0.5 w-24 text-right text-sm font-bold text-slate-500">${item.data}</div>
                         
                         <!-- Ficha Cadastral -->
                         <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col md:flex-row">
                             
-                            <!-- Imagem Contextual Filtrada -->
                             <div class="md:w-1/3 h-48 md:h-auto relative bg-gray-100 flex-shrink-0">
-                                <img src="${item.imagem}" alt="Notícia contextualizada" class="w-full h-full object-cover">
+                                <img src="${item.imagem}" alt="Contexto" class="w-full h-full object-cover">
                                 <span class="absolute top-2 left-2 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded tracking-wide uppercase">
                                     ${item.agencia === 'In Press Porter Novelli' ? 'In Press' : 'FH'}
                                 </span>
                             </div>
                             
-                            <!-- Metadados e Inteligência -->
                             <div class="p-5 flex flex-col justify-between flex-grow">
                                 <div>
                                     <div class="flex justify-between items-start gap-2 mb-1">
@@ -107,9 +90,15 @@
                                     <p class="text-sm text-gray-600 mb-4 leading-relaxed">${descricaoCurta}</p>
                                 </div>
                                 
-                                <div class="border-t border-gray-100 pt-3 mt-2">
-                                    <span class="text-xs font-bold text-gray-400 block mb-1">PRODUTOS SUGERIDOS:</span>
-                                    <div class="flex flex-wrap gap-1.5">${tagsProdutos}</div>
+                                <div class="border-t border-gray-100 pt-3 mt-2 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
+                                    <div>
+                                        <span class="text-[10px] font-bold text-gray-400 block mb-1 uppercase tracking-wide">Serviços de PR sugeridos:</span>
+                                        <div class="flex flex-wrap gap-1.5">${tagsProdutos}</div>
+                                    </div>
+                                    
+                                    <a href="${linkValidado}" target="_blank" class="flex-shrink-0 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold py-1.5 px-3 rounded inline-flex items-center transition-colors shadow-sm">
+                                        Ler Notícia ↗
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -119,49 +108,33 @@
             });
         }
 
-        // Lógica de Processamento dos Filtros Combinados
         function filtrarGeral() {
             const agencia = document.getElementById('filtroAgencia').value;
             const cliente = document.getElementById('filtroCliente').value.toLowerCase();
-            const produto = document.getElementById('filtroProduto').value;
 
             const dadosFiltrados = dadosOportunidades.filter(item => {
                 const bateAgencia = agencia === "" || item.agencia === agencia;
-                const bateProduto = produto === "" || item.produtos.includes(produto);
                 const bateCliente = cliente === "" || item.marcas.some(m => m.toLowerCase().includes(cliente));
-                
-                return bateAgencia && bateProduto && bateCliente;
+                return bateAgencia && bateCliente;
             });
 
             renderizarTimeline(dadosFiltrados);
         }
 
-        // Event Listeners ativos para escuta de modificações nos filtros
         document.getElementById('filtroAgencia').addEventListener('change', filtrarGeral);
         document.getElementById('filtroCliente').addEventListener('input', filtrarGeral);
-        document.getElementById('filtroProduto').addEventListener('change', filtrarGeral);
 
-        // Chamada Assíncrona Primária: Coleta o JSON gerado pela automação Python/Gemini
         fetch('oportunidades.json')
             .then(response => {
-                if (!response.ok) {
-                    throw new Error('Arquivo oportunidades.json não encontrado ou inacessível.');
-                }
+                if (!response.ok) throw new Error('Arquivo JSON inacessível.');
                 return response.json();
             })
             .then(dados => {
-                // Alimenta a base local e renderiza o estado inicial do feed
                 dadosOportunidades = dados;
                 renderizarTimeline(dadosOportunidades);
             })
             .catch(err => {
-                console.error("Erro na carga do repositório de dados:", err);
-                document.getElementById('timelineContainer').innerHTML = `
-                    <div class="bg-red-50 text-red-800 p-4 rounded-lg border border-red-200 ml-4">
-                        <p class="font-bold">Aviso de Inicialização:</p>
-                        <p class="text-sm mt-1">O arquivo base <strong>oportunidades.json</strong> ainda não foi gerado no repositório ou está inacessível. Certifique-se de disparar a automação (GitHub Actions) pelo menos uma vez para criar a base viva do painel.</p>
-                    </div>
-                `;
+                console.error("Erro:", err);
             });
     </script>
 </body>
