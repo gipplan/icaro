@@ -27,18 +27,23 @@
 
     <!-- CONTEÚDO DA PÁGINA -->
     <div>
-        <!-- Header Corporativo -->
-        <header class="bg-white border-b border-slate-200 py-4 px-8 shadow-sm">
-            <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-                <!-- Logo & Grupo In Press Title -->
-                <div class="flex items-center gap-4">
+        <!-- Header Corporativo com Identidade Nova -->
+        <header class="bg-white border-b border-slate-200 py-5 px-8 shadow-sm">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+                <!-- Logo & I.C.A.R.O. Identity -->
+                <div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
                     <img src="logo.png" alt="Grupo In Press" class="h-10 md:h-12 object-contain" onerror="this.style.display='none'; document.getElementById('fallbackTitle').classList.remove('hidden')">
-                    <span id="fallbackTitle" class="hidden text-xl font-bold text-slate-800">Grupo <span class="text-red-650">In</span> Press</span>
-                    <div class="border-l border-slate-300 pl-4 py-1">
-                        <span class="bg-red-50 text-red-700 text-[10px] font-extrabold px-2 py-0.5 rounded tracking-wider uppercase block w-max mb-0.5">
-                            ⚡ Í.C.A.R.O. Busca Ativa
-                        </span>
-                        <p class="text-xs text-slate-500 font-medium">Painel de Geração Sob Demanda</p>
+                    <span id="fallbackTitle" class="hidden text-xl font-bold text-slate-800">Grupo <span class="text-red-600">In</span> Press</span>
+                    
+                    <div class="border-t sm:border-t-0 sm:border-l border-slate-350 pt-3 sm:pt-0 sm:pl-4 py-1">
+                        <h2 class="text-sm md:text-lg font-bold text-slate-950 flex flex-wrap items-center justify-center sm:justify-start gap-1 md:gap-2 leading-none mb-1.5">
+                            <span class="text-red-600 font-black tracking-wider">I.C.A.R.O</span>
+                            <span class="text-slate-300 hidden sm:inline">|</span>
+                            <span class="text-slate-800 font-extrabold">Oportunidades de PR em Tempo Real</span>
+                        </h2>
+                        <p class="text-[10px] md:text-xs text-slate-500 font-normal tracking-wide leading-tight">
+                            Inteligência de Comunicação, Análise e Radar de Oportunidades
+                        </p>
                     </div>
                 </div>
                 <a href="index.html" class="bg-slate-800 hover:bg-slate-700 text-white text-sm font-bold py-2 px-4 rounded-lg transition-colors shadow-sm">
@@ -79,8 +84,8 @@
             <!-- Feedback de Carregamento -->
             <div id="statusBox" class="hidden bg-white border border-slate-200 p-6 rounded-xl text-center shadow-sm">
                 <div class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-red-600 mb-4"></div>
-                <p class="text-red-700 font-bold" id="statusMessage">Iniciando motor Í.C.A.R.O. nos servidores...</p>
-                <p class="text-xs text-slate-500 mt-2">Isso leva cerca de 1 minuto enquanto o Gemini faz as buscas e as imagens.</p>
+                <p class="text-red-700 font-bold" id="statusMessage">Iniciando motor I.C.A.R.O. nos servidores...</p>
+                <p class="text-xs text-slate-500 mt-2">Isso leva cerca de 1 minuto enquanto o Gemini faz as buscas e processa os cards.</p>
             </div>
         </main>
     </div>
@@ -88,7 +93,7 @@
     <!-- Rodapé -->
     <footer class="bg-white border-t border-slate-200 py-6 px-8 text-center mt-12 shadow-sm">
         <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-slate-400">
-            <p>© 2026 Grupo In Press | Í.C.A.R.O. Intelligence. Todos os direitos reservados.</p>
+            <p>© 2026 Grupo In Press | I.C.A.R.O. Todos os direitos reservados.</p>
         </div>
     </footer>
 
