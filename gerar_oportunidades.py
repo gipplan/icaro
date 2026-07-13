@@ -1,7 +1,7 @@
 import os
 import json
 import datetime
-import google.generativeai as genai
+from google import genai  # Nova biblioteca oficial do Google
 from duckduckgo_search import DDGS
 
 def obter_imagem_noticia_segura(termo_busca):
@@ -14,28 +14,23 @@ def obter_imagem_noticia_segura(termo_busca):
     except Exception as e:
         print(f"⚠️ Nota: Não foi possível coletar imagem para '{termo_busca}': {e}")
     
-    # Imagem corporativa segura padrão caso a busca falhe ou sofra timeout
     return "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
 
-def executar_radar():
-    print("🚀 Inicializando o motor Í.C.A.R.O...")
+def执行_radar():
+    print("🚀 Inicializando o motor Í.C.A.R.O. com o novo SDK de 2026...")
     
-    # Coleta e valida a existência da chave de API
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         print("❌ ERRO CRÍTICO: A variável de ambiente 'GEMINI_API_KEY' não foi encontrada!")
-        print("Certifique-se de que cadastrou a chave corretamente em Settings > Secrets > Actions.")
         exit(1)
         
     try:
-        genai.configure(api_key=api_key)
-        # CORREÇÃO AQUI: Atualizado para o modelo mais recente e suportado pela API
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        # Inicialização moderna usando a nova classe Client do pacote google-genai
+        client = genai.Client(api_key=api_key)
     except Exception as e:
-        print(f"❌ ERRO CRÍTICO ao inicializar o modelo Gemini: {e}")
+        print(f"❌ ERRO CRÍTICO ao inicializar o cliente GenAI: {e}")
         exit(1)
 
-    # Prompt estruturado contendo a carteira ativa de clientes das agências
     prompt_sistema = """
     Você é um analista de inteligência de mercado focado em Relações Públicas e Comunicação Corporativa.
     Sua tarefa é analisar o mercado das últimas 24 horas e identificar riscos e oportunidades para a seguinte lista de clientes ativos:
@@ -57,12 +52,15 @@ def executar_radar():
     ]
     """
 
-    print("🧠 Solicitando análise de cenários ao Gemini...")
+    print("🧠 Solicitando análise de cenários ao Gemini (gemini-1.5-flash)...")
     try:
-        resposta = model.generate_content(prompt_sistema)
+        # Nova sintaxe oficial para geração de conteúdo
+        resposta = client.models.generate_content(
+            model='gemini-1.5-flash',
+            contents=prompt_sistema
+        )
         conteudo_limpo = resposta.text.strip()
         
-        # Remove eventuais marcações de markdown que o modelo teime em gerar
         if conteudo_limpo.startswith("```"):
             conteudo_limpo = conteudo_limpo.replace("```json", "").replace("```", "").strip()
             
