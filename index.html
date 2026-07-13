@@ -25,7 +25,7 @@
         </div>
     </div>
 
-    <!-- CONTEÚDO DO SITE (Fica oculto atrás da cortina de senha) -->
+    <!-- CONTEÚDO DO SITE -->
     <div>
         <!-- Header -->
         <header class="bg-slate-900 text-white py-6 px-8 shadow-md">
@@ -36,14 +36,30 @@
                 </div>
                 
                 <!-- FILTROS -->
-                <div class="flex flex-wrap gap-3 bg-slate-800 p-3 rounded-lg w-full md:w-auto">
+                <div class="flex flex-wrap gap-3 bg-slate-800 p-3 rounded-lg w-full md:w-auto items-center relative">
+                    <!-- Filtro por Agência -->
                     <select id="filtroAgencia" class="bg-slate-700 text-white text-sm p-2 rounded border border-slate-600 focus:outline-none focus:border-amber-400">
                         <option value="">Todas as Agências</option>
-                        <option value="In Press Porter Novelli">In Press Porter Novelli</option>
+                        <option value="In Press Porter Novelli">In Press</option>
                         <option value="FleishmanHillard">FleishmanHillard</option>
                     </select>
                     
-                    <input id="filtroCliente" type="text" placeholder="Buscar por cliente..." class="bg-slate-700 text-white text-sm p-2 rounded border border-slate-600 focus:outline-none focus:border-amber-400 placeholder-gray-400">
+                    <!-- Filtro Multi-Select Customizado por Cliente -->
+                    <div class="relative inline-block text-left w-full md:w-56">
+                        <button id="dropdownBtn" onclick="toggleDropdown(event)" class="w-full bg-slate-700 text-white text-sm p-2 rounded border border-slate-600 focus:outline-none focus:border-amber-400 flex justify-between items-center">
+                            <span id="dropdownLabel" class="truncate text-gray-300">Selecionar Clientes</span>
+                            <svg class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        
+                        <!-- Lista do Dropdown (oculta por padrão) -->
+                        <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-full md:w-64 rounded-md shadow-lg bg-slate-800 border border-slate-700 z-50 max-h-60 overflow-y-auto">
+                            <div id="clientesContainer" class="p-2 space-y-1">
+                                <p class="text-xs text-gray-400 p-2">Carregando marcas...</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -75,13 +91,12 @@
             for (let i = 0; i < str.length; i++) {
                 const char = str.charCodeAt(i);
                 hash = (hash << 5) - hash + char;
-                hash = hash & hash; // Converte para inteiro de 32 bits
+                hash = hash & hash; 
             }
             return hash.toString();
         }
 
-        // Hash matemático para a senha: "planejamento<3"
-        const HASH_CORRETO = "-1356189163";
+        const HASH_CORRETO = "-1356189163"; // Senha "planejamento<3"
 
         function verificarSenha() {
             const senhaDigitada = document.getElementById("sitePassword").value;
@@ -96,23 +111,90 @@
             }
         }
 
+        // --- SISTEMA DO DROPDOWN CUSTOMIZADO ---
+        function toggleDropdown(event) {
+            event.stopPropagation();
+            const menu = document.getElementById('dropdownMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Fecha o dropdown ao clicar fora dele
+        document.addEventListener('click', () => {
+            const menu = document.getElementById('dropdownMenu');
+            if (menu) menu.classList.add('hidden');
+        });
+
+        document.getElementById('dropdownMenu').addEventListener('click', (event) => {
+            event.stopPropagation(); // Evita que o menu feche ao clicar nas caixas de seleção
+        });
+
+        // --- SISTEMA DA LINHA DO TEMPO E FILTROS ---
+        let dadosOportunidades = [];
+
         document.addEventListener("DOMContentLoaded", () => {
             if (sessionStorage.getItem("site_desbloqueado") === "true") {
                 document.getElementById("passwordBarrier").classList.add("hidden");
             }
 
             document.getElementById("sitePassword").addEventListener("keypress", (event) => {
-                if (event.key === "Enter") {
-                    verificarSenha();
-                }
+                if (event.key === "Enter") verificarSenha();
             });
+
+            document.getElementById('filtroAgencia').addEventListener('change', filtrarGeral);
+
+            // Carrega os dados reais gerados pelo robô
+            fetch('oportunidades.json')
+                .then(response => {
+                    if (!response.ok) throw new Error('Arquivo JSON inacessível.');
+                    return response.json();
+                })
+                .then(dados => {
+                    dadosOportunidades = dados;
+                    inicializarDropdownClientes(dadosOportunidades);
+                    renderizarTimeline(dadosOportunidades);
+                })
+                .catch(err => {
+                    console.error("Erro ao carregar banco:", err);
+                    const container = document.getElementById('timelineContainer');
+                    if (container) {
+                        container.innerHTML = `<p class="text-red-500 pl-6 py-4">Nenhuma oportunidade registrada ainda. Use o painel de busca ativa para gerar a primeira!</p>`;
+                    }
+                });
         });
 
-        // --- SISTEMA DA LINHA DO TEMPO ---
-        let dadosOportunidades = [];
+        // Identifica marcas únicas nas oportunidades e monta os checkboxes
+        function inicializarDropdownClientes(dados) {
+            const container = document.getElementById('clientesContainer');
+            if (!container) return;
+
+            // Extrai todas as marcas únicas e organiza em ordem alfabética
+            const marcasUnicas = new Set();
+            dados.forEach(item => {
+                if (item.marcas) {
+                    item.marcas.forEach(marca => marcasUnicas.add(marca.trim()));
+                }
+            });
+
+            const listaOrdenada = Array.from(marcasUnicas).sort((a, b) => a.localeCompare(b));
+
+            if (listaOrdenada.length === 0) {
+                container.innerHTML = `<p class="text-xs text-gray-500 p-2">Nenhum cliente cadastrado.</p>`;
+                return;
+            }
+
+            // Cria o HTML de cada checkbox
+            container.innerHTML = listaOrdenada.map(marca => `
+                <label class="flex items-center gap-2 p-1.5 hover:bg-slate-700 rounded cursor-pointer text-sm text-gray-200 transition-colors">
+                    <input type="checkbox" value="${marca}" onchange="filtrarGeral()" 
+                           class="w-4 h-4 rounded text-amber-500 focus:ring-amber-500 bg-slate-900 border-slate-700">
+                    <span class="truncate">${marca}</span>
+                </label>
+            `).join('');
+        }
 
         function renderizarTimeline(dados) {
             const container = document.getElementById('timelineContainer');
+            if (!container) return;
             container.innerHTML = '';
 
             if (dados.length === 0) {
@@ -121,27 +203,23 @@
             }
 
             dados.forEach(item => {
-                const descricaoCurta = item.descricao.substring(0, 300);
+                const descricaoCurta = item.descricao ? item.descricao.substring(0, 300) : "";
                 
-                const tagsProdutos = item.produtos.map(p => `
+                const tagsProdutos = item.produtos ? item.produtos.map(p => `
                     <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded">${p}</span>
-                `).join(' ');
+                `).join(' ') : "";
                 
-                const linkValidado = item.link_noticia || `https://news.google.com/search?q=${encodeURIComponent(item.marcas.join('+'))}+when:7d`;
+                const marcasTexto = item.marcas ? item.marcas.join(', ') : "Sem marcas";
+                const linkValidado = item.link_noticia || (item.marcas ? `https://news.google.com/search?q=${encodeURIComponent(item.marcas.join('+'))}+when:7d` : "#");
 
                 const card = `
                     <div class="mb-10 relative pl-6 md:pl-8 group">
-                        <!-- Marcador Visual da Timeline -->
                         <div class="absolute -left-[9px] top-1.5 bg-slate-900 rounded-full h-4 w-4 border-2 border-white group-hover:bg-amber-500 transition-colors"></div>
+                        <div class="hidden md:block absolute -left-32 top-0.5 w-24 text-right text-sm font-bold text-slate-500">${item.data || ""}</div>
                         
-                        <!-- Data Lateral -->
-                        <div class="hidden md:block absolute -left-32 top-0.5 w-24 text-right text-sm font-bold text-slate-500">${item.data}</div>
-                        
-                        <!-- Ficha Cadastral -->
                         <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col md:flex-row">
-                            
                             <div class="md:w-1/3 h-48 md:h-auto relative bg-gray-100 flex-shrink-0">
-                                <img src="${item.imagem}" alt="Contexto" class="w-full h-full object-cover">
+                                <img src="${item.imagem || ''}" alt="Contexto" class="w-full h-full object-cover">
                                 <span class="absolute top-2 left-2 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded tracking-wide uppercase">
                                     ${item.agencia === 'In Press Porter Novelli' ? 'In Press' : 'FH'}
                                 </span>
@@ -150,11 +228,11 @@
                             <div class="p-5 flex flex-col justify-between flex-grow">
                                 <div>
                                     <div class="flex justify-between items-start gap-2 mb-1">
-                                        <span class="text-xs font-bold uppercase tracking-wider text-slate-400">${item.setor}</span>
-                                        <span class="md:hidden text-xs font-bold text-slate-500">${item.data}</span>
+                                        <span class="text-xs font-bold uppercase tracking-wider text-slate-400">${item.setor || ""}</span>
+                                        <span class="md:hidden text-xs font-bold text-slate-500">${item.data || ""}</span>
                                     </div>
                                     <h3 class="text-lg font-bold text-slate-900 mb-2">
-                                        🎯 Marcas: ${item.marcas.join(', ')}
+                                        🎯 Marcas: ${marcasTexto}
                                     </h3>
                                     <p class="text-sm text-gray-600 mb-4 leading-relaxed">${descricaoCurta}</p>
                                 </div>
@@ -177,35 +255,43 @@
             });
         }
 
+        // Executa a filtragem combinando Agências e múltiplos Clientes
         function filtrarGeral() {
-            const agencia = document.getElementById('filtroAgencia').value;
-            const cliente = document.getElementById('filtroCliente').value.toLowerCase();
+            const fAgencia = document.getElementById('filtroAgencia');
+            const agencia = fAgencia ? fAgencia.value : "";
 
+            // Captura todos os clientes que foram marcados no dropdown
+            const checkboxesMarcados = Array.from(document.querySelectorAll('#clientesContainer input:checked'));
+            const clientesSelecionados = checkboxesMarcados.map(cb => cb.value);
+
+            // Atualiza o visual do botão do Dropdown dependendo de quantos clientes foram marcados
+            const label = document.getElementById('dropdownLabel');
+            if (label) {
+                if (clientesSelecionados.length === 0) {
+                    label.innerText = "Todos os Clientes";
+                    label.classList.add('text-gray-300');
+                } else if (clientesSelecionados.length === 1) {
+                    label.innerText = clientesSelecionados[0];
+                    label.classList.remove('text-gray-300');
+                } else {
+                    label.innerText = `Clientes (${clientesSelecionados.length})`;
+                    label.classList.remove('text-gray-300');
+                }
+            }
+
+            // Filtra os dados com base nas seleções
             const dadosFiltrados = dadosOportunidades.filter(item => {
                 const bateAgencia = agencia === "" || item.agencia === agencia;
-                const bateCliente = cliente === "" || item.marcas.some(m => m.toLowerCase().includes(cliente));
+                
+                // Se nenhum cliente estiver selecionado, exibe todos. Caso contrário, exibe se a oportunidade contiver QUALQUER uma das marcas selecionadas
+                const bateCliente = clientesSelecionados.length === 0 || 
+                                     (item.marcas && item.marcas.some(m => clientesSelecionados.includes(m.trim())));
+                
                 return bateAgencia && bateCliente;
             });
 
             renderizarTimeline(dadosFiltrados);
         }
-
-        document.getElementById('filtroAgencia').addEventListener('change', filtrarGeral);
-        document.getElementById('filtroCliente').addEventListener('input', filtrarGeral);
-
-        fetch('oportunidades.json')
-            .then(response => {
-                if (!response.ok) throw new Error('Arquivo JSON inacessível.');
-                return response.json();
-            })
-            .then(dados => {
-                dadosOportunidades = dados;
-                renderizarTimeline(dadosOportunidades);
-            })
-            .catch(err => {
-                console.error("Erro:", err);
-                document.getElementById('timelineContainer').innerHTML = `<p class="text-red-500 pl-6 py-4">Erro ao carregar os dados. Certifique-se de que a primeira varredura do robô já foi concluída.</p>`;
-            });
     </script>
 </body>
 </html>
