@@ -6,36 +6,50 @@
     <title>Radar de Oportunidades - PR Intelligence</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col justify-between">
 
-    <!-- Header -->
-    <header class="bg-slate-900 text-white py-6 px-8 shadow-md">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-            <div>
-                <h1 class="text-2xl font-bold text-amber-400">⚡ Í.C.A.R.O. Radar</h1>
-                <p class="text-sm text-gray-400">Oportunidades de PR e Comunicação Corporativa em Tempo Real</p>
-            </div>
-            
-            <!-- FILTROS -->
-            <div class="flex flex-wrap gap-3 bg-slate-800 p-3 rounded-lg w-full md:w-auto">
-                <select id="filtroAgencia" class="bg-slate-700 text-white text-sm p-2 rounded border border-slate-600 focus:outline-none focus:border-amber-400">
-                    <option value="">Todas as Agências</option>
-                    <option value="In Press Porter Novelli">In Press Porter Novelli</option>
-                    <option value="FleishmanHillard">FleishmanHillard</option>
-                </select>
+    <!-- Wrapper de Conteúdo Superior -->
+    <div>
+        <!-- Header -->
+        <header class="bg-slate-900 text-white py-6 px-8 shadow-md">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+                <div>
+                    <h1 class="text-2xl font-bold text-amber-400">⚡ Í.C.A.R.O. Radar</h1>
+                    <p class="text-sm text-gray-400">Oportunidades de PR e Comunicação Corporativa em Tempo Real</p>
+                </div>
                 
-                <input id="filtroCliente" type="text" placeholder="Buscar por cliente..." class="bg-slate-700 text-white text-sm p-2 rounded border border-slate-600 focus:outline-none focus:border-amber-400 placeholder-gray-400">
+                <!-- FILTROS -->
+                <div class="flex flex-wrap gap-3 bg-slate-800 p-3 rounded-lg w-full md:w-auto">
+                    <select id="filtroAgencia" class="bg-slate-700 text-white text-sm p-2 rounded border border-slate-600 focus:outline-none focus:border-amber-400">
+                        <option value="">Todas as Agências</option>
+                        <option value="In Press Porter Novelli">In Press Porter Novelli</option>
+                        <option value="FleishmanHillard">FleishmanHillard</option>
+                    </select>
+                    
+                    <input id="filtroCliente" type="text" placeholder="Buscar por cliente..." class="bg-slate-700 text-white text-sm p-2 rounded border border-slate-600 focus:outline-none focus:border-amber-400 placeholder-gray-400">
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- Container Principal -->
-    <main class="max-w-4xl mx-auto px-4 py-10">
-        <!-- Linha da Timeline -->
-        <div class="relative border-l-2 border-slate-300 ml-4 md:ml-32" id="timelineContainer">
-            <p class="text-gray-500 pl-6 py-4">Carregando oportunidades em tempo real...</p>
+        <!-- Container Principal -->
+        <main class="max-w-4xl mx-auto px-4 py-10">
+            <!-- Linha da Timeline -->
+            <div class="relative border-l-2 border-slate-300 ml-4 md:ml-32" id="timelineContainer">
+                <p class="text-gray-500 pl-6 py-4">Carregando oportunidades em tempo real...</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Rodapé com o link para a busca sob demanda -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-6 px-8 text-center mt-12">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+            <p>© 2026 Í.C.A.R.O. Intelligence. Todos os direitos reservados.</p>
+            <a href="busca.html" class="inline-flex items-center gap-1 text-slate-400 hover:text-amber-400 transition-colors font-semibold">
+                <span>Painel de Busca Ativa (Sob Demanda)</span>
+                <span class="text-xs">🔑</span>
+            </a>
         </div>
-    </main>
+    </footer>
 
     <script>
         let dadosOportunidades = [];
@@ -52,20 +66,20 @@
             dados.forEach(item => {
                 const descricaoCurta = item.descricao.substring(0, 300);
                 
-                // Tags dos SERVIÇOS de PR a serem oferecidos
+                // Renderiza os SERVIÇOS de PR autorizados
                 const tagsProdutos = item.produtos.map(p => `
                     <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded">${p}</span>
                 `).join(' ');
                 
-                // Trata a URL da notícia (fallback para Google Notícias caso a IA não retorne link válido)
-                const linkValidado = item.link_noticia || `https://www.google.com/search?q=noticias+${encodeURIComponent(item.marcas.join('+'))}`;
+                // Formatação do Link (Usa o link real retornado pela busca do Google)
+                const linkValidado = item.link_noticia || `https://news.google.com/search?q=${encodeURIComponent(item.marcas.join('+'))}+when:7d`;
 
                 const card = `
                     <div class="mb-10 relative pl-6 md:pl-8 group">
                         <!-- Marcador Visual da Timeline -->
                         <div class="absolute -left-[9px] top-1.5 bg-slate-900 rounded-full h-4 w-4 border-2 border-white group-hover:bg-amber-500 transition-colors"></div>
                         
-                        <!-- Data Flutuante Lateral -->
+                        <!-- Data Lateral -->
                         <div class="hidden md:block absolute -left-32 top-0.5 w-24 text-right text-sm font-bold text-slate-500">${item.data}</div>
                         
                         <!-- Ficha Cadastral -->
@@ -124,6 +138,7 @@
         document.getElementById('filtroAgencia').addEventListener('change', filtrarGeral);
         document.getElementById('filtroCliente').addEventListener('input', filtrarGeral);
 
+        // Busca o arquivo JSON estático gravado pelo Python
         fetch('oportunidades.json')
             .then(response => {
                 if (!response.ok) throw new Error('Arquivo JSON inacessível.');
@@ -135,6 +150,7 @@
             })
             .catch(err => {
                 console.error("Erro:", err);
+                document.getElementById('timelineContainer').innerHTML = `<p class="text-red-500 pl-6 py-4">Erro ao carregar os dados. Certifique-se de que a primeira varredura do robô já foi concluída.</p>`;
             });
     </script>
 </body>
