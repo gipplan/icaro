@@ -1,7 +1,8 @@
 import os
 import json
 import datetime
-from google import genai  # Nova biblioteca oficial do Google
+from google import genai
+from google.genai import types  # Importa os tipos de configuração do novo SDK
 from duckduckgo_search import DDGS
 
 def obter_imagem_noticia_segura(termo_busca):
@@ -14,10 +15,10 @@ def obter_imagem_noticia_segura(termo_busca):
     except Exception as e:
         print(f"⚠️ Nota: Não foi possível coletar imagem para '{termo_busca}': {e}")
     
-    return "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    return "[https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600)"
 
 def executar_radar():
-    print("🚀 Inicializando o motor Í.C.A.R.O. com o novo SDK de 2026...")
+    print("🚀 Inicializando o motor Í.C.A.R.O. com o SDK unificado...")
     
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
@@ -25,7 +26,6 @@ def executar_radar():
         exit(1)
         
     try:
-        # Inicialização moderna usando a nova classe Client do pacote google-genai
         client = genai.Client(api_key=api_key)
     except Exception as e:
         print(f"❌ ERRO CRÍTICO ao inicializar o cliente GenAI: {e}")
@@ -37,35 +37,37 @@ def executar_radar():
     - In Press Porter Novelli: Claro, Mercado Livre, Mercado Pago, Ambev, Prio, Vibra, Naturgy, Engie, Seara, PepsiCo, Prio, Gerdau, Einstein.
     - FleishmanHillard: Google, Shein, Stone, Mastercard, Samsung, Bayer, McKinsey, Cury Construtora.
 
-    Gere um array em formato JSON estrito, sem formatações adicionais ou blocks markdown (não use ```json), contendo as oportunidades reais encontradas.
+    Gere um array em formato JSON estrito contendo as oportunidades reais encontradas.
     Cada objeto do array deve seguir rigorosamente este modelo:
-    [
-        {
-            "data": "DD/MM/AAAA",
-            "agencia": "Nome exato da Agência",
-            "setor": "Setor macro da oportunidade",
-            "marcas": ["Marca1", "Marca2"],
-            "descricao": "Texto analítico resumido com o gatilho e impacto de até 300 caracteres.",
-            "produtos": ["Produto1", "Produto2"],
-            "palavra_chave_imagem": "Termo em inglês simples e corporativo para buscar uma imagem conceitual da notícia"
-        }
-    ]
+    {
+        "data": "DD/MM/AAAA",
+        "agencia": "Nome exato da Agência",
+        "setor": "Setor macro da oportunidade",
+        "marcas": ["Marca1", "Marca2"],
+        "descricao": "Texto analítico resumido com o gatilho e impacto de até 300 caracteres.",
+        "produtos": ["Produto1", "Produto2"],
+        "palavra_chave_imagem": "Termo em inglês simples e corporativo para buscar uma imagem conceitual da notícia"
+    }
     """
 
-    print("🧠 Solicitando análise de cenários ao Gemini (gemini-1.5-flash)...")
+    print("🧠 Solicitando análise de cenários ao Gemini (gemini-2.5-flash)...")
     try:
-        # Nova sintaxe oficial para geração de conteúdo
-        resposta = client.models.generate_content(
-            model='gemini-1.5-flash',
-            contents=prompt_sistema
+        # Configura o motor para forçar a saída em JSON puro, sem markdown block
+        configuracao_json = types.GenerateContentConfig(
+            response_mime_type="application/json"
         )
-        conteudo_limpo = resposta.text.strip()
         
-        if conteudo_limpo.startswith("```"):
-            conteudo_limpo = conteudo_limpo.replace("```json", "").replace("```", "").strip()
-            
-        oportunidades = json.loads(conteudo_limpo)
+        resposta = client.models.generate_content(
+            model='gemini-2.5-flash',  # Modelo atualizado e suportado em 2026
+            contents=prompt_sistema,
+            config=configuracao_json
+        )
+        
+        # Como forçamos o tipo MIME, a resposta vem como string JSON pura
+        conteudo_bruto = resposta.text.strip()
+        oportunidades = json.loads(conteudo_bruto)
         print(f"✅ Análise concluída. {len(oportunidades)} oportunidades identificadas.")
+        
     except Exception as e:
         print(f"❌ ERRO ao processar ou decodificar o retorno da IA: {e}")
         if 'resposta' in locals():
