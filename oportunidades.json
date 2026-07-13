@@ -1,5 +1,68 @@
 [
     {
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia e Eletrônicos de Consumo",
+        "marcas": [
+            "Samsung (B2B / B2C / LATAM)"
+        ],
+        "descricao": "Com o anúncio do Galaxy Unpacked para 22 de julho em Londres, a Samsung iniciou em 10 de julho o pré-registro para novos dobráveis com descontos de até R$ 2.000 no Brasil, abrindo oportunidades para campanhas de engajamento digital, ativação de influenciadores e forte presença online.",
+        "produtos": [
+            "Campanha",
+            "Influenciadores",
+            "Presença Digital"
+        ],
+        "link_noticia": "https://news.samsung.com/br/samsung-inicia-pre-registro-para-o-novo-galaxy-no-brasil",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Tecnologia e Serviços",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Apesar da desclassificação do Brasil na Copa do Mundo em 5 de julho, o iFood liderou o buzz nas redes sociais na semana da eliminação (2 a 8 de julho) ao focar em ações interativas e mimos via DM, mostrando resiliência estratégica e consolidando sua presença digital e campanhas de engajamento.",
+        "produtos": [
+            "Presença Digital",
+            "Campanha",
+            "Mídia"
+        ],
+        "link_noticia": "https://www.meioemensagem.com.br/midia/ifood-lidera-buzz-na-semana-de-eliminacao-do-brasil",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Mineração e Siderurgia",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "Após a renúncia de Daniel Stieler à presidência do conselho da Vale em 6 de julho de 2026 sob pressão da Previ, a CVM abriu processo em 8 de julho para investigar o acordo de compensação financeira. O fato demanda forte trabalho de assessoria de imprensa e reposicionamento de governança.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Posicionamento Executivo"
+        ],
+        "link_noticia": "https://economia.uol.com.br/noticias/redacao/2026/07/09/vale-confirma-compensacao-financeira-a-ex-presidente-do-conselho.htm",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Turismo e Aviação",
+        "marcas": [
+            "GOL/Smiles"
+        ],
+        "descricao": "No dia 6 de julho de 2026, a Smiles anunciou regras de upgrade para a nova classe executiva 'Business INSIGNIA by GOL', que decolou em seu primeiro voo Rio-Nova York em 8 de julho. A ação posiciona a marca no segmento premium, exigindo campanhas de relações públicas e assessoria de imprensa.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Campanha",
+            "Presença Digital"
+        ],
+        "link_noticia": "https://www.panrotas.com.br/aviacao/programas-de-fidelidade/2026/07/smiles-anuncia-regras-para-upgrade-cortesia-da-nova-classe-business-insignia-da-gol_204128.html",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
         "agencia": "In Press Porter Novelli",
         "setor": "Varejo",
         "marcas": [
