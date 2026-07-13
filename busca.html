@@ -6,75 +6,91 @@
     <title>Í.C.A.R.O. - Busca Ativa Sob Demanda</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans min-h-screen">
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between">
 
     <!-- BARREIRA DE SENHA (Bloqueia o site por padrão) -->
     <div id="passwordBarrier" class="fixed inset-0 bg-slate-950 flex flex-col items-center justify-center z-[9999] px-4">
         <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl max-w-md w-full text-center shadow-2xl">
             <span class="text-4xl mb-4 block">🔒</span>
-            <h2 class="text-xl font-bold text-amber-400 mb-2">Acesso Restrito</h2>
+            <h2 class="text-xl font-bold text-white mb-2">Acesso Restrito</h2>
             <p class="text-sm text-gray-400 mb-6">Este painel é privado. Insira a senha de acesso para continuar.</p>
             
             <input id="sitePassword" type="password" placeholder="Digite a senha..." 
-                   class="w-full p-3 bg-slate-950 border border-slate-700 rounded-lg text-white text-center focus:outline-none focus:border-amber-400 mb-4 transition-all">
+                   class="w-full p-3 bg-slate-950 border border-slate-700 rounded-lg text-white text-center focus:outline-none focus:border-red-500 mb-4 transition-all">
             
-            <button onclick="verificarSenha()" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-3 px-6 rounded-lg transition-colors">
+            <button onclick="verificarSenha()" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
                 Desbloquear Painel
             </button>
             <p id="msgErro" class="text-xs text-red-400 mt-3 hidden font-semibold">Senha incorreta. Tente novamente.</p>
         </div>
     </div>
 
-    <!-- CONTEÚDO DA PÁGINA (Fica oculto atrás da cortina de senha) -->
-    <!-- Header -->
-    <header class="bg-slate-950 text-white py-6 px-8 border-b border-slate-800 shadow-md">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-            <div>
-                <h1 class="text-2xl font-bold text-amber-400">⚡ Í.C.A.R.O. Busca Ativa</h1>
-                <p class="text-sm text-gray-400">Painel de Pesquisa e Geração de Oportunidades Sob Demanda</p>
+    <!-- CONTEÚDO DA PÁGINA -->
+    <div>
+        <!-- Header Corporativo -->
+        <header class="bg-white border-b border-slate-200 py-4 px-8 shadow-sm">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+                <!-- Logo & Grupo In Press Title -->
+                <div class="flex items-center gap-4">
+                    <img src="logo.png" alt="Grupo In Press" class="h-10 md:h-12 object-contain" onerror="this.style.display='none'; document.getElementById('fallbackTitle').classList.remove('hidden')">
+                    <span id="fallbackTitle" class="hidden text-xl font-bold text-slate-800">Grupo <span class="text-red-650">In</span> Press</span>
+                    <div class="border-l border-slate-300 pl-4 py-1">
+                        <span class="bg-red-50 text-red-700 text-[10px] font-extrabold px-2 py-0.5 rounded tracking-wider uppercase block w-max mb-0.5">
+                            ⚡ Í.C.A.R.O. Busca Ativa
+                        </span>
+                        <p class="text-xs text-slate-500 font-medium">Painel de Geração Sob Demanda</p>
+                    </div>
+                </div>
+                <a href="index.html" class="bg-slate-800 hover:bg-slate-700 text-white text-sm font-bold py-2 px-4 rounded-lg transition-colors shadow-sm">
+                    ← Voltar para o Painel Principal
+                </a>
             </div>
-            <a href="index.html" class="bg-slate-800 hover:bg-slate-700 text-sm font-bold py-2 px-4 rounded transition">
-                ← Voltar para o Painel Principal
-            </a>
-        </div>
-    </header>
+        </header>
 
-    <main class="max-w-4xl mx-auto px-4 py-10">
-        <!-- Área de Configuração de Chave (Salva apenas localmente no navegador) -->
-        <div class="bg-slate-800/50 border border-slate-850 p-4 rounded-xl mb-6 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <div class="text-left">
-                <h3 class="text-sm font-bold text-gray-300">Autenticação Local Segura</h3>
-                <p class="text-xs text-gray-500">Insira seu Token do GitHub. Ele fica salvo apenas no seu navegador.</p>
+        <main class="max-w-4xl mx-auto px-4 py-10">
+            <!-- Configuração do Token do GitHub -->
+            <div class="bg-white border border-slate-200 p-5 rounded-xl shadow-sm mb-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div class="text-left">
+                    <h3 class="text-sm font-bold text-slate-800">Autenticação Local Segura</h3>
+                    <p class="text-xs text-slate-500">Insira seu Token do GitHub. Ele fica salvo apenas no seu navegador pessoal.</p>
+                </div>
+                <div class="w-full sm:w-1/2">
+                    <input id="tokenSeguro" type="password" placeholder="Cole seu ghp_... aqui" 
+                           class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-lg text-sm text-slate-850 focus:outline-none focus:border-red-500">
+                </div>
             </div>
-            <div class="w-full sm:w-1/2">
-                <input id="tokenSeguro" type="password" placeholder="Cole seu ghp_... aqui" 
-                       class="w-full p-2 bg-slate-900 border border-slate-700 rounded-lg text-sm text-white focus:outline-none focus:border-amber-400">
-            </div>
-        </div>
 
-        <!-- Área de Controle de Varredura -->
-        <div class="bg-slate-800 border border-slate-700 p-6 rounded-xl shadow-lg mb-8">
-            <h2 class="text-lg font-bold text-amber-400 mb-2">🔍 Forçar Varredura de Marca</h2>
-            <p class="text-sm text-gray-300 mb-6 leading-relaxed">
-                Aviso: O disparo manual consome créditos da API de inteligência artificial. Utilize este recurso preferencialmente para rodar relatórios prioritários.
-            </p>
-            
-            <div class="flex flex-col sm:flex-row gap-4 items-center">
-                <input id="inputMarca" type="text" placeholder="Ex: Samsung, Ambev, iFood..." 
-                       class="w-full sm:w-2/3 p-3 bg-slate-900 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-amber-400">
-                <button onclick="forcarBusca()" class="w-full sm:w-1/3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-3 px-6 rounded-lg transition-colors">
-                    Pesquisar e Gerar 🚀
-                </button>
+            <!-- Formulário de Controle de Varredura -->
+            <div class="bg-white border border-slate-200 p-6 rounded-xl shadow-md mb-8">
+                <h2 class="text-lg font-bold text-slate-800 mb-2">🔍 Forçar Varredura de Marca</h2>
+                <p class="text-sm text-slate-500 mb-6 leading-relaxed">
+                    Aviso: O disparo manual consome créditos da API de inteligência artificial do Gemini. Utilize este recurso preferencialmente para rodar relatórios sob demanda.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 items-center">
+                    <input id="inputMarca" type="text" placeholder="Ex: Samsung, Ambev, iFood..." 
+                           class="w-full sm:w-2/3 p-3 bg-slate-50 border border-slate-300 rounded-lg text-slate-800 focus:outline-none focus:border-red-500">
+                    <button onclick="forcarBusca()" class="w-full sm:w-1/3 bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-sm">
+                        Pesquisar e Gerar 🚀
+                    </button>
+                </div>
             </div>
-        </div>
 
-        <!-- Feedback de Carregamento -->
-        <div id="statusBox" class="hidden bg-slate-800 border border-slate-700 p-6 rounded-xl text-center">
-            <div class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-amber-400 mb-4"></div>
-            <p class="text-amber-400 font-bold" id="statusMessage">Iniciando motor Í.C.A.R.O. nos servidores do GitHub...</p>
-            <p class="text-xs text-gray-400 mt-2">Isso pode levar de 30 a 60 segundos enquanto o Gemini processa os dados.</p>
+            <!-- Feedback de Carregamento -->
+            <div id="statusBox" class="hidden bg-white border border-slate-200 p-6 rounded-xl text-center shadow-sm">
+                <div class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-red-600 mb-4"></div>
+                <p class="text-red-700 font-bold" id="statusMessage">Iniciando motor Í.C.A.R.O. nos servidores...</p>
+                <p class="text-xs text-slate-500 mt-2">Isso leva cerca de 1 minuto enquanto o Gemini faz as buscas e as imagens.</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-white border-t border-slate-200 py-6 px-8 text-center mt-12 shadow-sm">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-slate-400">
+            <p>© 2026 Grupo In Press | Í.C.A.R.O. Intelligence. Todos os direitos reservados.</p>
         </div>
-    </main>
+    </footer>
 
     <script>
         // --- SISTEMA DE SEGURANÇA ---
@@ -83,13 +99,12 @@
             for (let i = 0; i < str.length; i++) {
                 const char = str.charCodeAt(i);
                 hash = (hash << 5) - hash + char;
-                hash = hash & hash; // Converte para inteiro de 32 bits
+                hash = hash & hash; 
             }
             return hash.toString();
         }
 
-        // Hash matemático para a senha: "planejamento<3"
-        const HASH_CORRETO = "-1356189163";
+        const HASH_CORRETO = "-1356189163"; // Senha "planejamento<3"
 
         function verificarSenha() {
             const senhaDigitada = document.getElementById("sitePassword").value;
@@ -104,19 +119,15 @@
             }
         }
 
-        // Executado assim que a página é lida
         document.addEventListener("DOMContentLoaded", () => {
             if (sessionStorage.getItem("site_desbloqueado") === "true") {
                 document.getElementById("passwordBarrier").classList.add("hidden");
             }
 
             document.getElementById("sitePassword").addEventListener("keypress", (event) => {
-                if (event.key === "Enter") {
-                    verificarSenha();
-                }
+                if (event.key === "Enter") verificarSenha();
             });
 
-            // Resgata o Token ghp_ do computador do usuário, se houver
             const tokenSalvo = localStorage.getItem("icaro_pat");
             if (tokenSalvo) {
                 document.getElementById("tokenSeguro").value = tokenSalvo;
@@ -128,18 +139,18 @@
             const token = document.getElementById('tokenSeguro').value.trim();
 
             if (!token) {
-                alert("Por favor, cole seu Personal Access Token (PAT) no campo de autenticação no topo da página.");
+                alert("Por favor, cole seu Personal Access Token (PAT) no campo de autenticação.");
                 return;
             }
             if (!marca) {
-                alert("Por favor, digite o nome de uma marca para realizar a busca.");
+                alert("Por favor, digite uma marca para buscar.");
                 return;
             }
 
             localStorage.setItem("icaro_pat", token);
 
             // ================================================================
-            // CONFIGURAÇÃO DO SEU REPOSITÓRIO
+            // CONFIGURAÇÃO DO REPOSITÓRIO
             // ================================================================
             const REPO_OWNER = "gipplan";                
             const REPO_NAME = "icaro";                     
@@ -166,13 +177,13 @@
                 });
 
                 if (response.status === 204) {
-                    statusMessage.innerHTML = `<span class="text-emerald-400 font-bold">🚀 Sucesso! O GitHub iniciou o processamento.</span><br><br><span class="text-xs text-gray-300">O robô está rodando agora. Aguarde cerca de 1 minuto e recarregue a <a href="index.html" class="underline text-amber-400 font-bold">página principal</a> para ver o novo card gerado!</span>`;
+                    statusMessage.innerHTML = `<span class="text-emerald-600 font-bold">🚀 Sucesso! O processamento foi iniciado.</span><br><br><span class="text-xs text-slate-500">O robô está rodando em segundo plano. Aguarde cerca de 1 minuto e recarregue a <a href="index.html" class="underline text-red-600 font-bold">página principal</a> para visualizar!</span>`;
                 } else {
                     const erroTxt = await response.text();
-                    statusMessage.innerHTML = `<span class="text-red-400 font-bold">⚠️ Falha ao acionar a automação.</span><br><span class="text-xs text-gray-400">Erro HTTP ${response.status}: ${erroTxt}</span>`;
+                    statusMessage.innerHTML = `<span class="text-red-500 font-bold">⚠️ Falha no disparo.</span><br><span class="text-xs text-slate-500">Erro HTTP ${response.status}: ${erroTxt}</span>`;
                 }
             } catch (error) {
-                statusMessage.innerHTML = `<span class="text-red-450 font-bold">⚠️ Erro de Conectividade.</span><br><span class="text-xs text-gray-400">${error.message}</span>`;
+                statusMessage.innerHTML = `<span class="text-red-500 font-bold">⚠️ Erro de rede.</span><br><span class="text-xs text-slate-500">${error.message}</span>`;
             }
         }
     </script>
