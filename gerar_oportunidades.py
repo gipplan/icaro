@@ -50,11 +50,11 @@ def executar_radar():
     }
     """
 
- # LISTA DE CASCATA (FALLBACK) ATUALIZADA COM NOMES OFICIAIS BASE
+# LISTA DE CASCATA (FALLBACK) COM OS NOMES VALIDADOS PELO NOVO SDK
     modelos_prioritarios = [
-        'gemini-1.5-pro',
-        'gemini-1.5-flash',
-        'gemini-1.0-pro'
+        'gemini-2.0-flash',         # O motor mais rápido e atualizado
+        'gemini-2.5-pro',           # Alternativa Pro (se disponível na sua região)
+        'gemini-1.5-flash-latest'   # O fallback de segurança que sabemos que existe
     ]
 
     print("🧠 Solicitando análise de cenários ao Gemini...")
