@@ -1,0 +1,61 @@
+[
+    {
+        "data": "24/10/2024",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Tecnologia e Varejo",
+        "marcas": [
+            "Mercado Livre",
+            "Mercado Pago"
+        ],
+        "descricao": "Com a alta na demanda por crédito no e-commerce brasileiro, Mercado Pago e Mercado Livre podem liderar narrativas sobre fomento a PMEs e inclusão financeira, fortalecendo a reputação das marcas em sustentabilidade econômica.",
+        "produtos": [
+            "Crédito para PMEs",
+            "Mercado Envios"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "data": "24/10/2024",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia e Telecomunicações",
+        "marcas": [
+            "Google",
+            "Samsung"
+        ],
+        "descricao": "O avanço da inteligência artificial generativa em smartphones abre oportunidade para Google e Samsung cocriarem pautas de produtividade e segurança de dados, posicionando suas inovações como ferramentas de inclusão digital.",
+        "produtos": [
+            "Gemini",
+            "Galaxy AI"
+        ],
+        "imagem": "https://techwireasia.com/wp-content/uploads/2023/12/generative_AI_smartphones_2-768x768.jpg"
+    },
+    {
+        "data": "24/10/2024",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia e Sustentabilidade",
+        "marcas": [
+            "Vibra",
+            "Engie"
+        ],
+        "descricao": "O crescimento do mercado de eletrificação de frotas abre espaço para Vibra e Engie liderarem o debate sobre transição energética justa, promovendo suas soluções de infraestrutura de recarga rápida e energia limpa no país.",
+        "produtos": [
+            "Carregadores elétricos",
+            "Energia solar contratada"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "data": "24/10/2024",
+        "agencia": "FleishmanHillard",
+        "setor": "Varejo e Moda",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "O investimento contínuo da Shein na nacionalização da produção têxtil no Brasil gera oportunidade de posicionamento institucional focado em geração de empregos locais e desenvolvimento de pequenas confecções regionais.",
+        "produtos": [
+            "Produção nacional",
+            "Marketplace"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    }
+]
