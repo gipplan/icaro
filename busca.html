@@ -8,7 +8,7 @@
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans min-h-screen">
 
-    <!-- BARREIRA DE SENHA (Bloqueia todo o site por padrão) -->
+    <!-- BARREIRA DE SENHA (Bloqueia o site por padrão) -->
     <div id="passwordBarrier" class="fixed inset-0 bg-slate-950 flex flex-col items-center justify-center z-[9999] px-4">
         <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl max-w-md w-full text-center shadow-2xl">
             <span class="text-4xl mb-4 block">🔒</span>
@@ -25,7 +25,7 @@
         </div>
     </div>
 
-    <!-- CONTEÚDO DA PÁGINA -->
+    <!-- CONTEÚDO DA PÁGINA (Fica oculto atrás da cortina de senha) -->
     <!-- Header -->
     <header class="bg-slate-950 text-white py-6 px-8 border-b border-slate-800 shadow-md">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
@@ -77,25 +77,26 @@
     </main>
 
     <script>
-        // Função para gerar o Hash SHA-256 da senha digitada
-        async function gerarHash(string) {
-            const utf8 = new Uint8Array(Array.from(string).map(c => c.charCodeAt(0)));
-            const hashBuffer = await crypto.subtle.digest('SHA-256', utf8);
-            const hashArray = Array.from(new Uint8Array(hashBuffer));
-            return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        // --- SISTEMA DE SEGURANÇA ---
+        function gerarHash(str) {
+            let hash = 0;
+            for (let i = 0; i < str.length; i++) {
+                const char = str.charCodeAt(i);
+                hash = (hash << 5) - hash + char;
+                hash = hash & hash; // Converte para inteiro de 32 bits
+            }
+            return hash.toString();
         }
 
-        // Assinatura SHA-256 criptografada da senha "planejamento<3"
-        // (Isso impede que qualquer pessoa descubra a palavra-chave lendo o código-fonte)
-        const HASH_CORRETO = "4a2032ef85711757399f6ad0fe08b1b768c8b0c9a6fd03319b252b2b841193c2";
+        // Hash matemático para a senha: "planejamento<3"
+        const HASH_CORRETO = "-1356189163";
 
-        async function verificarSenha() {
+        function verificarSenha() {
             const senhaDigitada = document.getElementById("sitePassword").value;
-            const hashDigitado = await gerarHash(senhaDigitada);
+            const hashDigitado = gerarHash(senhaDigitada);
             const msgErro = document.getElementById("msgErro");
 
             if (hashDigitado === HASH_CORRETO) {
-                // Salva que o usuário já desbloqueou nesta aba para não pedir novamente
                 sessionStorage.setItem("site_desbloqueado", "true");
                 document.getElementById("passwordBarrier").classList.add("hidden");
             } else {
@@ -105,12 +106,10 @@
 
         // Executado assim que a página é lida
         document.addEventListener("DOMContentLoaded", () => {
-            // Se já estiver logado, some com a barreira na hora
             if (sessionStorage.getItem("site_desbloqueado") === "true") {
                 document.getElementById("passwordBarrier").classList.add("hidden");
             }
 
-            // Permite dar 'Enter' no campo de senha para desbloquear
             document.getElementById("sitePassword").addEventListener("keypress", (event) => {
                 if (event.key === "Enter") {
                     verificarSenha();
@@ -137,7 +136,6 @@
                 return;
             }
 
-            // Guarda o token no seu navegador localmente
             localStorage.setItem("icaro_pat", token);
 
             // ================================================================
