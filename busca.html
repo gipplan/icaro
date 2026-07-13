@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Í.C.A.R.O. - Busca Ativa Sob Demanda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-slate-950 text-white py-6 px-8 border-b border-slate-800 shadow-md">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>
+                <h1 class="text-2xl font-bold text-amber-400">⚡ Í.C.A.R.O. Busca Ativa</h1>
+                <p class="text-sm text-gray-400">Painel de Pesquisa e Geração de Oportunidades Sob Demanda</p>
+            </div>
+          <a href="index.html" class="bg-slate-800 hover:bg-slate-700 text-sm font-bold py-2 px-4 rounded transition">
+    ← Voltar para o Painel Principal
+</a>
+        </div>
+    </header>
+
+    <!-- Área de Controle de Custos / Input -->
+    <main class="max-w-4xl mx-auto px-4 py-10">
+        <div class="bg-slate-800 border border-slate-700 p-6 rounded-xl shadow-lg mb-8">
+            <h2 class="text-lg font-bold text-amber-400 mb-2">🔍 Forçar Varredura de Marca</h2>
+            <p class="text-sm text-gray-300 mb-6 leading-relaxed">
+                Aviso: O disparo manual consome créditos da API de inteligência artificial. Utilize este recurso preferencialmente para rodar relatórios prioritários ou coletar dados fora da janela programada.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 items-center">
+                <input id="inputMarca" type="text" placeholder="Ex: Samsung, Ambev, iFood..." 
+                       class="w-full sm:w-2/3 p-3 bg-slate-900 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-amber-400">
+                <button onclick="forcarBusca()" class="w-full sm:w-1/3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-3 px-6 rounded-lg transition-colors">
+                    Pesquisar e Gerar 🚀
+                </button>
+            </div>
+        </div>
+
+        <!-- Feedback de Carregamento -->
+        <div id="statusBox" class="hidden bg-slate-800 border border-slate-700 p-6 rounded-xl text-center">
+            <div class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-amber-400 mb-4"></div>
+            <p class="text-amber-400 font-bold" id="statusMessage">Iniciando motor Í.C.A.R.O. nos servidores do GitHub...</p>
+            <p class="text-xs text-gray-400 mt-2">Isso pode levar de 30 a 60 segundos enquanto o Gemini processa os dados.</p>
+        </div>
+    </main>
+
+    <script>
+        async function forcarBusca() {
+            const marca = document.getElementById('inputMarca').value.trim();
+            if (!marca) {
+                alert("Por favor, digite o nome de uma marca para realizar a busca.");
+                return;
+            }
+
+            // ================================================================
+            // CONFIGURAÇÃO DO SEU REPOSITÓRIO (Preencha aqui com os seus dados)
+            // ================================================================
+            const GITHUB_TOKEN = "SEU_PERSONAL_ACCESS_TOKEN_AQUI"; // Token clássico com escopo 'repo' e 'workflow'
+            const REPO_OWNER = "SEU_USUARIO_GITHUB";                // Seu nome de usuário no GitHub
+            const REPO_NAME = "SEU_REPOSITORIO";                     // Nome exato do seu repositório
+            // ================================================================
+
+            const statusBox = document.getElementById('statusBox');
+            const statusMessage = document.getElementById('statusMessage');
+            
+            statusBox.classList.remove('hidden');
+            statusMessage.innerText = `Solicitando varredura para a marca: ${marca}...`;
+
+            try {
+                const response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/atualizar_radar.yml/dispatches`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${GITHUB_TOKEN}`,
+                        'Accept': 'application/vnd.github.v3+json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        ref: 'main',
+                        inputs: { marca_alvo: marca }
+                    })
+                });
+
+                if (response.status === 204) {
+                    statusMessage.innerHTML = `<span class="text-emerald-400">🚀 Sucesso! O GitHub iniciou o processamento.</span><br><br><span class="text-xs text-gray-300">O robô está rodando agora. Aguarde cerca de 1 minuto e recarregue a <a href="index.html" class="underline text-amber-400">página principal</a> para ver o novo card gerado!</span>`;
+                } else {
+                    const erroTxt = await response.text();
+                    statusMessage.innerHTML = `<span class="text-red-400">⚠️ Falha ao acionar a automação.</span><br><span class="text-xs text-gray-400">Erro HTTP ${response.status}: ${erroTxt}</span>`;
+                }
+            } catch (error) {
+                statusMessage.innerHTML = `<span class="text-red-400">⚠️ Erro de Conectividade.</span><br><span class="text-xs text-gray-400">${error.message}</span>`;
+            }
+        }
+    </script>
+</body>
+</html>
