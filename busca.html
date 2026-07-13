@@ -15,18 +15,30 @@
                 <h1 class="text-2xl font-bold text-amber-400">⚡ Í.C.A.R.O. Busca Ativa</h1>
                 <p class="text-sm text-gray-400">Painel de Pesquisa e Geração de Oportunidades Sob Demanda</p>
             </div>
-          <a href="index.html" class="bg-slate-800 hover:bg-slate-700 text-sm font-bold py-2 px-4 rounded transition">
-    ← Voltar para o Painel Principal
-</a>
+            <a href="index.html" class="bg-slate-800 hover:bg-slate-700 text-sm font-bold py-2 px-4 rounded transition">
+                ← Voltar para o Painel Principal
+            </a>
         </div>
     </header>
 
-    <!-- Área de Controle de Custos / Input -->
     <main class="max-w-4xl mx-auto px-4 py-10">
+        <!-- Área de Configuração de Chave (Salva apenas localmente no navegador) -->
+        <div class="bg-slate-800/50 border border-slate-800 p-4 rounded-xl mb-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="text-left">
+                <h3 class="text-sm font-bold text-gray-300">Autenticação Local Segura</h3>
+                <p class="text-xs text-gray-500">Insira seu Token do GitHub. Ele fica salvo apenas no seu navegador.</p>
+            </div>
+            <div class="w-full sm:w-1/2">
+                <input id="tokenSeguro" type="password" placeholder="Cole seu ghp_... aqui" 
+                       class="w-full p-2 bg-slate-900 border border-slate-700 rounded-lg text-sm text-white focus:outline-none focus:border-amber-400">
+            </div>
+        </div>
+
+        <!-- Área de Controle de Varredura -->
         <div class="bg-slate-800 border border-slate-700 p-6 rounded-xl shadow-lg mb-8">
             <h2 class="text-lg font-bold text-amber-400 mb-2">🔍 Forçar Varredura de Marca</h2>
             <p class="text-sm text-gray-300 mb-6 leading-relaxed">
-                Aviso: O disparo manual consome créditos da API de inteligência artificial. Utilize este recurso preferencialmente para rodar relatórios prioritários ou coletar dados fora da janela programada.
+                Aviso: O disparo manual consome créditos da API de inteligência artificial. Utilize este recurso preferencialmente para rodar relatórios prioritários.
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4 items-center">
@@ -47,19 +59,35 @@
     </main>
 
     <script>
+        // Ao carregar a página, recupera o token do computador do usuário, se houver
+        document.addEventListener("DOMContentLoaded", () => {
+            const tokenSalvo = localStorage.getItem("icaro_pat");
+            if (tokenSalvo) {
+                document.getElementById("tokenSeguro").value = tokenSalvo;
+            }
+        });
+
         async function forcarBusca() {
             const marca = document.getElementById('inputMarca').value.trim();
+            const token = document.getElementById('tokenSeguro').value.trim();
+
+            if (!token) {
+                alert("Por favor, cole seu Personal Access Token (PAT) no campo de autenticação no topo da página.");
+                return;
+            }
             if (!marca) {
                 alert("Por favor, digite o nome de uma marca para realizar a busca.");
                 return;
             }
 
+            // Salva o token localmente para que o usuário não precise digitar de novo na próxima visita
+            localStorage.setItem("icaro_pat", token);
+
             // ================================================================
-            // CONFIGURAÇÃO DO SEU REPOSITÓRIO (Preencha aqui com os seus dados)
+            // CONFIGURAÇÃO DO SEU REPOSITÓRIO (Defina apenas o usuário e repo)
             // ================================================================
-            const GITHUB_TOKEN = "SEU_PERSONAL_ACCESS_TOKEN_AQUI"; // Token clássico com escopo 'repo' e 'workflow'
-            const REPO_OWNER = "SEU_USUARIO_GITHUB";                // Seu nome de usuário no GitHub
-            const REPO_NAME = "SEU_REPOSITORIO";                     // Nome exato do seu repositório
+            const REPO_OWNER = "gipplan";                
+            const REPO_NAME = "icaro";                     
             // ================================================================
 
             const statusBox = document.getElementById('statusBox');
@@ -72,7 +100,7 @@
                 const response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/atualizar_radar.yml/dispatches`, {
                     method: 'POST',
                     headers: {
-                        'Authorization': `Bearer ${GITHUB_TOKEN}`,
+                        'Authorization': `Bearer ${token}`,
                         'Accept': 'application/vnd.github.v3+json',
                         'Content-Type': 'application/json'
                     },
@@ -83,7 +111,7 @@
                 });
 
                 if (response.status === 204) {
-                    statusMessage.innerHTML = `<span class="text-emerald-400">🚀 Sucesso! O GitHub iniciou o processamento.</span><br><br><span class="text-xs text-gray-300">O robô está rodando agora. Aguarde cerca de 1 minuto e recarregue a <a href="index.html" class="underline text-amber-400">página principal</a> para ver o novo card gerado!</span>`;
+                    statusMessage.innerHTML = `<span class="text-emerald-400">🚀 Sucesso! O GitHub iniciou o processamento.</span><br><br><span class="text-xs text-gray-300">O robô está rodando agora. Aguarde cerca de 1 minuto e recarregue a <a href="index.html" class="underline text-amber-400 font-bold">página principal</a> para ver o novo card gerado!</span>`;
                 } else {
                     const erroTxt = await response.text();
                     statusMessage.innerHTML = `<span class="text-red-400">⚠️ Falha ao acionar a automação.</span><br><span class="text-xs text-gray-400">Erro HTTP ${response.status}: ${erroTxt}</span>`;
