@@ -8,6 +8,24 @@
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans min-h-screen">
 
+    <!-- BARREIRA DE SENHA (Bloqueia todo o site por padrão) -->
+    <div id="passwordBarrier" class="fixed inset-0 bg-slate-950 flex flex-col items-center justify-center z-[9999] px-4">
+        <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl max-w-md w-full text-center shadow-2xl">
+            <span class="text-4xl mb-4 block">🔒</span>
+            <h2 class="text-xl font-bold text-amber-400 mb-2">Acesso Restrito</h2>
+            <p class="text-sm text-gray-400 mb-6">Este painel é privado. Insira a senha de acesso para continuar.</p>
+            
+            <input id="sitePassword" type="password" placeholder="Digite a senha..." 
+                   class="w-full p-3 bg-slate-950 border border-slate-700 rounded-lg text-white text-center focus:outline-none focus:border-amber-400 mb-4 transition-all">
+            
+            <button onclick="verificarSenha()" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-3 px-6 rounded-lg transition-colors">
+                Desbloquear Painel
+            </button>
+            <p id="msgErro" class="text-xs text-red-400 mt-3 hidden font-semibold">Senha incorreta. Tente novamente.</p>
+        </div>
+    </div>
+
+    <!-- CONTEÚDO DA PÁGINA -->
     <!-- Header -->
     <header class="bg-slate-950 text-white py-6 px-8 border-b border-slate-800 shadow-md">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
@@ -23,7 +41,7 @@
 
     <main class="max-w-4xl mx-auto px-4 py-10">
         <!-- Área de Configuração de Chave (Salva apenas localmente no navegador) -->
-        <div class="bg-slate-800/50 border border-slate-800 p-4 rounded-xl mb-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div class="bg-slate-800/50 border border-slate-850 p-4 rounded-xl mb-6 flex flex-col sm:flex-row justify-between items-center gap-4">
             <div class="text-left">
                 <h3 class="text-sm font-bold text-gray-300">Autenticação Local Segura</h3>
                 <p class="text-xs text-gray-500">Insira seu Token do GitHub. Ele fica salvo apenas no seu navegador.</p>
@@ -59,8 +77,47 @@
     </main>
 
     <script>
-        // Ao carregar a página, recupera o token do computador do usuário, se houver
+        // Função para gerar o Hash SHA-256 da senha digitada
+        async function gerarHash(string) {
+            const utf8 = new Uint8Array(Array.from(string).map(c => c.charCodeAt(0)));
+            const hashBuffer = await crypto.subtle.digest('SHA-256', utf8);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        }
+
+        // Assinatura SHA-256 criptografada da senha "planejamento<3"
+        // (Isso impede que qualquer pessoa descubra a palavra-chave lendo o código-fonte)
+        const HASH_CORRETO = "4a2032ef85711757399f6ad0fe08b1b768c8b0c9a6fd03319b252b2b841193c2";
+
+        async function verificarSenha() {
+            const senhaDigitada = document.getElementById("sitePassword").value;
+            const hashDigitado = await gerarHash(senhaDigitada);
+            const msgErro = document.getElementById("msgErro");
+
+            if (hashDigitado === HASH_CORRETO) {
+                // Salva que o usuário já desbloqueou nesta aba para não pedir novamente
+                sessionStorage.setItem("site_desbloqueado", "true");
+                document.getElementById("passwordBarrier").classList.add("hidden");
+            } else {
+                msgErro.classList.remove("hidden");
+            }
+        }
+
+        // Executado assim que a página é lida
         document.addEventListener("DOMContentLoaded", () => {
+            // Se já estiver logado, some com a barreira na hora
+            if (sessionStorage.getItem("site_desbloqueado") === "true") {
+                document.getElementById("passwordBarrier").classList.add("hidden");
+            }
+
+            // Permite dar 'Enter' no campo de senha para desbloquear
+            document.getElementById("sitePassword").addEventListener("keypress", (event) => {
+                if (event.key === "Enter") {
+                    verificarSenha();
+                }
+            });
+
+            // Resgata o Token ghp_ do computador do usuário, se houver
             const tokenSalvo = localStorage.getItem("icaro_pat");
             if (tokenSalvo) {
                 document.getElementById("tokenSeguro").value = tokenSalvo;
@@ -80,11 +137,11 @@
                 return;
             }
 
-            // Salva o token localmente para que o usuário não precise digitar de novo na próxima visita
+            // Guarda o token no seu navegador localmente
             localStorage.setItem("icaro_pat", token);
 
             // ================================================================
-            // CONFIGURAÇÃO DO SEU REPOSITÓRIO (Defina apenas o usuário e repo)
+            // CONFIGURAÇÃO DO SEU REPOSITÓRIO
             // ================================================================
             const REPO_OWNER = "gipplan";                
             const REPO_NAME = "icaro";                     
@@ -111,13 +168,13 @@
                 });
 
                 if (response.status === 204) {
-                    statusMessage.innerHTML = `<span class="text-emerald-400">🚀 Sucesso! O GitHub iniciou o processamento.</span><br><br><span class="text-xs text-gray-300">O robô está rodando agora. Aguarde cerca de 1 minuto e recarregue a <a href="index.html" class="underline text-amber-400 font-bold">página principal</a> para ver o novo card gerado!</span>`;
+                    statusMessage.innerHTML = `<span class="text-emerald-400 font-bold">🚀 Sucesso! O GitHub iniciou o processamento.</span><br><br><span class="text-xs text-gray-300">O robô está rodando agora. Aguarde cerca de 1 minuto e recarregue a <a href="index.html" class="underline text-amber-400 font-bold">página principal</a> para ver o novo card gerado!</span>`;
                 } else {
                     const erroTxt = await response.text();
-                    statusMessage.innerHTML = `<span class="text-red-400">⚠️ Falha ao acionar a automação.</span><br><span class="text-xs text-gray-400">Erro HTTP ${response.status}: ${erroTxt}</span>`;
+                    statusMessage.innerHTML = `<span class="text-red-400 font-bold">⚠️ Falha ao acionar a automação.</span><br><span class="text-xs text-gray-400">Erro HTTP ${response.status}: ${erroTxt}</span>`;
                 }
             } catch (error) {
-                statusMessage.innerHTML = `<span class="text-red-400">⚠️ Erro de Conectividade.</span><br><span class="text-xs text-gray-400">${error.message}</span>`;
+                statusMessage.innerHTML = `<span class="text-red-450 font-bold">⚠️ Erro de Conectividade.</span><br><span class="text-xs text-gray-400">${error.message}</span>`;
             }
         }
     </script>
