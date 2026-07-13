@@ -27,51 +27,76 @@
 
     <!-- CONTEÚDO DO SITE -->
     <div>
-        <!-- Header Corporativo -->
-        <header class="bg-white border-b border-slate-200 py-5 px-8 shadow-sm">
-            <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-                <!-- Logo & I.C.A.R.O. Identity -->
-                <div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
-                    <img src="logo.png" alt="Grupo In Press" class="h-10 md:h-12 object-contain" onerror="this.style.display='none'; document.getElementById('fallbackTitle').classList.remove('hidden')">
-                    <span id="fallbackTitle" class="hidden text-xl font-bold text-slate-800">Grupo <span class="text-red-600">In</span> Press</span>
+        <!-- Header Corporativo (Novo visual centralizado em 2 linhas) -->
+        <header class="bg-white border-b border-slate-200 py-6 px-8 shadow-sm">
+            <div class="max-w-6xl mx-auto flex flex-col items-center gap-6">
+                
+                <!-- LINHA 1: Logo & Título (Centralizados) -->
+                <div class="flex flex-col items-center text-center max-w-2xl w-full">
+                    <img src="logo.png" alt="Grupo In Press" class="h-12 md:h-14 object-contain mb-3" onerror="this.style.display='none'; document.getElementById('fallbackTitle').classList.remove('hidden')">
+                    <span id="fallbackTitle" class="hidden text-2xl font-bold text-slate-800 mb-2">Grupo <span class="text-red-600">In</span> Press</span>
                     
-                    <div class="border-t sm:border-t-0 sm:border-l border-slate-350 pt-3 sm:pt-0 sm:pl-4 py-1">
-                        <h2 class="text-sm md:text-lg font-bold text-slate-950 flex flex-wrap items-center justify-center sm:justify-start gap-1 md:gap-2 leading-none mb-1.5">
+                    <div class="pt-2">
+                        <h2 class="text-lg md:text-2xl font-bold text-slate-950 flex flex-wrap items-center justify-center gap-2 leading-none mb-2">
                             <span class="text-red-600 font-black tracking-wider">I.C.A.R.O</span>
-                            <span class="text-slate-300 hidden sm:inline">|</span>
+                            <span class="text-slate-300">|</span>
                             <span class="text-slate-800 font-extrabold">Oportunidades de PR em Tempo Real</span>
                         </h2>
-                        <p class="text-[10px] md:text-xs text-slate-500 font-normal tracking-wide leading-tight">
+                        <p class="text-xs md:text-sm text-slate-500 font-normal tracking-wide leading-tight">
                             Inteligência de Comunicação, Análise e Radar de Oportunidades
                         </p>
                     </div>
                 </div>
                 
-                <!-- FILTROS -->
-                <div class="flex flex-wrap gap-3 bg-slate-100 p-2 rounded-xl w-full md:w-auto items-center border border-slate-200 relative">
-                    <!-- Filtro por Agência -->
-                    <select id="filtroAgencia" class="bg-white text-slate-700 text-sm p-2 rounded-lg border border-slate-300 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 font-medium transition-all">
+                <!-- LINHA 2: Menus de Seleção (Filtros de 2ª Linha) -->
+                <div class="flex flex-wrap gap-4 bg-slate-100 p-3 rounded-2xl w-full max-w-4xl justify-center items-center border border-slate-200 relative">
+                    
+                    <!-- Filtro 1: Agência -->
+                    <select id="filtroAgencia" class="bg-white text-slate-700 text-sm p-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 font-medium transition-all w-full sm:w-auto min-w-[180px]">
                         <option value="">Todas as Agências</option>
                         <option value="In Press Porter Novelli">In Press</option>
                         <option value="FleishmanHillard">FleishmanHillard</option>
                     </select>
                     
-                    <!-- Filtro Multi-Select por Cliente -->
-                    <div class="relative inline-block text-left w-full md:w-56">
-                        <button id="dropdownBtn" onclick="toggleDropdown(event)" class="w-full bg-white text-slate-755 text-sm p-2 rounded-lg border border-slate-300 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 flex justify-between items-center font-medium transition-all">
+                    <!-- Filtro 2: Cliente (Multi-Select) -->
+                    <div class="relative inline-block text-left w-full sm:w-auto min-w-[200px]">
+                        <button id="dropdownBtn" onclick="toggleDropdown(event, 'dropdownMenu')" class="w-full bg-white text-slate-750 text-sm p-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 flex justify-between items-center font-medium transition-all">
                             <span id="dropdownLabel" class="truncate text-slate-400">Selecionar Clientes</span>
-                            <svg class="h-4 w-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="h-4 w-4 text-slate-400 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
                         
-                        <!-- Lista do Dropdown -->
-                        <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-full md:w-64 rounded-lg shadow-lg bg-white border border-slate-200 z-50 max-h-60 overflow-y-auto">
+                        <!-- Menu Dropdown de Clientes -->
+                        <div id="dropdownMenu" class="hidden absolute left-0 sm:right-0 mt-2 w-full sm:w-64 rounded-lg shadow-lg bg-white border border-slate-200 z-50 max-h-60 overflow-y-auto">
                             <div id="clientesContainer" class="p-2 space-y-1">
                                 <p class="text-xs text-slate-400 p-2">Carregando marcas...</p>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Filtro 3: Serviço Sugerido (Novo Multi-Select) -->
+                    <div class="relative inline-block text-left w-full sm:w-auto min-w-[200px]">
+                        <button id="dropdownBtnServicos" onclick="toggleDropdown(event, 'dropdownMenuServicos')" class="w-full bg-white text-slate-750 text-sm p-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 flex justify-between items-center font-medium transition-all">
+                            <span id="dropdownLabelServicos" class="truncate text-slate-400">Selecionar Serviços</span>
+                            <svg class="h-4 w-4 text-slate-400 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        
+                        <!-- Menu Dropdown de Serviços -->
+                        <div id="dropdownMenuServicos" class="hidden absolute left-0 sm:right-0 mt-2 w-full sm:w-64 rounded-lg shadow-lg bg-white border border-slate-200 z-50 max-h-60 overflow-y-auto">
+                            <div id="servicosContainer" class="p-2 space-y-1">
+                                <p class="text-xs text-slate-400 p-2">Carregando serviços...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botão de Recarregar Fotos -->
+                    <button onclick="mudarTodasAsImagens()" class="bg-white hover:bg-slate-50 text-slate-700 text-sm p-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-red-550 flex items-center justify-center gap-1 font-medium transition-all shadow-sm w-full sm:w-auto" title="Trocar fotos dos cards atuais">
+                        <span>🔄</span>
+                        <span class="inline">Mudar Fotos</span>
+                    </button>
                 </div>
             </div>
         </header>
@@ -122,19 +147,34 @@
             }
         }
 
-        // --- SISTEMA DO DROPDOWN CUSTOMIZADO ---
-        function toggleDropdown(event) {
+        // --- SISTEMA DO DROPDOWN CUSTOMIZADO (Multi-menus) ---
+        function toggleDropdown(event, menuId) {
             event.stopPropagation();
-            const menu = document.getElementById('dropdownMenu');
-            menu.classList.toggle('hidden');
+            const menus = ['dropdownMenu', 'dropdownMenuServicos'];
+            
+            // Fecha o menu oposto e abre/fecha o selecionado
+            menus.forEach(id => {
+                const menuElement = document.getElementById(id);
+                if (id === menuId) {
+                    menuElement.classList.toggle('hidden');
+                } else {
+                    menuElement.classList.add('hidden');
+                }
+            });
         }
 
         document.addEventListener('click', () => {
-            const menu = document.getElementById('dropdownMenu');
-            if (menu) menu.classList.add('hidden');
+            const m1 = document.getElementById('dropdownMenu');
+            const m2 = document.getElementById('dropdownMenuServicos');
+            if (m1) m1.classList.add('hidden');
+            if (m2) m2.classList.add('hidden');
         });
 
         document.getElementById('dropdownMenu').addEventListener('click', (event) => {
+            event.stopPropagation();
+        });
+
+        document.getElementById('dropdownMenuServicos').addEventListener('click', (event) => {
             event.stopPropagation();
         });
 
@@ -160,6 +200,7 @@
                 .then(dados => {
                     dadosOportunidades = dados;
                     inicializarDropdownClientes(dadosOportunidades);
+                    inicializarDropdownServicos(dadosOportunidades);
                     renderizarTimeline(dadosOportunidades);
                 })
                 .catch(err => {
@@ -170,6 +211,12 @@
                     }
                 });
         });
+
+        function mudarTodasAsImagens() {
+            const novoOffset = Math.floor(Math.random() * 500) + 1;
+            sessionStorage.setItem("offset_imagens", novoOffset);
+            filtrarGeral();
+        }
 
         function inicializarDropdownClientes(dados) {
             const container = document.getElementById('clientesContainer');
@@ -198,6 +245,34 @@
             `).join('');
         }
 
+        // NOVO DROPDOWN: Lê "produtos" (Serviços sugeridos) no JSON de forma dinâmica
+        function inicializarDropdownServicos(dados) {
+            const container = document.getElementById('servicosContainer');
+            if (!container) return;
+
+            const servicosUnicos = new Set();
+            dados.forEach(item => {
+                if (item.produtos) {
+                    item.produtos.forEach(servico => servicosUnicos.add(servico.trim()));
+                }
+            });
+
+            const listaOrdenada = Array.from(servicosUnicos).sort((a, b) => a.localeCompare(b));
+
+            if (listaOrdenada.length === 0) {
+                container.innerHTML = `<p class="text-xs text-slate-500 p-2">Nenhum serviço cadastrado.</p>`;
+                return;
+            }
+
+            container.innerHTML = listaOrdenada.map(servico => `
+                <label class="flex items-center gap-2 p-1.5 hover:bg-slate-100 rounded cursor-pointer text-sm text-slate-700 transition-colors">
+                    <input type="checkbox" value="${servico}" onchange="filtrarGeral()" 
+                           class="w-4 h-4 rounded text-red-600 focus:ring-red-500 bg-white border-slate-350">
+                    <span class="truncate font-medium">${servico}</span>
+                </label>
+            `).join('');
+        }
+
         function renderizarTimeline(dados) {
             const container = document.getElementById('timelineContainer');
             if (!container) return;
@@ -207,6 +282,8 @@
                 container.innerHTML = `<p class="text-slate-500 pl-6 py-4">Nenhuma oportunidade encontrada com os filtros selecionados.</p>`;
                 return;
             }
+
+            const offset = parseInt(sessionStorage.getItem("offset_imagens") || "0");
 
             dados.forEach(item => {
                 const descricaoCurta = item.descricao ? item.descricao.substring(0, 300) : "";
@@ -218,21 +295,15 @@
                 const marcasTexto = item.marcas ? item.marcas.join(', ') : "Sem marcas";
                 const linkValidado = item.link_noticia || (item.marcas ? `https://news.google.com/search?q=${encodeURIComponent(item.marcas.join('+'))}+when:7d` : "#");
 
-                // ================================================================
-                // SISTEMA INTELIGENTE DE IMAGENS POR MARCA
-                // ================================================================
                 const marcaPrincipal = item.marcas && item.marcas.length > 0 ? item.marcas[0] : "business";
-                const seedMarca = Math.abs(gerarHash(marcaPrincipal)) % 1000;
+                const seedMarca = (Math.abs(gerarHash(marcaPrincipal)) + offset) % 1000;
                 
-                // Constrói um termo de busca limpo com base no nome do cliente e setor
                 const setorLimpo = item.setor ? item.setor.toLowerCase().split(' ')[0].replace(/[^a-z]/g, '') : "office";
                 const termoBusca = `${marcaPrincipal.toLowerCase().replace(/[^a-z0-9]/g, '')},${setorLimpo}`;
 
-                // Se a notícia tiver imagem válida usa ela, senão gera uma perfeita baseada na marca!
                 const imagemFinal = (item.imagem && item.imagem.startsWith('http') && !item.imagem.includes('placeholder')) 
                     ? item.imagem 
                     : `https://loremflickr.com/600/400/${encodeURIComponent(termoBusca)}/all?lock=${seedMarca}`;
-                // ================================================================
 
                 const card = `
                     <div class="mb-10 relative pl-6 md:pl-8 group">
@@ -277,32 +348,59 @@
             });
         }
 
+        // Sistema combinando filtros de Agência + Clientes (Multiselect) + Serviços (Multiselect)
         function filtrarGeral() {
+            // Agência
             const fAgencia = document.getElementById('filtroAgencia');
             const agencia = fAgencia ? fAgencia.value : "";
 
-            const checkboxesMarcados = Array.from(document.querySelectorAll('#clientesContainer input:checked'));
-            const clientesSelecionados = checkboxesMarcados.map(cb => cb.value);
+            // Clientes Selecionados
+            const checkboxesClientes = Array.from(document.querySelectorAll('#clientesContainer input:checked'));
+            const clientesSelecionados = checkboxesClientes.map(cb => cb.value);
 
-            const label = document.getElementById('dropdownLabel');
-            if (label) {
+            const labelClientes = document.getElementById('dropdownLabel');
+            if (labelClientes) {
                 if (clientesSelecionados.length === 0) {
-                    label.innerText = "Todos os Clientes";
-                    label.classList.add('text-slate-400');
+                    labelClientes.innerText = "Todos os Clientes";
+                    labelClientes.classList.add('text-slate-400');
                 } else if (clientesSelecionados.length === 1) {
-                    label.innerText = clientesSelecionados[0];
-                    label.classList.remove('text-slate-400');
+                    labelClientes.innerText = clientesSelecionados[0];
+                    labelClientes.classList.remove('text-slate-400');
                 } else {
-                    label.innerText = `Clientes (${clientesSelecionados.length})`;
-                    label.classList.remove('text-slate-400');
+                    labelClientes.innerText = `Clientes (${clientesSelecionados.length})`;
+                    labelClientes.classList.remove('text-slate-400');
                 }
             }
 
+            // Serviços Selecionados
+            const checkboxesServicos = Array.from(document.querySelectorAll('#servicosContainer input:checked'));
+            const servicosSelecionados = checkboxesServicos.map(cb => cb.value);
+
+            const labelServicos = document.getElementById('dropdownLabelServicos');
+            if (labelServicos) {
+                if (servicosSelecionados.length === 0) {
+                    labelServicos.innerText = "Todos os Serviços";
+                    labelServicos.classList.add('text-slate-400');
+                } else if (servicosSelecionados.length === 1) {
+                    labelServicos.innerText = servicosSelecionados[0];
+                    labelServicos.classList.remove('text-slate-400');
+                } else {
+                    labelServicos.innerText = `Serviços (${servicosSelecionados.length})`;
+                    labelServicos.classList.remove('text-slate-400');
+                }
+            }
+
+            // Algoritmo de filtragem consolidado
             const dadosFiltrados = dadosOportunidades.filter(item => {
                 const bateAgencia = agencia === "" || item.agencia === agencia;
+                
                 const bateCliente = clientesSelecionados.length === 0 || 
                                      (item.marcas && item.marcas.some(m => clientesSelecionados.includes(m.trim())));
-                return bateAgencia && bateCliente;
+
+                const bateServico = servicosSelecionados.length === 0 || 
+                                     (item.produtos && item.produtos.some(s => servicosSelecionados.includes(s.trim())));
+                
+                return bateAgencia && bateCliente && bateServico;
             });
 
             renderizarTimeline(dadosFiltrados);
