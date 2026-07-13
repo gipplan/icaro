@@ -50,14 +50,27 @@ def executar_radar():
     }
     """
 
-# LISTA DE CASCATA (FALLBACK) COM OS NOMES VALIDADOS PELO NOVO SDK
-    modelos_prioritarios = [
-        'gemini-2.0-flash',         # O motor mais rápido e atualizado
-        'gemini-2.5-pro',           # Alternativa Pro (se disponível na sua região)
-        'gemini-1.5-flash-latest'   # O fallback de segurança que sabemos que existe
-    ]
+    print("🔍 Consultando a API do Google para descobrir os modelos liberados para a sua chave...")
+    modelos_prioritarios = []
+    
+    try:
+        # Busca dinâmica: Pede para a API listar exatamente o que você tem permissão de usar
+        for m in client.models.list():
+            nome_limpo = m.name.replace('models/', '')
+            # Filtra apenas modelos de texto da família Gemini
+            if 'gemini' in nome_limpo and ('flash' in nome_limpo or 'pro' in nome_limpo):
+                modelos_prioritarios.append(nome_limpo)
+        print(f"✅ Modelos autorizados encontrados! Top 3: {modelos_prioritarios[:3]}")
+    except Exception as e:
+        print(f"⚠️ Aviso: Não foi possível mapear dinamicamente. Usando versões fixas numéricas. Erro: {e}")
+        # Fallback de segurança com os nomes numéricos exatos para chaves novas
+        modelos_prioritarios = ['gemini-1.5-flash-002', 'gemini-1.5-pro-002', 'gemini-1.5-flash-8b']
 
-    print("🧠 Solicitando análise de cenários ao Gemini...")
+    # Se a API retornar vazio por algum motivo, garante que temos as versões base
+    if not modelos_prioritarios:
+        modelos_prioritarios = ['gemini-1.5-flash-002', 'gemini-1.5-pro-002']
+
+    print("\n🧠 Solicitando análise de cenários ao Gemini...")
     
     configuracao_json = types.GenerateContentConfig(
         response_mime_type="application/json"
@@ -66,7 +79,7 @@ def executar_radar():
     resposta = None
     modelo_utilizado = None
 
-    # Loop de tentativa: itera pela lista de modelos até um dar certo
+    # O robô agora testa os modelos válidos encontrados até um funcionar
     for modelo in modelos_prioritarios:
         print(f"Tentando processamento com o modelo: {modelo}...")
         try:
@@ -77,17 +90,15 @@ def executar_radar():
             )
             modelo_utilizado = modelo
             print(f"✅ Sucesso! Conectado e processado usando o modelo: {modelo_utilizado}")
-            break  # Interrompe o loop de tentativas assim que obtém sucesso
+            break
         except Exception as e:
             print(f"⚠️ Modelo {modelo} indisponível ou falhou. Motivo: {e}")
-            continue # Pula para o próximo modelo da lista
+            continue
 
-    # Se o loop terminar e a variável 'resposta' continuar vazia, significa que todos falharam
     if not resposta:
-        print("❌ ERRO CRÍTICO: Nenhum dos modelos da lista de fallback conseguiu processar a requisição.")
+        print("❌ ERRO CRÍTICO: Nenhum dos modelos conseguiu processar a requisição.")
         exit(1)
 
-    # Processamento do JSON gerado
     try:
         conteudo_bruto = resposta.text.strip()
         oportunidades = json.loads(conteudo_bruto)
