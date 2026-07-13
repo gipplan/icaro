@@ -27,18 +27,23 @@
 
     <!-- CONTEÚDO DO SITE -->
     <div>
-        <!-- Header Corporativo -->
-        <header class="bg-white border-b border-slate-200 py-4 px-8 shadow-sm">
-            <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-                <!-- Logo & Grupo In Press Title -->
-                <div class="flex items-center gap-4">
+        <!-- Header Corporativo com Identidade Nova -->
+        <header class="bg-white border-b border-slate-200 py-5 px-8 shadow-sm">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+                <!-- Logo & I.C.A.R.O. Identity -->
+                <div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
                     <img src="logo.png" alt="Grupo In Press" class="h-10 md:h-12 object-contain" onerror="this.style.display='none'; document.getElementById('fallbackTitle').classList.remove('hidden')">
-                    <span id="fallbackTitle" class="hidden text-xl font-bold text-slate-800">Grupo <span class="text-red-650">In</span> Press</span>
-                    <div class="border-l border-slate-300 pl-4 py-1">
-                        <span class="bg-red-50 text-red-700 text-[10px] font-extrabold px-2 py-0.5 rounded tracking-wider uppercase block w-max mb-0.5">
-                            ⚡ Í.C.A.R.O. Radar
-                        </span>
-                        <p class="text-xs text-slate-500 font-medium">Oportunidades de PR em Tempo Real</p>
+                    <span id="fallbackTitle" class="hidden text-xl font-bold text-slate-800">Grupo <span class="text-red-600">In</span> Press</span>
+                    
+                    <div class="border-t sm:border-t-0 sm:border-l border-slate-350 pt-3 sm:pt-0 sm:pl-4 py-1">
+                        <h2 class="text-sm md:text-lg font-bold text-slate-950 flex flex-wrap items-center justify-center sm:justify-start gap-1 md:gap-2 leading-none mb-1.5">
+                            <span class="text-red-600 font-black tracking-wider">I.C.A.R.O</span>
+                            <span class="text-slate-300 hidden sm:inline">|</span>
+                            <span class="text-slate-800 font-extrabold">Oportunidades de PR em Tempo Real</span>
+                        </h2>
+                        <p class="text-[10px] md:text-xs text-slate-500 font-normal tracking-wide leading-tight">
+                            Inteligência de Comunicação, Análise e Radar de Oportunidades
+                        </p>
                     </div>
                 </div>
                 
@@ -53,7 +58,7 @@
                     
                     <!-- Filtro Multi-Select por Cliente -->
                     <div class="relative inline-block text-left w-full md:w-56">
-                        <button id="dropdownBtn" onclick="toggleDropdown(event)" class="w-full bg-white text-slate-750 text-sm p-2 rounded-lg border border-slate-300 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 flex justify-between items-center font-medium transition-all">
+                        <button id="dropdownBtn" onclick="toggleDropdown(event)" class="w-full bg-white text-slate-755 text-sm p-2 rounded-lg border border-slate-300 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 flex justify-between items-center font-medium transition-all">
                             <span id="dropdownLabel" class="truncate text-slate-400">Selecionar Clientes</span>
                             <svg class="h-4 w-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -82,8 +87,8 @@
     <!-- Rodapé Corporativo -->
     <footer class="bg-white border-t border-slate-200 py-6 px-8 text-center mt-12 shadow-sm">
         <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-slate-400">
-            <p>© 2026 Grupo In Press | Í.C.A.R.O. Intelligence. Todos os direitos reservados.</p>
-            <a href="busca.html" class="inline-flex items-center gap-1 text-slate-500 hover:text-red-650 transition-colors font-semibold">
+            <p>© 2026 Grupo In Press | I.C.A.R.O. Todos os direitos reservados.</p>
+            <a href="busca.html" class="inline-flex items-center gap-1 text-slate-500 hover:text-red-600 transition-colors font-semibold">
                 <span>Painel de Busca Ativa (Sob Demanda)</span>
                 <span class="text-xs">🔑</span>
             </a>
@@ -215,7 +220,7 @@
 
                 const card = `
                     <div class="mb-10 relative pl-6 md:pl-8 group">
-                        <div class="absolute -left-[9px] top-1.5 bg-slate-800 rounded-full h-4 w-4 border-2 border-white group-hover:bg-red-650 transition-colors"></div>
+                        <div class="absolute -left-[9px] top-1.5 bg-slate-800 rounded-full h-4 w-4 border-2 border-white group-hover:bg-red-600 transition-colors"></div>
                         <div class="hidden md:block absolute -left-32 top-0.5 w-24 text-right text-sm font-bold text-slate-400">${item.data || ""}</div>
                         
                         <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col md:flex-row">
