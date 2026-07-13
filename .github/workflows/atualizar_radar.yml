@@ -37,9 +37,11 @@ jobs:
       run: python gerar_oportunidades.py
 
     # 5. Salva o arquivo oportunidades.json gerado de volta no seu repositório público
-    - name: Commitar e enviar alterações
-      run: |
-        git config --global user.name "Í.C.A.R.O. Bot"
-        git config --global user.email "bot@icaro.ai"
-        git add oportunidades.json
-        git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Radar Atualizado: $(date +'%d/%m/%Y %H:%M:%S')" && git push)
+  - name: Commitar e enviar alterações
+        run: |
+          git config --global user.name "Í.C.A.R.O. Bot"
+          git config --global user.email "bot@icaro.com"
+          git add oportunidades.json
+          git commit -m "🤖 Radar Atualizado" || echo "Nenhuma mudança para commitar"
+          git pull --rebase origin main  # <-- ESSA É A LINHA MÁGICA QUE RESOLVE O CONFLITO
+          git push
