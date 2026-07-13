@@ -29,7 +29,8 @@ def executar_radar():
         
     try:
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-pro')
+        # CORREÇÃO AQUI: Atualizado para o modelo mais recente e suportado pela API
+        model = genai.GenerativeModel('gemini-1.5-flash')
     except Exception as e:
         print(f"❌ ERRO CRÍTICO ao inicializar o modelo Gemini: {e}")
         exit(1)
@@ -43,15 +44,17 @@ def executar_radar():
 
     Gere um array em formato JSON estrito, sem formatações adicionais ou blocos markdown (não use ```json), contendo as oportunidades reais encontradas.
     Cada objeto do array deve seguir rigorosamente este modelo:
-    {
-        "data": "DD/MM/AAAA",
-        "agencia": "Nome exato da Agência",
-        "setor": "Setor macro da oportunidade",
-        "marcas": ["Marca1", "Marca2"],
-        "descricao": "Texto analítico resumido com o gatilho e impacto de até 300 caracteres.",
-        "produtos": ["Produto1", "Produto2"],
-        "palavra_chave_imagem": "Termo em inglês simples e corporativo para buscar uma imagem conceitual da notícia"
-    }
+    [
+        {
+            "data": "DD/MM/AAAA",
+            "agencia": "Nome exato da Agência",
+            "setor": "Setor macro da oportunidade",
+            "marcas": ["Marca1", "Marca2"],
+            "descricao": "Texto analítico resumido com o gatilho e impacto de até 300 caracteres.",
+            "produtos": ["Produto1", "Produto2"],
+            "palavra_chave_imagem": "Termo em inglês simples e corporativo para buscar uma imagem conceitual da notícia"
+        }
+    ]
     """
 
     print("🧠 Solicitando análise de cenários ao Gemini...")
