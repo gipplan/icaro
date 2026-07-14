@@ -91,24 +91,7 @@
         "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr1wWmxZQjBJ3ZuTT6Bo6k3R3VEu11wFDirKOKZRQWWRj6ZDFa6qJ93oI&s=10?w=600",
         "tipo": "marca"
     },
-    {
-        "agencia": "FleishmanHillard",
-        "setor": "Tecnologia e Bens de Consumo",
-        "marcas": [
-            "Samsung (B2B / B2C / LATAM)"
-        ],
-        "descricao": "Em 10/07/2026, a Samsung iniciou a campanha de pré-registro no Brasil para os novos dobráveis Galaxy Z Fold 8 e Z Flip 8 e wearables que serão anunciados em 22/07 no Unpacked de Londres. A ação oferece cupons de até R$ 2.000, servindo de gatilho para gerar buzz digital e engajamento da comunidade.",
-        "produtos": [
-            "Campanha",
-            "Presença Digital",
-            "Influenciadores"
-        ],
-        "link_noticia": "[https://forbes.com.br/forbes-money/2026/07/samsung-anuncia-data-do-proximo-galaxy-unpacked-e-promete-novos-celulares-dobraveis/](https://forbes.com.br/forbes-money/2026/07/samsung-anuncia-data-do-proximo-galaxy-unpacked-e-promete-novos-celulares-dobraveis/)",
-        "data": "14/07/2026",
-        "imagem": "https://t2.tudocdn.net/809734?w=1920&h=1080?w=600",
-        "tipo": "marca"
-    },
-    {
+       {
         "agencia": "FleishmanHillard",
         "setor": "Tecnologia e Serviços Financeiros",
         "marcas": [
@@ -174,24 +157,7 @@
         "imagem": "https://s2-valor.glbimg.com/BJPT9enh-1JGZ3wGuqC891dnHhw=/0x0:3840x2550/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2023/6/f/xDuBZcQLO65Bxh4u3p6g/270123previ015.jpg?w=600",
         "tipo": "marca"
     },
-    {
-        "agencia": "FleishmanHillard",
-        "setor": "Tecnologia e Eletroeletrônicos",
-        "marcas": [
-            "Samsung"
-        ],
-        "descricao": "A Samsung anunciou que o próximo Galaxy Unpacked ocorrerá dia 22 de julho em Londres, focando em IA e novos dobráveis. Com o início do pré-registro no Brasil, a marca tem a oportunidade de liderar conversas sobre tecnologia por meio de forte presença digital e parcerias com influenciadores.",
-        "produtos": [
-            "Campanha",
-            "Presença Digital",
-            "Assessoria de Imprensa"
-        ],
-        "link_noticia": "[https://news.samsung.com/br/convite-galaxy-unpacked-julho-2026-um-novo-formato-esta-prestes-a-se-desdobrar](https://news.samsung.com/br/convite-galaxy-unpacked-julho-2026-um-novo-formato-esta-prestes-a-se-desdobrar)",
-        "data": "13/07/2026",
-        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB5q-eBBJPNBEJL3TpAJQ9tyQn1GWk1AGumg_bu00yRUtyAYEXLy1OCmM&s=10?w=600",
-        "tipo": "marca"
-    },
-    {
+       {
         "agencia": "FleishmanHillard",
         "setor": "Varejo de Moda",
         "marcas": [
@@ -207,24 +173,7 @@
         "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPlNU9BIoJt5QIcWQWXwSnEyoNMDPdaFLerOuUp54VEw&s?w=600",
         "tipo": "marca"
     },
-    {
-        "agencia": "In Press Porter Novelli",
-        "setor": "Tecnologia e Serviços",
-        "marcas": [
-            "iFood"
-        ],
-        "descricao": "Apesar da desclassificação do Brasil na Copa do Mundo em 5 de julho, o iFood liderou o buzz nas redes sociais na semana da eliminação (2 a 8 de julho) ao focar em ações interativas e mimos via DM, mostrando resiliência estratégica e consolidando sua presença digital e campanhas de engajamento.",
-        "produtos": [
-            "Presença Digital",
-            "Campanha",
-            "Mídia"
-        ],
-        "link_noticia": "[https://www.meioemensagem.com.br/midia/ifood-lidera-buzz-na-semana-de-eliminacao-do-brasil](https://www.meioemensagem.com.br/midia/ifood-lidera-buzz-na-semana-de-eliminacao-do-brasil)",
-        "data": "13/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600",
-        "tipo": "marca"
-    },
-    {
+       {
         "agencia": "In Press Porter Novelli",
         "setor": "Mineração e Siderurgia",
         "marcas": [
@@ -280,7 +229,7 @@
         "marcas": [
             "Samsung (B2B / B2C / LATAM)"
         ],
-        "descricao": "A Samsung abreu no Brasil o pré-registro para o Galaxy Unpacked 2026, com descontos de até R$ 2 mil no Galaxy Z Fold 8 e Flip 8. A ação é ideal para campanhas de relacionamento com a imprensa e PR Stunt antes do evento global em Londres no dia 22 de julho, visando o público tech e early adopters.",
+        "descricao": "A Samsung abriu no Brasil o pré-registro para o Galaxy Unpacked 2026, com descontos de até R$ 2 mil no Galaxy Z Fold 8 e Flip 8. A ação é ideal para campanhas de relacionamento com a imprensa e PR Stunt antes do evento global em Londres no dia 22 de julho, visando o público tech e early adopters.",
         "produtos": [
             "Assessoria de Imprensa",
             "Campanha",
