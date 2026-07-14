@@ -48,7 +48,7 @@
 
             <span class="text-3xl mb-4 block">🔒</span>
             <h2 class="text-xl font-bold font-editorial text-white mb-2">Acesso Restrito</h2>
-            <p class="text-xs text-stone-400 mb-6 font-sans-custom tracking-wider">PAINEL DE INTELIGÊNCIA EDITORIAL DO GRUPO IN PRESS</p>
+            <p class="text-xs text-stone-400 mb-6 font-sans-custom tracking-wide">PAINEL DE INTELIGÊNCIA EDITORIAL DO GRUPO IN PRESS</p>
             
             <input id="sitePassword" type="password" placeholder="Digite a chave de acesso..." 
                    class="w-full p-3 bg-stone-950 border border-stone-700 rounded-lg text-white text-center focus:outline-none focus:border-inpress-red mb-4 transition-all text-sm tracking-widest font-sans-custom">
@@ -62,18 +62,21 @@
 
     <!-- CONTEÚDO PRINCIPAL -->
     <div>
-        <!-- Header Editorial Corporativo (Com o KV de Linhas Concêntricas) -->
-        <header class="bg-white border-b border-stone-200 py-8 px-8 shadow-sm relative overflow-hidden">
-            <!-- Grafismo Concêntrico Superior Direito (KV Oficial da Identidade) -->
-            <svg class="absolute -right-12 -top-12 h-56 w-56 text-stone-100 pointer-events-none hidden md:block" viewBox="0 0 100 100">
-                <circle cx="100" cy="0" r="15" fill="none" stroke="currentColor" stroke-width="0.4"/>
-                <circle cx="100" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="0.4"/>
-                <circle cx="100" cy="0" r="45" fill="none" stroke="currentColor" stroke-width="0.4"/>
-                <circle cx="100" cy="0" r="60" fill="none" stroke="currentColor" stroke-width="0.4"/>
-                <circle cx="100" cy="0" r="75" fill="none" stroke="currentColor" stroke-width="0.4"/>
-                <circle cx="100" cy="0" r="90" fill="none" stroke="currentColor" stroke-width="0.4"/>
-                <circle cx="100" cy="0" r="105" fill="none" stroke="currentColor" stroke-width="0.4"/>
-            </svg>
+        <!-- Header Editorial Corporativo (Sem overflow-hidden para não cortar os dropdowns e com z-30) -->
+        <header class="bg-white border-b border-stone-200 py-8 px-8 shadow-sm relative z-30">
+            <!-- Wrapper para segurar o grafismo de círculos sem estragar o fluxo de dropdowns -->
+            <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <!-- Grafismo Concêntrico Superior Direito (KV Oficial da Identidade) -->
+                <svg class="absolute -right-12 -top-12 h-56 w-56 text-stone-100 pointer-events-none hidden md:block" viewBox="0 0 100 100">
+                    <circle cx="100" cy="0" r="15" fill="none" stroke="currentColor" stroke-width="0.4"/>
+                    <circle cx="100" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="0.4"/>
+                    <circle cx="100" cy="0" r="45" fill="none" stroke="currentColor" stroke-width="0.4"/>
+                    <circle cx="100" cy="0" r="60" fill="none" stroke="currentColor" stroke-width="0.4"/>
+                    <circle cx="100" cy="0" r="75" fill="none" stroke="currentColor" stroke-width="0.4"/>
+                    <circle cx="100" cy="0" r="90" fill="none" stroke="currentColor" stroke-width="0.4"/>
+                    <circle cx="100" cy="0" r="105" fill="none" stroke="currentColor" stroke-width="0.4"/>
+                </svg>
+            </div>
 
             <div class="max-w-6xl mx-auto flex flex-col items-center relative z-10">
                 <!-- Logo & Título -->
@@ -91,16 +94,18 @@
                     </div>
                 </div>
                 
-                <!-- Barra de Filtros -->
-                <div class="flex flex-wrap gap-4 bg-stone-50 p-3 rounded-xl w-full max-w-4xl justify-center items-center border border-stone-250 mt-8 relative">
+                <!-- Barra de Filtros (z-40 para garantir que fique acima do subheader) -->
+                <div class="flex flex-wrap gap-4 bg-stone-50 p-3 rounded-xl w-full max-w-4xl justify-center items-center border border-stone-250 mt-8 relative z-40">
                     
+                    <!-- Filtro 1: Agência -->
                     <select id="filtroAgencia" class="bg-white text-inpress-chumbo text-xs p-2.5 rounded-lg border border-stone-300 focus:outline-none focus:border-inpress-red font-semibold tracking-wide transition-all w-full sm:w-auto min-w-[180px] cursor-pointer">
                         <option value="">Todas as Agências</option>
                         <option value="In Press Porter Novelli">In Press</option>
                         <option value="FleishmanHillard">FleishmanHillard</option>
                     </select>
                     
-                    <div class="relative inline-block text-left w-full sm:w-auto min-w-[200px]">
+                    <!-- Filtro 2: Cliente (Multi-Select, com z-50 para flutuar acima de tudo) -->
+                    <div class="relative inline-block text-left w-full sm:w-auto min-w-[200px] z-50">
                         <button id="dropdownBtn" onclick="toggleDropdown(event, 'dropdownMenu')" class="w-full bg-white text-inpress-chumbo text-xs p-2.5 rounded-lg border border-stone-300 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
                             <span id="dropdownLabel" class="truncate text-stone-400">Todos os Clientes</span>
                             <svg class="h-4 w-4 text-stone-400 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -108,14 +113,16 @@
                             </svg>
                         </button>
                         
-                        <div id="dropdownMenu" class="hidden absolute left-0 sm:right-0 mt-2 w-full sm:w-64 rounded-lg shadow-lg bg-white border border-stone-200 z-50 max-h-60 overflow-y-auto">
+                        <!-- Lista do Dropdown de Clientes (z-[100] garante prioridade de exibição absoluta) -->
+                        <div id="dropdownMenu" class="hidden absolute left-0 sm:right-0 mt-2 w-full sm:w-64 rounded-lg shadow-lg bg-white border border-stone-200 z-[100] max-h-60 overflow-y-auto">
                             <div id="clientesContainer" class="p-2 space-y-1">
                                 <p class="text-[10px] text-stone-400 p-2">Carregando marcas...</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="relative inline-block text-left w-full sm:w-auto min-w-[200px]">
+                    <!-- Filtro 3: Serviços Sugeridos (Multi-Select, com z-50) -->
+                    <div class="relative inline-block text-left w-full sm:w-auto min-w-[200px] z-50">
                         <button id="dropdownBtnServicos" onclick="toggleDropdown(event, 'dropdownMenuServicos')" class="w-full bg-white text-inpress-chumbo text-xs p-2.5 rounded-lg border border-stone-300 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
                             <span id="dropdownLabelServicos" class="truncate text-stone-400">Todos os Serviços</span>
                             <svg class="h-4 w-4 text-stone-400 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -123,7 +130,8 @@
                             </svg>
                         </button>
                         
-                        <div id="dropdownMenuServicos" class="hidden absolute left-0 sm:right-0 mt-2 w-full sm:w-64 rounded-lg shadow-lg bg-white border border-stone-200 z-50 max-h-60 overflow-y-auto">
+                        <!-- Lista do Dropdown de Serviços (z-[100]) -->
+                        <div id="dropdownMenuServicos" class="hidden absolute left-0 sm:right-0 mt-2 w-full sm:w-64 rounded-lg shadow-lg bg-white border border-stone-200 z-[100] max-h-60 overflow-y-auto">
                             <div id="servicosContainer" class="p-2 space-y-1">
                                 <p class="text-[10px] text-stone-400 p-2">Carregando serviços...</p>
                             </div>
@@ -302,6 +310,7 @@
             `).join('');
         }
 
+        // --- LÓGICA DE TEMPO ---
         function calcularDiferencaDias(dataStr) {
             if (!dataStr) return -1;
             try {
@@ -319,6 +328,7 @@
             }
         }
 
+        // Determina borda com cores institucionais oficiais (Pág 18)
         function determinarBordaCard(diasDiferenca) {
             if (diasDiferenca === 0) {
                 // Hoje: Borda vermelha oficial In Press (#E00300)
@@ -384,7 +394,7 @@
                 const setorLimpo = item.setor ? item.setor.toLowerCase().split(' ')[0].replace(/[^a-z]/g, '') : "office";
                 const termoBusca = `${marcaPrincipal.toLowerCase().replace(/[^a-z0-9]/g, '')},${setorLimpo}`;
 
-                // Foto de apoio com o mood fotográfico exigido no manual (Páginas 20 e 21 - espontâneo, natural)
+                // Foto de apoio com o mood fotográfico exigido no manual (Páginas 20 e 21 - espontâneo, natural, sutil)
                 const imagemFinal = (item.imagem && item.imagem.startsWith('http') && !item.imagem.includes('placeholder')) 
                     ? item.imagem 
                     : `https://loremflickr.com/600/400/${encodeURIComponent(termoBusca)}/all?lock=${seedMarca}`;
@@ -462,6 +472,7 @@
             });
         }
 
+        // --- SISTEMA CONSOLIDADO DE FILTROS ---
         function filtrarGeral() {
             const fAgencia = document.getElementById('filtroAgencia');
             const agencia = fAgencia ? fAgencia.value : "";
