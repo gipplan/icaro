@@ -1,6 +1,70 @@
 [
     {
         "agencia": "In Press Porter Novelli",
+        "setor": "Aviação e Turismo",
+        "marcas": [
+            "GOL/Smiles"
+        ],
+        "descricao": "A GOL inaugurou em 08/07/2026 sua rota inédita e direta de longo alcance ligando o Rio de Janeiro (Galeão) a Nova York (JFK) com o Airbus A330-200. A novidade reposiciona a marca no mercado intercontinental com sua nova classe executiva Insignia, gerando forte tração de relações públicas no setor.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Campanha",
+            "Posicionamento Executivo"
+        ],
+        "link_noticia": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/03/06/lula-participa-de-anuncio-de-hub-da-gol-com-voo-rio-nova-york.ghtml",
+        "data": "14/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce e Varejo",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "No dia 13/07/2026, o Mercado Livre bateu recorde histórico no Brasil com a campanha 7.7, superando o volume de vendas da Black Friday de 2025. O sucesso foi impulsionado pela estreia de Anitta como nova embaixadora da marca, gerando excelente gancho para PR focado em conversão e influência.",
+        "produtos": [
+            "Influenciadores",
+            "Campanha",
+            "Mídia"
+        ],
+        "link_noticia": "https://www.ecommercebrasil.com.br/noticias/mercado-livre-bate-recorde-historico-de-vendas-e-supera-black-friday-no-7-7",
+        "data": "14/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia e Bens de Consumo",
+        "marcas": [
+            "Samsung (B2B / B2C / LATAM)"
+        ],
+        "descricao": "Em 10/07/2026, a Samsung iniciou a campanha de pré-registro no Brasil para os novos dobráveis Galaxy Z Fold 8 e Z Flip 8 e wearables que serão anunciados em 22/07 no Unpacked de Londres. A ação oferece cupons de até R$ 2.000, servindo de gatilho para gerar buzz digital e engajamento da comunidade.",
+        "produtos": [
+            "Campanha",
+            "Presença Digital",
+            "Influenciadores"
+        ],
+        "link_noticia": "https://forbes.com.br/forbes-money/2026/07/samsung-anuncia-data-do-proximo-galaxy-unpacked-e-promete-novos-celulares-dobraveis/",
+        "data": "14/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia e Serviços Financeiros",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "Com inscrições até 15/07/2026, a Stone lançou seu Programa de Estágio 2026 com bolsas de R$ 2.200 e elegibilidade à PLR nas cidades de São Paulo, Rio de Janeiro, Florianópolis, Porto Alegre e remoto. Trata-se de uma excelente oportunidade para o fortalecimento do employer branding e de PR de RH.",
+        "produtos": [
+            "Comunicação Interna",
+            "Presença Digital",
+            "Assessoria de Imprensa"
+        ],
+        "link_noticia": "https://folhadirigida.com.br/vagas/estagio-stone-2026",
+        "data": "14/07/2026",
+        "imagem": "https://media.licdn.com/dms/image/v2/D4D22AQHQptbaEmQfig/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1695993726780?e=2147483647&v=beta&t=ehANHS530iqBmaDj-FWZwuzxOUgqkqptsZvb4YwVmI0"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
         "setor": "Tecnologia e Delivery",
         "marcas": [
             "iFood"
