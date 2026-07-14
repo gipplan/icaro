@@ -84,6 +84,17 @@
     <script>
         let dadosOportunidades = [];
 
+        // Hashing rápido de string para geração consistente de sementes (fallback)
+        function gerarHash(str) {
+            let hash = 0;
+            for (let i = 0; i < str.length; i++) {
+                const char = str.charCodeAt(i);
+                hash = (hash << 5) - hash + char;
+                hash = hash & hash; 
+            }
+            return hash.toString();
+        }
+
         document.addEventListener("DOMContentLoaded", () => {
             fetch('oportunidades.json')
                 .then(response => {
@@ -104,7 +115,7 @@
             return nome.replace(/\s*\(.*?\)\s*/g, '').trim();
         }
 
-        // --- ALGORITMOS DE TEXTO (Iguais aos do Index para manter a mesma visão de Fato vs Recomendação) ---
+        // --- ALGORITMOS DE TEXTO (Iguais aos do Index) ---
         function separarContextoERecomendacao(texto) {
             if (!texto) return { fato: "", rec: "" };
             let partes = texto.split(/\.(?=\s)/);
@@ -128,17 +139,14 @@
         function mesclarFatoERecomendacao(fato, rec) {
             if (!rec || rec.trim() === "") return fato;
             
-            // Tenta inverter a lógica do gerúndio se a recomendação não parecer uma frase nova
             const primeiraPalavraRec = rec.split(' ')[0].toLowerCase();
             const gerundiosComuns = ['mostrando', 'abrindo', 'exigindo', 'gerando', 'visando', 'propondo', 'direcionando', 'demandando', 'sinalizando', 'reforçando', 'consolidando', 'oferecendo', 'permitindo', 'ajudando', 'preparando'];
             
             if (gerundiosComuns.includes(primeiraPalavraRec)) {
-                // Remove o ponto final do fato se existir
                 let fatoLimpo = fato.endsWith('.') ? fato.slice(0, -1) : fato;
                 return `${fatoLimpo}, ${primeiraPalavraRec} ${rec.substring(primeiraPalavraRec.length).trim()}`;
             }
             
-            // Se for uma frase independente, apenas junta
             let fatoComPonto = fato.endsWith('.') ? fato : fato + ".";
             return `${fatoComPonto} ${rec}`;
         }
@@ -166,6 +174,16 @@
                 const corTagSuperior = isMacro ? 'bg-inpress-red text-white' : 'bg-inpress-dark/95 text-white';
                 const tituloCard = (isMacro && item.titulo) ? item.titulo : marcasTexto;
 
+                // Lógica de fallback para a Imagem
+                const marcaPrincipal = item.marcas && item.marcas.length > 0 ? limparMarca(item.marcas[0]) : "business";
+                const seedMarca = Math.abs(gerarHash(marcaPrincipal)) % 1000;
+                const setorLimpo = item.setor ? item.setor.toLowerCase().split(' ')[0].replace(/[^a-z]/g, '') : "office";
+                const termoBusca = isMacro ? "economy,business" : `${marcaPrincipal.toLowerCase().replace(/[^a-z0-9]/g, '')},${setorLimpo}`;
+                const imagemFinal = (item.imagem && item.imagem.trim() !== '') 
+                    ? item.imagem 
+                    : `https://loremflickr.com/600/400/${encodeURIComponent(termoBusca)}/all?lock=${seedMarca}`;
+
+
                 // Construção do Card com Overlay de Admin
                 const card = `
                     <article id="card-${index}" class="bg-white rounded-md overflow-hidden transition-all flex flex-col justify-between relative border border-stone-200 shadow-sm">
@@ -184,17 +202,18 @@
                         <div id="view-mode-${index}" class="flex flex-col h-full">
                             <div class="h-32 relative bg-stone-100 flex-shrink-0 overflow-hidden border-b border-stone-200">
                                 <div class="absolute inset-0 bg-stone-800/10 mix-blend-multiply"></div>
+                                <img src="${imagemFinal}" alt="Cover" class="w-full h-full object-cover grayscale-[15%]">
                                 <span class="absolute top-4 left-4 ${corTagSuperior} text-[9px] font-extrabold px-2 py-1 tracking-widest uppercase rounded-sm z-10">
                                     ${tagSuperior}
                                 </span>
                             </div>
                             
-                            <div class="p-5 flex-grow">
+                            <div class="p-5 flex-grow flex flex-col">
                                 <h3 class="text-xl font-bold font-editorial text-inpress-dark leading-tight mb-3 line-clamp-2">
                                     ${tituloCard}
                                 </h3>
                                 
-                                <div class="mb-3">
+                                <div class="mb-3 flex-grow">
                                     <span class="text-[9px] font-bold text-stone-400 block mb-0.5 uppercase tracking-widest font-sans-custom">O Fato</span>
                                     <p class="text-xs text-stone-700 leading-snug font-sans-custom line-clamp-3">
                                         ${fato}
@@ -211,32 +230,37 @@
                         </div>
 
                         <!-- Visão de Edição do Card (Escondida por Padrão) -->
-                        <div id="edit-mode-${index}" class="hidden flex-col h-full bg-stone-50 p-5 absolute inset-0 z-40 border-2 border-stone-900 rounded-md">
-                            <div class="flex justify-between items-center mb-4">
+                        <div id="edit-mode-${index}" class="hidden flex-col h-full bg-stone-50 p-5 absolute inset-0 z-40 border-2 border-stone-900 rounded-md shadow-xl">
+                            <div class="flex justify-between items-center mb-4 pb-2 border-b border-stone-200">
                                 <span class="text-xs font-bold text-stone-900 uppercase tracking-widest">Editando Card #${index + 1}</span>
-                                <button onclick="fecharEditor(${index})" class="text-stone-400 hover:text-stone-800">✕ Cancelar</button>
+                                <button onclick="fecharEditor(${index})" class="text-stone-400 hover:text-stone-800 font-bold">✕</button>
                             </div>
                             
-                            <div class="space-y-3 flex-grow overflow-y-auto pr-2 custom-scrollbar">
+                            <div class="space-y-4 flex-grow overflow-y-auto pr-2 custom-scrollbar pb-4">
                                 ${isMacro ? `
                                 <div>
                                     <label class="text-[9px] font-bold text-stone-500 uppercase tracking-widest block mb-1">Título Macro</label>
-                                    <input type="text" id="edit-titulo-${index}" value="${item.titulo || ''}" class="w-full text-xs p-2 border border-stone-300 rounded font-sans-custom focus:border-stone-900 focus:outline-none">
+                                    <input type="text" id="edit-titulo-${index}" value="${item.titulo || ''}" class="w-full text-xs p-2.5 border border-stone-300 rounded font-sans-custom focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900 transition-shadow">
                                 </div>` : ''}
                                 
                                 <div>
+                                    <label class="text-[9px] font-bold text-stone-500 uppercase tracking-widest block mb-1">URL da Imagem (Opcional)</label>
+                                    <input type="text" id="edit-imagem-${index}" value="${item.imagem || ''}" placeholder="Cole a URL da imagem aqui..." class="w-full text-xs p-2.5 border border-stone-300 rounded font-sans-custom focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900 transition-shadow">
+                                </div>
+
+                                <div>
                                     <label class="text-[9px] font-bold text-stone-500 uppercase tracking-widest block mb-1">O Fato (Contexto)</label>
-                                    <textarea id="edit-fato-${index}" rows="3" class="w-full text-xs p-2 border border-stone-300 rounded font-sans-custom focus:border-stone-900 focus:outline-none resize-none">${fato}</textarea>
+                                    <textarea id="edit-fato-${index}" rows="3" class="w-full text-xs p-2.5 border border-stone-300 rounded font-sans-custom focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900 transition-shadow resize-none">${fato}</textarea>
                                 </div>
                                 
                                 <div>
                                     <label class="text-[9px] font-bold text-stone-500 uppercase tracking-widest block mb-1">Tática Sugerida</label>
-                                    <textarea id="edit-rec-${index}" rows="3" class="w-full text-xs p-2 border border-stone-300 rounded font-sans-custom focus:border-stone-900 focus:outline-none resize-none">${rec}</textarea>
+                                    <textarea id="edit-rec-${index}" rows="3" class="w-full text-xs p-2.5 border border-stone-300 rounded font-sans-custom focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900 transition-shadow resize-none">${rec}</textarea>
                                 </div>
                             </div>
                             
-                            <div class="mt-4 pt-3 border-t border-stone-200">
-                                <button onclick="salvarEdicao(${index})" class="w-full bg-stone-900 hover:bg-black text-white text-xs font-bold py-2.5 rounded uppercase tracking-wider transition-colors">
+                            <div class="mt-2 pt-3 border-t border-stone-200">
+                                <button onclick="salvarEdicao(${index})" class="w-full bg-stone-900 hover:bg-black text-white text-xs font-bold py-3 rounded uppercase tracking-wider transition-colors shadow-md">
                                     Salvar Alterações
                                 </button>
                             </div>
@@ -254,7 +278,6 @@
             document.getElementById(`edit-mode-${index}`).classList.remove('hidden');
             document.getElementById(`edit-mode-${index}`).classList.add('flex');
             
-            // Esconde os controles de admin nativos enquanto edita
             const card = document.getElementById(`card-${index}`);
             const controls = card.querySelector('.admin-controls');
             if(controls) controls.style.display = 'none';
@@ -273,18 +296,22 @@
         function salvarEdicao(index) {
             const item = dadosOportunidades[index];
             
+            // Salva o título (se for Macro)
             if (item.tipo === 'setor') {
                 const novoTitulo = document.getElementById(`edit-titulo-${index}`).value;
                 item.titulo = novoTitulo;
             }
             
+            // Salva a nova Imagem
+            const novaImagem = document.getElementById(`edit-imagem-${index}`).value;
+            item.imagem = novaImagem;
+
+            // Salva e Mescla Fato/Tática
             const novoFato = document.getElementById(`edit-fato-${index}`).value;
             const novaRec = document.getElementById(`edit-rec-${index}`).value;
-            
-            // Mescla as duas partes de volta na propriedade "descricao" (que é como o JSON salva)
             item.descricao = mesclarFatoERecomendacao(novoFato, novaRec);
             
-            // Re-renderiza tudo para refletir
+            // Atualiza Interface
             renderizarTimelineAdmin(dadosOportunidades);
         }
 
@@ -297,21 +324,13 @@
 
         // --- FUNÇÃO DE EXPORTAÇÃO ---
         function exportarJSON() {
-            // Formata o JSON com indentação bonita (4 espaços)
             const jsonString = JSON.stringify(dadosOportunidades, null, 4);
-            
-            // Cria um "blob" (arquivo virtual na memória do navegador)
             const blob = new Blob([jsonString], { type: "application/json" });
-            
-            // Cria um link temporário para forçar o download
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            
-            // Nome do arquivo gerado
             a.download = 'oportunidades.json';
             
-            // Dispara o download e limpa a memória
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
@@ -322,28 +341,14 @@
     </script>
     
     <style>
-        /* Estilização da barra de rolagem do painel de edição interno */
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: #f5f5f4; 
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #d6d3d1; 
-            border-radius: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-            background: #a8a29e; 
-        }
+        .custom-scrollbar::-webkit-scrollbar { width: 5px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f5f5f4; border-radius: 4px;}
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #d6d3d1; border-radius: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #a8a29e; }
     </style>
 </body>
 </html>
 ```eof
 
-Salve este código em um novo arquivo chamado `admin.html` na mesma pasta do seu projeto. 
-
-**Como funciona a exportação?**
-Como o JavaScript roda por segurança no navegador do usuário, ele não pode sobrescrever arquivos no seu computador sem sua permissão. Portanto, quando você fizer a triagem (editar textos, apagar o que for irrelevante) e clicar no grande botão vermelho **"Salvar & Exportar JSON"**, o seu navegador fará o download automático de um novo arquivo chamado `oportunidades.json`. 
-
-Basta você pegar esse arquivo que caiu na sua pasta de Downloads e colar por cima do `oportunidades.json` antigo na pasta do seu projeto. Automaticamente, a página executiva (`index.html`) passará a ler a base limpa!
+### Detalhe Funcional:
+Note que se o usuário deixar o campo de "URL da Imagem" em branco durante a edição, o código está programado com um sistema de *fallback* inteligente. Ele identificará o campo vazio e automaticamente renderizará a imagem "default" baseada no contexto (as fotos geradas por algoritmo), exatamente como fazíamos no `index.html`. Isso evita *quebra* do layout caso o usuário apague um link de imagem acidentalmente.
