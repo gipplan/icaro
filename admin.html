@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Gestão - I.C.A.R.O. | Grupo In Press</title>
+    <!-- Google Fonts: Lora (Serif) & Plus Jakarta Sans (Sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        inpress: {
+                            red: '#E00300',
+                            chumbo: '#575756',
+                            dark: '#111111'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .font-editorial { font-family: 'Fraunces', Georgia, serif; }
+        .font-sans-custom { font-family: 'Montserrat', sans-serif; }
+        /* Transição suave para os botões de admin */
+        .admin-controls { opacity: 0; transition: opacity 0.2s ease-in-out; }
+        article:hover .admin-controls { opacity: 1; }
+    </style>
+</head>
+<body class="bg-stone-50 text-inpress-dark font-sans-custom min-h-screen flex flex-col justify-between relative">
+
+    <!-- Header Editorial Compacto (Modo Admin) -->
+    <header class="relative py-6 px-8 shadow-sm bg-stone-900 border-b-4 border-inpress-red z-30">
+        <div class="max-w-6xl mx-auto flex justify-between items-center relative z-10">
+            <div class="flex items-center gap-4">
+                <img src="logo.png" alt="Grupo In Press" class="h-8 object-contain brightness-0 invert" onerror="this.style.display='none'; document.getElementById('fallbackTitle').classList.remove('hidden')">
+                <span id="fallbackTitle" class="hidden text-sm font-bold text-white tracking-widest uppercase font-sans-custom">Grupo <span class="text-inpress-red">In</span> Press</span>
+                <div class="h-6 w-px bg-stone-700"></div>
+                <h1 class="text-xl font-bold font-editorial text-white tracking-widest uppercase">I.C.A.R.O. <span class="text-stone-400 font-sans-custom text-xs font-normal ml-2">Painel de Curadoria Editorial</span></h1>
+            </div>
+            
+            <a href="index.html" class="text-xs font-bold text-white hover:text-inpress-red transition-colors tracking-widest uppercase border border-stone-700 px-4 py-2 rounded">
+                Voltar à Visão Executiva ↗
+            </a>
+        </div>
+    </header>
+
+    <!-- Sub-Header Técnico -->
+    <div class="max-w-6xl mx-auto px-4 mt-8 w-full">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-stone-300 pb-2 gap-4">
+            <span class="text-xs font-bold tracking-widest text-inpress-chumbo uppercase font-sans-custom">Gerenciamento da Base de Dados</span>
+            <span class="text-xs font-bold tracking-widest text-stone-400 uppercase font-sans-custom">Oportunidades Carregadas: <span id="contadorCards" class="text-inpress-dark">0</span></span>
+        </div>
+    </div>
+
+    <!-- Container Principal (Briefing Grid Editável) -->
+    <main class="max-w-6xl mx-auto px-4 py-8 w-full flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="timelineContainer">
+            <p class="text-stone-400 italic text-center col-span-full py-12">Carregando curadoria de inteligência para edição...</p>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-white border-t border-stone-200 py-6 px-8 text-center shadow-sm">
+        <div class="max-w-6xl mx-auto text-xs text-inpress-chumbo tracking-wider">
+            <p>Modo Administrador | I.C.A.R.O.</p>
+        </div>
+    </footer>
+
+    <!-- BOTÃO FIXO DE EXPORTAÇÃO -->
+    <button onclick="exportarJSON()" class="fixed bottom-6 right-6 bg-inpress-red hover:bg-red-700 text-white font-bold py-4 px-6 rounded-full shadow-2xl transition-transform hover:scale-105 z-50 flex items-center gap-3 tracking-wider text-sm font-sans-custom border border-red-500">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+        Salvar & Exportar JSON
+    </button>
+
+    <script>
+        let dadosOportunidades = [];
+
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch('oportunidades.json')
+                .then(response => {
+                    if (!response.ok) throw new Error('Arquivo JSON inacessível.');
+                    return response.json();
+                })
+                .then(dados => {
+                    dadosOportunidades = dados;
+                    renderizarTimelineAdmin(dadosOportunidades);
+                })
+                .catch(err => {
+                    console.error("Erro ao carregar banco:", err);
+                    document.getElementById('timelineContainer').innerHTML = `<p class="text-red-500 italic text-center col-span-full py-12">Erro ao carregar oportunidades.json.</p>`;
+                });
+        });
+
+        function limparMarca(nome) {
+            return nome.replace(/\s*\(.*?\)\s*/g, '').trim();
+        }
+
+        // --- ALGORITMOS DE TEXTO (Iguais aos do Index para manter a mesma visão de Fato vs Recomendação) ---
+        function separarContextoERecomendacao(texto) {
+            if (!texto) return { fato: "", rec: "" };
+            let partes = texto.split(/\.(?=\s)/);
+            if (partes.length === 1) {
+                const regexGerundio = /,\s*(mostrando|abrindo|exigindo|gerando|visando|propondo|direcionando|demandando|sinalizando|reforçando|consolidando|oferecendo|permitindo|ajudando|preparando)/i;
+                const match = texto.match(regexGerundio);
+                if (match) {
+                    const index = texto.indexOf(match[0]);
+                    const fato = texto.substring(0, index).trim() + ".";
+                    const gerundioCapitalizado = match[1].charAt(0).toUpperCase() + match[1].slice(1);
+                    const rec = gerundioCapitalizado + " " + texto.substring(index + match[0].length).trim();
+                    return { fato, rec };
+                }
+                return { fato: partes[0].trim(), rec: "" };
+            }
+            const fato = partes.shift() + ".";
+            const rec = partes.join(". ") + (partes.length > 0 && !texto.endsWith(".") ? "." : "");
+            return { fato: fato.trim(), rec: rec.trim() };
+        }
+
+        function mesclarFatoERecomendacao(fato, rec) {
+            if (!rec || rec.trim() === "") return fato;
+            
+            // Tenta inverter a lógica do gerúndio se a recomendação não parecer uma frase nova
+            const primeiraPalavraRec = rec.split(' ')[0].toLowerCase();
+            const gerundiosComuns = ['mostrando', 'abrindo', 'exigindo', 'gerando', 'visando', 'propondo', 'direcionando', 'demandando', 'sinalizando', 'reforçando', 'consolidando', 'oferecendo', 'permitindo', 'ajudando', 'preparando'];
+            
+            if (gerundiosComuns.includes(primeiraPalavraRec)) {
+                // Remove o ponto final do fato se existir
+                let fatoLimpo = fato.endsWith('.') ? fato.slice(0, -1) : fato;
+                return `${fatoLimpo}, ${primeiraPalavraRec} ${rec.substring(primeiraPalavraRec.length).trim()}`;
+            }
+            
+            // Se for uma frase independente, apenas junta
+            let fatoComPonto = fato.endsWith('.') ? fato : fato + ".";
+            return `${fatoComPonto} ${rec}`;
+        }
+
+        // --- SISTEMA DE GESTÃO DO ADMIN ---
+        function renderizarTimelineAdmin(dados) {
+            const container = document.getElementById('timelineContainer');
+            if (!container) return;
+            container.innerHTML = '';
+            
+            document.getElementById('contadorCards').innerText = dados.length;
+
+            if (dados.length === 0) {
+                container.innerHTML = `<p class="text-stone-400 italic text-center col-span-full py-12">Base de dados vazia.</p>`;
+                return;
+            }
+
+            dados.forEach((item, index) => {
+                const isMacro = (item.tipo === 'setor');
+                const textoOriginal = item.descricao ? item.descricao : "";
+                const { fato, rec } = separarContextoERecomendacao(textoOriginal);
+                const marcasTexto = item.marcas ? item.marcas.map(m => limparMarca(m)).join(', ') : "Sem marcas";
+                
+                const tagSuperior = isMacro ? 'ALERTA MACRO' : (item.agencia === 'In Press Porter Novelli' ? 'IN PRESS' : 'FLEISHMANHILLARD');
+                const corTagSuperior = isMacro ? 'bg-inpress-red text-white' : 'bg-inpress-dark/95 text-white';
+                const tituloCard = (isMacro && item.titulo) ? item.titulo : marcasTexto;
+
+                // Construção do Card com Overlay de Admin
+                const card = `
+                    <article id="card-${index}" class="bg-white rounded-md overflow-hidden transition-all flex flex-col justify-between relative border border-stone-200 shadow-sm">
+                        
+                        <!-- CONTROLES FLUTUANTES ADMIN -->
+                        <div class="admin-controls absolute top-4 right-4 z-50 flex gap-2">
+                            <button onclick="abrirEditor(${index})" class="bg-stone-900/90 hover:bg-stone-900 text-white text-[10px] px-3 py-1.5 rounded font-bold uppercase tracking-wider backdrop-blur-sm border border-stone-700 transition-colors shadow-lg">
+                                Editar ✏️
+                            </button>
+                            <button onclick="excluirCard(${index})" class="bg-red-600/90 hover:bg-red-700 text-white text-[10px] px-3 py-1.5 rounded font-bold uppercase tracking-wider backdrop-blur-sm border border-red-800 transition-colors shadow-lg">
+                                Excluir 🗑️
+                            </button>
+                        </div>
+
+                        <!-- Visão Normal do Card (Somente Leitura) -->
+                        <div id="view-mode-${index}" class="flex flex-col h-full">
+                            <div class="h-32 relative bg-stone-100 flex-shrink-0 overflow-hidden border-b border-stone-200">
+                                <div class="absolute inset-0 bg-stone-800/10 mix-blend-multiply"></div>
+                                <span class="absolute top-4 left-4 ${corTagSuperior} text-[9px] font-extrabold px-2 py-1 tracking-widest uppercase rounded-sm z-10">
+                                    ${tagSuperior}
+                                </span>
+                            </div>
+                            
+                            <div class="p-5 flex-grow">
+                                <h3 class="text-xl font-bold font-editorial text-inpress-dark leading-tight mb-3 line-clamp-2">
+                                    ${tituloCard}
+                                </h3>
+                                
+                                <div class="mb-3">
+                                    <span class="text-[9px] font-bold text-stone-400 block mb-0.5 uppercase tracking-widest font-sans-custom">O Fato</span>
+                                    <p class="text-xs text-stone-700 leading-snug font-sans-custom line-clamp-3">
+                                        ${fato}
+                                    </p>
+                                </div>
+
+                                <div class="bg-stone-50 p-3 rounded border border-stone-100">
+                                    <span class="text-[9px] font-bold text-inpress-red uppercase tracking-widest block mb-1">Tática Sugerida</span>
+                                    <p class="text-xs text-stone-600 leading-snug font-editorial italic line-clamp-3">
+                                        "${rec}"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Visão de Edição do Card (Escondida por Padrão) -->
+                        <div id="edit-mode-${index}" class="hidden flex-col h-full bg-stone-50 p-5 absolute inset-0 z-40 border-2 border-stone-900 rounded-md">
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="text-xs font-bold text-stone-900 uppercase tracking-widest">Editando Card #${index + 1}</span>
+                                <button onclick="fecharEditor(${index})" class="text-stone-400 hover:text-stone-800">✕ Cancelar</button>
+                            </div>
+                            
+                            <div class="space-y-3 flex-grow overflow-y-auto pr-2 custom-scrollbar">
+                                ${isMacro ? `
+                                <div>
+                                    <label class="text-[9px] font-bold text-stone-500 uppercase tracking-widest block mb-1">Título Macro</label>
+                                    <input type="text" id="edit-titulo-${index}" value="${item.titulo || ''}" class="w-full text-xs p-2 border border-stone-300 rounded font-sans-custom focus:border-stone-900 focus:outline-none">
+                                </div>` : ''}
+                                
+                                <div>
+                                    <label class="text-[9px] font-bold text-stone-500 uppercase tracking-widest block mb-1">O Fato (Contexto)</label>
+                                    <textarea id="edit-fato-${index}" rows="3" class="w-full text-xs p-2 border border-stone-300 rounded font-sans-custom focus:border-stone-900 focus:outline-none resize-none">${fato}</textarea>
+                                </div>
+                                
+                                <div>
+                                    <label class="text-[9px] font-bold text-stone-500 uppercase tracking-widest block mb-1">Tática Sugerida</label>
+                                    <textarea id="edit-rec-${index}" rows="3" class="w-full text-xs p-2 border border-stone-300 rounded font-sans-custom focus:border-stone-900 focus:outline-none resize-none">${rec}</textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 pt-3 border-t border-stone-200">
+                                <button onclick="salvarEdicao(${index})" class="w-full bg-stone-900 hover:bg-black text-white text-xs font-bold py-2.5 rounded uppercase tracking-wider transition-colors">
+                                    Salvar Alterações
+                                </button>
+                            </div>
+                        </div>
+
+                    </article>
+                `;
+                container.innerHTML += card;
+            });
+        }
+
+        // --- FUNÇÕES DE INTERAÇÃO DO ADMIN ---
+        function abrirEditor(index) {
+            document.getElementById(`view-mode-${index}`).classList.add('hidden');
+            document.getElementById(`edit-mode-${index}`).classList.remove('hidden');
+            document.getElementById(`edit-mode-${index}`).classList.add('flex');
+            
+            // Esconde os controles de admin nativos enquanto edita
+            const card = document.getElementById(`card-${index}`);
+            const controls = card.querySelector('.admin-controls');
+            if(controls) controls.style.display = 'none';
+        }
+
+        function fecharEditor(index) {
+            document.getElementById(`edit-mode-${index}`).classList.add('hidden');
+            document.getElementById(`edit-mode-${index}`).classList.remove('flex');
+            document.getElementById(`view-mode-${index}`).classList.remove('hidden');
+            
+            const card = document.getElementById(`card-${index}`);
+            const controls = card.querySelector('.admin-controls');
+            if(controls) controls.style.display = 'flex';
+        }
+
+        function salvarEdicao(index) {
+            const item = dadosOportunidades[index];
+            
+            if (item.tipo === 'setor') {
+                const novoTitulo = document.getElementById(`edit-titulo-${index}`).value;
+                item.titulo = novoTitulo;
+            }
+            
+            const novoFato = document.getElementById(`edit-fato-${index}`).value;
+            const novaRec = document.getElementById(`edit-rec-${index}`).value;
+            
+            // Mescla as duas partes de volta na propriedade "descricao" (que é como o JSON salva)
+            item.descricao = mesclarFatoERecomendacao(novoFato, novaRec);
+            
+            // Re-renderiza tudo para refletir
+            renderizarTimelineAdmin(dadosOportunidades);
+        }
+
+        function excluirCard(index) {
+            if(confirm("Tem certeza que deseja excluir esta oportunidade? Esta ação removerá o card da base.")) {
+                dadosOportunidades.splice(index, 1);
+                renderizarTimelineAdmin(dadosOportunidades);
+            }
+        }
+
+        // --- FUNÇÃO DE EXPORTAÇÃO ---
+        function exportarJSON() {
+            // Formata o JSON com indentação bonita (4 espaços)
+            const jsonString = JSON.stringify(dadosOportunidades, null, 4);
+            
+            // Cria um "blob" (arquivo virtual na memória do navegador)
+            const blob = new Blob([jsonString], { type: "application/json" });
+            
+            // Cria um link temporário para forçar o download
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            
+            // Nome do arquivo gerado
+            a.download = 'oportunidades.json';
+            
+            // Dispara o download e limpa a memória
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            alert("Base de dados exportada com sucesso! Substitua o arquivo 'oportunidades.json' na sua pasta raiz pelo arquivo baixado.");
+        }
+    </script>
+    
+    <style>
+        /* Estilização da barra de rolagem do painel de edição interno */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f5f5f4; 
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #d6d3d1; 
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #a8a29e; 
+        }
+    </style>
+</body>
+</html>
+```eof
+
+Salve este código em um novo arquivo chamado `admin.html` na mesma pasta do seu projeto. 
+
+**Como funciona a exportação?**
+Como o JavaScript roda por segurança no navegador do usuário, ele não pode sobrescrever arquivos no seu computador sem sua permissão. Portanto, quando você fizer a triagem (editar textos, apagar o que for irrelevante) e clicar no grande botão vermelho **"Salvar & Exportar JSON"**, o seu navegador fará o download automático de um novo arquivo chamado `oportunidades.json`. 
+
+Basta você pegar esse arquivo que caiu na sua pasta de Downloads e colar por cima do `oportunidades.json` antigo na pasta do seu projeto. Automaticamente, a página executiva (`index.html`) passará a ler a base limpa!
