@@ -4,31 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Briefing de Inteligência - Grupo In Press</title>
-    <!-- Google Fonts: Lora (Serif) & Plus Jakarta Sans (Sans-serif) -->
+    <!-- Google Fonts oficiais do Grupo In Press (Fraunces & Montserrat) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
     
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        inpress: {
+                            red: '#E00300',      // Vermelho oficial (Pág 18)
+                            chumbo: '#575756',   // Chumbo oficial (Pág 18)
+                            dark: '#111111'      // Preto de apoio
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
-        .font-editorial { font-family: 'Lora', Georgia, serif; }
-        .font-sans-custom { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-editorial { font-family: 'Fraunces', Georgia, serif; }
+        .font-sans-custom { font-family: 'Montserrat', sans-serif; }
     </style>
 </head>
-<body class="bg-stone-50 text-stone-800 font-sans-custom min-h-screen flex flex-col justify-between">
+<body class="bg-white text-inpress-dark font-sans-custom min-h-screen flex flex-col justify-between relative overflow-x-hidden">
 
-    <!-- BARREIRA DE SENHA -->
+    <!-- BARREIRA DE SENHA (Acesso Restrito) -->
     <div id="passwordBarrier" class="fixed inset-0 bg-stone-950 flex flex-col items-center justify-center z-[9999] px-4">
-        <div class="bg-stone-900 border border-stone-800 p-10 rounded-2xl max-w-md w-full text-center shadow-2xl">
+        <div class="bg-stone-900 border border-stone-850 p-10 rounded-2xl max-w-md w-full text-center shadow-2xl relative overflow-hidden">
+            <!-- Grafismo de Linhas Concêntricas Oficial no Fundo do Bloqueio -->
+            <svg class="absolute -right-10 -bottom-10 h-48 w-48 text-stone-800/40 pointer-events-none" viewBox="0 0 100 100">
+                <circle cx="100" cy="100" r="20" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                <circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                <circle cx="100" cy="100" r="100" fill="none" stroke="currentColor" stroke-width="0.5"/>
+            </svg>
+
             <span class="text-3xl mb-4 block">🔒</span>
             <h2 class="text-xl font-bold font-editorial text-white mb-2">Acesso Restrito</h2>
-            <p class="text-xs text-stone-400 mb-6 font-sans-custom tracking-wide">PAINEL DE INTELIGÊNCIA EDITORIAL DO GRUPO IN PRESS</p>
+            <p class="text-xs text-stone-400 mb-6 font-sans-custom tracking-wider">PAINEL DE INTELIGÊNCIA EDITORIAL DO GRUPO IN PRESS</p>
             
             <input id="sitePassword" type="password" placeholder="Digite a chave de acesso..." 
-                   class="w-full p-3 bg-stone-950 border border-stone-700 rounded-lg text-white text-center focus:outline-none focus:border-red-650 mb-4 transition-all text-sm tracking-widest font-sans-custom">
+                   class="w-full p-3 bg-stone-950 border border-stone-700 rounded-lg text-white text-center focus:outline-none focus:border-inpress-red mb-4 transition-all text-sm tracking-widest font-sans-custom">
             
-            <button onclick="verificarSenha()" class="w-full bg-red-750 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors text-sm uppercase tracking-wider font-sans-custom">
+            <button onclick="verificarSenha()" class="w-full bg-inpress-red hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors text-sm uppercase tracking-wider font-sans-custom">
                 Desbloquear Briefing
             </button>
             <p id="msgErro" class="text-xs text-red-400 mt-3 hidden font-semibold">Chave incorreta. Tente novamente.</p>
@@ -37,36 +62,46 @@
 
     <!-- CONTEÚDO PRINCIPAL -->
     <div>
-        <!-- Header Editorial Centralizado -->
-        <header class="bg-white border-b border-stone-200 py-6 px-8 shadow-sm">
-            <div class="max-w-6xl mx-auto flex flex-col items-center">
-                
+        <!-- Header Editorial Corporativo (Com o KV de Linhas Concêntricas) -->
+        <header class="bg-white border-b border-stone-200 py-8 px-8 shadow-sm relative overflow-hidden">
+            <!-- Grafismo Concêntrico Superior Direito (KV Oficial da Identidade) -->
+            <svg class="absolute -right-12 -top-12 h-56 w-56 text-stone-100 pointer-events-none hidden md:block" viewBox="0 0 100 100">
+                <circle cx="100" cy="0" r="15" fill="none" stroke="currentColor" stroke-width="0.4"/>
+                <circle cx="100" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="0.4"/>
+                <circle cx="100" cy="0" r="45" fill="none" stroke="currentColor" stroke-width="0.4"/>
+                <circle cx="100" cy="0" r="60" fill="none" stroke="currentColor" stroke-width="0.4"/>
+                <circle cx="100" cy="0" r="75" fill="none" stroke="currentColor" stroke-width="0.4"/>
+                <circle cx="100" cy="0" r="90" fill="none" stroke="currentColor" stroke-width="0.4"/>
+                <circle cx="100" cy="0" r="105" fill="none" stroke="currentColor" stroke-width="0.4"/>
+            </svg>
+
+            <div class="max-w-6xl mx-auto flex flex-col items-center relative z-10">
                 <!-- Logo & Título -->
                 <div class="flex flex-col items-center text-center max-w-3xl w-full">
                     <img src="logo.png" alt="Grupo In Press" class="h-12 md:h-14 object-contain mb-5" onerror="this.style.display='none'; document.getElementById('fallbackTitle').classList.remove('hidden')">
-                    <span id="fallbackTitle" class="hidden text-xl font-bold text-stone-800 mb-3 tracking-widest uppercase">Grupo <span class="text-red-600">In</span> Press</span>
+                    <span id="fallbackTitle" class="hidden text-xl font-bold text-inpress-dark mb-3 tracking-widest uppercase font-sans-custom">Grupo <span class="text-inpress-red">In</span> Press</span>
                     
                     <div class="pt-2">
-                        <h2 class="text-2xl md:text-4xl font-extrabold font-editorial text-stone-900 tracking-tight leading-tight mb-2">
-                            I.C.A.R.O. <span class="font-light text-stone-400">|</span> <span class="font-normal text-stone-700 italic">Oportunidades de PR em Tempo Real</span>
+                        <h2 class="text-2xl md:text-4xl font-extrabold font-editorial text-inpress-dark tracking-tight leading-tight mb-2">
+                            I.C.A.R.O. <span class="font-light text-stone-300">|</span> <span class="font-normal text-inpress-chumbo italic">Oportunidades de PR em Tempo Real</span>
                         </h2>
-                        <p class="text-xs md:text-sm text-stone-500 font-medium tracking-widest uppercase leading-tight border-t border-stone-100 pt-3 w-full">
+                        <p class="text-xs md:text-sm text-inpress-chumbo font-medium tracking-widest uppercase leading-tight border-t border-stone-100 pt-3 w-full">
                             Inteligência de Comunicação, Análise e Radar de Oportunidades
                         </p>
                     </div>
                 </div>
                 
-                <!-- Filtros Principais -->
-                <div class="flex flex-wrap gap-4 bg-stone-50 p-3 rounded-xl w-full max-w-4xl justify-center items-center border border-stone-200 mt-8 relative">
+                <!-- Barra de Filtros -->
+                <div class="flex flex-wrap gap-4 bg-stone-50 p-3 rounded-xl w-full max-w-4xl justify-center items-center border border-stone-250 mt-8 relative">
                     
-                    <select id="filtroAgencia" class="bg-white text-stone-755 text-xs p-2.5 rounded-lg border border-stone-300 focus:outline-none focus:border-red-600 font-semibold tracking-wide transition-all w-full sm:w-auto min-w-[180px] cursor-pointer">
+                    <select id="filtroAgencia" class="bg-white text-inpress-chumbo text-xs p-2.5 rounded-lg border border-stone-300 focus:outline-none focus:border-inpress-red font-semibold tracking-wide transition-all w-full sm:w-auto min-w-[180px] cursor-pointer">
                         <option value="">Todas as Agências</option>
                         <option value="In Press Porter Novelli">In Press</option>
                         <option value="FleishmanHillard">FleishmanHillard</option>
                     </select>
                     
                     <div class="relative inline-block text-left w-full sm:w-auto min-w-[200px]">
-                        <button id="dropdownBtn" onclick="toggleDropdown(event, 'dropdownMenu')" class="w-full bg-white text-stone-750 text-xs p-2.5 rounded-lg border border-stone-300 focus:outline-none focus:border-red-650 flex justify-between items-center font-semibold tracking-wide transition-all">
+                        <button id="dropdownBtn" onclick="toggleDropdown(event, 'dropdownMenu')" class="w-full bg-white text-inpress-chumbo text-xs p-2.5 rounded-lg border border-stone-300 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
                             <span id="dropdownLabel" class="truncate text-stone-400">Todos os Clientes</span>
                             <svg class="h-4 w-4 text-stone-400 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -81,7 +116,7 @@
                     </div>
 
                     <div class="relative inline-block text-left w-full sm:w-auto min-w-[200px]">
-                        <button id="dropdownBtnServicos" onclick="toggleDropdown(event, 'dropdownMenuServicos')" class="w-full bg-white text-stone-750 text-xs p-2.5 rounded-lg border border-stone-300 focus:outline-none focus:border-red-650 flex justify-between items-center font-semibold tracking-wide transition-all">
+                        <button id="dropdownBtnServicos" onclick="toggleDropdown(event, 'dropdownMenuServicos')" class="w-full bg-white text-inpress-chumbo text-xs p-2.5 rounded-lg border border-stone-300 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
                             <span id="dropdownLabelServicos" class="truncate text-stone-400">Todos os Serviços</span>
                             <svg class="h-4 w-4 text-stone-400 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -98,19 +133,19 @@
             </div>
         </header>
 
-        <!-- Sub-Header Editorial (Filtros de Data Interativos) -->
+        <!-- Sub-Header Editorial -->
         <div class="max-w-6xl mx-auto px-4 mt-10">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-stone-300 pb-2 gap-4">
-                <span class="text-xs font-bold tracking-widest text-stone-400 uppercase font-sans-custom">Mural de Táticas e Oportunidades</span>
+                <span class="text-xs font-bold tracking-widest text-inpress-chumbo uppercase font-sans-custom">Mural de Táticas e Oportunidades</span>
                 
                 <div class="flex flex-wrap items-center gap-6 text-[10px] font-bold uppercase tracking-wider font-sans-custom select-none" id="filtrosTempo">
-                    <button onclick="setFiltroTempo('hoje')" id="btn-hoje" class="flex items-center gap-1.5 transition-all text-stone-400 hover:text-stone-700">
-                        <div class="w-2.5 h-2.5 rounded-full bg-red-600"></div> Hoje
+                    <button onclick="setFiltroTempo('hoje')" id="btn-hoje" class="flex items-center gap-1.5 transition-all text-stone-400 hover:text-inpress-dark">
+                        <div class="w-2.5 h-2.5 rounded-full bg-inpress-red"></div> Hoje
                     </button>
-                    <button onclick="setFiltroTempo('semana')" id="btn-semana" class="flex items-center gap-1.5 transition-all text-stone-400 hover:text-stone-700">
-                        <div class="w-2.5 h-2.5 rounded-full bg-stone-900"></div> Últimos 7 Dias
+                    <button onclick="setFiltroTempo('semana')" id="btn-semana" class="flex items-center gap-1.5 transition-all text-stone-400 hover:text-inpress-dark">
+                        <div class="w-2.5 h-2.5 rounded-full bg-inpress-dark"></div> Últimos 7 Dias
                     </button>
-                    <button onclick="setFiltroTempo('todas')" id="btn-todas" class="flex items-center gap-1.5 transition-all text-stone-800 border-b-2 border-stone-800 pb-0.5">
+                    <button onclick="setFiltroTempo('todas')" id="btn-todas" class="flex items-center gap-1.5 transition-all text-inpress-dark border-b-2 border-inpress-dark pb-0.5">
                         <div class="w-2.5 h-2.5 rounded-full bg-stone-300"></div> Todas
                     </button>
                 </div>
@@ -127,9 +162,9 @@
 
     <!-- Rodapé -->
     <footer class="bg-white border-t border-stone-200 py-8 px-8 text-center mt-16 shadow-sm">
-        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-stone-400 tracking-wider">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-inpress-chumbo tracking-wider">
             <p>© 2026 Grupo In Press | I.C.A.R.O. Todos os direitos reservados.</p>
-            <a href="busca.html" class="inline-flex items-center gap-1.5 text-stone-550 hover:text-red-750 transition-colors font-bold uppercase tracking-wider">
+            <a href="busca.html" class="inline-flex items-center gap-1.5 text-inpress-chumbo hover:text-inpress-red transition-colors font-bold uppercase tracking-wider">
                 <span>Busca Ativa Sob Demanda</span>
                 <span class="text-[10px]">🔑</span>
             </a>
@@ -239,7 +274,7 @@
             }
             container.innerHTML = listaOrdenada.map(marca => `
                 <label class="flex items-center gap-2 p-2 hover:bg-stone-50 rounded cursor-pointer text-xs text-stone-700 transition-colors">
-                    <input type="checkbox" value="${marca}" onchange="filtrarGeral()" class="w-4 h-4 rounded text-red-650 focus:ring-red-500 bg-white border-stone-300">
+                    <input type="checkbox" value="${marca}" onchange="filtrarGeral()" class="w-4 h-4 rounded text-inpress-red focus:ring-red-500 bg-white border-stone-300">
                     <span class="truncate font-semibold tracking-wide">${marca}</span>
                 </label>
             `).join('');
@@ -261,7 +296,7 @@
             }
             container.innerHTML = listaOrdenada.map(servico => `
                 <label class="flex items-center gap-2 p-2 hover:bg-stone-50 rounded cursor-pointer text-xs text-stone-700 transition-colors">
-                    <input type="checkbox" value="${servico}" onchange="filtrarGeral()" class="w-4 h-4 rounded text-red-650 focus:ring-red-500 bg-white border-stone-300">
+                    <input type="checkbox" value="${servico}" onchange="filtrarGeral()" class="w-4 h-4 rounded text-inpress-red focus:ring-red-500 bg-white border-stone-300">
                     <span class="truncate font-semibold tracking-wide">${servico}</span>
                 </label>
             `).join('');
@@ -284,33 +319,39 @@
             }
         }
 
+        function determinarBordaCard(diasDiferenca) {
+            if (diasDiferenca === 0) {
+                // Hoje: Borda vermelha oficial In Press (#E00300)
+                return "border-inpress-red border-[1.5px] shadow-[0_0_12px_rgba(224,3,0,0.15)] hover:shadow-[0_0_15px_rgba(224,3,0,0.25)]";
+            } else if (diasDiferenca > 0 && diasDiferenca <= 7) {
+                // Últimos 7 dias: Preto In Press
+                return "border-inpress-dark border-[1.5px] hover:shadow-lg";
+            } else {
+                // Demais: Borda sutil de apoio
+                return "border-stone-200 hover:border-stone-400 shadow-sm hover:shadow-md";
+            }
+        }
+
         function setFiltroTempo(novoFiltro) {
             filtroTempoAtual = novoFiltro;
             const botoes = ['btn-hoje', 'btn-semana', 'btn-todas'];
             botoes.forEach(id => {
                 const btn = document.getElementById(id);
-                btn.className = "flex items-center gap-1.5 transition-all text-stone-400 hover:text-stone-700";
+                btn.className = "flex items-center gap-1.5 transition-all text-stone-400 hover:text-inpress-dark";
             });
             const btnAtivo = document.getElementById(`btn-${novoFiltro}`);
-            btnAtivo.className = "flex items-center gap-1.5 transition-all text-stone-800 border-b-2 border-stone-800 pb-0.5";
+            btnAtivo.className = "flex items-center gap-1.5 transition-all text-inpress-dark border-b-2 border-inpress-dark pb-0.5";
             filtrarGeral();
         }
 
         function separarContextoERecomendacao(texto) {
             if (!texto) return { fato: "", rec: "" };
-            
-            // Divide o texto de forma simples pelo primeiro ponto final seguido de espaço
             const partes = texto.split(/\.(?=\s)/);
-            
             if (partes.length === 1) {
-                // Se só tem uma frase, assume como Fato
                 return { fato: partes[0] + ".", rec: "" };
             }
-            
-            // Pega a primeira frase como Fato e o restante como Recomendação
             const fato = partes.shift() + ".";
             const rec = partes.join(". ") + (partes.length > 0 && !texto.endsWith(".") ? "." : "");
-            
             return { fato: fato.trim(), rec: rec.trim() };
         }
 
@@ -320,7 +361,7 @@
             container.innerHTML = '';
 
             if (dados.length === 0) {
-                container.innerHTML = `<p class="text-stone-400 italic text-center col-span-full py-12">Nenhuma análise disponível para os filtros aplicados.</p>`;
+                container.innerHTML = `<p class="text-stone-400 italic text-center col-span-full py-12">Nenhuma oportunidade disponível para os critérios filtrados.</p>`;
                 return;
             }
 
@@ -329,74 +370,90 @@
                 const { fato, rec } = separarContextoERecomendacao(textoOriginal);
                 
                 const tagsServicos = item.produtos ? item.produtos.map(p => `
-                    <span class="bg-stone-900 text-stone-100 px-2 py-0.5 rounded-sm">${p}</span>
+                    <span class="bg-inpress-dark text-white px-2 py-0.5 rounded-sm">${p}</span>
                 `).join('') : "";
                 
                 const marcasTexto = item.marcas ? item.marcas.map(m => limparMarca(m)).join(', ') : "Sem marcas";
                 const linkValidado = item.link_noticia || (item.marcas ? `https://news.google.com/search?q=${encodeURIComponent(item.marcas.map(m => limparMarca(m)).join('+'))}+when:7d` : "#");
 
-                // Cálculo de Data para a Borda (Lógica do painel executivo)
                 const diferencaDias = calcularDiferencaDias(item.data);
-                let classeBordaLateral = "border-l-4 border-stone-200"; // Padrão
+                const classeBordaCard = determinarBordaCard(diferencaDias);
 
-                if (diferencaDias === 0) {
-                    classeBordaLateral = "border-l-4 border-red-600 shadow-md shadow-red-900/5";
-                } else if (diferencaDias > 0 && diferencaDias <= 7) {
-                    classeBordaLateral = "border-l-4 border-stone-800 shadow-sm";
-                }
+                const marcaPrincipal = item.marcas && item.marcas.length > 0 ? limparMarca(item.marcas[0]) : "business";
+                const seedMarca = Math.abs(gerarHash(marcaPrincipal)) % 1000;
+                const setorLimpo = item.setor ? item.setor.toLowerCase().split(' ')[0].replace(/[^a-z]/g, '') : "office";
+                const termoBusca = `${marcaPrincipal.toLowerCase().replace(/[^a-z0-9]/g, '')},${setorLimpo}`;
+
+                // Foto de apoio com o mood fotográfico exigido no manual (Páginas 20 e 21 - espontâneo, natural)
+                const imagemFinal = (item.imagem && item.imagem.startsWith('http') && !item.imagem.includes('placeholder')) 
+                    ? item.imagem 
+                    : `https://loremflickr.com/600/400/${encodeURIComponent(termoBusca)}/all?lock=${seedMarca}`;
 
                 const card = `
-                    <article class="bg-white rounded-r-lg overflow-hidden transition-all flex flex-col justify-between border-y border-r border-stone-200 ${classeBordaLateral} group hover:shadow-lg hover:-translate-y-0.5 duration-300">
+                    <article class="bg-white rounded-md overflow-hidden transition-all flex flex-col justify-between relative ${classeBordaCard} group hover:-translate-y-0.5 duration-300">
                         
-                        <div class="p-6">
-                            <!-- Top Bar Técnica -->
-                            <div class="flex justify-between items-start mb-4 border-b border-stone-100 pb-3">
-                                <div>
-                                    <h3 class="text-xl font-bold font-editorial text-stone-900 leading-none mb-1.5">
-                                        ${marcasTexto}
-                                    </h3>
-                                    <span class="text-[9px] font-bold uppercase tracking-widest text-stone-400 block">${item.setor || ""}</span>
-                                </div>
-                                <span class="text-[10px] font-bold text-stone-400 uppercase tracking-wider bg-stone-50 px-2 py-1 rounded">${item.data || ""}</span>
+                        <!-- Grafismo de Arcos Concêntricos Oficial da Identidade no canto inferior direito do card -->
+                        <svg class="absolute -right-10 -bottom-10 h-32 w-32 text-stone-100 pointer-events-none group-hover:text-red-50/20 transition-colors" viewBox="0 0 100 100">
+                            <circle cx="100" cy="100" r="20" fill="none" stroke="currentColor" stroke-width="0.3"/>
+                            <circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" stroke-width="0.3"/>
+                            <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" stroke-width="0.3"/>
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="0.3"/>
+                        </svg>
+
+                        <div class="relative z-10">
+                            <!-- Imagem Curada (Conexão, escuta ativa e verdade - Pág 21) -->
+                            <div class="h-56 relative bg-stone-100 flex-shrink-0 overflow-hidden">
+                                <img src="${imagemFinal}" alt="${marcasTexto}" class="w-full h-full object-cover grayscale-[15%] group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700">
+                                <span class="absolute top-4 left-4 bg-inpress-dark/95 text-white text-[10px] font-extrabold px-2.5 py-1 tracking-widest uppercase">
+                                    ${item.agencia === 'In Press Porter Novelli' ? 'IN PRESS' : 'FLEISHMANHILLARD'}
+                                </span>
                             </div>
                             
-                            <!-- DIVISÃO: Fato vs Recomendação -->
-                            <div class="mb-5 space-y-4">
-                                
-                                <!-- O Fato -->
-                                <div>
-                                    <span class="text-[9px] font-bold text-stone-400 block mb-1 uppercase tracking-widest">O Fato</span>
-                                    <p class="text-sm text-stone-700 leading-relaxed font-sans-custom font-medium">
-                                        ${fato}
-                                    </p>
+                            <div class="p-6">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-[10px] font-bold uppercase tracking-widest text-inpress-chumbo font-sans-custom">${item.setor || ""}</span>
+                                    <span class="text-[10px] font-bold text-inpress-chumbo uppercase tracking-wider font-sans-custom">${item.data || ""}</span>
                                 </div>
+                                
+                                <h3 class="text-2xl font-normal font-editorial text-inpress-dark leading-snug mb-3">
+                                    ${marcasTexto}
+                                </h3>
+                                
+                                <div class="mb-5 space-y-4">
+                                    <!-- O Fato -->
+                                    <div>
+                                        <span class="text-[9px] font-bold text-inpress-chumbo block mb-1 uppercase tracking-widest font-sans-custom">O Fato</span>
+                                        <p class="text-sm text-inpress-dark leading-relaxed font-sans-custom font-normal">
+                                            ${fato}
+                                        </p>
+                                    </div>
 
-                                <!-- A Recomendação Estratégica -->
-                                <div class="bg-stone-50/50 p-4 rounded-md border border-stone-100">
-                                    <div class="flex items-center gap-1.5 mb-2">
-                                        <span class="text-[10px] font-bold text-red-700 uppercase tracking-widest">Tática Sugerida</span>
-                                        <div class="h-px bg-red-100 flex-grow"></div>
-                                    </div>
-                                    <p class="text-sm text-stone-600 leading-relaxed font-editorial italic mb-4">
-                                        "${rec}"
-                                    </p>
-                                    
-                                    <!-- Pílulas de Serviço -->
-                                    <div class="flex flex-wrap gap-1.5 text-[9px] font-bold uppercase tracking-wide">
-                                        ${tagsServicos}
+                                    <!-- A Recomendação Estratégica -->
+                                    <div class="bg-stone-50 p-4 rounded-md border border-stone-150">
+                                        <div class="flex items-center gap-1.5 mb-2">
+                                            <span class="text-[10px] font-bold text-inpress-red uppercase tracking-widest font-sans-custom">Tática Sugerida</span>
+                                            <div class="h-px bg-red-100 flex-grow"></div>
+                                        </div>
+                                        <p class="text-sm text-inpress-chumbo leading-relaxed font-editorial italic mb-4">
+                                            "${rec}"
+                                        </p>
+                                        
+                                        <!-- Serviços Sugeridos -->
+                                        <div class="flex flex-wrap gap-1.5 text-[9px] font-bold uppercase tracking-wide font-sans-custom">
+                                            ${tagsServicos}
+                                        </div>
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
 
-                        <!-- Rodapé -->
-                        <div class="px-6 py-4 bg-stone-50 border-t border-stone-100 flex justify-between items-center group-hover:bg-red-50/30 transition-colors">
-                            <span class="text-[9px] font-bold tracking-widest text-stone-400 uppercase">
+                        <!-- Rodapé do Card -->
+                        <div class="px-6 py-4 bg-stone-50 border-t border-stone-100 flex justify-between items-center group-hover:bg-red-50/20 transition-colors relative z-10">
+                            <span class="text-[9px] font-bold tracking-widest text-inpress-chumbo uppercase font-sans-custom">
                                 ${item.agencia === 'In Press Porter Novelli' ? 'In Press P.N.' : 'FleishmanHillard'}
                             </span>
-                            <a href="${linkValidado}" target="_blank" class="inline-flex items-center gap-1 text-xs font-bold text-stone-700 hover:text-red-700 tracking-wider transition-colors font-sans-custom">
-                                Ver Matéria Original ↗
+                            <a href="${linkValidado}" target="_blank" class="inline-flex items-center gap-1 text-xs font-bold text-inpress-dark hover:text-inpress-red tracking-wider transition-colors font-sans-custom">
+                                [ Ler Análise ↗ ]
                             </a>
                         </div>
                     </article>
