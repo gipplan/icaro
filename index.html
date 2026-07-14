@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Briefing de Inteligência - Grupo In Press</title>
-    <!-- Google Fonts: Fraunces (Serif Oficial) & Montserrat (Sans-serif Oficial) -->
+    <!-- Google Fonts: Lora (Serif) & Plus Jakarta Sans (Sans-serif) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -32,9 +32,9 @@
         .font-sans-custom { font-family: 'Montserrat', sans-serif; }
     </style>
 </head>
-<body class="bg-white text-inpress-dark font-sans-custom min-h-screen flex flex-col justify-between relative overflow-x-hidden">
+<body class="bg-stone-50 text-inpress-dark font-sans-custom min-h-screen flex flex-col justify-between">
 
-    <!-- BARREIRA DE SENHA (Acesso Restrito) -->
+    <!-- BARREIRA DE SENHA -->
     <div id="passwordBarrier" class="fixed inset-0 bg-stone-950 flex flex-col items-center justify-center z-[9999] px-4">
         <div class="bg-stone-900 border border-stone-850 p-10 rounded-2xl max-w-md w-full text-center shadow-2xl relative overflow-hidden">
             <!-- Grafismo de Linhas Concêntricas Oficial no Fundo do Bloqueio -->
@@ -64,7 +64,7 @@
     <div>
         <!-- Header Editorial Corporativo (Sem overflow-hidden para não cortar os dropdowns e com z-30) -->
         <header class="relative py-8 px-8 shadow-md bg-cover bg-center z-30" style="background-image: linear-gradient(rgba(17, 17, 17, 0.8), rgba(28, 25, 23, 0.95)), url('http://googleusercontent.com/image_collection/image_retrieval/1646351935261000525_0');">
-            <!-- Wrapper para segurar o grafismo de círculos sem estragar o fluxo de dropdowns -->
+            <!-- Wrapper para segurar o grafismo de circles sem estragar o fluxo de dropdowns -->
             <div class="absolute inset-0 overflow-hidden pointer-events-none">
                 <!-- Grafismo Concêntrico Superior Direito (KV Oficial da Identidade) -->
                 <svg class="absolute -right-12 -top-12 h-56 w-56 text-stone-100/10 pointer-events-none hidden md:block" viewBox="0 0 100 100">
@@ -144,10 +144,9 @@
             </div>
         </header>
 
-        <!-- Sub-Header Editorial -->
+        <!-- Sub-Header Editorial (Filtros de Data Interativos - Limpo e alinhado à direita) -->
         <div class="max-w-6xl mx-auto px-4 mt-10">
-            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-stone-300 pb-2 gap-4">
-                <span class="text-xs font-bold tracking-widest text-inpress-chumbo uppercase font-sans-custom">Mural de Táticas e Oportunidades</span>
+            <div class="flex justify-end border-b border-stone-300 pb-2">
                 
                 <div class="flex flex-wrap items-center gap-6 text-[10px] font-bold uppercase tracking-wider font-sans-custom select-none" id="filtrosTempo">
                     <button onclick="setFiltroTempo('hoje')" id="btn-hoje" class="flex items-center gap-1.5 transition-all text-stone-400 hover:text-inpress-dark">
@@ -313,7 +312,6 @@
             `).join('');
         }
 
-        // --- LÓGICA DE TEMPO ---
         function calcularDiferencaDias(dataStr) {
             if (!dataStr) return -1;
             try {
@@ -331,16 +329,12 @@
             }
         }
 
-        // Determina borda com cores institucionais oficiais (Pág 18)
         function determinarBordaCard(diasDiferenca) {
             if (diasDiferenca === 0) {
-                // Hoje: Borda vermelha oficial In Press (#E00300)
                 return "border-inpress-red border-[1.5px] shadow-[0_0_12px_rgba(224,3,0,0.15)] hover:shadow-[0_0_15px_rgba(224,3,0,0.25)]";
             } else if (diasDiferenca > 0 && diasDiferenca <= 7) {
-                // Últimos 7 dias: Preto In Press
                 return "border-inpress-dark border-[1.5px] hover:shadow-lg";
             } else {
-                // Demais: Borda sutil de apoio
                 return "border-stone-200 hover:border-stone-400 shadow-sm hover:shadow-md";
             }
         }
@@ -359,10 +353,27 @@
 
         function separarContextoERecomendacao(texto) {
             if (!texto) return { fato: "", rec: "" };
-            const partes = texto.split(/\.(?=\s)/);
+            
+            let partes = texto.split(/\.(?=\s)/);
+            
             if (partes.length === 1) {
-                return { fato: partes[0] + ".", rec: "" };
+                const regexGerundio = /,\s*(mostrando|abrindo|exigindo|gerando|visando|propondo|direcionando|demandando|sinalizando|reforçando|consolidando|oferecendo|permitindo|ajudando)/i;
+                const match = texto.match(regexGerundio);
+                
+                if (match) {
+                    const index = texto.indexOf(match[0]);
+                    const fato = texto.substring(0, index).trim() + ".";
+                    const gerundioCapitalizado = match[1].charAt(0).toUpperCase() + match[1].slice(1);
+                    const rec = gerundioCapitalizado + " " + texto.substring(index + match[0].length).trim();
+                    return { fato, rec };
+                }
+                
+                return { 
+                    fato: partes[0].trim(), 
+                    rec: "Estruturar ações táticas de relacionamento e monitoramento de canais digitais." 
+                };
             }
+            
             const fato = partes.shift() + ".";
             const rec = partes.join(". ") + (partes.length > 0 && !texto.endsWith(".") ? "." : "");
             return { fato: fato.trim(), rec: rec.trim() };
@@ -397,7 +408,6 @@
                 const setorLimpo = item.setor ? item.setor.toLowerCase().split(' ')[0].replace(/[^a-z]/g, '') : "office";
                 const termoBusca = `${marcaPrincipal.toLowerCase().replace(/[^a-z0-9]/g, '')},${setorLimpo}`;
 
-                // Foto de apoio com o mood fotográfico exigido no manual (Páginas 20 e 21 - espontâneo, natural, sutil)
                 const imagemFinal = (item.imagem && item.imagem.startsWith('http') && !item.imagem.includes('placeholder')) 
                     ? item.imagem 
                     : `https://loremflickr.com/600/400/${encodeURIComponent(termoBusca)}/all?lock=${seedMarca}`;
@@ -405,7 +415,6 @@
                 const card = `
                     <article class="bg-white rounded-md overflow-hidden transition-all flex flex-col justify-between relative ${classeBordaCard} group hover:-translate-y-0.5 duration-300">
                         
-                        <!-- Grafismo de Arcos Concêntricos Oficial da Identidade no canto inferior direito do card -->
                         <svg class="absolute -right-10 -bottom-10 h-32 w-32 text-stone-100 pointer-events-none group-hover:text-red-50/20 transition-colors" viewBox="0 0 100 100">
                             <circle cx="100" cy="100" r="20" fill="none" stroke="currentColor" stroke-width="0.3"/>
                             <circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" stroke-width="0.3"/>
@@ -414,7 +423,6 @@
                         </svg>
 
                         <div class="relative z-10">
-                            <!-- Imagem Curada (Conexão, escuta ativa e verdade - Pág 21) -->
                             <div class="h-56 relative bg-stone-100 flex-shrink-0 overflow-hidden">
                                 <img src="${imagemFinal}" alt="${marcasTexto}" class="w-full h-full object-cover grayscale-[15%] group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700">
                                 <span class="absolute top-4 left-4 bg-inpress-dark/95 text-white text-[10px] font-extrabold px-2.5 py-1 tracking-widest uppercase">
@@ -433,7 +441,6 @@
                                 </h3>
                                 
                                 <div class="mb-5 space-y-4">
-                                    <!-- O Fato -->
                                     <div>
                                         <span class="text-[9px] font-bold text-inpress-chumbo block mb-1 uppercase tracking-widest font-sans-custom">O Fato</span>
                                         <p class="text-sm text-inpress-dark leading-relaxed font-sans-custom font-normal">
@@ -441,7 +448,6 @@
                                         </p>
                                     </div>
 
-                                    <!-- A Recomendação Estratégica -->
                                     <div class="bg-stone-50 p-4 rounded-md border border-stone-150">
                                         <div class="flex items-center gap-1.5 mb-2">
                                             <span class="text-[10px] font-bold text-inpress-red uppercase tracking-widest font-sans-custom">Tática Sugerida</span>
@@ -451,7 +457,6 @@
                                             "${rec}"
                                         </p>
                                         
-                                        <!-- Serviços Sugeridos -->
                                         <div class="flex flex-wrap gap-1.5 text-[9px] font-bold uppercase tracking-wide font-sans-custom">
                                             ${tagsServicos}
                                         </div>
@@ -460,13 +465,12 @@
                             </div>
                         </div>
 
-                        <!-- Rodapé do Card -->
                         <div class="px-6 py-4 bg-stone-50 border-t border-stone-100 flex justify-between items-center group-hover:bg-red-50/20 transition-colors relative z-10">
                             <span class="text-[9px] font-bold tracking-widest text-inpress-chumbo uppercase font-sans-custom">
                                 ${item.agencia === 'In Press Porter Novelli' ? 'In Press P.N.' : 'FleishmanHillard'}
                             </span>
                             <a href="${linkValidado}" target="_blank" class="inline-flex items-center gap-1 text-xs font-bold text-inpress-dark hover:text-inpress-red tracking-wider transition-colors font-sans-custom">
-                                [ Ver Fonte ↗ ]
+                                Ver Fonte ↗
                             </a>
                         </div>
                     </article>
@@ -475,7 +479,6 @@
             });
         }
 
-        // --- SISTEMA CONSOLIDADO DE FILTROS ---
         function filtrarGeral() {
             const fAgencia = document.getElementById('filtroAgencia');
             const agencia = fAgencia ? fAgencia.value : "";
