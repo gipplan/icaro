@@ -208,23 +208,6 @@
         "tipo": "marca"
     },
     {
-        "agencia": "FleishmanHillard",
-        "setor": "Tecnologia e Eletrônicos de Consumo",
-        "marcas": [
-            "Samsung (B2B / B2C / LATAM)"
-        ],
-        "descricao": "Com o anúncio do Galaxy Unpacked para 22 de julho em Londres, a Samsung iniciou em 10 de julho o pré-registro para novos dobráveis com descontos de até R$ 2.000 no Brasil, abrindo oportunidades para campanhas de engajamento digital, ativação de influenciadores e forte presença online.",
-        "produtos": [
-            "Campanha",
-            "Influenciadores",
-            "Presença Digital"
-        ],
-        "link_noticia": "[https://news.samsung.com/br/samsung-inicia-pre-registro-para-o-novo-galaxy-no-brasil]",
-        "data": "13/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600",
-        "tipo": "marca"
-    },
-    {
         "agencia": "In Press Porter Novelli",
         "setor": "Tecnologia e Serviços",
         "marcas": [
@@ -274,24 +257,7 @@
         "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600",
         "tipo": "marca"
     },
-    {
-        "agencia": "In Press Porter Novelli",
-        "setor": "Varejo",
-        "marcas": [
-            "Mercado Livre"
-        ],
-        "descricao": "O Mercado Livre atingiu recorde histórico de vendas no Brasil no dia 7.7 de 2026, superando a Black Friday de 2025. O desempenho histórico foi impulsionado pela estreia de Anitta como embaixadora oficial, abrindo oportunidades para ações de branding com influenciadores e campanhas de PR integradas.",
-        "produtos": [
-            "Campanha",
-            "Influenciadores",
-            "Presença Digital"
-        ],
-        "link_noticia": "[https://exame.com/negocios/7-7-vende-mais-que-black-friday-para-o-meli-sim-e-culpa-pode-ser-da-anitta/](https://exame.com/negocios/7-7-vende-mais-que-black-friday-para-o-meli-sim-e-culpa-pode-ser-da-anitta/)",
-        "data": "13/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600",
-        "tipo": "marca"
-    },
-    {
+      {
         "agencia": "In Press Porter Novelli",
         "setor": "Aviação",
         "marcas": [
