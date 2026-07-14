@@ -1,5 +1,63 @@
 [
     {
+        "tipo": "setor",
+        "titulo": "Avanço do Marco Legal da IA (PL 2338/23)",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Tecnologia, Inovação e Eletroeletrônicos",
+        "marcas": [
+            "Samsung",
+            "Mercado Livre",
+            "iFood"
+        ],
+        "descricao": "O Senado Federal avançou na estruturação da comissão para votação do Marco Regulatório da Inteligência Artificial no Brasil, focando em direitos autorais e governança algorítmica. Estruturar posicionamento executivo (Thought Leadership) focado em inovação responsável e compliance, antecipando o debate regulatório na imprensa de negócios antes que o texto vá a plenário.",
+        "produtos": [
+            "Relações Governamentais",
+            "Posicionamento Executivo",
+            "Assessoria de Imprensa"
+        ],
+        "link_noticia": "https://www12.senado.leg.br/noticias/materias/2024/05/23/projeto-sobre-inteligencia-artificial-e-tema-de-debate-no-senado",
+        "data": "14/07/2026",
+        "imagem": "http://googleusercontent.com/image_collection/image_retrieval/11470016688364733389_0"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Impacto na Logística Cross-border Asiática",
+        "agencia": "FleishmanHillard",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Shein",
+            "Mercado Livre"
+        ],
+        "descricao": "O Governo publicou novas diretrizes de fiscalização aduaneira e tributação que impactam diretamente os custos logísticos de remessas internacionais e a competitividade do varejo local. Preparar os porta-vozes para defesa institucional e elaborar materiais de Q&A para a imprensa, blindando a narrativa sobre geração de empregos locais e democratização do consumo.",
+        "produtos": [
+            "Gestão de Crise",
+            "Relações Governamentais",
+            "Assessoria de Imprensa"
+        ],
+        "link_noticia": "https://agenciabrasil.ebc.com.br/economia/noticia/2024-06/camara-aprova-taxacao-de-20-para-compras-internacionais-de-ate-us-50",
+        "data": "14/07/2026",
+        "imagem": "http://googleusercontent.com/image_collection/image_retrieval/10073137417526059655_0"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Aperto Regulatório da CVM sobre 'Greenwashing'",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Siderurgia e Consumo",
+        "marcas": [
+            "Vale",
+            "Ambev"
+        ],
+        "descricao": "A CVM intensificou as resoluções de transparência sobre fundos e empresas que divulgam falsas metas de descarbonização, preparando multas para casos de greenwashing. Realizar auditoria imediata de risco reputacional nos relatórios de sustentabilidade dos clientes e criar campanhas de PR focadas em dados comprováveis e metas ESG factíveis.",
+        "produtos": [
+            "Auditoria de Risco",
+            "Campanha Institucional",
+            "Relações com Investidores"
+        ],
+        "link_noticia": "https://www.cvm.gov.br/noticias/arquivos/2023/20231024-1.html",
+        "data": "13/07/2026",
+        "imagem": "http://googleusercontent.com/image_collection/image_retrieval/14847910228489027377_0"
+    },
+    {
         "agencia": "In Press Porter Novelli",
         "setor": "Aviação e Turismo",
         "marcas": [
@@ -13,7 +71,8 @@
         ],
         "link_noticia": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/03/06/lula-participa-de-anuncio-de-hub-da-gol-com-voo-rio-nova-york.ghtml",
         "data": "14/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600",
+        "tipo": "marca"
     },
     {
         "agencia": "In Press Porter Novelli",
@@ -29,7 +88,8 @@
         ],
         "link_noticia": "https://www.ecommercebrasil.com.br/noticias/mercado-livre-bate-recorde-historico-de-vendas-e-supera-black-friday-no-7-7",
         "data": "14/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600",
+        "tipo": "marca"
     },
     {
         "agencia": "FleishmanHillard",
@@ -45,7 +105,8 @@
         ],
         "link_noticia": "https://forbes.com.br/forbes-money/2026/07/samsung-anuncia-data-do-proximo-galaxy-unpacked-e-promete-novos-celulares-dobraveis/",
         "data": "14/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600",
+        "tipo": "marca"
     },
     {
         "agencia": "FleishmanHillard",
@@ -61,7 +122,8 @@
         ],
         "link_noticia": "https://folhadirigida.com.br/vagas/estagio-stone-2026",
         "data": "14/07/2026",
-        "imagem": "https://media.licdn.com/dms/image/v2/D4D22AQHQptbaEmQfig/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1695993726780?e=2147483647&v=beta&t=ehANHS530iqBmaDj-FWZwuzxOUgqkqptsZvb4YwVmI0"
+        "imagem": "https://media.licdn.com/dms/image/v2/D4D22AQHQptbaEmQfig/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1695993726780?e=2147483647&v=beta&t=ehANHS530iqBmaDj-FWZwuzxOUgqkqptsZvb4YwVmI0",
+        "tipo": "marca"
     },
     {
         "agencia": "In Press Porter Novelli",
@@ -77,7 +139,8 @@
         ],
         "link_noticia": "https://www.mktesportivo.com/2026/07/ifood-afirma-ter-cumprido-metas-de-marketing-mesmo-apos-saida-do-brasil-da-copa/",
         "data": "13/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1528127269322-539801943592?w=600"
+        "imagem": "https://images.unsplash.com/photo-1528127269322-539801943592?w=600",
+        "tipo": "marca"
     },
     {
         "agencia": "In Press Porter Novelli",
@@ -93,7 +156,8 @@
         ],
         "link_noticia": "https://mercadoeconsumo.com.br/13/07/2026/e-commerce/campanha-7-7-supera-a-black-friday-e-registra-maior-dia-de-vendas-da-historia-no-mercado-livre/",
         "data": "13/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600"
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600",
+        "tipo": "marca"
     },
     {
         "agencia": "In Press Porter Novelli",
@@ -101,14 +165,15 @@
         "marcas": [
             "Ambev"
         ],
-        "descricao": "As ações da Ambev caíram após a eliminação precoce do Brasil na Copa do Mundo, o que frustrou as projeções de alta no consumo de cerveja para o terceiro trimestre de 2026. O cenário exige ações rápidas de PR e relações com investidores para atenuar o impacto da sazonalidade no mercado.",
+        "descricao": "As ações da Ambev caíram após a eliminação precoce do Brasil na Copa do Mundo, o que frustrou as projections de alta no consumo de cerveja para o terceiro trimestre de 2026. O cenário exige ações rápidas de PR e relações com investidores para atenuar o impacto da sazonalidade no mercado.",
         "produtos": [
             "Assessoria de Imprensa",
             "Mídia"
         ],
         "link_noticia": "https://www.infomoney.com.br/mercados/ambev-acao-cai-apos-brasil-eliminado-frustrar-expectativa-por-mais-vendas-de-cerveja/",
         "data": "13/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1608270586620-248524c67de9?w=600"
+        "imagem": "https://images.unsplash.com/photo-1608270586620-248524c67de9?w=600",
+        "tipo": "marca"
     },
     {
         "agencia": "In Press Porter Novelli",
@@ -123,7 +188,8 @@
         ],
         "link_noticia": "https://br.advfn.com/noticias/vale-esclarece-saida-de-daniel-stieler-a-cvm-e-nega-acordo-para-viabilizar-renuncia-ao-conselho/",
         "data": "13/07/2026",
-        "imagem": "https://s2-valor-investe.glbimg.com/jYQ2XrYEbQByv5erZzz1ZE_Qctc=/1600x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/b/G/wzEOQnTXGu5wnmQ9DVgQ/whatsapp-image-2025-02-17-at-16.06.05.jpeg"
+        "imagem": "https://s2-valor-investe.glbimg.com/jYQ2XrYEbQByv5erZzz1ZE_Qctc=/1600x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/b/G/wzEOQnTXGu5wnmQ9DVgQ/whatsapp-image-2025-02-17-at-16.06.05.jpeg",
+        "tipo": "marca"
     },
     {
         "agencia": "FleishmanHillard",
@@ -139,7 +205,8 @@
         ],
         "link_noticia": "https://news.samsung.com/br/convite-galaxy-unpacked-julho-2026-um-novo-formato-esta-prestes-a-se-desdobrar",
         "data": "13/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600"
+        "imagem": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600",
+        "tipo": "marca"
     },
     {
         "agencia": "FleishmanHillard",
@@ -154,7 +221,8 @@
         ],
         "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/shein-obtem-a-aprovacao-da-china-para-ipo-em-hong-kong.shtml",
         "data": "13/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600"
+        "imagem": "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600",
+        "tipo": "marca"
     },
     {
         "agencia": "FleishmanHillard",
@@ -170,7 +238,8 @@
         ],
         "link_noticia": "https://news.samsung.com/br/samsung-inicia-pre-registro-para-o-novo-galaxy-no-brasil",
         "data": "13/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600"
+        "imagem": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600",
+        "tipo": "marca"
     },
     {
         "agencia": "In Press Porter Novelli",
@@ -186,7 +255,8 @@
         ],
         "link_noticia": "https://www.meioemensagem.com.br/midia/ifood-lidera-buzz-na-semana-de-eliminacao-do-brasil",
         "data": "13/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600"
+        "imagem": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600",
+        "tipo": "marca"
     },
     {
         "agencia": "In Press Porter Novelli",
@@ -201,7 +271,8 @@
         ],
         "link_noticia": "https://economia.uol.com.br/noticias/redacao/2026/07/09/vale-confirma-compensacao-financeira-a-ex-presidente-do-conselho.htm",
         "data": "13/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600"
+        "imagem": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600",
+        "tipo": "marca"
     },
     {
         "agencia": "In Press Porter Novelli",
@@ -217,7 +288,8 @@
         ],
         "link_noticia": "https://www.panrotas.com.br/aviacao/programas-de-fidelidade/2026/07/smiles-anuncia-regras-para-upgrade-cortesia-da-nova-classe-business-insignia-da-gol_204128.html",
         "data": "13/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600"
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600",
+        "tipo": "marca"
     },
     {
         "agencia": "In Press Porter Novelli",
@@ -233,7 +305,8 @@
         ],
         "link_noticia": "https://exame.com/negocios/7-7-vende-mais-que-black-friday-para-o-meli-sim-e-culpa-pode-ser-da-anitta/",
         "data": "13/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600"
+        "imagem": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600",
+        "tipo": "marca"
     },
     {
         "agencia": "In Press Porter Novelli",
@@ -249,7 +322,8 @@
         ],
         "link_noticia": "https://kiosquedaaviacao.pt/gol-realiza-o-seu-3o-voo-para-nova-iorque-e-prepara-lisboa/",
         "data": "13/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1483450388369-9ed95738483c?w=600"
+        "imagem": "https://images.unsplash.com/photo-1483450388369-9ed95738483c?w=600",
+        "tipo": "marca"
     },
     {
         "agencia": "FleishmanHillard",
@@ -265,7 +339,8 @@
         ],
         "link_noticia": "https://www.tudocelular.com/samsung/noticias/n223696/samsung-libera-pre-registro-do-galaxy-z-fold-8.html",
         "data": "13/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600"
+        "imagem": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600",
+        "tipo": "marca"
     },
     {
         "agencia": "FleishmanHillard",
@@ -281,6 +356,7 @@
         ],
         "link_noticia": "https://www.seudinheiro.com/2026/negocios/shein-com-ainda-mais-poder-de-fogo-por-que-o-ipo-da-asiatica-pode-tornar-a-vida-das-varejistas-brasileiras-ainda-mais-dificil/",
         "data": "13/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600"
+        "imagem": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600",
+        "tipo": "marca"
     }
 ]
