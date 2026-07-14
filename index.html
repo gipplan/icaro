@@ -38,7 +38,7 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <div>
         <!-- Header Editorial Centralizado (Linha 1) -->
-        <header class="bg-white border-b border-stone-200 py-8 px-8 shadow-sm">
+        <header class="bg-white border-b border-stone-200 py-6 px-8 shadow-sm">
             <div class="max-w-6xl mx-auto flex flex-col items-center">
                 
                 <!-- Logo & Título Editorial Centralizados -->
@@ -60,7 +60,7 @@
                 <div class="flex flex-wrap gap-4 bg-stone-50 p-3 rounded-xl w-full max-w-4xl justify-center items-center border border-stone-200 mt-8 relative">
                     
                     <!-- Filtro 1: Agência -->
-                    <select id="filtroAgencia" class="bg-white text-stone-750 text-xs p-2.5 rounded-lg border border-stone-300 focus:outline-none focus:border-red-600 font-semibold tracking-wide transition-all w-full sm:w-auto min-w-[180px] cursor-pointer">
+                    <select id="filtroAgencia" class="bg-white text-stone-755 text-xs p-2.5 rounded-lg border border-stone-300 focus:outline-none focus:border-red-600 font-semibold tracking-wide transition-all w-full sm:w-auto min-w-[180px] cursor-pointer">
                         <option value="">Todas as Agências</option>
                         <option value="In Press Porter Novelli">In Press</option>
                         <option value="FleishmanHillard">FleishmanHillard</option>
@@ -220,6 +220,11 @@
                 });
         });
 
+        // Função auxiliar para limpar textos de parênteses como "(B2B / B2C / LATAM)"
+        function limparMarca(nome) {
+            return nome.replace(/\s*\(.*?\)\s*/g, '').trim();
+        }
+
         function inicializarDropdownClientes(dados) {
             const container = document.getElementById('clientesContainer');
             if (!container) return;
@@ -227,7 +232,9 @@
             const marcasUnicas = new Set();
             dados.forEach(item => {
                 if (item.marcas) {
-                    item.marcas.forEach(marca => marcasUnicas.add(marca.trim()));
+                    item.marcas.forEach(marca => {
+                        marcasUnicas.add(limparMarca(marca));
+                    });
                 }
             });
 
@@ -287,11 +294,14 @@
             dados.forEach(item => {
                 const descricaoCurta = item.descricao ? item.descricao : "";
                 const tagsServicos = item.produtos ? item.produtos.join('  •  ') : "";
-                const marcasTexto = item.marcas ? item.marcas.join(', ') : "Sem marcas";
-                const linkValidado = item.link_noticia || (item.marcas ? `https://news.google.com/search?q=${encodeURIComponent(item.marcas.join('+'))}+when:7d` : "#");
+                
+                // Limpa as marcas individualmente antes de exibi-las unidas por vírgula
+                const marcasTexto = item.marcas ? item.marcas.map(m => limparMarca(m)).join(', ') : "Sem marcas";
+                
+                const linkValidado = item.link_noticia || (item.marcas ? `https://news.google.com/search?q=${encodeURIComponent(item.marcas.map(m => limparMarca(m)).join('+'))}+when:7d` : "#");
 
-                // Sistema de Imagem de Alta Definição Curada
-                const marcaPrincipal = item.marcas && item.marcas.length > 0 ? item.marcas[0] : "business";
+                // Sistema de Imagem de Alta Definição Curada (Baseado na primeira marca já limpa)
+                const marcaPrincipal = item.marcas && item.marcas.length > 0 ? limparMarca(item.marcas[0]) : "business";
                 const seedMarca = Math.abs(gerarHash(marcaPrincipal)) % 1000;
                 const setorLimpo = item.setor ? item.setor.toLowerCase().split(' ')[0].replace(/[^a-z]/g, '') : "office";
                 const termoBusca = `${marcaPrincipal.toLowerCase().replace(/[^a-z0-9]/g, '')},${setorLimpo}`;
@@ -302,7 +312,7 @@
 
                 const card = `
                     <!-- Módulo Editorial -->
-                    <article class="bg-white border border-stone-200 overflow-hidden hover:border-stone-400 transition-all flex flex-col justify-between">
+                    <article class="bg-white border border-stone-200 overflow-hidden hover:border-stone-450 hover:shadow-md transition-all flex flex-col justify-between">
                         
                         <div>
                             <!-- Imagem Curada -->
@@ -334,13 +344,13 @@
                         <div class="px-6 pb-6 pt-3 border-t border-stone-100">
                             <div class="mb-4">
                                 <span class="text-[9px] font-bold text-stone-400 block mb-1.5 uppercase tracking-widest">Serviços Recomendados:</span>
-                                <div class="text-[10px] font-bold text-red-700 tracking-wide font-sans-custom">
+                                <div class="text-[10px] font-bold text-red-750 tracking-wide font-sans-custom">
                                     ${tagsServicos}
                                 </div>
                             </div>
                             
                             <a href="${linkValidado}" target="_blank" class="inline-block text-xs font-bold text-stone-800 hover:text-red-700 tracking-wider transition-colors font-sans-custom">
-                                [ Ver Fonte ↗ ]
+                                [ Ler Análise ↗ ]
                             </a>
                         </div>
                     </article>
@@ -377,7 +387,7 @@
             if (labelServicos) {
                 if (servicosSelecionados.length === 0) {
                     labelServicos.innerText = "Todos os Serviços";
-                    labelServicos.classList.add('text-slate-400');
+                    labelServicos.classList.add('text-stone-400');
                 } else if (servicosSelecionados.length === 1) {
                     labelServicos.innerText = servicosSelecionados[0];
                     labelServicos.classList.remove('text-stone-400');
@@ -390,8 +400,9 @@
             const dadosFiltrados = dadosOportunidades.filter(item => {
                 const bateAgencia = agencia === "" || item.agencia === agencia;
                 
+                // Filtra combinando marcas já tratadas e limpas
                 const bateCliente = clientesSelecionados.length === 0 || 
-                                     (item.marcas && item.marcas.some(m => clientesSelecionados.includes(m.trim())));
+                                     (item.marcas && item.marcas.some(m => clientesSelecionados.includes(limparMarca(m))));
 
                 const bateServico = servicosSelecionados.length === 0 || 
                                      (item.produtos && item.produtos.some(s => servicosSelecionados.includes(s.trim())));
