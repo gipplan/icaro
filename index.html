@@ -18,7 +18,7 @@
 </head>
 <body class="bg-stone-50 text-stone-800 font-sans-custom min-h-screen flex flex-col justify-between">
 
-    <!-- BARREIRA DE SENHA (Bloqueia o site por padrão - Tema Editorial Escuro) -->
+    <!-- BARREIRA DE SENHA (Bloqueia o site por padrão) -->
     <div id="passwordBarrier" class="fixed inset-0 bg-stone-950 flex flex-col items-center justify-center z-[9999] px-4">
         <div class="bg-stone-900 border border-stone-800 p-10 rounded-2xl max-w-md w-full text-center shadow-2xl">
             <span class="text-3xl mb-4 block">🔒</span>
@@ -37,11 +37,11 @@
 
     <!-- CONTEÚDO PRINCIPAL -->
     <div>
-        <!-- Header Editorial Centralizado (Linha 1) -->
+        <!-- Header Editorial Centralizado -->
         <header class="bg-white border-b border-stone-200 py-6 px-8 shadow-sm">
             <div class="max-w-6xl mx-auto flex flex-col items-center">
                 
-                <!-- Logo & Título Editorial Centralizados -->
+                <!-- Logo & Título -->
                 <div class="flex flex-col items-center text-center max-w-3xl w-full">
                     <img src="logo.png" alt="Grupo In Press" class="h-12 md:h-14 object-contain mb-5" onerror="this.style.display='none'; document.getElementById('fallbackTitle').classList.remove('hidden')">
                     <span id="fallbackTitle" class="hidden text-xl font-bold text-stone-800 mb-3 tracking-widest uppercase">Grupo <span class="text-red-600">In</span> Press</span>
@@ -56,17 +56,15 @@
                     </div>
                 </div>
                 
-                <!-- Barra de Seleção e Filtros (Linha 2 - Elegante e Discreta) -->
+                <!-- Filtros -->
                 <div class="flex flex-wrap gap-4 bg-stone-50 p-3 rounded-xl w-full max-w-4xl justify-center items-center border border-stone-200 mt-8 relative">
                     
-                    <!-- Filtro 1: Agência -->
                     <select id="filtroAgencia" class="bg-white text-stone-755 text-xs p-2.5 rounded-lg border border-stone-300 focus:outline-none focus:border-red-600 font-semibold tracking-wide transition-all w-full sm:w-auto min-w-[180px] cursor-pointer">
                         <option value="">Todas as Agências</option>
                         <option value="In Press Porter Novelli">In Press</option>
                         <option value="FleishmanHillard">FleishmanHillard</option>
                     </select>
                     
-                    <!-- Filtro 2: Cliente (Multi-Select) -->
                     <div class="relative inline-block text-left w-full sm:w-auto min-w-[200px]">
                         <button id="dropdownBtn" onclick="toggleDropdown(event, 'dropdownMenu')" class="w-full bg-white text-stone-750 text-xs p-2.5 rounded-lg border border-stone-300 focus:outline-none focus:border-red-650 flex justify-between items-center font-semibold tracking-wide transition-all">
                             <span id="dropdownLabel" class="truncate text-stone-400">Todos os Clientes</span>
@@ -82,7 +80,6 @@
                         </div>
                     </div>
 
-                    <!-- Filtro 3: Serviços Recomendados (Multi-Select) -->
                     <div class="relative inline-block text-left w-full sm:w-auto min-w-[200px]">
                         <button id="dropdownBtnServicos" onclick="toggleDropdown(event, 'dropdownMenuServicos')" class="w-full bg-white text-stone-750 text-xs p-2.5 rounded-lg border border-stone-300 focus:outline-none focus:border-red-650 flex justify-between items-center font-semibold tracking-wide transition-all">
                             <span id="dropdownLabelServicos" class="truncate text-stone-400">Todos os Serviços</span>
@@ -101,24 +98,26 @@
             </div>
         </header>
 
-        <!-- Sub-Header Editorial de Divisão de Data -->
+        <!-- Sub-Header Editorial -->
         <div class="max-w-6xl mx-auto px-4 mt-10">
             <div class="flex justify-between items-center border-b border-stone-300 pb-2">
                 <span class="text-xs font-bold tracking-widest text-stone-400 uppercase font-sans-custom">Relatório de PR & Oportunidades</span>
-                <span class="text-xs font-bold text-stone-500 uppercase tracking-wider font-sans-custom">Atualizado em Tempo Real</span>
+                <div class="flex items-center gap-4 text-[10px] font-bold text-stone-400 uppercase tracking-wider font-sans-custom">
+                    <span class="flex items-center gap-1"><div class="w-2 h-2 rounded-full bg-red-600"></div> Hoje</span>
+                    <span class="flex items-center gap-1"><div class="w-2 h-2 rounded-full bg-stone-900"></div> Últimos 7 Dias</span>
+                </div>
             </div>
         </div>
 
         <!-- Container Principal (Briefing Grid) -->
         <main class="max-w-6xl mx-auto px-4 py-8">
-            <!-- Grid de Módulos Editoriais -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="timelineContainer">
                 <p class="text-stone-400 italic text-center col-span-full py-12">Carregando curadoria de inteligência...</p>
             </div>
         </main>
     </div>
 
-    <!-- Rodapé Corporativo -->
+    <!-- Rodapé -->
     <footer class="bg-white border-t border-stone-200 py-8 px-8 text-center mt-16 shadow-sm">
         <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-stone-400 tracking-wider">
             <p>© 2026 Grupo In Press | I.C.A.R.O. Todos os direitos reservados.</p>
@@ -141,7 +140,7 @@
             return hash.toString();
         }
 
-        const HASH_CORRETO = "-1356189163"; // Senha "planejamento<3"
+        const HASH_CORRETO = "-1356189163";
 
         function verificarSenha() {
             const senhaDigitada = document.getElementById("sitePassword").value;
@@ -156,7 +155,7 @@
             }
         }
 
-        // --- SISTEMA DO DROPDOWN CUSTOMIZADO (Multi-menus) ---
+        // --- SISTEMA DE MENUS ---
         function toggleDropdown(event, menuId) {
             event.stopPropagation();
             const menus = ['dropdownMenu', 'dropdownMenuServicos'];
@@ -178,26 +177,18 @@
             if (m2) m2.classList.add('hidden');
         });
 
-        document.getElementById('dropdownMenu').addEventListener('click', (event) => {
-            event.stopPropagation();
-        });
+        document.getElementById('dropdownMenu').addEventListener('click', (event) => { event.stopPropagation(); });
+        document.getElementById('dropdownMenuServicos').addEventListener('click', (event) => { event.stopPropagation(); });
 
-        document.getElementById('dropdownMenuServicos').addEventListener('click', (event) => {
-            event.stopPropagation();
-        });
-
-        // --- SISTEMA EDITORIAL DE DADOS ---
         let dadosOportunidades = [];
 
         document.addEventListener("DOMContentLoaded", () => {
             if (sessionStorage.getItem("site_desbloqueado") === "true") {
                 document.getElementById("passwordBarrier").classList.add("hidden");
             }
-
             document.getElementById("sitePassword").addEventListener("keypress", (event) => {
                 if (event.key === "Enter") verificarSenha();
             });
-
             document.getElementById('filtroAgencia').addEventListener('change', filtrarGeral);
 
             fetch('oportunidades.json')
@@ -220,7 +211,6 @@
                 });
         });
 
-        // Função auxiliar para limpar textos de parênteses como "(B2B / B2C / LATAM)"
         function limparMarca(nome) {
             return nome.replace(/\s*\(.*?\)\s*/g, '').trim();
         }
@@ -228,27 +218,20 @@
         function inicializarDropdownClientes(dados) {
             const container = document.getElementById('clientesContainer');
             if (!container) return;
-
             const marcasUnicas = new Set();
             dados.forEach(item => {
                 if (item.marcas) {
-                    item.marcas.forEach(marca => {
-                        marcasUnicas.add(limparMarca(marca));
-                    });
+                    item.marcas.forEach(marca => marcasUnicas.add(limparMarca(marca)));
                 }
             });
-
             const listaOrdenada = Array.from(marcasUnicas).sort((a, b) => a.localeCompare(b));
-
             if (listaOrdenada.length === 0) {
                 container.innerHTML = `<p class="text-xs text-stone-500 p-2">Nenhum cliente cadastrado.</p>`;
                 return;
             }
-
             container.innerHTML = listaOrdenada.map(marca => `
                 <label class="flex items-center gap-2 p-2 hover:bg-stone-50 rounded cursor-pointer text-xs text-stone-700 transition-colors">
-                    <input type="checkbox" value="${marca}" onchange="filtrarGeral()" 
-                           class="w-4 h-4 rounded text-red-650 focus:ring-red-500 bg-white border-stone-300">
+                    <input type="checkbox" value="${marca}" onchange="filtrarGeral()" class="w-4 h-4 rounded text-red-650 focus:ring-red-500 bg-white border-stone-300">
                     <span class="truncate font-semibold tracking-wide">${marca}</span>
                 </label>
             `).join('');
@@ -257,28 +240,57 @@
         function inicializarDropdownServicos(dados) {
             const container = document.getElementById('servicosContainer');
             if (!container) return;
-
             const servicosUnicos = new Set();
             dados.forEach(item => {
                 if (item.produtos) {
                     item.produtos.forEach(servico => servicosUnicos.add(servico.trim()));
                 }
             });
-
             const listaOrdenada = Array.from(servicosUnicos).sort((a, b) => a.localeCompare(b));
-
             if (listaOrdenada.length === 0) {
                 container.innerHTML = `<p class="text-xs text-stone-500 p-2">Nenhum serviço cadastrado.</p>`;
                 return;
             }
-
             container.innerHTML = listaOrdenada.map(servico => `
                 <label class="flex items-center gap-2 p-2 hover:bg-stone-50 rounded cursor-pointer text-xs text-stone-700 transition-colors">
-                    <input type="checkbox" value="${servico}" onchange="filtrarGeral()" 
-                           class="w-4 h-4 rounded text-red-650 focus:ring-red-500 bg-white border-stone-300">
+                    <input type="checkbox" value="${servico}" onchange="filtrarGeral()" class="w-4 h-4 rounded text-red-650 focus:ring-red-500 bg-white border-stone-300">
                     <span class="truncate font-semibold tracking-wide">${servico}</span>
                 </label>
             `).join('');
+        }
+
+        // Sistema Lógico para calcular Destaque de Cor da Borda baseado em Data
+        function determinarBordaCard(dataStr) {
+            // Se a data vier vazia, retorna a borda padrão fina cinza
+            if (!dataStr) return "border-stone-200 hover:border-stone-450 shadow-sm hover:shadow-md"; 
+            
+            try {
+                // Converte a string "DD/MM/YYYY" para objeto Date no JavaScript
+                const partes = dataStr.split('/');
+                const dataCard = new Date(partes[2], partes[1] - 1, partes[0]);
+                const dataHoje = new Date();
+                
+                // Zera as horas para comparar apenas os dias exatos
+                dataCard.setHours(0,0,0,0);
+                dataHoje.setHours(0,0,0,0);
+                
+                // Calcula a diferença em dias
+                const msPorDia = 24 * 60 * 60 * 1000;
+                const diferencaDias = Math.floor((dataHoje - dataCard) / msPorDia);
+
+                if (diferencaDias === 0) {
+                    // É Hoje: Borda vermelha destacada (Tive que forçar a sombra para chamar mais atenção)
+                    return "border-red-600 border-[1.5px] shadow-[0_0_12px_rgba(220,38,38,0.15)] hover:shadow-[0_0_15px_rgba(220,38,38,0.25)]";
+                } else if (diferencaDias > 0 && diferencaDias <= 7) {
+                    // Últimos 7 dias: Borda preta firme
+                    return "border-stone-900 border-[1.5px] hover:border-stone-950 hover:shadow-lg";
+                } else {
+                    // Mais antigo: Borda padrão fina
+                    return "border-stone-200 hover:border-stone-450 shadow-sm hover:shadow-md";
+                }
+            } catch (e) {
+                return "border-stone-200 hover:border-stone-450 shadow-sm hover:shadow-md";
+            }
         }
 
         function renderizarTimeline(dados) {
@@ -294,13 +306,12 @@
             dados.forEach(item => {
                 const descricaoCurta = item.descricao ? item.descricao : "";
                 const tagsServicos = item.produtos ? item.produtos.join('  •  ') : "";
-                
-                // Limpa as marcas individualmente antes de exibi-las unidas por vírgula
                 const marcasTexto = item.marcas ? item.marcas.map(m => limparMarca(m)).join(', ') : "Sem marcas";
-                
                 const linkValidado = item.link_noticia || (item.marcas ? `https://news.google.com/search?q=${encodeURIComponent(item.marcas.map(m => limparMarca(m)).join('+'))}+when:7d` : "#");
 
-                // Sistema de Imagem de Alta Definição Curada (Baseado na primeira marca já limpa)
+                // Cálculo das Cores das Bordas
+                const classeBordaCard = determinarBordaCard(item.data);
+
                 const marcaPrincipal = item.marcas && item.marcas.length > 0 ? limparMarca(item.marcas[0]) : "business";
                 const seedMarca = Math.abs(gerarHash(marcaPrincipal)) % 1000;
                 const setorLimpo = item.setor ? item.setor.toLowerCase().split(' ')[0].replace(/[^a-z]/g, '') : "office";
@@ -311,11 +322,9 @@
                     : `https://loremflickr.com/600/400/${encodeURIComponent(termoBusca)}/all?lock=${seedMarca}`;
 
                 const card = `
-                    <!-- Módulo Editorial -->
-                    <article class="bg-white border border-stone-200 overflow-hidden hover:border-stone-450 hover:shadow-md transition-all flex flex-col justify-between">
+                    <article class="bg-white rounded-sm overflow-hidden transition-all flex flex-col justify-between ${classeBordaCard}">
                         
                         <div>
-                            <!-- Imagem Curada -->
                             <div class="h-56 relative bg-stone-100 flex-shrink-0 overflow-hidden">
                                 <img src="${imagemFinal}" alt="${marcasTexto}" class="w-full h-full object-cover grayscale-[15%] hover:scale-105 hover:grayscale-0 transition-all duration-700">
                                 <span class="absolute top-4 left-4 bg-stone-900/90 text-stone-100 text-[10px] font-extrabold px-2.5 py-1 tracking-widest uppercase">
@@ -323,7 +332,6 @@
                                 </span>
                             </div>
                             
-                            <!-- Conteúdo do Briefing -->
                             <div class="p-6">
                                 <div class="flex justify-between items-center mb-3">
                                     <span class="text-[10px] font-bold uppercase tracking-widest text-stone-400">${item.setor || ""}</span>
@@ -340,7 +348,6 @@
                             </div>
                         </div>
 
-                        <!-- Rodapé Editorial do Módulo -->
                         <div class="px-6 pb-6 pt-3 border-t border-stone-100">
                             <div class="mb-4">
                                 <span class="text-[9px] font-bold text-stone-400 block mb-1.5 uppercase tracking-widest">Serviços Recomendados:</span>
@@ -399,14 +406,8 @@
 
             const dadosFiltrados = dadosOportunidades.filter(item => {
                 const bateAgencia = agencia === "" || item.agencia === agencia;
-                
-                // Filtra combinando marcas já tratadas e limpas
-                const bateCliente = clientesSelecionados.length === 0 || 
-                                     (item.marcas && item.marcas.some(m => clientesSelecionados.includes(limparMarca(m))));
-
-                const bateServico = servicosSelecionados.length === 0 || 
-                                     (item.produtos && item.produtos.some(s => servicosSelecionados.includes(s.trim())));
-                
+                const bateCliente = clientesSelecionados.length === 0 || (item.marcas && item.marcas.some(m => clientesSelecionados.includes(limparMarca(m))));
+                const bateServico = servicosSelecionados.length === 0 || (item.produtos && item.produtos.some(s => servicosSelecionados.includes(s.trim())));
                 return bateAgencia && bateCliente && bateServico;
             });
 
