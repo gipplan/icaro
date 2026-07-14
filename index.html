@@ -17,8 +17,8 @@
                 extend: {
                     colors: {
                         inpress: {
-                            red: '#E00300',      // Vermelho oficial (Pág 18)
-                            chumbo: '#575756',   // Chumbo oficial (Pág 18)
+                            red: '#E00300',      // Vermelho oficial
+                            chumbo: '#575756',   // Chumbo oficial
                             dark: '#111111'      // Preto de apoio
                         }
                     }
@@ -37,7 +37,6 @@
     <!-- BARREIRA DE SENHA -->
     <div id="passwordBarrier" class="fixed inset-0 bg-stone-950 flex flex-col items-center justify-center z-[9999] px-4">
         <div class="bg-stone-900 border border-stone-850 p-10 rounded-2xl max-w-md w-full text-center shadow-2xl relative overflow-hidden">
-            <!-- Grafismo de Linhas Concêntricas Oficial no Fundo do Bloqueio -->
             <svg class="absolute -right-10 -bottom-10 h-48 w-48 text-stone-800/40 pointer-events-none" viewBox="0 0 100 100">
                 <circle cx="100" cy="100" r="20" fill="none" stroke="currentColor" stroke-width="0.5"/>
                 <circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" stroke-width="0.5"/>
@@ -62,11 +61,9 @@
 
     <!-- CONTEÚDO PRINCIPAL -->
     <div>
-        <!-- Header Editorial Corporativo (Sem overflow-hidden para não cortar os dropdowns e com z-30) -->
+        <!-- Header Editorial Corporativo -->
         <header class="relative py-8 px-8 shadow-md bg-cover bg-center z-30" style="background-image: linear-gradient(rgba(17, 17, 17, 0.8), rgba(28, 25, 23, 0.95)), url('http://googleusercontent.com/image_collection/image_retrieval/1646351935261000525_0');">
-            <!-- Wrapper para segurar o grafismo de circles sem estragar o fluxo de dropdowns -->
             <div class="absolute inset-0 overflow-hidden pointer-events-none">
-                <!-- Grafismo Concêntrico Superior Direito (KV Oficial da Identidade) -->
                 <svg class="absolute -right-12 -top-12 h-56 w-56 text-stone-100/10 pointer-events-none hidden md:block" viewBox="0 0 100 100">
                     <circle cx="100" cy="0" r="15" fill="none" stroke="currentColor" stroke-width="0.4"/>
                     <circle cx="100" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="0.4"/>
@@ -79,13 +76,11 @@
             </div>
 
             <div class="max-w-6xl mx-auto flex flex-col items-center relative z-10">
-                <!-- Logo no Canto Superior Esquerdo -->
                 <div class="w-full flex justify-start items-center mb-6">
                     <img src="logo.png" alt="Grupo In Press" class="h-10 md:h-12 object-contain brightness-0 invert" onerror="this.style.display='none'; document.getElementById('fallbackTitle').classList.remove('hidden')">
                     <span id="fallbackTitle" class="hidden text-base font-bold text-white tracking-widest uppercase font-sans-custom">Grupo <span class="text-inpress-red">In</span> Press</span>
                 </div>
                 
-                <!-- Título Editorial Centralizado e em Grande Destaque -->
                 <div class="flex flex-col items-center text-center max-w-3xl w-full">
                     <div class="pt-2">
                         <h2 class="text-5xl md:text-7xl font-extrabold font-editorial text-white tracking-widest leading-none mb-4">
@@ -97,26 +92,46 @@
                     </div>
                 </div>
                 
-                <!-- Barra de Filtros com Glassmorphism (z-40 para garantir que fique acima do subheader) -->
-                <div class="flex flex-wrap gap-4 bg-white/10 backdrop-blur-md p-3 rounded-xl w-full max-w-4xl justify-center items-center border border-white/10 mt-8 relative z-40">
+                <!-- Barra de Filtros (Agora com 4 elementos) -->
+                <div class="flex flex-wrap gap-3 bg-white/10 backdrop-blur-md p-3 rounded-xl w-full max-w-5xl justify-center items-center border border-white/10 mt-8 relative z-40">
                     
+                    <!-- NOVO FILTRO: Origem da Oportunidade (Visões) -->
+                    <div class="relative inline-block text-left w-full sm:w-auto min-w-[180px] z-50">
+                        <button id="dropdownBtnTipos" onclick="toggleDropdown(event, 'dropdownMenuTipos')" class="w-full bg-white/15 text-white text-xs p-2.5 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
+                            <span id="dropdownLabelTipos" class="truncate font-bold">Visão: Todas</span>
+                            <svg class="h-4 w-4 text-stone-300 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div id="dropdownMenuTipos" class="hidden absolute left-0 sm:right-0 mt-2 w-full sm:w-56 rounded-lg shadow-lg bg-white border border-stone-200 z-[100] max-h-60 overflow-y-auto">
+                            <div class="p-2 space-y-1">
+                                <label class="flex items-center gap-2 p-2 hover:bg-stone-50 rounded cursor-pointer text-xs text-stone-700 transition-colors">
+                                    <input type="checkbox" value="marca" class="filtro-tipo-checkbox w-4 h-4 rounded text-inpress-red focus:ring-red-500 bg-white border-stone-300" onchange="filtrarGeral()">
+                                    <span class="font-semibold tracking-wide">Foco em Marcas</span>
+                                </label>
+                                <label class="flex items-center gap-2 p-2 hover:bg-stone-50 rounded cursor-pointer text-xs text-stone-700 transition-colors">
+                                    <input type="checkbox" value="setor" class="filtro-tipo-checkbox w-4 h-4 rounded text-inpress-red focus:ring-red-500 bg-white border-stone-300" onchange="filtrarGeral()">
+                                    <span class="font-semibold tracking-wide">Radar Setorial (Macro)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Filtro 1: Agência -->
-                    <select id="filtroAgencia" class="bg-white/15 text-white text-xs p-2.5 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red font-semibold tracking-wide transition-all w-full sm:w-auto min-w-[180px] cursor-pointer">
+                    <select id="filtroAgencia" class="bg-white/15 text-white text-xs p-2.5 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red font-semibold tracking-wide transition-all w-full sm:w-auto min-w-[170px] cursor-pointer">
                         <option value="" class="bg-stone-900 text-white">Todas as Agências</option>
                         <option value="In Press Porter Novelli" class="bg-stone-900 text-white">In Press</option>
                         <option value="FleishmanHillard" class="bg-stone-900 text-white">FleishmanHillard</option>
                     </select>
                     
-                    <!-- Filtro 2: Cliente (Multi-Select, com z-50 para flutuar acima de tudo) -->
-                    <div class="relative inline-block text-left w-full sm:w-auto min-w-[200px] z-50">
+                    <!-- Filtro 2: Cliente -->
+                    <div class="relative inline-block text-left w-full sm:w-auto min-w-[190px] z-50">
                         <button id="dropdownBtn" onclick="toggleDropdown(event, 'dropdownMenu')" class="w-full bg-white/15 text-white text-xs p-2.5 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
                             <span id="dropdownLabel" class="truncate text-stone-300">Todos os Clientes</span>
                             <svg class="h-4 w-4 text-stone-300 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        
-                        <!-- Lista do Dropdown de Clientes (z-[100] garante prioridade de exibição absoluta) -->
                         <div id="dropdownMenu" class="hidden absolute left-0 sm:right-0 mt-2 w-full sm:w-64 rounded-lg shadow-lg bg-white border border-stone-200 z-[100] max-h-60 overflow-y-auto">
                             <div id="clientesContainer" class="p-2 space-y-1">
                                 <p class="text-[10px] text-stone-400 p-2">Carregando marcas...</p>
@@ -124,16 +139,14 @@
                         </div>
                     </div>
 
-                    <!-- Filtro 3: Serviços Sugeridos (Multi-Select, com z-50) -->
-                    <div class="relative inline-block text-left w-full sm:w-auto min-w-[200px] z-50">
+                    <!-- Filtro 3: Serviços -->
+                    <div class="relative inline-block text-left w-full sm:w-auto min-w-[190px] z-50">
                         <button id="dropdownBtnServicos" onclick="toggleDropdown(event, 'dropdownMenuServicos')" class="w-full bg-white/15 text-white text-xs p-2.5 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
                             <span id="dropdownLabelServicos" class="truncate text-stone-300">Todos os Serviços</span>
                             <svg class="h-4 w-4 text-stone-300 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        
-                        <!-- Lista do Dropdown de Serviços (z-[100]) -->
                         <div id="dropdownMenuServicos" class="hidden absolute left-0 sm:right-0 mt-2 w-full sm:w-64 rounded-lg shadow-lg bg-white border border-stone-200 z-[100] max-h-60 overflow-y-auto">
                             <div id="servicosContainer" class="p-2 space-y-1">
                                 <p class="text-[10px] text-stone-400 p-2">Carregando serviços...</p>
@@ -144,10 +157,9 @@
             </div>
         </header>
 
-        <!-- Sub-Header Editorial (Filtros de Data Interativos - Limpo e alinhado à direita) -->
+        <!-- Sub-Header Editorial (Filtros de Data Interativos) -->
         <div class="max-w-6xl mx-auto px-4 mt-10">
             <div class="flex justify-end border-b border-stone-300 pb-2">
-                
                 <div class="flex flex-wrap items-center gap-6 text-[10px] font-bold uppercase tracking-wider font-sans-custom select-none" id="filtrosTempo">
                     <button onclick="setFiltroTempo('hoje')" id="btn-hoje" class="flex items-center gap-1.5 transition-all text-stone-400 hover:text-inpress-dark">
                         <div class="w-2.5 h-2.5 rounded-full bg-inpress-red"></div> Hoje
@@ -211,7 +223,7 @@
         // --- SISTEMA DE MENUS DROPDOWN ---
         function toggleDropdown(event, menuId) {
             event.stopPropagation();
-            const menus = ['dropdownMenu', 'dropdownMenuServicos'];
+            const menus = ['dropdownMenu', 'dropdownMenuServicos', 'dropdownMenuTipos'];
             menus.forEach(id => {
                 const menuElement = document.getElementById(id);
                 if (id === menuId) {
@@ -223,14 +235,16 @@
         }
 
         document.addEventListener('click', () => {
-            const m1 = document.getElementById('dropdownMenu');
-            const m2 = document.getElementById('dropdownMenuServicos');
-            if (m1) m1.classList.add('hidden');
-            if (m2) m2.classList.add('hidden');
+            const menus = ['dropdownMenu', 'dropdownMenuServicos', 'dropdownMenuTipos'];
+            menus.forEach(id => {
+                const m = document.getElementById(id);
+                if (m) m.classList.add('hidden');
+            });
         });
 
         document.getElementById('dropdownMenu').addEventListener('click', (event) => { event.stopPropagation(); });
         document.getElementById('dropdownMenuServicos').addEventListener('click', (event) => { event.stopPropagation(); });
+        document.getElementById('dropdownMenuTipos').addEventListener('click', (event) => { event.stopPropagation(); });
 
         let dadosOportunidades = [];
         let filtroTempoAtual = 'todas';
@@ -278,10 +292,8 @@
                 }
             });
             const listaOrdenada = Array.from(marcasUnicas).sort((a, b) => a.localeCompare(b));
-            if (listaOrdenada.length === 0) {
-                container.innerHTML = `<p class="text-xs text-stone-500 p-2">Nenhum cliente cadastrado.</p>`;
-                return;
-            }
+            if (listaOrdenada.length === 0) return;
+            
             container.innerHTML = listaOrdenada.map(marca => `
                 <label class="flex items-center gap-2 p-2 hover:bg-stone-50 rounded cursor-pointer text-xs text-stone-700 transition-colors">
                     <input type="checkbox" value="${marca}" onchange="filtrarGeral()" class="w-4 h-4 rounded text-inpress-red focus:ring-red-500 bg-white border-stone-300">
@@ -300,10 +312,8 @@
                 }
             });
             const listaOrdenada = Array.from(servicosUnicos).sort((a, b) => a.localeCompare(b));
-            if (listaOrdenada.length === 0) {
-                container.innerHTML = `<p class="text-xs text-stone-500 p-2">Nenhum serviço cadastrado.</p>`;
-                return;
-            }
+            if (listaOrdenada.length === 0) return;
+
             container.innerHTML = listaOrdenada.map(servico => `
                 <label class="flex items-center gap-2 p-2 hover:bg-stone-50 rounded cursor-pointer text-xs text-stone-700 transition-colors">
                     <input type="checkbox" value="${servico}" onchange="filtrarGeral()" class="w-4 h-4 rounded text-inpress-red focus:ring-red-500 bg-white border-stone-300">
@@ -357,7 +367,7 @@
             let partes = texto.split(/\.(?=\s)/);
             
             if (partes.length === 1) {
-                const regexGerundio = /,\s*(mostrando|abrindo|exigindo|gerando|visando|propondo|direcionando|demandando|sinalizando|reforçando|consolidando|oferecendo|permitindo|ajudando)/i;
+                const regexGerundio = /,\s*(mostrando|abrindo|exigindo|gerando|visando|propondo|direcionando|demandando|sinalizando|reforçando|consolidando|oferecendo|permitindo|ajudando|preparando)/i;
                 const match = texto.match(regexGerundio);
                 
                 if (match) {
@@ -390,6 +400,8 @@
             }
 
             dados.forEach(item => {
+                const isMacro = (item.tipo === 'setor');
+                
                 const textoOriginal = item.descricao ? item.descricao : "";
                 const { fato, rec } = separarContextoERecomendacao(textoOriginal);
                 
@@ -403,10 +415,24 @@
                 const diferencaDias = calcularDiferencaDias(item.data);
                 const classeBordaCard = determinarBordaCard(diferencaDias);
 
+                // Lógica Dinâmica de Título e Tag
+                const tagSuperior = isMacro ? 'ALERTA MACRO' : (item.agencia === 'In Press Porter Novelli' ? 'IN PRESS' : 'FLEISHMANHILLARD');
+                const corTagSuperior = isMacro ? 'bg-inpress-red text-white' : 'bg-inpress-dark/95 text-white';
+                const tituloCard = (isMacro && item.titulo) ? item.titulo : marcasTexto;
+                
+                // Exibe as marcas ativáveis apenas se for um alerta Macro
+                const blocoMarcasMacro = isMacro ? `
+                    <div class="mt-2 mb-1 p-2 bg-stone-100 rounded border border-stone-200">
+                        <span class="text-[9px] font-bold text-stone-500 uppercase tracking-widest block mb-0.5">Marcas Ativáveis:</span>
+                        <span class="text-xs font-bold text-inpress-red font-sans-custom">${marcasTexto}</span>
+                    </div>
+                ` : '';
+
+                // Busca inteligente de imagem
                 const marcaPrincipal = item.marcas && item.marcas.length > 0 ? limparMarca(item.marcas[0]) : "business";
                 const seedMarca = Math.abs(gerarHash(marcaPrincipal)) % 1000;
                 const setorLimpo = item.setor ? item.setor.toLowerCase().split(' ')[0].replace(/[^a-z]/g, '') : "office";
-                const termoBusca = `${marcaPrincipal.toLowerCase().replace(/[^a-z0-9]/g, '')},${setorLimpo}`;
+                const termoBusca = isMacro ? "economy,business" : `${marcaPrincipal.toLowerCase().replace(/[^a-z0-9]/g, '')},${setorLimpo}`;
 
                 const imagemFinal = (item.imagem && item.imagem.startsWith('http') && !item.imagem.includes('placeholder')) 
                     ? item.imagem 
@@ -424,9 +450,9 @@
 
                         <div class="relative z-10">
                             <div class="h-56 relative bg-stone-100 flex-shrink-0 overflow-hidden">
-                                <img src="${imagemFinal}" alt="${marcasTexto}" class="w-full h-full object-cover grayscale-[15%] group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700">
-                                <span class="absolute top-4 left-4 bg-inpress-dark/95 text-white text-[10px] font-extrabold px-2.5 py-1 tracking-widest uppercase">
-                                    ${item.agencia === 'In Press Porter Novelli' ? 'IN PRESS' : 'FLEISHMANHILLARD'}
+                                <img src="${imagemFinal}" alt="${tituloCard}" class="w-full h-full object-cover grayscale-[15%] group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700">
+                                <span class="absolute top-4 left-4 ${corTagSuperior} text-[10px] font-extrabold px-2.5 py-1 tracking-widest uppercase">
+                                    ${tagSuperior}
                                 </span>
                             </div>
                             
@@ -436,11 +462,13 @@
                                     <span class="text-[10px] font-bold text-inpress-chumbo uppercase tracking-wider font-sans-custom">${item.data || ""}</span>
                                 </div>
                                 
-                                <h3 class="text-2xl font-normal font-editorial text-inpress-dark leading-snug mb-3">
-                                    ${marcasTexto}
+                                <h3 class="text-2xl font-normal font-editorial text-inpress-dark leading-snug mb-2">
+                                    ${tituloCard}
                                 </h3>
                                 
-                                <div class="mb-5 space-y-4">
+                                ${blocoMarcasMacro}
+                                
+                                <div class="mt-4 mb-5 space-y-4">
                                     <div>
                                         <span class="text-[9px] font-bold text-inpress-chumbo block mb-1 uppercase tracking-widest font-sans-custom">O Fato</span>
                                         <p class="text-sm text-inpress-dark leading-relaxed font-sans-custom font-normal">
@@ -467,7 +495,7 @@
 
                         <div class="px-6 py-4 bg-stone-50 border-t border-stone-100 flex justify-between items-center group-hover:bg-red-50/20 transition-colors relative z-10">
                             <span class="text-[9px] font-bold tracking-widest text-inpress-chumbo uppercase font-sans-custom">
-                                ${item.agencia === 'In Press Porter Novelli' ? 'In Press P.N.' : 'FleishmanHillard'}
+                                ${isMacro ? 'Radar Macro Setorial' : (item.agencia === 'In Press Porter Novelli' ? 'In Press P.N.' : 'FleishmanHillard')}
                             </span>
                             <a href="${linkValidado}" target="_blank" class="inline-flex items-center gap-1 text-xs font-bold text-inpress-dark hover:text-inpress-red tracking-wider transition-colors font-sans-custom">
                                 Ver Fonte ↗
@@ -480,6 +508,24 @@
         }
 
         function filtrarGeral() {
+            // Lógica do novo filtro de Tipos (Visões)
+            const checkboxesTipos = Array.from(document.querySelectorAll('.filtro-tipo-checkbox:checked'));
+            const tiposSelecionados = checkboxesTipos.map(cb => cb.value);
+            
+            const labelTipos = document.getElementById('dropdownLabelTipos');
+            if (labelTipos) {
+                if (tiposSelecionados.length === 0 || tiposSelecionados.length === 2) {
+                    labelTipos.innerText = "Visão: Todas";
+                    labelTipos.classList.remove('text-inpress-red');
+                } else if (tiposSelecionados.includes('marca')) {
+                    labelTipos.innerText = "Visão: Marcas";
+                    labelTipos.classList.add('text-inpress-red');
+                } else if (tiposSelecionados.includes('setor')) {
+                    labelTipos.innerText = "Visão: Radar Macro";
+                    labelTipos.classList.add('text-inpress-red');
+                }
+            }
+
             const fAgencia = document.getElementById('filtroAgencia');
             const agencia = fAgencia ? fAgencia.value : "";
 
@@ -490,13 +536,12 @@
             if (labelClientes) {
                 if (clientesSelecionados.length === 0) {
                     labelClientes.innerText = "Todos os Clientes";
-                    labelClientes.classList.add('text-stone-400');
-                } else if (clientesSelecionados.length === 1) {
-                    labelClientes.innerText = clientesSelecionados[0];
-                    labelClientes.classList.remove('text-stone-400');
+                    labelClientes.classList.add('text-stone-300');
+                    labelClientes.classList.remove('text-white');
                 } else {
-                    labelClientes.innerText = `Clientes (${clientesSelecionados.length})`;
-                    labelClientes.classList.remove('text-stone-400');
+                    labelClientes.innerText = clientesSelecionados.length === 1 ? clientesSelecionados[0] : `Clientes (${clientesSelecionados.length})`;
+                    labelClientes.classList.remove('text-stone-300');
+                    labelClientes.classList.add('text-white');
                 }
             }
 
@@ -507,17 +552,23 @@
             if (labelServicos) {
                 if (servicosSelecionados.length === 0) {
                     labelServicos.innerText = "Todos os Serviços";
-                    labelServicos.classList.add('text-stone-400');
-                } else if (servicosSelecionados.length === 1) {
-                    labelServicos.innerText = servicosSelecionados[0];
-                    labelServicos.classList.remove('text-stone-400');
+                    labelServicos.classList.add('text-stone-300');
+                    labelServicos.classList.remove('text-white');
                 } else {
-                    labelServicos.innerText = `Serviços (${servicosSelecionados.length})`;
-                    labelServicos.classList.remove('text-stone-400');
+                    labelServicos.innerText = servicosSelecionados.length === 1 ? servicosSelecionados[0] : `Serviços (${servicosSelecionados.length})`;
+                    labelServicos.classList.remove('text-stone-300');
+                    labelServicos.classList.add('text-white');
                 }
             }
 
             const dadosFiltrados = dadosOportunidades.filter(item => {
+                // Filtro de Visão (Marcas vs Macro)
+                let bateTipo = true;
+                if (tiposSelecionados.length === 1) {
+                    // Se apenas "marca" ou "setor" estiver selecionado, filtra por ele.
+                    bateTipo = item.tipo === tiposSelecionados[0] || (!item.tipo && tiposSelecionados[0] === 'marca'); 
+                }
+
                 const bateAgencia = agencia === "" || item.agencia === agencia;
                 const bateCliente = clientesSelecionados.length === 0 || (item.marcas && item.marcas.some(m => clientesSelecionados.includes(limparMarca(m))));
                 const bateServico = servicosSelecionados.length === 0 || (item.produtos && item.produtos.some(s => servicosSelecionados.includes(s.trim())));
@@ -531,7 +582,7 @@
                     bateTempo = (diasDiferenca >= 0 && diasDiferenca <= 7);
                 }
 
-                return bateAgencia && bateCliente && bateServico && bateTempo;
+                return bateTipo && bateAgencia && bateCliente && bateServico && bateTempo;
             });
 
             renderizarTimeline(dadosFiltrados);
