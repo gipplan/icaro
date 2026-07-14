@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Briefing de Inteligência - Grupo In Press</title>
-    <!-- Google Fonts oficiais do Grupo In Press (Fraunces & Montserrat) -->
+    <!-- Google Fonts: Fraunces (Serif Oficial) & Montserrat (Sans-serif Oficial) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -63,11 +63,11 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <div>
         <!-- Header Editorial Corporativo (Sem overflow-hidden para não cortar os dropdowns e com z-30) -->
-        <header class="bg-white border-b border-stone-200 py-8 px-8 shadow-sm relative z-30">
+        <header class="relative py-8 px-8 shadow-md bg-cover bg-center z-30" style="background-image: linear-gradient(rgba(17, 17, 17, 0.8), rgba(28, 25, 23, 0.95)), url('http://googleusercontent.com/image_collection/image_retrieval/1646351935261000525_0');">
             <!-- Wrapper para segurar o grafismo de círculos sem estragar o fluxo de dropdowns -->
             <div class="absolute inset-0 overflow-hidden pointer-events-none">
                 <!-- Grafismo Concêntrico Superior Direito (KV Oficial da Identidade) -->
-                <svg class="absolute -right-12 -top-12 h-56 w-56 text-stone-100 pointer-events-none hidden md:block" viewBox="0 0 100 100">
+                <svg class="absolute -right-12 -top-12 h-56 w-56 text-stone-100/10 pointer-events-none hidden md:block" viewBox="0 0 100 100">
                     <circle cx="100" cy="0" r="15" fill="none" stroke="currentColor" stroke-width="0.4"/>
                     <circle cx="100" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="0.4"/>
                     <circle cx="100" cy="0" r="45" fill="none" stroke="currentColor" stroke-width="0.4"/>
@@ -79,36 +79,39 @@
             </div>
 
             <div class="max-w-6xl mx-auto flex flex-col items-center relative z-10">
-                <!-- Logo & Título -->
+                <!-- Logo no Canto Superior Esquerdo -->
+                <div class="w-full flex justify-start items-center mb-6">
+                    <img src="logo.png" alt="Grupo In Press" class="h-10 md:h-12 object-contain brightness-0 invert" onerror="this.style.display='none'; document.getElementById('fallbackTitle').classList.remove('hidden')">
+                    <span id="fallbackTitle" class="hidden text-base font-bold text-white tracking-widest uppercase font-sans-custom">Grupo <span class="text-inpress-red">In</span> Press</span>
+                </div>
+                
+                <!-- Título Editorial Centralizado e em Grande Destaque -->
                 <div class="flex flex-col items-center text-center max-w-3xl w-full">
-                    <img src="logo.png" alt="Grupo In Press" class="h-12 md:h-14 object-contain mb-5" onerror="this.style.display='none'; document.getElementById('fallbackTitle').classList.remove('hidden')">
-                    <span id="fallbackTitle" class="hidden text-xl font-bold text-inpress-dark mb-3 tracking-widest uppercase font-sans-custom">Grupo <span class="text-inpress-red">In</span> Press</span>
-                    
                     <div class="pt-2">
-                        <h2 class="text-2xl md:text-4xl font-extrabold font-editorial text-inpress-dark tracking-tight leading-tight mb-2">
-                            I.C.A.R.O. <span class="font-light text-stone-300">|</span> <span class="font-normal text-inpress-chumbo italic">Oportunidades de PR em Tempo Real</span>
+                        <h2 class="text-5xl md:text-7xl font-extrabold font-editorial text-white tracking-widest leading-none mb-4">
+                            I.C.A.R.O.
                         </h2>
-                        <p class="text-xs md:text-sm text-inpress-chumbo font-medium tracking-widest uppercase leading-tight border-t border-stone-100 pt-3 w-full">
+                        <p class="text-[10px] md:text-xs text-stone-300 font-bold tracking-widest uppercase leading-tight border-t border-white/20 pt-4 w-full">
                             Inteligência de Comunicação, Análise e Radar de Oportunidades
                         </p>
                     </div>
                 </div>
                 
-                <!-- Barra de Filtros (z-40 para garantir que fique acima do subheader) -->
-                <div class="flex flex-wrap gap-4 bg-stone-50 p-3 rounded-xl w-full max-w-4xl justify-center items-center border border-stone-250 mt-8 relative z-40">
+                <!-- Barra de Filtros com Glassmorphism (z-40 para garantir que fique acima do subheader) -->
+                <div class="flex flex-wrap gap-4 bg-white/10 backdrop-blur-md p-3 rounded-xl w-full max-w-4xl justify-center items-center border border-white/10 mt-8 relative z-40">
                     
                     <!-- Filtro 1: Agência -->
-                    <select id="filtroAgencia" class="bg-white text-inpress-chumbo text-xs p-2.5 rounded-lg border border-stone-300 focus:outline-none focus:border-inpress-red font-semibold tracking-wide transition-all w-full sm:w-auto min-w-[180px] cursor-pointer">
-                        <option value="">Todas as Agências</option>
-                        <option value="In Press Porter Novelli">In Press</option>
-                        <option value="FleishmanHillard">FleishmanHillard</option>
+                    <select id="filtroAgencia" class="bg-white/15 text-white text-xs p-2.5 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red font-semibold tracking-wide transition-all w-full sm:w-auto min-w-[180px] cursor-pointer">
+                        <option value="" class="bg-stone-900 text-white">Todas as Agências</option>
+                        <option value="In Press Porter Novelli" class="bg-stone-900 text-white">In Press</option>
+                        <option value="FleishmanHillard" class="bg-stone-900 text-white">FleishmanHillard</option>
                     </select>
                     
                     <!-- Filtro 2: Cliente (Multi-Select, com z-50 para flutuar acima de tudo) -->
                     <div class="relative inline-block text-left w-full sm:w-auto min-w-[200px] z-50">
-                        <button id="dropdownBtn" onclick="toggleDropdown(event, 'dropdownMenu')" class="w-full bg-white text-inpress-chumbo text-xs p-2.5 rounded-lg border border-stone-300 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
-                            <span id="dropdownLabel" class="truncate text-stone-400">Todos os Clientes</span>
-                            <svg class="h-4 w-4 text-stone-400 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <button id="dropdownBtn" onclick="toggleDropdown(event, 'dropdownMenu')" class="w-full bg-white/15 text-white text-xs p-2.5 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
+                            <span id="dropdownLabel" class="truncate text-stone-300">Todos os Clientes</span>
+                            <svg class="h-4 w-4 text-stone-300 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
@@ -123,9 +126,9 @@
 
                     <!-- Filtro 3: Serviços Sugeridos (Multi-Select, com z-50) -->
                     <div class="relative inline-block text-left w-full sm:w-auto min-w-[200px] z-50">
-                        <button id="dropdownBtnServicos" onclick="toggleDropdown(event, 'dropdownMenuServicos')" class="w-full bg-white text-inpress-chumbo text-xs p-2.5 rounded-lg border border-stone-300 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
-                            <span id="dropdownLabelServicos" class="truncate text-stone-400">Todos os Serviços</span>
-                            <svg class="h-4 w-4 text-stone-400 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <button id="dropdownBtnServicos" onclick="toggleDropdown(event, 'dropdownMenuServicos')" class="w-full bg-white/15 text-white text-xs p-2.5 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
+                            <span id="dropdownLabelServicos" class="truncate text-stone-300">Todos os Serviços</span>
+                            <svg class="h-4 w-4 text-stone-300 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
