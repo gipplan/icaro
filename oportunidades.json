@@ -1,5 +1,100 @@
 [
     {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Finanças e E-commerce",
+        "marcas": [
+            "Mercado Livre",
+            "Mercado Pago"
+        ],
+        "descricao": "O Mercado Pago anunciou no dia 15 de julho de 2026 a ampliação de sua oferta de seguros baseados em inteligência artificial (IA) para simplificar a contratação e potencializar seu ecossistema. Um gatilho para ações de PR com foco em inovação tecnológica.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Campanha",
+            "Mídia"
+        ],
+        "link_noticia": "https://cqcs.com.br/noticia/mercado-livre-anuncia-venda-de-seguro-atraves-da-ia/",
+        "data": "15/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Siderurgia e Mineração",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "A Vale anunciou no dia 14 de julho de 2026 a eleição de Wilfred Theodoor Bruijn como novo presidente do Conselho de Administração, cumprindo mandato tampão após a renúncia de Daniel Stieler. Movimento chave para governança e relações institucionais em meio a pressões de mercado.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Relações Governamentais",
+            "Posicionamento Executivo"
+        ],
+        "link_noticia": "https://investidor10.com.br/noticias/vale-vale3-aponta-novo-presidente-do-conselho-ate-nova-votacao-em-2026/",
+        "data": "15/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Bebidas e Alimentos",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "A eliminação antecipada do Brasil na Copa do Mundo gerou queda no consumo projetado de cerveja, pressionando as ações da Ambev em julho de 2026. A situação requer gerenciamento de reputação e campanhas táticas de PR para impulsionar o volume de vendas no segundo semestre.",
+        "produtos": [
+            "Campanha",
+            "Influenciadores",
+            "Assessoria de Imprensa"
+        ],
+        "link_noticia": "https://oespecialista.com.br/investimentos/saida-do-brasil-da-copa-pressiona-ambev-no-2t26/",
+        "data": "15/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia / Eletrônicos de Consumo",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "A Samsung confirmou o próximo Galaxy Unpacked para 22 de julho de 2026, abrindo o período de inscrições com benefícios exclusivos. A campanha foca no anúncio da nova geração de dobráveis com inteligência artificial, sendo um momento crucial para o engajamento digital e PR da marca no país.",
+        "produtos": [
+            "Campanha",
+            "Influenciadores",
+            "Presença Digital"
+        ],
+        "link_noticia": "https://news.samsung.com/br/convite-galaxy-unpacked-julho-2026-um-novo-formato-esta-prestes-a-se-desdobrar",
+        "data": "15/07/2026",
+        "imagem": "https://eldinero.com.do/wp-content/uploads/samsung-logo-scaled.jpg"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Varejo",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "Com o aval da agência reguladora da China no dia 10 de julho de 2026, a Shein avançou com os planos de IPO na Bolsa de Hong Kong, previsto para agosto. O movimento eleva a competitividade estrutural no e-commerce brasileiro e exige posicionamento estratégico das varejistas locais.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Mídia"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/shein-obtem-a-aprovacao-da-china-para-ipo-em-hong-kong.shtml",
+        "data": "15/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Saúde e Agronegócio",
+        "marcas": [
+            "Bayer"
+        ],
+        "descricao": "No dia 10 de julho de 2026, a Bayer anunciou um acordo de 3 bilhões de euros para vender sua participação em uma unidade de saúde à Apollo Global, visando desalavancagem e recuperação financeira. Transação corporativa de grande impacto global para o posicionamento da holding alemã.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Posicionamento Executivo"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/bayer-vende-participacao-em-empresa-de-anticoncepcionais-por-r-175-bilhoes.shtml",
+        "data": "15/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
         "tipo": "setor",
         "titulo": "Avanço do Marco Legal da IA (PL 2338/23)",
         "agencia": "In Press Porter Novelli",
@@ -91,7 +186,7 @@
         "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr1wWmxZQjBJ3ZuTT6Bo6k3R3VEu11wFDirKOKZRQWWRj6ZDFa6qJ93oI&s=10?w=600",
         "tipo": "marca"
     },
-       {
+    {
         "agencia": "FleishmanHillard",
         "setor": "Tecnologia e Serviços Financeiros",
         "marcas": [
@@ -125,7 +220,7 @@
         "imagem": "https://www.mktesportivo.com/wp-content/uploads/2026/07/ifood-acoes-marketing-Selecao-Brasileira-1024x682.jpg?w=600",
         "tipo": "marca"
     },
-       {
+    {
         "agencia": "In Press Porter Novelli",
         "setor": "Bebidas e Consumo",
         "marcas": [
@@ -157,7 +252,7 @@
         "imagem": "https://s2-valor.glbimg.com/BJPT9enh-1JGZ3wGuqC891dnHhw=/0x0:3840x2550/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2023/6/f/xDuBZcQLO65Bxh4u3p6g/270123previ015.jpg?w=600",
         "tipo": "marca"
     },
-       {
+    {
         "agencia": "FleishmanHillard",
         "setor": "Varejo de Moda",
         "marcas": [
@@ -173,7 +268,7 @@
         "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPlNU9BIoJt5QIcWQWXwSnEyoNMDPdaFLerOuUp54VEw&s?w=600",
         "tipo": "marca"
     },
-       {
+    {
         "agencia": "In Press Porter Novelli",
         "setor": "Mineração e Siderurgia",
         "marcas": [
@@ -206,7 +301,7 @@
         "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600",
         "tipo": "marca"
     },
-      {
+    {
         "agencia": "In Press Porter Novelli",
         "setor": "Aviação",
         "marcas": [
