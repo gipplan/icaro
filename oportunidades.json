@@ -1,4 +1,61 @@
 [
+ {
+        "tipo": "setor",
+        "titulo": "Anatel avança com taxação de redes para Big Techs (Fair Share)",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Telecomunicações, Tecnologia e Mídia",
+        "marcas": [
+            "Mercado Livre",
+            "Samsung",
+            "iFood"
+        ],
+        "descricao": "A Anatel abriu hoje (15) a consulta pública decisiva para obrigar grandes plataformas digitais a pagarem pelo uso da infraestrutura das operadoras de telecomunicações. Estruturar com urgência um comitê de crise e public affairs para desenhar a narrativa de defesa do ecossistema digital, mostrando como a taxação pode ser repassada ao consumidor final.",
+        "produtos": [
+            "Public Affairs",
+            "Gestão de Crise",
+            "Relações Governamentais"
+        ],
+        "link_noticia": "https://www.teletime.com.br/telecom/fair-share-anatel-prepara-consulta-publica-sobre-o-tema/",
+        "data": "15/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Nova lei europeia de rastreabilidade entra em vigor",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Agronegócio e Food Service",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "A partir de hoje, a União Europeia passa a barrar a importação de commodities brasileiras que não comprovem origem livre de desmatamento até 2020. Acionar imediatamente a assessoria de imprensa para divulgar relatórios de sustentabilidade e rastreabilidade da cadeia de suprimentos dos clientes, separando a marca dos produtores irregulares.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Auditoria de Risco",
+            "Produção de Conteúdo"
+        ],
+        "link_noticia": "https://agenciabrasil.ebc.com.br/economia/noticia/lei-antidesmatamento-europeia-afeta-exportacoes-brasileiras",
+        "data": "15/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=600"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Atraso na Fase 2 do Drex gera insegurança nas Fintechs",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Tecnologia",
+        "marcas": [
+            "Stone",
+            "Mercado Livre"
+        ],
+        "descricao": "O Banco Central anunciou hoje um novo adiamento para o lançamento comercial do Drex (Real Digital) devido a desafios de privacidade de dados nos testes com consórcios bancários. Oportunidade para posicionar os executivos das empresas clientes em artigos de opinião (Op-Eds) e entrevistas sobre os desafios da infraestrutura digital e o futuro dos pagamentos.",
+        "produtos": [
+            "Posicionamento Executivo",
+            "Assessoria de Imprensa",
+            "Produção de Conteúdo"
+        ],
+        "link_noticia": "https://www.infomoney.com.br/mercados/banco-central-adia-fase-2-do-drex-real-digital/",
+        "data": "15/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600"
+    },
     {
         "agencia": "In Press Porter Novelli",
         "setor": "Finanças e E-commerce",
