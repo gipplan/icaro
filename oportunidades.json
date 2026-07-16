@@ -1,5 +1,69 @@
 [
- {
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Varejo",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "Mercado Livre registrou recorde histórico de vendas no Brasil no dia 7.7, superando a Black Friday de 2025. O marco foi impulsionado pela estreia da cantora Anitta como embaixadora em campanha integrada. Excelente oportunidade para amplificar o posicionamento de marca e ROI em mídias.",
+        "produtos": [
+            "Campanha",
+            "Influenciadores",
+            "Assessoria de Imprensa"
+        ],
+        "link_noticia": "https://centraldovarejo.com.br/mercado-livre-bate-recorde-de-vendas-no-7-7-e-supera-black-friday",
+        "data": "16/07/2026",
+        "imagem": "https://gironews.com/wp-content/uploads/2024/06/mlcd-925x400.jpg"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Tecnologia",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "A Secretaria Nacional de Direitos Digitais do MJSP reclassificou a indicação etária do iFood de 18 para 14 anos, reconhecendo as travas de segurança robustas da plataforma contra o acesso de menores a itens adultos. O fato é ideal para reforçar o posicionamento de conformidade e ESG da marca.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Relações Governamentais",
+            "Presença Digital"
+        ],
+        "link_noticia": "https://congressoemfoco.uol.com.br/area/pais/ministerio-da-justica-reduz-classificacao-indicativa-do-ifood-para-14-anos/",
+        "data": "16/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Saúde",
+        "marcas": [
+            "Bayer"
+        ],
+        "descricao": "A Bayer firmou acordo de €3 bilhões com a Apollo para venda de participação minoritária na divisão de contraceptivos (LARC). A captação visa cobrir liquidez e litígios, enquanto mantém o controle operacional, exigindo comunicação estratégica transparente para investidores e público interno.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Comunicação Interna",
+            "Posicionamento Executivo"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/bayer-vende-participacao-em-empresa-de-anticoncepcionais-por-r-175-bilhoes.shtml",
+        "data": "16/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "E-commerce",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "A China aprovou o IPO da Shein em Hong Kong, abrindo caminho para uma listagem de até US$ 50 bilhões. O movimento eleva a pressão competitiva no varejo nacional de moda e demanda posicionamento institucional sólido para consolidar sua reputação corporativa e expansão no mercado brasileiro.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Presença Digital",
+            "Relações Governamentais"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/shein-obtem-a-aprovacao-da-china-para-ipo-em-hong-kong.shtml",
+        "data": "16/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
         "tipo": "setor",
         "titulo": "Anatel avança com taxação de redes para Big Techs (Fair Share)",
         "agencia": "In Press Porter Novelli",
