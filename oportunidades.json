@@ -1,21 +1,5 @@
 [
     {
-        "agencia": "FleishmanHillard",
-        "setor": "Tecnologia",
-        "marcas": [
-            "Samsung"
-        ],
-        "descricao": "Com o anúncio oficial do Galaxy Unpacked para 22 de julho de 2026 em Londres, a Samsung deve lançar novos celulares dobráveis e wearables. Há oportunidade para campanhas de influenciadores e presença digital para aquecer o público brasileiro na pré-venda nacional das novidades do portfólio.",
-        "produtos": [
-            "Campanha",
-            "Influenciadores",
-            "Presença Digital"
-        ],
-        "link_noticia": "https://forbes.com.br/forbes-tech/2026/07/samsung-anuncia-data-do-proximo-galaxy-unpacked-e-promete-novos-celulares-dobraveis/",
-        "data": "16/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
-    },
-    {
         "agencia": "In Press Porter Novelli",
         "setor": "Mineração",
         "marcas": [
@@ -28,7 +12,7 @@
         ],
         "link_noticia": "https://www.estadao.com.br/economia/vale-diz-que-descartou-investimento-em-minas-de-ferro-dos-irmaos-batista-apos-avaliacao/",
         "data": "16/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+        "imagem": "https://media.investnews.com.br/uploads/2020/02/vale3.jpg"
     },
     {
         "agencia": "FleishmanHillard",
@@ -60,22 +44,6 @@
         ],
         "link_noticia": "https://www.segs.com.br/seguros/mercado-livre-anuncia-venda-de-seguro-atraves-da-ia",
         "data": "16/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
-    },
-    {
-        "agencia": "In Press Porter Novelli",
-        "setor": "Varejo",
-        "marcas": [
-            "Mercado Livre"
-        ],
-        "descricao": "Mercado Livre registrou recorde histórico de vendas no Brasil no dia 7.7, superando a Black Friday de 2025. O marco foi impulsionado pela estreia da cantora Anitta como embaixadora em campanha integrada. Excelente oportunidade para amplificar o posicionamento de marca e ROI em mídias.",
-        "produtos": [
-            "Campanha",
-            "Influenciadores",
-            "Assessoria de Imprensa"
-        ],
-        "link_noticia": "https://centraldovarejo.com.br/mercado-livre-bate-recorde-de-vendas-no-7-7-e-supera-black-friday",
-        "data": "16/07/2026",
         "imagem": "https://gironews.com/wp-content/uploads/2024/06/mlcd-925x400.jpg"
     },
     {
@@ -92,7 +60,7 @@
         ],
         "link_noticia": "https://congressoemfoco.uol.com.br/area/pais/ministerio-da-justica-reduz-classificacao-indicativa-do-ifood-para-14-anos/",
         "data": "16/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1NkUlsx_S1tq6AO267B1DFnVsiwbR5sdp5_WL8wJwc7P7mw239UHyUmQk&s=10"
     },
     {
         "agencia": "FleishmanHillard",
@@ -108,7 +76,7 @@
         ],
         "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/bayer-vende-participacao-em-empresa-de-anticoncepcionais-por-r-175-bilhoes.shtml",
         "data": "16/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+        "imagem": "https://www.bloomberglinea.com.br/resizer/v2/D3CMJ5FGNVGBZETJNFMWRXNRZA.jpeg?auth=c68e64e842838b1d529a33daffdddd998ad6f3e2345fdc9f95e9d894c5035a58"
     },
     {
         "agencia": "FleishmanHillard",
@@ -124,7 +92,7 @@
         ],
         "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/shein-obtem-a-aprovacao-da-china-para-ipo-em-hong-kong.shtml",
         "data": "16/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+        "imagem": "https://weethub.com/wp-content/uploads/2023/07/blogpost.png"
     },
     {
         "tipo": "setor",
