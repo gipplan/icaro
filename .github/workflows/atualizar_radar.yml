@@ -11,6 +11,10 @@ on:
   schedule:
     - cron: '0 9 * * 1-5' # Roda de segunda a sexta às 9h UTC (6h da manhã no BR)
 
+# PERMISSÃO CRÍTICA ADICIONADA: Necessário para o GITHUB_TOKEN conseguir commitar e fazer o push
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
