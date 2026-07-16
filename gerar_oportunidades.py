@@ -1,175 +1,103 @@
 import os
 import json
-import datetime
 import re
 from google import genai
 from google.genai import types
-from duckduckgo_search import DDGS
 
-def obter_imagem_noticia_segura(marca, setor):
-    """Busca uma imagem relacionada usando a marca e o setor no DuckDuckGo"""
-    termo_busca = f"{marca} empresa {setor}"
+def carregar_playbook():
+    """Tenta ler o playbook.md da raiz. Se não existir, retorna string vazia."""
     try:
-        with DDGS() as ddgs:
-            resultados = list(ddgs.images(termo_busca, safesearch='on', max_results=1))
-            if resultados and 'image' in resultados[0]:
-                return resultados[0]['image']
-    except Exception as e:
-        print(f"⚠️ Nota: Não foi possível coletar imagem para '{termo_busca}': {e}")
-    
-    return "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+        with open('playbook.md', 'r', encoding='utf-8') as f:
+            return f.read()
+    except FileNotFoundError:
+        return "Nenhum playbook personalizado encontrado. Siga as diretrizes de Diretor Sênior de PR."
 
-def executar_radar():
-    print("🚀 Inicializando o motor Í.C.A.R.O. v5 (Com Google Search Real-Time)...")
-    
+def gerar_oportunidades():
+    # 1. Configura o cliente do Gemini usando a chave do GitHub Actions
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        print("❌ ERRO CRÍTICO: A variável de ambiente 'GEMINI_API_KEY' não foi encontrada!")
-        exit(1)
-        
-    try:
-        client = genai.Client(api_key=api_key)
-    except Exception as e:
-        print(f"❌ ERRO CRÍTICO ao inicializar o cliente GenAI: {e}")
-        exit(1)
-
-    data_hoje = datetime.datetime.now().strftime("%d/%m/%Y")
-
-    # PROMPT focado em exigir que a IA use a ferramenta de busca do Google
-    prompt_sistema = f"""
-    Você é um analista de inteligência de mercado focado em Relações Públicas e Comunicação Corporativa.
-    Hoje é {data_hoje}.
+        raise ValueError("Chave da API não encontrada nas variáveis de ambiente.")
     
-    SUA TAREFA OBRIGATÓRIA:
-    Utilize a sua ferramenta integrada de busca (Google Search) para pesquisar de forma ativa notícias reais, fatos, lançamentos, crises ou movimentações de mercado ocorridas EXCLUSIVAMENTE NOS ÚLTIMOS 7 DIAS para as marcas listadas abaixo. 
-    Não invente nada. Baseie-se unicamente nas notícias quentes encontradas pela busca web.
-
-    Lista de clientes ativos para monitoramento:
-    - In Press Porter Novelli: Canais Globo, Editora Globo, IDB Maraey, Maratona do Rio, Rio Open, Sail GP, ICT Costa Rica, Globo Internacional, Globo Portugal, Riot Games, Seara, happn, Fundação Mapfre, MAPFRE, Open Society, Fundação Ford Foundation, Sony Music (Institucional), Taboaço, Reyou (Bravo Cosméticos), Engie, Yara, RZK Energia - Thopen, Siemens Energy, Abihpec, DSM, Bunge, Matrix, Agrolend, Ambev, Electrolux, Emma Colchões, Gallo, General Mills, Randstad, Unilever, Rexona, Americanas, Betano, Caixa Consórcio, Caixa Seguradora, Chevron, CNP, FenaSaúde, Firjan, IBS Energy, Karoon, Naturgy, Rio Mais, Prio, Seadrill, TAESA, Vibra, White Martins, Abecs, Atos, AWS, Black Rock, Banco Mercantil, BBCE, Cisco, CLARO, Equinix, FICO, HPE, Intelbras, Mercado Bitcoin, Iron Mountain, Madrona Advogados, Sicredi, Solis Investimentos, JOVI, PhizChat, Wiz, Cidade Center Norte, Mercado Livre, Mercado Pago, Natura (e Avon), São Leopoldo Mandic, McDonalds, Compra Agora, Senac SP, SAEA, Insper, iFood, Klabin, Abasp, Penske, Bla Bla Car, IBJR, Corteva, ArcelorMittal, Localiza, Belgo Arames, Direcional, Farmax, Norsk Hydro, Grupo Sada, Vale, Veolia, GSK, Afya, Servier, Roche farma, Roche Dia, MV, Medsenior, Johnson & Johnson, Henkel, TIC Trens, Motiva (CCR), GOL/Smiles, IBGC, eureciclo, Mattel, Royal Canin, PepsiCo, Herbalife.
-
-    - FleishmanHillard: Abrintel, Harsco, ICC (International Chamber of Commerce Brazil), LANXESS, Oz, Bayer, HCor, Albert Einstein, Philips do Brasil, Philips Medical, Samsung (B2B / B2C / LATAM), Stone, Kellanova, Google, Mastercard, Shein, State Grid, Hitachi, McKinsey, Abrabe, General Motors, Sicredi Brasília, ABDE, Belo Sun, Beiersdorf, Cury Construtora, Newell, Onçafari, Votorantim, Veracel, Softys, Guerbet.
-
-    Retorne EXCLUSIVAMENTE um array JSON válido contendo as oportunidades reais mapeadas, sem nenhum texto antes ou depois.
-    Siga este modelo estrito:
-    [
-        {{
-            "agencia": "Nome exato da Agência (In Press Porter Novelli ou FleishmanHillard)",
-            "setor": "Setor macro da oportunidade",
-            "marcas": ["Marca Envolvida"],
-            "descricao": "Texto analítico resumido com o gatilho factual recente e o impacto estratégico, contendo até 300 caracteres.",
-            "produtos": ["Serviço 1", "Serviço 2"],
-            "link_noticia": "URL real completa do artigo ou portal de notícias de onde você extraiu esta informação na busca do Google"
-        }}
-    ]
-
-    REGRAS DE CONTEÚDO:
-    1. "produtos": Escolha de 1 a 3 opções estritamente desta lista: [Assessoria de Imprensa, Relações Governamentais, Comunicação Interna, Presença Digital, Influenciadores, Campanha, PR Stunt, Posicionamento Executivo, Mídia].
-    2. "link_noticia": Deve ser o link direto e real da matéria jornalística encontrada (Ex: g1.globo.com, exame.com, valor.globo.com, etc). Não envie links de busca genéricos.
-    """
-
-    print("🔍 Consultando a API do Google para descobrir os modelos liberados...")
-    modelos_prioritarios = []
-    try:
-        for m in client.models.list():
-            nome_limpo = m.name.replace('models/', '')
-            if 'gemini' in nome_limpo and ('flash' in nome_limpo or 'pro' in nome_limpo):
-                modelos_prioritarios.append(nome_limpo)
-    except Exception:
-        pass
-
-    if not modelos_prioritarios:
-        modelos_prioritarios = ['gemini-1.5-flash-002', 'gemini-1.5-pro-002']
-
-    print("\n🧠 Solicitando análise com GOOGLE SEARCH GROUNDING ativado...")
+    client = genai.Client(api_key=api_key)
     
-    # ATIVAÇÃO DO MOTOR DE BUSCA DO GOOGLE DENTRO DA API DO GEMINI
-    configuracao_json = types.GenerateContentConfig(
-        response_mime_type="application/json",
-        tools=[types.Tool(google_search=types.GoogleSearch())] # <-- A mágica acontece aqui
+    # 2. Carrega o contexto tático da agência
+    playbook_texto = carregar_playbook()
+
+    # 3. Monta o Prompt Definitivo
+    prompt = f"""
+Atue como Í.C.A.R.O., o motor de inteligência e curadoria editorial corporativa. Execute a varredura comercial diária e cruzamento de dados de hoje, identificando riscos e oportunidades de relações públicas e comunicação corporativa. Foque nas 5 a 10 pautas mais quentes do dia no total.
+
+⚠️ PRIORIDADE MÁXIMA (FORÇAR BUSCA): É obrigatório incluir resultados recentes para **iFood** e **Stone**. Caso a varredura inicial geral não identifique fatos relevantes sobre elas, execute uma busca adicional e direcionada exclusivamente para estas duas marcas. O sistema não deve ignorar as outras marcas com notícias quentes, mas o JSON final DEVE conter pautas para iFood e Stone.
+
+Você deve executar OBRIGATORIAMENTE duas frentes de busca:
+
+**FRENTE 1: Radar de Marcas**
+Busque fatos relevantes ocorridos nas últimas 24/48 horas estritamente para a seguinte lista de clientes (utilize a categoria para preencher o campo 'agencia' no JSON):
+
+**Clientes In Press Porter Novelli:**
+Canais Globo, Editora Globo, IDB Maraey, Maratona do Rio, Rio Open, Sail GP, ICT Costa Rica, Globo Internacional, Globo Portugal, Riot Games, Seara, happn, Fundação Mapfre, MAPFRE, Open Society, Fundação Ford Foundation, Sony Music, Taboaço, Reyou, Engie, Yara, RZK Energia, Siemens Energy, Abihpec, DSM, Bunge, Matrix, Agrolend, Ambev, Electrolux, Emma Colchões, Gallo, General Mills, Randstad, Unilever, Rexona, Americanas, Betano, Caixa Consórcio, Caixa Seguradora, Chevron, CNP, FenaSaúde, Firjan, IBS Energy, Karoon, Naturgy, Rio Mais, Prio, Seadrill, TAESA, Vibra, White Martins, Abecs, Atos, AWS, Black Rock, Banco Mercantil, BBCE, Cisco, CLARO, Equinix, FICO, HPE, Intelbras, Mercado Bitcoin, Iron Mountain, Madrona Advogados, Sicredi, Solis Investimentos, JOVI, PhizChat, Wiz, Cidade Center Norte, Mercado Livre, Mercado Pago, Natura, Avon, São Leopoldo Mandic, McDonalds, Compra Agora, Senac SP, SAEA, Insper, iFood, Klabin, Abasp, Penske, Bla Bla Car, IBJR, Corteva, ArcelorMittal, Localiza, Belgo Arames, Direcional, Farmax, Norsk Hydro, Grupo Sada, Vale, Veolia, GSK, Afya, Servier, Roche farma, Roche Dia, MV, Medsenior, Johnson & Johnson, Henkel, TIC Trens, Motiva (CCR), GOL/Smiles, IBGC, eureciclo, Mattel, Royal Canin, PepsiCo, Herbalife.
+
+**Clientes FleishmanHillard:**
+Abrintel, Harsco, ICC, LANXESS, Oz, Bayer, HCor, Albert Einstein, Philips do Brasil, Philips Medical, Samsung, Stone, Kellanova, Google, Mastercard, Shein, State Grid, Hitachi, McKinsey, Abrabe, General Motors, Sicredi Brasília, ABDE, Belo Sun, Beiersdorf, Cury Construtora, Newell, Onçafari, Votorantim, Veracel, Softys, Guerbet.
+
+**FRENTE 2: Radar Macroeconômico (Setorial)**
+Identifique movimentações governamentais, regulatórias ou de mercado que gerem impacto crítico para os setores:
+- Tecnologia, IA e Eletroeletrônicos
+- E-commerce, Varejo e Logística
+- Energia, Mineração e Siderurgia (ESG)
+- Finanças e Fintechs
+- Aviação e Turismo
+
+**DIRETRIZES PARA A "TÁTICA SUGERIDA" (NÍVEL DIRETOR DE PR):**
+Atue como um Diretor Sênior de Comunicação Corporativa. Suas recomendações não podem ser óbvias ou operacionais (NUNCA sugira "fazer press release" ou "postar nas redes").
+Sua tática sempre deve começar com um verbo no gerúndio e justificar o impacto no negócio.
+Use EXCLUSIVAMENTE as estratégias e gatilhos listados no playbook da agência abaixo para formular as recomendações:
+
+--- INÍCIO DO PLAYBOOK ---
+{playbook_texto}
+--- FIM DO PLAYBOOK ---
+
+**DIRETRIZES DE SAÍDA (JSON STRICT):**
+1. Para as notícias da Frente 1, adicione o campo "tipo": "marca". O campo "titulo" deve ser vazio.
+2. Para as notícias da Frente 2, adicione o campo "tipo": "setor" e preencha o campo "titulo" com o tema macro.
+3. Entregue a resposta EXCLUSIVAMENTE em formato de array JSON válido, sem markdown, sem textos antes ou depois.
+4. Estrutura do objeto: tipo, titulo (se macro), agencia, setor, marcas (array), descricao (Fato + Tática baseada no playbook), produtos (array com 1 a 3 produtos de PR), link_noticia, data (formato DD/MM/AAAA usando a data de hoje) e imagem (URL - busque fotos realistas de bancos de imagens gratuitos se não tiver a fonte).
+"""
+
+    print("Enviando requisição para a API do Gemini...")
+    
+    # 4. Faz a chamada usando o modelo mais eficiente
+    response = client.models.generate_content(
+        model='gemini-2.5-flash',
+        contents=prompt,
+        config=types.GenerateContentConfig(
+            temperature=0.4 # Temperatura baixa para forçar aderência ao JSON e ao Playbook
+        )
     )
-
-    resposta = None
-    modelo_utilizado = None
-
-    for modelo in modelos_prioritarios:
-        print(f"Tentando processamento com o modelo: {modelo}...")
-        try:
-            resposta = client.models.generate_content(
-                model=modelo,
-                contents=prompt_sistema,
-                config=configuracao_json
-            )
-            modelo_utilizado = modelo
-            print(f"✅ Sucesso! Processado usando o modelo com busca: {modelo_utilizado}")
-            break
-        except Exception as e:
-            print(f"⚠️ Erro ao tentar o modelo {modelo}: {e}")
-            continue
-
-    if not resposta:
-        print("❌ ERRO CRÍTICO: Nenhum dos modelos conseguiu processar a requisição.")
-        exit(1)
-
-    try:
-        conteudo_bruto = resposta.text.strip()
-        
-        inicio_array = conteudo_bruto.find('[')
-        fim_array = conteudo_bruto.rfind(']')
-        
-        if inicio_array != -1 and fim_array != -1:
-            conteudo_limpo = conteudo_bruto[inicio_array:fim_array+1]
-        else:
-            conteudo_limpo = conteudo_bruto
-            
-        conteudo_limpo = re.sub(r'^```json\s*', '', conteudo_limpo, flags=re.MULTILINE)
-        conteudo_limpo = re.sub(r'^```\s*', '', conteudo_limpo, flags=re.MULTILINE)
-        conteudo_limpo = re.sub(r'\s*```$', '', conteudo_limpo).strip()
-            
-        novas_oportunidades = json.loads(conteudo_limpo)
-        
-        if isinstance(novas_oportunidades, dict):
-            novas_oportunidades = [novas_oportunidades]
-            
-    except Exception as e:
-        print(f"❌ ERRO ao decodificar o JSON: {e}")
-        print(f"Retorno obtido:\n{resposta.text}")
-        exit(1)
-
-    print("🖼️ Buscando imagens inteligentes para os novos cenários...")
-    for op in novas_oportunidades:
-        # Carimba a data real de processamento do card
-        op["data"] = data_hoje
-        
-        marca_principal = op.get("marcas", ["Mercado"])[0]
-        setor = op.get("setor", "corporativo")
-        
-        # O Python agora só faz a busca da imagem conceitual
-        op["imagem"] = obter_imagem_noticia_segura(marca_principal, setor)
-        
-        # Garante um fallback de link caso a IA não tenha preenchido o link_noticia
-        if "link_noticia" not in op or not op["link_noticia"] or "[google.com/search](https://google.com/search)" in op["link_noticia"]:
-            op["link_noticia"] = f"[https://news.google.com/search?q=](https://news.google.com/search?q=){marca_principal.replace(' ', '+')}+when:7d&hl=pt-BR&gl=BR&ceid=BR:pt-419"
-
-    print("💾 Resgatando histórico e gravando dados...")
-    arquivo_json = "oportunidades.json"
-    dados_existentes = []
     
-    if os.path.exists(arquivo_json):
-        try:
-            with open(arquivo_json, "r", encoding="utf-8") as f:
-                dados_existentes = json.load(f)
-        except Exception:
-            pass
-            
-    dados_atualizados = novas_oportunidades + dados_existentes
+    texto_resposta = response.text
+    
+    # 5. Tratamento de segurança: limpar qualquer markdown que a IA possa gerar por engano
+    if "```json" in texto_resposta:
+        texto_resposta = texto_resposta.split("```json")[1].split("```")[0].strip()
+    elif "```" in texto_resposta:
+        texto_resposta = texto_resposta.split("```")[1].split("```")[0].strip()
+        
+    texto_resposta = texto_resposta.strip()
 
+    # 6. Salva (sobrescreve) o arquivo oportunidades.json
     try:
-        with open(arquivo_json, "w", encoding="utf-8") as f:
-            json.dump(dados_atualizados, f, ensure_ascii=False, indent=4)
-        print(f"🎉 Processo finalizado com sucesso! Total na base de dados: {len(dados_atualizados)}.")
-    except Exception as e:
-        print(f"❌ ERRO ao gravar o arquivo de saída: {e}")
-        exit(1)
+        # Testa se a string resultante é um JSON válido antes de salvar
+        json.loads(texto_resposta)
+        
+        with open('oportunidades.json', 'w', encoding='utf-8') as f:
+            f.write(texto_resposta)
+        print("Sucesso! oportunidades.json foi atualizado com base no novo prompt e playbook.")
+        
+    except json.JSONDecodeError:
+        print("Erro: A resposta da API não foi um JSON válido. Veja a resposta crua:")
+        print(texto_resposta)
+        raise
 
 if __name__ == "__main__":
-    executar_radar()
+    gerar_oportunidades()
