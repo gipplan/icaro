@@ -1,5 +1,68 @@
 [
     {
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "Com o anúncio oficial do Galaxy Unpacked para 22 de julho de 2026 em Londres, a Samsung deve lançar novos celulares dobráveis e wearables. Há oportunidade para campanhas de influenciadores e presença digital para aquecer o público brasileiro na pré-venda nacional das novidades do portfólio.",
+        "produtos": [
+            "Campanha",
+            "Influenciadores",
+            "Presença Digital"
+        ],
+        "link_noticia": "https://forbes.com.br/forbes-tech/2026/07/samsung-anuncia-data-do-proximo-galaxy-unpacked-e-promete-novos-celulares-dobraveis/",
+        "data": "16/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Mineração",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "Em 14/07/2026, a Vale divulgou fato relevante confirmando que descartou o investimento no Sistema Centro-Oeste após avaliação de governança, desmentindo rumores de recompra dos irmãos Batista. O gatilho é ideal para assessoria de imprensa focada em governança e blindagem reputacional.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Posicionamento Executivo"
+        ],
+        "link_noticia": "https://www.estadao.com.br/economia/vale-diz-que-descartou-investimento-em-minas-de-ferro-dos-irmaos-batista-apos-avaliacao/",
+        "data": "16/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia",
+        "marcas": [
+            "Google"
+        ],
+        "descricao": "Em 16/07/2026, reguladores da União Europeia anunciaram que o Google deve abrir 11 recursos do Android para concorrentes como OpenAI até 2027. O impacto exige estratégias robustas de relações governamentais e posicionamento de porta-vozes para gerenciar a percepção regulatória global.",
+        "produtos": [
+            "Relações Governamentais",
+            "Posicionamento Executivo",
+            "Assessoria de Imprensa"
+        ],
+        "link_noticia": "https://g1.globo.com/tecnologia/noticia/2026/07/16/ue-obriga-google-a-abrir-servicos-para-openai-e-outras-concorrentes-entenda.ghtml",
+        "data": "16/07/2026",
+        "imagem": "https://static.mercadonegro.pe/wp-content/uploads/2021/10/27163053/Google-reporta-fuertes-ganancias-con-su-empresa-matriz-Alphabet-Inc.jpg"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Serviços Financeiros",
+        "marcas": [
+            "Mercado Pago"
+        ],
+        "descricao": "Em 15/07/2026, o Mercado Pago anunciou a expansão de sua vertical de seguros integrados à rotina financeira via Inteligência Artificial, em parceria com Porto e Chubb. O gatilho factual viabiliza forte atuação de assessoria de imprensa e campanhas com foco em tecnologia e inovação no setor.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Campanha",
+            "Presença Digital"
+        ],
+        "link_noticia": "https://www.segs.com.br/seguros/mercado-livre-anuncia-venda-de-seguro-atraves-da-ia",
+        "data": "16/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    },
+    {
         "agencia": "In Press Porter Novelli",
         "setor": "Varejo",
         "marcas": [
