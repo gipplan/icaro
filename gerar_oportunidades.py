@@ -66,12 +66,12 @@ Use EXCLUSIVAMENTE as estratégias e gatilhos listados no playbook da agência a
 
     print("Enviando requisição para a API do Gemini...")
     
-    # 4. Faz a chamada usando o modelo mais eficiente
+  # 4. Faz a chamada usando o modelo mais eficiente
     response = client.models.generate_content(
-        model='gemini-2.5-flash',
+        model='gemini-1.5-flash', 
         contents=prompt,
         config=types.GenerateContentConfig(
-            temperature=0.4 # Temperatura baixa para forçar aderência ao JSON e ao Playbook
+            temperature=0.4
         )
     )
     
