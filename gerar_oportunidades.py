@@ -73,9 +73,9 @@ Use EXCLUSIVAMENTE as estratégias e gatilhos listados no playbook da agência a
 
     print("Enviando requisição para a API do Gemini usando o modelo PRO...")
     
-    # 4. Faz a chamada usando o modelo PRO (mais estável e com maior disponibilidade)
+  # 4. Faz a chamada usando o modelo PRO (mais estável e com maior disponibilidade)
     response = client.models.generate_content(
-        model='gemini-1.5-pro',
+        model='gemini-2.5-pro',
         contents=prompt,
         config=types.GenerateContentConfig(
             temperature=0.4 
