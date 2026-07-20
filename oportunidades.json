@@ -1,116 +1,116 @@
 [
-{
-"tipo": "marca",
-"titulo": "",
-"agencia": "In Press Porter Novelli",
-"setor": "Tecnologia e Logística",
-"marcas": [
-"iFood"
-],
-"descricao": "O iFood iniciou hoje o piloto de um novo modelo de precificação dinâmica B2B orientado por IA generativa, que ajusta automaticamente os custos de insumos e taxas logísticas em tempo real para blindar restaurantes parceiros contra picos de inflação local. Articulando roadshows fechados com analistas de mercado (Relações com Investidores) para demonstrar o impacto do novo algoritmo na expansão das margens de lucro de longo prazo, combinado a um projeto de Brand Publishing focado em literacia econômica para donos de restaurantes, neutralizando possíveis fricções com o ecossistema parceiro.",
-"produtos": [
-"Relações com Investidores",
-"Brand Publishing",
-"Reputação Corporativa"
-],
-"link_noticia": "https://braziljournal.com/ifood-ia-precificacao-dinamica-b2b-inflacao-2026/",
-"data": "20/07/2026",
-"imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600"
-},
-{
-"tipo": "marca",
-"titulo": "",
-"agencia": "FleishmanHillard",
-"setor": "Finanças e Fintechs",
-"marcas": [
-"Stone"
-],
-"descricao": "A Stone confirmou a assinatura de uma aliança estratégica com marketplaces asiáticos para processamento instantâneo de pagamentos cross-border utilizando sua própria infraestrutura de stablecoins (moedas digitais pareadas), reduzindo custos cambiais em até 80%. Posicionando o CEO em Op-Eds estratégicos nos principais veículos financeiros internacionais para chancelar a vanguarda tecnológica da empresa, enquanto engatilhamos operações de Lobby junto ao Banco Central e CVM para garantir a conformidade regulatória desta integração antes dos grandes bancos comerciais.",
-"produtos": [
-"Op-Eds",
-"Lobby",
-"Public Affairs"
-],
-"link_noticia": "https://valor.globo.com/financas/noticia/2026/07/20/stone-alianca-cross-border-stablecoin-asia.ghtml",
-"data": "20/07/2026",
-"imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600"
-},
-{
-"tipo": "setor",
-"titulo": "Congresso acelera votação de 'Taxa de Impacto Hídrico' para datacenters de IA",
-"agencia": "FleishmanHillard",
-"setor": "Tecnologia e ESG",
-"marcas": [
-"Google",
-"AWS"
-],
-"descricao": "Avançou nas comissões do Senado um projeto de lei que cria uma taxação progressiva sobre o uso de água e energia por datacenters focados em treinar grandes modelos de inteligência artificial (LLMs), ameaçando os custos operacionais das big techs no país. Mobilizando uma coalizão setorial para intensivo Public Affairs em Brasília, focado em barrar o avanço tributário ao demonstrar perdas de competitividade, simultaneamente à ativação de Fóruns Proprietários com especialistas ambientais para repactuar a narrativa de eficiência hídrica da infraestrutura de nuvem.",
-"produtos": [
-"Public Affairs",
-"Fóruns Proprietários",
-"Gestão de Crise Avançada"
-],
-"link_noticia": "https://www.teletime.com.br/2026/07/20/senado-avanca-taxacao-hidrica-datacenters-ia/",
-"data": "20/07/2026",
-"imagem": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600"
-},
-{
-"tipo": "setor",
-"titulo": "Nova regulação europeia de rastreabilidade extrema entra em vigor com risco de sanções",
-"agencia": "In Press Porter Novelli",
-"setor": "ESG, Energia e Mineração",
-"marcas": [
-"Vale",
-"Bunge",
-"Yara"
-],
-"descricao": "A União Europeia implementou a fase final do seu marco regulatório de rastreabilidade de cadeia de suprimentos, passando a exigir relatórios diários cruzados com imagens de satélite para liberar a entrada de minério e commodities agrícolas em portos europeus. Orquestrando a publicação de papers técnicos (Brand Publishing) em hubs globais de ESG para atestar a conformidade antecipada e rigorosa das operações, suportado por uma célula de Gestão de Crise Avançada capaz de neutralizar campanhas de desinformação de ONGs protecionistas europeias.",
-"produtos": [
-"Brand Publishing",
-"Gestão de Crise Avançada",
-"Public Affairs"
-],
-"link_noticia": "https://exame.com/esg/uniao-europeia-inicia-rastreabilidade-diaria-commodities/",
-"data": "20/07/2026",
-"imagem": "https://images.unsplash.com/photo-1622322588320-96f2641e7fde?w=600"
-},
-{
-"tipo": "marca",
-"titulo": "",
-"agencia": "In Press Porter Novelli",
-"setor": "E-commerce, Varejo e Logística",
-"marcas": [
-"Ambev",
-"Mercado Livre"
-],
-"descricao": "Ambev e Mercado Livre anunciaram uma joint-venture logística para utilizar dark stores e mini-hubs logísticos ociosos nas madrugadas para acelerar entregas ultra-rápidas de produtos de supermercado em bairros periféricos e de alta densidade. Implementando um PR Stunt de guerrilha em comunidades fechadas do WhatsApp (Dark Social) com líderes comunitários para gerar buzz autêntico e exclusividade nas primeiras entregas gratuitas, atrelado a Op-Eds de C-levels sobre a revolução da capilaridade local na nova economia.",
-"produtos": [
-"Ativações em Dark Social",
-"PR Stunt",
-"Op-Eds"
-],
-"link_noticia": "https://neofeed.com.br/negocios/ambev-mercado-livre-joint-venture-dark-stores-2026/",
-"data": "20/07/2026",
-"imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600"
-},
-{
-"tipo": "setor",
-"titulo": "Crise de semicondutores e peças afeta manutenção de malha aérea global",
-"agencia": "In Press Porter Novelli",
-"setor": "Aviação e Turismo",
-"marcas": [
-"GOL/Smiles"
-],
-"descricao": "O recrudescimento nas tensões comerciais asiáticas causou um novo choque na cadeia de suprimentos de peças de reposição aeronáutica, forçando companhias aéreas latino-americanas a contingenciar rotas secundárias no pico da temporada turística. Estruturando um comitê estratégico de Gestão de Crise Avançada para alinhamento e mitigação regulatória contínua com a ANAC e Senacon (Lobby), enquanto distribuímos memorandos fechados para investidores institucionais (RI) detalhando as proteções financeiras e blindando o valor do equity.",
-"produtos": [
-"Gestão de Crise Avançada",
-"Lobby",
-"Relações com Investidores"
-],
-"link_noticia": "https://aeroin.net/crise-cadeia-suprimentos-ameaca-malha-aerea-julho/",
-"data": "20/07/2026",
-"imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600"
-},
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Tecnologia e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "O iFood iniciou hoje o piloto de um novo modelo de precificação dinâmica B2B orientado por IA generativa, que ajusta automaticamente os custos de insumos e taxas logísticas em tempo real para blindar restaurantes parceiros contra picos de inflação local. Articulando roadshows fechados com analistas de mercado (Relações com Investidores) para demonstrar o impacto do novo algoritmo na expansão das margens de lucro de longo prazo, combinado a um projeto de Brand Publishing focado em literacia econômica para donos de restaurantes, neutralizando possíveis fricções com o ecossistema parceiro.",
+        "produtos": [
+            "Relações com Investidores",
+            "Brand Publishing",
+            "Reputação Corporativa"
+        ],
+        "link_noticia": "https://braziljournal.com/ifood-ia-precificacao-dinamica-b2b-inflacao-2026/",
+        "data": "20/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "A Stone confirmou a assinatura de uma aliança estratégica com marketplaces asiáticos para processamento instantâneo de pagamentos cross-border utilizando sua própria infraestrutura de stablecoins (moedas digitais pareadas), reduzindo custos cambiais em até 80%. Posicionando o CEO em Op-Eds estratégicos nos principais veículos financeiros internacionais para chancelar a vanguarda tecnológica da empresa, enquanto engatilhamos operações de Lobby junto ao Banco Central e CVM para garantir a conformidade regulatória desta integração antes dos grandes bancos comerciais.",
+        "produtos": [
+            "Op-Eds",
+            "Lobby",
+            "Public Affairs"
+        ],
+        "link_noticia": "https://valor.globo.com/financas/noticia/2026/07/20/stone-alianca-cross-border-stablecoin-asia.ghtml",
+        "data": "20/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Congresso acelera votação de 'Taxa de Impacto Hídrico' para datacenters de IA",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia e ESG",
+        "marcas": [
+            "Google",
+            "AWS"
+        ],
+        "descricao": "Avançou nas comissões do Senado um projeto de lei que cria uma taxação progressiva sobre o uso de água e energia por datacenters focados em treinar grandes modelos de inteligência artificial (LLMs), ameaçando os custos operacionais das big techs no país. Mobilizando uma coalizão setorial para intensivo Public Affairs em Brasília, focado em barrar o avanço tributário ao demonstrar perdas de competitividade, simultaneamente à ativação de Fóruns Proprietários com especialistas ambientais para repactuar a narrativa de eficiência hídrica da infraestrutura de nuvem.",
+        "produtos": [
+            "Public Affairs",
+            "Fóruns Proprietários",
+            "Gestão de Crise Avançada"
+        ],
+        "link_noticia": "https://www.teletime.com.br/2026/07/20/senado-avanca-taxacao-hidrica-datacenters-ia/",
+        "data": "20/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Nova regulação europeia de rastreabilidade extrema entra em vigor com risco de sanções",
+        "agencia": "In Press Porter Novelli",
+        "setor": "ESG, Energia e Mineração",
+        "marcas": [
+            "Vale",
+            "Bunge",
+            "Yara"
+        ],
+        "descricao": "A União Europeia implementou a fase final do seu marco regulatório de rastreabilidade de cadeia de suprimentos, passando a exigir relatórios diários cruzados com imagens de satélite para liberar a entrada de minério e commodities agrícolas em portos europeus. Orquestrando a publicação de papers técnicos (Brand Publishing) em hubs globais de ESG para atestar a conformidade antecipada e rigorosa das operações, suportado por uma célula de Gestão de Crise Avançada capaz de neutralizar campanhas de desinformação de ONGs protecionistas europeias.",
+        "produtos": [
+            "Brand Publishing",
+            "Gestão de Crise Avançada",
+            "Public Affairs"
+        ],
+        "link_noticia": "https://exame.com/esg/uniao-europeia-inicia-rastreabilidade-diaria-commodities/",
+        "data": "20/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1622322588320-96f2641e7fde?w=600"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Ambev",
+            "Mercado Livre"
+        ],
+        "descricao": "Ambev e Mercado Livre anunciaram uma joint-venture logística para utilizar dark stores e mini-hubs logísticos ociosos nas madrugadas para acelerar entregas ultra-rápidas de produtos de supermercado em bairros periféricos e de alta densidade. Implementando um PR Stunt de guerrilha em comunidades fechadas do WhatsApp (Dark Social) com líderes comunitários para gerar buzz autêntico e exclusividade nas primeiras entregas gratuitas, atrelado a Op-Eds de C-levels sobre a revolução da capilaridade local na nova economia.",
+        "produtos": [
+            "Ativações em Dark Social",
+            "PR Stunt",
+            "Op-Eds"
+        ],
+        "link_noticia": "https://neofeed.com.br/negocios/ambev-mercado-livre-joint-venture-dark-stores-2026/",
+        "data": "20/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Crise de semicondutores e peças afeta manutenção de malha aérea global",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Aviação e Turismo",
+        "marcas": [
+            "GOL/Smiles"
+        ],
+        "descricao": "O recrudescimento nas tensões comerciais asiáticas causou um novo choque na cadeia de suprimentos de peças de reposição aeronáutica, forçando companhias aéreas latino-americanas a contingenciar rotas secundárias no pico da temporada turística. Estruturando um comitê estratégico de Gestão de Crise Avançada para alinhamento e mitigação regulatória contínua com a ANAC e Senacon (Lobby), enquanto distribuímos memorandos fechados para investidores institucionais (RI) detalhando as proteções financeiras e blindando o valor do equity.",
+        "produtos": [
+            "Gestão de Crise Avançada",
+            "Lobby",
+            "Relações com Investidores"
+        ],
+        "link_noticia": "https://aeroin.net/crise-cadeia-suprimentos-ameaca-malha-aerea-julho/",
+        "data": "20/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600"
+    },
     {
         "tipo": "marca",
         "titulo": "",
@@ -788,5 +788,114 @@
         "link_noticia": "https://www.cnnbrasil.com.br/economia/macro-legal-hidrogenio-verde-sancionado",
         "data": "24/10/2024",
         "imagem": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "O avanço do Projeto de Lei de regulamentação dos trabalhadores de aplicativos no Congresso Nacional intensifica o debate sobre os custos operacionais e o modelo de contratação das plataformas de delivery. Estruturando Dark Site Preparations com Q&As detalhados, simulações de impacto financeiro e posicionamentos jurídicos prontos para neutralizar ruídos de comunicação e responder de forma ágil à opinião pública assim que as votações avançarem no plenário.",
+        "produtos": [
+            "Dark Site de Contingência",
+            "Q&A Regulatório",
+            "Media Training de Crise"
+        ],
+        "link_noticia": "https://g1.globo.com/politica/noticia/2024/05/projeto-de-lei-dos-aplicativos-avanca-na-camara.ghtml",
+        "data": "24/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "A Stone Co. apresenta resultados financeiros robustos no primeiro trimestre de 2024, registrando forte crescimento no lucro líquido e expansão acelerada de sua base de clientes ativos de micro, pequenas e médias empresas. Posicionando Op-Eds Híbridos assinados pelo CEO em veículos Tier 1 de economia, combinados com impulsionamento estratégico no LinkedIn Pulse, para consolidar a autoridade da marca como principal parceira de crescimento do empreendedor brasileiro.",
+        "produtos": [
+            "Op-Ed Executivo",
+            "Campanha de LinkedIn Pulse",
+            "Press Briefing Financeiro"
+        ],
+        "link_noticia": "https://valor.globo.com/financas/noticia/2024/05/stone-tem-lucro-liquido-recorde-no-primeiro-trimestre.ghtml",
+        "data": "24/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "O processo de definição do novo CEO da Vale atrai intensa cobertura midiática e especulações sobre possíveis interferências políticas na governança da companhia. Implementando Shadow Banning Strategy focada em SEO positivo para empurrar notícias puramente especulativas e boatos de bastidores para as páginas secundárias dos motores de busca, priorizando a indexação de conteúdos oficiais sobre as práticas de governança corporativa da mineradora.",
+        "produtos": [
+            "SEO de Reputação",
+            "Monitoramento de Ruído Digital",
+            "Posicionamento de Governança"
+        ],
+        "link_noticia": "https://exame.com/negocios/vale-avanca-em-processo-de-sucessao-de-ceo/",
+        "data": "24/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Google"
+        ],
+        "descricao": "O Google enfrenta escrutínio global e críticas de usuários sobre a precisão das respostas geradas por sua nova ferramenta de busca integrada com inteligência artificial, o AI Overviews. Criando Fóruns Proprietários focados em ética de IA e curadoria de dados para reunir líderes de tecnologia, cientistas de dados e jornalistas especializados, posicionando a marca como líder responsável e transparente na evolução dos motores de busca.",
+        "produtos": [
+            "Fórum Proprietário de IA",
+            "Mesa Redonda com Key Opinion Leaders",
+            "Whitepaper de Ética em IA"
+        ],
+        "link_noticia": "https://tecnoblog.net/noticias/google-ajusta-respostas-de-ia-apos-erros-bizarros-nas-buscas/",
+        "data": "24/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Aviação e Turismo",
+        "marcas": [
+            "GOL"
+        ],
+        "descricao": "A GOL avança em suas negociações complexas de reestruturação de frota e captação de novos recursos sob a proteção do Capítulo 11 da Lei de Falências dos Estados Unidos. Estruturando Dark Site Preparations com esclarecimentos detalhados sobre a normalidade das operações, segurança dos voos e manutenção integral dos benefícios do programa Smiles para mitigar o risco de evasão de clientes e pânico no mercado consumidor.",
+        "produtos": [
+            "Dark Site de Reestruturação",
+            "Q&A para Clientes Smiles",
+            "Plano de Comunicação de Crise"
+        ],
+        "link_noticia": "https://www.infomoney.com.br/negocios/gol-apresenta-plano-de-reestruturacao-financeira-nos-eua/",
+        "data": "24/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Isenção de Imposto de Importação e a Taxação do E-commerce Internacional",
+        "agencia": "FleishmanHillard",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Shein",
+            "Mercado Livre"
+        ],
+        "descricao": "O debate no Congresso Nacional sobre o fim da isenção tributária para compras internacionais de até US$ 50 acirra a disputa entre varejistas nacionais e plataformas globais de e-commerce. Executando PR Stunt em Dark Social através do compartilhamento controlado de estudos de impacto econômico e social em comunidades fechadas de criadores de conteúdo e influenciadores de finanças para gerar mobilização orgânica contra o retrocesso no poder de compra do consumidor.",
+        "produtos": [
+            "Mapeamento de Dark Social",
+            "Estudo de Impacto Setorial",
+            "Advocacy Digital"
+        ],
+        "link_noticia": "https://www12.senado.leg.br/noticias/materias/2024/05/fim-de-isencao-para-compras-de-ate-us-50-divide-opinioes-no-senado",
+        "data": "24/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&w=800&q=80"
     }
 ]
