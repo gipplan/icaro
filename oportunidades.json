@@ -5,11 +5,11 @@
     "agencia": "In Press Porter Novelli",
     "setor": "E-commerce, Varejo e Logística",
     "marcas": ["iFood"],
-    "descricao": "Fato: O debate sobre a regulamentação dos trabalhadores de aplicativos avança no Congresso, pressionando o iFood a se posicionar sobre direitos trabalhistas e custos operacionais. Tática: Executando Op-Eds Híbridos assinados pelo CEO no Valor Econômico e impulsionados via LinkedIn Pulse para defender o modelo de flexibilidade com proteção social, mitigando riscos de percepção negativa sobre precarização do trabalho e protegendo a reputação institucional da marca junto a investidores e reguladores.",
-    "produtos": ["Op-Eds Híbridos", "LinkedIn Pulse Amplification"],
-    "link_noticia": "https://g1.globo.com/economia/noticia/2024/05/24/regulamentacao-de-trabalhadores-de-aplicativo-avanca.ghtml",
+    "descricao": "Fato: O iFood anunciou a expansão de suas ferramentas de Inteligência Artificial para apoiar a gestão de vendas de pequenos e médios restaurantes parceiros. Tática: Estruturando um Fórum Proprietário focado em Inteligência Artificial aplicada ao pequeno varejo alimentar, posicionando o iFood como o principal viabilizador tecnológico do setor e mitigando ruídos sobre taxas de comissão ao gerar valor direto para o negócio dos parceiros.",
+    "produtos": ["Fórum Proprietário", "Thought Leadership", "Relações com a Mídia"],
+    "link_noticia": "https://exame.com.br/tecnologia/ifood-expande-uso-de-inteligencia-artificial-para-restaurantes/",
     "data": "24/05/2024",
-    "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
+    "imagem": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
   },
   {
     "tipo": "marca",
@@ -17,11 +17,11 @@
     "agencia": "FleishmanHillard",
     "setor": "Finanças e Fintechs",
     "marcas": ["Stone"],
-    "descricao": "Fato: Stone consolida sua estratégia de ecossistema integrado de software e serviços financeiros para PMEs, buscando se diferenciar na acirrada guerra das maquininhas. Tática: Estruturando Fóruns Proprietários focados em produtividade e digitalização de pequenos negócios para posicionar a Stone como parceira estratégica de crescimento e impulsionar a adoção de suas soluções integradas de gestão, descolando a marca da mera disputa por taxas de transação.",
-    "produtos": ["Fóruns Proprietários", "C-Level Positioning"],
-    "link_noticia": "https://valor.globo.com/financas/noticia/2024/05/24/stone-avanca-em-servicos-financeiros.ghtml",
+    "descricao": "Fato: A Stone registrou forte crescimento no primeiro trimestre de 2024, impulsionada pela expansão de sua carteira de crédito e soluções de banking para micro e pequenas empresas. Tática: Posicionando o CEO da Stone através de Op-Eds Híbridos em veículos de finanças de Tier 1 integrados a uma campanha de engajamento no LinkedIn Pulse, demonstrando como o acesso ao microcrédito inteligente impulsiona o PIB local e blindando a marca contra críticas sobre taxas de juros do setor.",
+    "produtos": ["Op-Eds Híbridos", "Thought Leadership", "Executive Communications"],
+    "link_noticia": "https://valor.globo.com/financas/noticia/2024/05/stone-tem-lucro-liquido-no-primeiro-trimestre.ghtml",
     "data": "24/05/2024",
-    "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d"
+    "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
   },
   {
     "tipo": "marca",
@@ -29,46 +29,46 @@
     "agencia": "In Press Porter Novelli",
     "setor": "Energia, Mineração e Siderurgia (ESG)",
     "marcas": ["Vale"],
-    "descricao": "Fato: A definição do novo CEO da Vale atrai intensa atenção do mercado financeiro e de órgãos reguladores, gerando especulações na imprensa sobre governança corporativa. Tática: Preparando Dark Site Preparations com Q&As detalhados sobre governança e transição de liderança para conter vazamentos e especulações antes do anúncio oficial ao mercado, garantindo a estabilidade das ações e a confiança dos acionistas.",
-    "produtos": ["Dark Site Preparations", "Media Training de Crise"],
-    "link_noticia": "https://exame.com/negocios/sucessao-na-vale-o-que-esta-em-jogo/",
+    "descricao": "Fato: A Vale enfrenta forte escrutínio público e especulações de mercado sobre o processo de sucessão de seu CEO e as negociações do acordo de Mariana. Tática: Elaborando Dark Site Preparations com Q&As detalhados sobre governança corporativa e critérios de sucessão do CEO, antecipando-se a vazamentos especulativos na imprensa e garantindo uma resposta ágil que proteja o valor das ações na Bolsa.",
+    "produtos": ["Dark Site Preparations", "Gestão de Crise", "Media Training"],
+    "link_noticia": "https://oglobo.globo.com/economia/noticia/2024/05/vale-sucessao-de-ceo-entra-em-fase-decisiva.ghtml",
     "data": "24/05/2024",
-    "imagem": "https://images.unsplash.com/photo-1516937941344-00b4e0337589"
+    "imagem": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80"
   },
   {
     "tipo": "marca",
     "titulo": "",
+    "agencia": "In Press Porter Novelli",
+    "setor": "E-commerce, Varejo e Logística",
+    "marcas": ["Mercado Livre"],
+    "descricao": "Fato: O Mercado Livre anunciou um investimento recorde de R$ 23 bilhões no Brasil para 2024, focando na expansão de sua malha logística e contratação de novos colaboradores. Tática: Orquestrando um PR Stunt em Dark Social através do vazamento controlado de novas funcionalidades logísticas ultra-rápidas em grupos fechados de e-commerce no WhatsApp, gerando buzz orgânico e senso de exclusividade antes do anúncio oficial ao mercado de capitais.",
+    "produtos": ["PR Stunt em Dark Social", "Relações Públicas Digitais", "Influencer Engagement"],
+    "link_noticia": "https://g1.globo.com/economia/noticia/2024/04/mercado-livre-anuncia-investimento-recorde-de-r-23-bilhoes-no-brasil.ghtml",
+    "data": "24/05/2024",
+    "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "tipo": "setor",
+    "titulo": "Impacto da IA Generativa na Busca e no Tráfego de Publishers",
     "agencia": "FleishmanHillard",
     "setor": "Tecnologia, IA e Eletroeletrônicos",
     "marcas": ["Google"],
-    "descricao": "Fato: O Google acelera a implementação de recursos de IA generativa no Brasil, enfrentando questionamentos da ANPD sobre o uso de dados locais para treinamento de modelos. Tática: Implementando uma Shadow Banning Strategy focada em SEO positivo para destacar os compromissos de privacidade e segurança de dados da marca, empurrando críticas regulatórias para páginas secundárias de busca e preservando a confiança do usuário final.",
-    "produtos": ["Shadow Banning Strategy", "SEO de Reputação"],
-    "link_noticia": "https://tecnoblog.net/noticias/google-ia-generativa-brasil-anpd/",
+    "descricao": "Fato: O Google lançou os 'AI Overviews' em sua ferramenta de busca, gerando forte preocupação entre publishers e portais de notícias sobre a queda drástica no tráfego orgânico de referência. Tática: Desenvolvendo uma estratégia de Brand Publishing para criar um hub de conteúdo independente focado no ecossistema de criadores, garantindo tráfego direto e autoridade editorial própria sem depender exclusivamente das flutuações de algoritmos de busca tradicionais.",
+    "produtos": ["Brand Publishing", "Content Strategy", "SEO PR"],
+    "link_noticia": "https://techcrunch.com/2024/05/14/google-io-2024-ai-search-overviews/",
     "data": "24/05/2024",
-    "imagem": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd"
+    "imagem": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?auto=format&fit=crop&w=800&q=80"
   },
   {
     "tipo": "setor",
-    "titulo": "Regulamentação da Inteligência Artificial no Brasil (PL 2338)",
-    "agencia": "Ambas",
-    "setor": "Tecnologia, IA e Eletroeletrônicos",
-    "marcas": ["Google", "AWS", "Cisco"],
-    "descricao": "Fato: O avanço do PL 2338/23 no Senado cria regras rígidas para o uso de IA, impondo sanções pesadas a empresas de tecnologia. Tática: Criando um Brand Publishing focado em ética tecnológica e inovação responsável para educar o mercado e legisladores, posicionando as marcas parceiras como líderes em conformidade antes da aprovação da lei para mitigar impactos operacionais futuros.",
-    "produtos": ["Brand Publishing", "Advocacy Editorial"],
-    "link_noticia": "https://www12.senado.leg.br/noticias/materias/2024/05/24/pl-da-inteligencia-artificial-avanca-no-senado",
-    "data": "24/05/2024",
-    "imagem": "https://images.unsplash.com/photo-1677442136019-21780efad99a"
-  },
-  {
-    "tipo": "setor",
-    "titulo": "Reestruturação do Setor Aéreo e Impacto no Turismo Nacional",
+    "titulo": "Consolidação e Reestruturação no Setor de Aviação Civil",
     "agencia": "In Press Porter Novelli",
     "setor": "Aviação e Turismo",
-    "marcas": ["GOL/Smiles"],
-    "descricao": "Fato: A reestruturação financeira da GOL sob o Chapter 11 e a flutuação do preço do combustível de aviação pressionam o setor de turismo brasileiro. Tática: Planejando um PR Stunt em Dark Social através de vazamentos controlados de planos de expansão de rotas regionais em grupos fechados de turismo para gerar buzz positivo e percepção de estabilidade operacional, estimulando a compra antecipada de passagens.",
-    "produtos": ["PR Stunt em Dark Social", "Vazamento Controlado"],
-    "link_noticia": "https://panrotas.com.br/aviacao/empresas/2024/05/gol-apresenta-plano-de-reestruturacao/",
+    "marcas": ["GOL"],
+    "descricao": "Fato: A GOL Linhas Aéreas avança em seu processo de reestruturação financeira sob o Chapter 11 nos EUA, enquanto o mercado especula sobre uma possível fusão ou acordo de codeshare ampliado com a Azul. Tática: Implementando uma Shadow Banning Strategy focada em SEO positivo para diluir o impacto de notícias sobre a reestruturação financeira nas buscas orgânicas, priorizando conteúdos sobre a expansão de rotas regionais e parcerias para manter a confiança do consumidor final.",
+    "produtos": ["Shadow Banning Strategy", "SEO de Reputação", "Comunicação de Crise"],
+    "link_noticia": "https://www1.folha.uol.com.br/mercado/2024/05/gol-e-azul-anunciam-acordo-de-codeshare-para-compartilhar-voos.shtml",
     "data": "24/05/2024",
-    "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05"
+    "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
   }
 ]
