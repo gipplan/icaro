@@ -1,4 +1,116 @@
 [
+{
+"tipo": "marca",
+"titulo": "",
+"agencia": "In Press Porter Novelli",
+"setor": "Tecnologia e Logística",
+"marcas": [
+"iFood"
+],
+"descricao": "O iFood iniciou hoje o piloto de um novo modelo de precificação dinâmica B2B orientado por IA generativa, que ajusta automaticamente os custos de insumos e taxas logísticas em tempo real para blindar restaurantes parceiros contra picos de inflação local. Articulando roadshows fechados com analistas de mercado (Relações com Investidores) para demonstrar o impacto do novo algoritmo na expansão das margens de lucro de longo prazo, combinado a um projeto de Brand Publishing focado em literacia econômica para donos de restaurantes, neutralizando possíveis fricções com o ecossistema parceiro.",
+"produtos": [
+"Relações com Investidores",
+"Brand Publishing",
+"Reputação Corporativa"
+],
+"link_noticia": "https://braziljournal.com/ifood-ia-precificacao-dinamica-b2b-inflacao-2026/",
+"data": "20/07/2026",
+"imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600"
+},
+{
+"tipo": "marca",
+"titulo": "",
+"agencia": "FleishmanHillard",
+"setor": "Finanças e Fintechs",
+"marcas": [
+"Stone"
+],
+"descricao": "A Stone confirmou a assinatura de uma aliança estratégica com marketplaces asiáticos para processamento instantâneo de pagamentos cross-border utilizando sua própria infraestrutura de stablecoins (moedas digitais pareadas), reduzindo custos cambiais em até 80%. Posicionando o CEO em Op-Eds estratégicos nos principais veículos financeiros internacionais para chancelar a vanguarda tecnológica da empresa, enquanto engatilhamos operações de Lobby junto ao Banco Central e CVM para garantir a conformidade regulatória desta integração antes dos grandes bancos comerciais.",
+"produtos": [
+"Op-Eds",
+"Lobby",
+"Public Affairs"
+],
+"link_noticia": "https://valor.globo.com/financas/noticia/2026/07/20/stone-alianca-cross-border-stablecoin-asia.ghtml",
+"data": "20/07/2026",
+"imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600"
+},
+{
+"tipo": "setor",
+"titulo": "Congresso acelera votação de 'Taxa de Impacto Hídrico' para datacenters de IA",
+"agencia": "FleishmanHillard",
+"setor": "Tecnologia e ESG",
+"marcas": [
+"Google",
+"AWS"
+],
+"descricao": "Avançou nas comissões do Senado um projeto de lei que cria uma taxação progressiva sobre o uso de água e energia por datacenters focados em treinar grandes modelos de inteligência artificial (LLMs), ameaçando os custos operacionais das big techs no país. Mobilizando uma coalizão setorial para intensivo Public Affairs em Brasília, focado em barrar o avanço tributário ao demonstrar perdas de competitividade, simultaneamente à ativação de Fóruns Proprietários com especialistas ambientais para repactuar a narrativa de eficiência hídrica da infraestrutura de nuvem.",
+"produtos": [
+"Public Affairs",
+"Fóruns Proprietários",
+"Gestão de Crise Avançada"
+],
+"link_noticia": "https://www.teletime.com.br/2026/07/20/senado-avanca-taxacao-hidrica-datacenters-ia/",
+"data": "20/07/2026",
+"imagem": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600"
+},
+{
+"tipo": "setor",
+"titulo": "Nova regulação europeia de rastreabilidade extrema entra em vigor com risco de sanções",
+"agencia": "In Press Porter Novelli",
+"setor": "ESG, Energia e Mineração",
+"marcas": [
+"Vale",
+"Bunge",
+"Yara"
+],
+"descricao": "A União Europeia implementou a fase final do seu marco regulatório de rastreabilidade de cadeia de suprimentos, passando a exigir relatórios diários cruzados com imagens de satélite para liberar a entrada de minério e commodities agrícolas em portos europeus. Orquestrando a publicação de papers técnicos (Brand Publishing) em hubs globais de ESG para atestar a conformidade antecipada e rigorosa das operações, suportado por uma célula de Gestão de Crise Avançada capaz de neutralizar campanhas de desinformação de ONGs protecionistas europeias.",
+"produtos": [
+"Brand Publishing",
+"Gestão de Crise Avançada",
+"Public Affairs"
+],
+"link_noticia": "https://exame.com/esg/uniao-europeia-inicia-rastreabilidade-diaria-commodities/",
+"data": "20/07/2026",
+"imagem": "https://images.unsplash.com/photo-1622322588320-96f2641e7fde?w=600"
+},
+{
+"tipo": "marca",
+"titulo": "",
+"agencia": "In Press Porter Novelli",
+"setor": "E-commerce, Varejo e Logística",
+"marcas": [
+"Ambev",
+"Mercado Livre"
+],
+"descricao": "Ambev e Mercado Livre anunciaram uma joint-venture logística para utilizar dark stores e mini-hubs logísticos ociosos nas madrugadas para acelerar entregas ultra-rápidas de produtos de supermercado em bairros periféricos e de alta densidade. Implementando um PR Stunt de guerrilha em comunidades fechadas do WhatsApp (Dark Social) com líderes comunitários para gerar buzz autêntico e exclusividade nas primeiras entregas gratuitas, atrelado a Op-Eds de C-levels sobre a revolução da capilaridade local na nova economia.",
+"produtos": [
+"Ativações em Dark Social",
+"PR Stunt",
+"Op-Eds"
+],
+"link_noticia": "https://neofeed.com.br/negocios/ambev-mercado-livre-joint-venture-dark-stores-2026/",
+"data": "20/07/2026",
+"imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600"
+},
+{
+"tipo": "setor",
+"titulo": "Crise de semicondutores e peças afeta manutenção de malha aérea global",
+"agencia": "In Press Porter Novelli",
+"setor": "Aviação e Turismo",
+"marcas": [
+"GOL/Smiles"
+],
+"descricao": "O recrudescimento nas tensões comerciais asiáticas causou um novo choque na cadeia de suprimentos de peças de reposição aeronáutica, forçando companhias aéreas latino-americanas a contingenciar rotas secundárias no pico da temporada turística. Estruturando um comitê estratégico de Gestão de Crise Avançada para alinhamento e mitigação regulatória contínua com a ANAC e Senacon (Lobby), enquanto distribuímos memorandos fechados para investidores institucionais (RI) detalhando as proteções financeiras e blindando o valor do equity.",
+"produtos": [
+"Gestão de Crise Avançada",
+"Lobby",
+"Relações com Investidores"
+],
+"link_noticia": "https://aeroin.net/crise-cadeia-suprimentos-ameaca-malha-aerea-julho/",
+"data": "20/07/2026",
+"imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600"
+},
     {
         "tipo": "marca",
         "titulo": "",
