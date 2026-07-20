@@ -92,10 +92,10 @@
                     </div>
                 </div>
                 
-                <!-- Barra de Filtros (Agora com 4 elementos) -->
+                <!-- Barra de Filtros -->
                 <div class="flex flex-wrap gap-3 bg-white/10 backdrop-blur-md p-3 rounded-xl w-full max-w-5xl justify-center items-center border border-white/10 mt-8 relative z-40">
                     
-                    <!-- NOVO FILTRO: Origem da Oportunidade (Visões) -->
+                    <!-- Filtro: Origem da Oportunidade (Visões) -->
                     <div class="relative inline-block text-left w-full sm:w-auto min-w-[180px] z-50">
                         <button id="dropdownBtnTipos" onclick="toggleDropdown(event, 'dropdownMenuTipos')" class="w-full bg-white/15 text-white text-xs p-2.5 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
                             <span id="dropdownLabelTipos" class="truncate font-bold">Visão: Todas</span>
@@ -325,15 +325,27 @@
         function calcularDiferencaDias(dataStr) {
             if (!dataStr) return -1;
             try {
-                const partes = dataStr.split('/');
-                const dataCard = new Date(partes[2], partes[1] - 1, partes[0]);
+                let dia, mes, ano;
+                
+                if (dataStr.includes('-') && dataStr.split('-')[0].length === 4) {
+                    [ano, mes, dia] = dataStr.split('-');
+                } else {
+                    const partes = dataStr.split(/[\/\-]/);
+                    dia = partes[0];
+                    mes = partes[1];
+                    ano = partes[2];
+                }
+
+                const dataCard = new Date(parseInt(ano), parseInt(mes) - 1, parseInt(dia));
                 const dataHoje = new Date();
                 
                 dataCard.setHours(0,0,0,0);
                 dataHoje.setHours(0,0,0,0);
                 
                 const msPorDia = 24 * 60 * 60 * 1000;
-                return Math.floor((dataHoje - dataCard) / msPorDia);
+                const diferenca = Math.round((dataHoje - dataCard) / msPorDia);
+                
+                return diferenca < 0 ? 0 : diferenca;
             } catch (e) {
                 return -1;
             }
@@ -415,12 +427,10 @@
                 const diferencaDias = calcularDiferencaDias(item.data);
                 const classeBordaCard = determinarBordaCard(diferencaDias);
 
-                // Lógica Dinâmica de Título e Tag
                 const tagSuperior = isMacro ? 'ALERTA MACRO' : (item.agencia === 'In Press Porter Novelli' ? 'IN PRESS' : 'FLEISHMANHILLARD');
                 const corTagSuperior = isMacro ? 'bg-inpress-red text-white' : 'bg-inpress-dark/95 text-white';
                 const tituloCard = (isMacro && item.titulo) ? item.titulo : marcasTexto;
                 
-                // Exibe as marcas ativáveis apenas se for um alerta Macro
                 const blocoMarcasMacro = isMacro ? `
                     <div class="mt-2 mb-1 p-2 bg-stone-100 rounded border border-stone-200">
                         <span class="text-[9px] font-bold text-stone-500 uppercase tracking-widest block mb-0.5">Marcas Ativáveis:</span>
@@ -428,7 +438,6 @@
                     </div>
                 ` : '';
 
-                // Busca inteligente de imagem
                 const marcaPrincipal = item.marcas && item.marcas.length > 0 ? limparMarca(item.marcas[0]) : "business";
                 const seedMarca = Math.abs(gerarHash(marcaPrincipal)) % 1000;
                 const setorLimpo = item.setor ? item.setor.toLowerCase().split(' ')[0].replace(/[^a-z]/g, '') : "office";
@@ -508,7 +517,6 @@
         }
 
         function filtrarGeral() {
-            // Lógica do novo filtro de Tipos (Visões)
             const checkboxesTipos = Array.from(document.querySelectorAll('.filtro-tipo-checkbox:checked'));
             const tiposSelecionados = checkboxesTipos.map(cb => cb.value);
             
@@ -562,10 +570,8 @@
             }
 
             const dadosFiltrados = dadosOportunidades.filter(item => {
-                // Filtro de Visão (Marcas vs Macro)
                 let bateTipo = true;
                 if (tiposSelecionados.length === 1) {
-                    // Se apenas "marca" ou "setor" estiver selecionado, filtra por ele.
                     bateTipo = item.tipo === tiposSelecionados[0] || (!item.tipo && tiposSelecionados[0] === 'marca'); 
                 }
 
@@ -584,6 +590,8 @@
 
                 return bateTipo && bateAgencia && bateCliente && bateServico && bateTempo;
             });
+
+            dadosFiltrados.sort((a, b) => calcularDiferencaDias(a.data) - calcularDiferencaDias(b.data));
 
             renderizarTimeline(dadosFiltrados);
         }
