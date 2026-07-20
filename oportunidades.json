@@ -71,4 +71,446 @@
     "data": "24/05/2024",
     "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
   }
+      {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Mineração",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "Em 14/07/2026, a Vale divulgou fato relevante confirmando que descartou o investimento no Sistema Centro-Oeste após avaliação de governança, desmentindo rumores de recompra dos irmãos Batista. O gatilho é ideal para assessoria de imprensa focada em governança e blindagem reputacional.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Posicionamento Executivo"
+        ],
+        "link_noticia": "https://www.estadao.com.br/economia/vale-diz-que-descartou-investimento-em-minas-de-ferro-dos-irmaos-batista-apos-avaliacao/",
+        "data": "16/07/2026",
+        "imagem": "https://media.investnews.com.br/uploads/2020/02/vale3.jpg"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia",
+        "marcas": [
+            "Google"
+        ],
+        "descricao": "Em 16/07/2026, reguladores da União Europeia anunciaram que o Google deve abrir 11 recursos do Android para concorrentes como OpenAI até 2027. O impacto exige estratégias robustas de relações governamentais e posicionamento de porta-vozes para gerenciar a percepção regulatória global.",
+        "produtos": [
+            "Relações Governamentais",
+            "Posicionamento Executivo",
+            "Assessoria de Imprensa"
+        ],
+        "link_noticia": "https://g1.globo.com/tecnologia/noticia/2026/07/16/ue-obriga-google-a-abrir-servicos-para-openai-e-outras-concorrentes-entenda.ghtml",
+        "data": "16/07/2026",
+        "imagem": "https://static.mercadonegro.pe/wp-content/uploads/2021/10/27163053/Google-reporta-fuertes-ganancias-con-su-empresa-matriz-Alphabet-Inc.jpg"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Serviços Financeiros",
+        "marcas": [
+            "Mercado Pago"
+        ],
+        "descricao": "Em 15/07/2026, o Mercado Pago anunciou a expansão de sua vertical de seguros integrados à rotina financeira via Inteligência Artificial, em parceria com Porto e Chubb. O gatilho factual viabiliza forte atuação de assessoria de imprensa e campanhas com foco em tecnologia e inovação no setor.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Campanha",
+            "Presença Digital"
+        ],
+        "link_noticia": "https://www.segs.com.br/seguros/mercado-livre-anuncia-venda-de-seguro-atraves-da-ia",
+        "data": "16/07/2026",
+        "imagem": "https://gironews.com/wp-content/uploads/2024/06/mlcd-925x400.jpg"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Tecnologia",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "A Secretaria Nacional de Direitos Digitais do MJSP reclassificou a indicação etária do iFood de 18 para 14 anos, reconhecendo as travas de segurança robustas da plataforma contra o acesso de menores a itens adultos. O fato é ideal para reforçar o posicionamento de conformidade e ESG da marca.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Relações Governamentais",
+            "Presença Digital"
+        ],
+        "link_noticia": "https://congressoemfoco.uol.com.br/area/pais/ministerio-da-justica-reduz-classificacao-indicativa-do-ifood-para-14-anos/",
+        "data": "16/07/2026",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1NkUlsx_S1tq6AO267B1DFnVsiwbR5sdp5_WL8wJwc7P7mw239UHyUmQk&s=10"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Saúde",
+        "marcas": [
+            "Bayer"
+        ],
+        "descricao": "A Bayer firmou acordo de €3 bilhões com a Apollo para venda de participação minoritária na divisão de contraceptivos (LARC). A captação visa cobrir liquidez e litígios, enquanto mantém o controle operacional, exigindo comunicação estratégica transparente para investidores e público interno.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Comunicação Interna",
+            "Posicionamento Executivo"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/bayer-vende-participacao-em-empresa-de-anticoncepcionais-por-r-175-bilhoes.shtml",
+        "data": "16/07/2026",
+        "imagem": "https://www.bloomberglinea.com.br/resizer/v2/D3CMJ5FGNVGBZETJNFMWRXNRZA.jpeg?auth=c68e64e842838b1d529a33daffdddd998ad6f3e2345fdc9f95e9d894c5035a58"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "E-commerce",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "A China aprovou o IPO da Shein em Hong Kong, abrindo caminho para uma listagem de até US$ 50 bilhões. O movimento eleva a pressão competitiva no varejo nacional de moda e demanda posicionamento institucional sólido para consolidar sua reputação corporativa e expansão no mercado brasileiro.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Presença Digital",
+            "Relações Governamentais"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/shein-obtem-a-aprovacao-da-china-para-ipo-em-hong-kong.shtml",
+        "data": "16/07/2026",
+        "imagem": "https://weethub.com/wp-content/uploads/2023/07/blogpost.png"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Anatel avança com taxação de redes para Big Techs (Fair Share)",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Telecomunicações, Tecnologia e Mídia",
+        "marcas": [
+            "Mercado Livre",
+            "Samsung",
+            "iFood"
+        ],
+        "descricao": "A Anatel abriu hoje (15) a consulta pública decisiva para obrigar grandes plataformas digitais a pagarem pelo uso da infraestrutura das operadoras de telecomunicações. Estruturar com urgência um comitê de crise e public affairs para desenhar a narrativa de defesa do ecossistema digital, mostrando como a taxação pode ser repassada ao consumidor final.",
+        "produtos": [
+            "Public Affairs",
+            "Gestão de Crise",
+            "Relações Governamentais"
+        ],
+        "link_noticia": "https://www.teletime.com.br/telecom/fair-share-anatel-prepara-consulta-publica-sobre-o-tema/",
+        "data": "15/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Nova lei europeia de rastreabilidade entra em vigor",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Agronegócio e Food Service",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "A partir de hoje, a União Europeia passa a barrar a importação de commodities brasileiras que não comprovem origem livre de desmatamento até 2020. Acionar imediatamente a assessoria de imprensa para divulgar relatórios de sustentabilidade e rastreabilidade da cadeia de suprimentos dos clientes, separando a marca dos produtores irregulares.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Auditoria de Risco",
+            "Produção de Conteúdo"
+        ],
+        "link_noticia": "https://agenciabrasil.ebc.com.br/economia/noticia/lei-antidesmatamento-europeia-afeta-exportacoes-brasileiras",
+        "data": "15/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=600"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Atraso na Fase 2 do Drex gera insegurança nas Fintechs",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Tecnologia",
+        "marcas": [
+            "Stone",
+            "Mercado Livre"
+        ],
+        "descricao": "O Banco Central anunciou hoje um novo adiamento para o lançamento comercial do Drex (Real Digital) devido a desafios de privacidade de dados nos testes com consórcios bancários. Oportunidade para posicionar os executivos das empresas clientes em artigos de opinião (Op-Eds) e entrevistas sobre os desafios da infraestrutura digital e o futuro dos pagamentos.",
+        "produtos": [
+            "Posicionamento Executivo",
+            "Assessoria de Imprensa",
+            "Produção de Conteúdo"
+        ],
+        "link_noticia": "https://www.infomoney.com.br/mercados/banco-central-adia-fase-2-do-drex-real-digital/",
+        "data": "15/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Finanças e E-commerce",
+        "marcas": [
+            "Mercado Livre",
+            "Mercado Pago"
+        ],
+        "descricao": "O Mercado Pago anunciou no dia 15 de julho de 2026 a ampliação de sua oferta de seguros baseados em inteligência artificial (IA) para simplificar a contratação e potencializar seu ecossistema. Um gatilho para ações de PR com foco em inovação tecnológica.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Campanha",
+            "Mídia"
+        ],
+        "link_noticia": "https://cqcs.com.br/noticia/mercado-livre-anuncia-venda-de-seguro-atraves-da-ia/",
+        "data": "15/07/2026",
+        "imagem": "https://mambadigital.com.br/wp-content/webp-express/webp-images/uploads/2024/05/o-guia-completo-para-vender-no-mercado-livre.jpg.webp"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Saúde e Agronegócio",
+        "marcas": [
+            "Bayer"
+        ],
+        "descricao": "No dia 10 de julho de 2026, a Bayer anunciou um acordo de 3 bilhões de euros para vender sua participação em uma unidade de saúde à Apollo Global, visando desalavancagem e recuperação financeira. Transação corporativa de grande impacto global para o posicionamento da holding alemã.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Posicionamento Executivo"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/bayer-vende-participacao-em-empresa-de-anticoncepcionais-por-r-175-bilhoes.shtml",
+        "data": "15/07/2026",
+        "imagem": "https://cloudfront-us-east-1.images.arcpublishing.com/bloomberglinea/2K3F2AID4VEWFAIYXR53Z4D7EI.jpeg"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Avanço do Marco Legal da IA (PL 2338/23)",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Tecnologia, Inovação e Eletroeletrônicos",
+        "marcas": [
+            "Samsung",
+            "Mercado Livre",
+            "iFood"
+        ],
+        "descricao": "O Senado Federal avançou na estruturação da comissão para votação do Marco Regulatório da Inteligência Artificial no Brasil, focando em direitos autorais e governança algorítmica. Estruturar posicionamento executivo (Thought Leadership) focado em inovação responsável e compliance, antecipando o debate regulatório na imprensa de negócios antes que o texto vá a plenário.",
+        "produtos": [
+            "Relações Governamentais",
+            "Posicionamento Executivo",
+            "Assessoria de Imprensa"
+        ],
+        "link_noticia": "[https://www12.senado.leg.br/noticias/materias/2024/05/23/projeto-sobre-inteligencia-artificial-e-tema-de-debate-no-senado](https://www12.senado.leg.br/noticias/materias/2024/05/23/projeto-sobre-inteligencia-artificial-e-tema-de-debate-no-senado)",
+        "data": "14/07/2026",
+        "imagem": "https://www.fecomercio.com.br/upload/img/2024/04/15/661d39524562b-64cbf79e13c23_portal_artigoia_exemplosinternacionais.jpg?w=600"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Impacto na Logística Cross-border Asiática",
+        "agencia": "FleishmanHillard",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Shein",
+            "Mercado Livre"
+        ],
+        "descricao": "O Governo publicou novas diretrizes de fiscalização aduaneira e tributação que impactam diretamente os custos logísticos de remessas internacionais e a competitividade do varejo local. Preparar os porta-vozes para defesa institucional e elaborar materiais de Q&A para a imprensa, blindando a narrativa sobre geração de empregos locais e democratização do consumo.",
+        "produtos": [
+            "Gestão de Crise",
+            "Relações Governamentais",
+            "Assessoria de Imprensa"
+        ],
+        "link_noticia": "[https://agenciabrasil.ebc.com.br/economia/noticia/2024-06/camara-aprova-taxacao-de-20-para-compras-internacionais-de-ate-us-50](https://agenciabrasil.ebc.com.br/economia/noticia/2024-06/camara-aprova-taxacao-de-20-para-compras-internacionais-de-ate-us-50)",
+        "data": "14/07/2026",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwwItkwNuscAv1liDHwaq4wzW6dcv4Ztx3icLQRygXh5FtewpAstUeleo&s=10?w=600"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Aperto Regulatório da CVM sobre 'Greenwashing'",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Siderurgia e Consumo",
+        "marcas": [
+            "Vale",
+            "Ambev"
+        ],
+        "descricao": "A CVM intensificou as resoluções de transparência sobre fundos e empresas que divulgam falsas metas de descarbonização, preparando multas para casos de greenwashing. Realizar auditoria imediata de risco reputacional nos relatórios de sustentabilidade dos clientes e criar campanhas de PR focadas em dados comprováveis e metas ESG factíveis.",
+        "produtos": [
+            "Auditoria de Risco",
+            "Campanha Institucional",
+            "Relações com Investidores"
+        ],
+        "link_noticia": "[https://www.cvm.gov.br/noticias/arquivos/2023/20231024-1.html](https://www.cvm.gov.br/noticias/arquivos/2023/20231024-1.html)",
+        "data": "13/07/2026",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxL1KhdVOwkrs7F2_U1MFvIY0JyjRuxY3vJVx-YbIvrgXetN8_IuaqD44&s=10?w=600"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Aviação e Turismo",
+        "marcas": [
+            "GOL/Smiles"
+        ],
+        "descricao": "A GOL inaugurou em 08/07/2026 sua rota inédita e direta de longo alcance ligando o Rio de Janeiro (Galeão) a Nova York (JFK) com o Airbus A330-200. A novidade reposiciona a marca no mercado intercontinental com sua nova classe executiva Insignia, gerando forte tração de relações públicas no setor.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Campanha",
+            "Posicionamento Executivo"
+        ],
+        "link_noticia": "[https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/03/06/lula-participa-de-anuncio-de-hub-da-gol-com-voo-rio-nova-york.ghtml](https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/03/06/lula-participa-de-anuncio-de-hub-da-gol-com-voo-rio-nova-york.ghtml)",
+        "data": "14/07/2026",
+        "imagem": "https://www.cavok.com.br/wp-content/uploads/2026/07/jato-a330-200-da-wamos-com-pintura-da-gol-decola-para-nova-york-u76cq7d.jpg?w=600",
+        "tipo": "marca"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce e Varejo",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "No dia 13/07/2026, o Mercado Livre bateu recorde histórico no Brasil com a campanha 7.7, superando o volume de vendas da Black Friday de 2025. O sucesso foi impulsionado pela estreia de Anitta como nova embaixadora da marca, gerando excelente gancho para PR focado em conversão e influência.",
+        "produtos": [
+            "Influenciadores",
+            "Campanha",
+            "Mídia"
+        ],
+        "link_noticia": "[https://www.ecommercebrasil.com.br/noticias/mercado-livre-bate-recorde-historico-de-vendas-e-supera-black-friday-no-7-7](https://www.ecommercebrasil.com.br/noticias/mercado-livre-bate-recorde-historico-de-vendas-e-supera-black-friday-no-7-7)",
+        "data": "14/07/2026",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr1wWmxZQjBJ3ZuTT6Bo6k3R3VEu11wFDirKOKZRQWWRj6ZDFa6qJ93oI&s=10?w=600",
+        "tipo": "marca"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia e Serviços Financeiros",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "Com inscrições até 15/07/2026, a Stone lançou seu Programa de Estágio 2026 com bolsas de R$ 2.200 e elegibilidade à PLR nas cidades de São Paulo, Rio de Janeiro, Florianópolis, Porto Alegre e remoto. Trata-se de uma excelente oportunidade para o fortalecimento do employer branding e de PR de RH.",
+        "produtos": [
+            "Comunicação Interna",
+            "Presença Digital",
+            "Assessoria de Imprensa"
+        ],
+        "link_noticia": "[https://folhadirigida.com.br/vagas/estagio-stone-2026](https://folhadirigida.com.br/vagas/estagio-stone-2026)",
+        "data": "14/07/2026",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzbi46WbYKXTzCxHdnIV8Tbv5ugAVK5kLCypiBYdNO19NwrOSQPSxzt0OY&s=10?w=600",
+        "tipo": "marca"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Tecnologia e Delivery",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Apesar da eliminação precoce do Brasil na Copa, o iFood declarou sucesso em sua campanha de marketing, alcançando 185 milhões de pessoas. A manutenção do plano de comunicação mostra a maturidade da marca em PR esportivo, exigindo posicionamento digital contínuo para manter o engajamento.",
+        "produtos": [
+            "Campanha",
+            "Presença Digital",
+            "Influenciadores"
+        ],
+        "link_noticia": "[https://www.mktesportivo.com/2026/07/ifood-afirma-ter-cumprido-metas-de-marketing-mesmo-apos-saida-do-brasil-da-copa/](https://www.mktesportivo.com/2026/07/ifood-afirma-ter-cumprido-metas-de-marketing-mesmo-apos-saida-do-brasil-da-copa/)",
+        "data": "13/07/2026",
+        "imagem": "https://www.mktesportivo.com/wp-content/uploads/2026/07/ifood-acoes-marketing-Selecao-Brasileira-1024x682.jpg?w=600",
+        "tipo": "marca"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Bebidas e Consumo",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "As ações da Ambev caíram após a eliminação precoce do Brasil na Copa do Mundo, o que frustrou as projeções de alta no consumo de cerveja para o terceiro trimestre de 2026. O cenário exige ações rápidas de PR e relações com investidores para atenuar o impacto da sazonalidade no mercado.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Mídia"
+        ],
+        "link_noticia": "[https://www.infomoney.com.br/mercados/ambev-acao-cai-apos-brasil-eliminado-frustrar-expectativa-por-mais-vendas-de-cerveja/](https://www.infomoney.com.br/mercados/ambev-acao-cai-apos-brasil-eliminado-frustrar-expectativa-por-mais-vendas-de-cerveja/)",
+        "data": "13/07/2026",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUyJV2nA40jQzV0meiNPJegDWKVMkCRsK_M_wY3mpwNmiFi7l2rWH7RUo&s=10?w=600",
+        "tipo": "marca"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Mineração e Siderurgia",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "A Vale respondeu a ofício da CVM prestando esclarecimentos sobre a renúncia de Daniel Stieler da presidência do conselho e o contrato de não competição firmado. O fato exige comunicação corporativa de crise e governança estruturada para blindar a reputação e acalmar o mercado financeiro.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Posicionamento Executivo"
+        ],
+        "link_noticia": "[https://br.advfn.com/noticias/vale-esclarece-saida-de-daniel-stieler-a-cvm-e-nega-acordo-para-viabilizar-renuncia-ao-conselho/](https://br.advfn.com/noticias/vale-esclarece-saida-de-daniel-stieler-a-cvm-e-nega-acordo-para-viabilizar-renuncia-ao-conselho/)",
+        "data": "13/07/2026",
+        "imagem": "https://s2-valor.glbimg.com/BJPT9enh-1JGZ3wGuqC891dnHhw=/0x0:3840x2550/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2023/6/f/xDuBZcQLO65Bxh4u3p6g/270123previ015.jpg?w=600",
+        "tipo": "marca"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Varejo de Moda",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "A China aprovou o plano da Shein de realizar seu IPO em Hong Kong após barreiras no Ocidente. O aval do órgão regulador chinês encerra um ano de espera, exigindo forte posicionamento de relações institucionais e relações públicas para sustentar a narrativa de governança corporativa global.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Relações Governamentais"
+        ],
+        "link_noticia": "[https://www1.folha.uol.com.br/mercado/2026/07/shein-obtem-a-aprovacao-da-china-para-ipo-em-hong-kong.shtml](https://www1.folha.uol.com.br/mercado/2026/07/shein-obtem-a-aprovacao-da-china-para-ipo-em-hong-kong.shtml)",
+        "data": "13/07/2026",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPlNU9BIoJt5QIcWQWXwSnEyoNMDPdaFLerOuUp54VEw&s?w=600",
+        "tipo": "marca"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Mineração e Siderurgia",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "Após a renúncia de Daniel Stieler à presidência do conselho da Vale em 6 de julho de 2026 sob pressão da Previ, a CVM abriu processo em 8 de julho para investigar o acordo de compensação financeira. O fato demanda forte trabalho de assessoria de imprensa e reposicionamento de governança.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Posicionamento Executivo"
+        ],
+        "link_noticia": "[https://economia.uol.com.br/noticias/redacao/2026/07/09/vale-confirma-compensacao-financeira-a-ex-presidente-do-conselho.htm](https://economia.uol.com.br/noticias/redacao/2026/07/09/vale-confirma-compensacao-financeira-a-ex-presidente-do-conselho.htm)",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600",
+        "tipo": "marca"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Turismo e Aviação",
+        "marcas": [
+            "GOL/Smiles"
+        ],
+        "descricao": "No dia 6 de julho de 2026, a Smiles anunciou regras de upgrade para a nova classe executiva 'Business INSIGNIA by GOL', que decolou em seu primeiro voo Rio-Nova York em 8 de julho. A ação posiciona a marca no segmento premium, exigindo campanhas de relações públicas e assessoria de imprensa.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Campanha",
+            "Presença Digital"
+        ],
+        "link_noticia": "[https://www.panrotas.com.br/aviacao/programas-de-fidelidade/2026/07/smiles-anuncia-regras-para-upgrade-cortesia-da-nova-classe-business-insignia-da-gol_204128.html](https://www.panrotas.com.br/aviacao/programas-de-fidelidade/2026/07/smiles-anuncia-regras-para-upgrade-cortesia-da-nova-classe-business-insignia-da-gol_204128.html)",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600",
+        "tipo": "marca"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Aviação",
+        "marcas": [
+            "GOL/Smiles"
+        ],
+        "descricao": "A GOL iniciou em 8 de julho seus voos diretos entre o Rio de Janeiro (GIG) e Nova York (JFK), marcando o início de sua operação de longo curso com aeronaves A330. O marco oferece grande oportunidade para impulsionar a presença digital e campanhas de PR integradas sobre a expansão internacional.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Campanha",
+            "Presença Digital"
+        ],
+        "link_noticia": "[https://kiosquedaaviacao.pt/gol-realiza-o-seu-3o-voo-para-nova-iorque-e-prepara-lisboa/](https://kiosquedaaviacao.pt/gol-realiza-o-seu-3o-voo-para-nova-iorque-e-prepara-lisboa/)",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1483450388369-9ed95738483c?w=600",
+        "tipo": "marca"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia",
+        "marcas": [
+            "Samsung (B2B / B2C / LATAM)"
+        ],
+        "descricao": "A Samsung abriu no Brasil o pré-registro para o Galaxy Unpacked 2026, com descontos de até R$ 2 mil no Galaxy Z Fold 8 e Flip 8. A ação é ideal para campanhas de relacionamento com a imprensa e PR Stunt antes do evento global em Londres no dia 22 de julho, visando o público tech e early adopters.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Campanha",
+            "PR Stunt"
+        ],
+        "link_noticia": "[https://www.tudocelular.com/samsung/noticias/n223696/samsung-libera-pre-registro-do-galaxy-z-fold-8.html](https://www.tudocelular.com/samsung/noticias/n223696/samsung-libera-pre-registro-do-galaxy-z-fold-8.html)",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600",
+        "tipo": "marca"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Varejo",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "Segundo relatório do BTG Pactual de 13 de julho de 2026, a base de usuários ativos mensais da Shein no Brasil cresceu 34% no 2T26, liderando a expansão do e-commerce. O avanço demonstra a resiliência da marca no país e abre caminho para campanhas de Presença Digital e Assessoria de Imprensa.",
+        "produtos": [
+            "Presença Digital",
+            "Assessoria de Imprensa",
+            "Campanha"
+        ],
+        "link_noticia": "[https://www.seudinheiro.com/2026/negocios/shein-com-ainda-mais-poder-de-fogo-por-que-o-ipo-da-asiatica-pode-tornar-a-vida-das-varejistas-brasileiras-ainda-mais-dificil/](https://www.seudinheiro.com/2026/negocios/shein-com-ainda-mais-poder-de-fogo-por-que-o-ipo-da-asiatica-pode-tornar-a-vida-das-varejistas-brasileiras-ainda-mais-dificil/)",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600",
+        "tipo": "marca"
+    }
 ]
