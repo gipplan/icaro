@@ -5,7 +5,6 @@ from google import genai
 from google.genai import types
 
 def carregar_playbook():
-    """Tenta ler o playbook.md da raiz. Se não existir, retorna string vazia."""
     try:
         with open('playbook.md', 'r', encoding='utf-8') as f:
             return f.read()
@@ -13,17 +12,25 @@ def carregar_playbook():
         return "Nenhum playbook personalizado encontrado. Siga as diretrizes de Diretor Sênior de PR."
 
 def gerar_oportunidades():
-    # 1. Configura o cliente do Gemini usando a chave do GitHub Actions
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         raise ValueError("Chave da API não encontrada nas variáveis de ambiente.")
     
     client = genai.Client(api_key=api_key)
     
-    # 2. Carrega o contexto tático da agência
+    # =====================================================================
+    # BLOCO DE DIAGNÓSTICO: Imprime os modelos disponíveis no log do GitHub
+    # =====================================================================
+    print("🔍 Diagnosticando modelos disponíveis para a sua chave de API...")
+    try:
+        modelos_disponiveis = [m.name for m in client.models.list() if "gemini" in m.name]
+        print(f"Modelos encontrados: {modelos_disponiveis}")
+    except Exception as e:
+        print(f"Aviso: Não foi possível listar os modelos. Erro: {e}")
+    # =====================================================================
+    
     playbook_texto = carregar_playbook()
 
-    # 3. Monta o Prompt Definitivo
     prompt = f"""
 Atue como Í.C.A.R.O., o motor de inteligência e curadoria editorial corporativa. Execute a varredura comercial diária e cruzamento de dados de hoje, identificando riscos e oportunidades de relações públicas e comunicação corporativa. Foque nas 5 a 10 pautas mais quentes do dia no total.
 
@@ -64,20 +71,19 @@ Use EXCLUSIVAMENTE as estratégias e gatilhos listados no playbook da agência a
 4. Estrutura do objeto: tipo, titulo (se macro), agencia, setor, marcas (array), descricao (Fato + Tática baseada no playbook), produtos (array com 1 a 3 produtos de PR), link_noticia, data (formato DD/MM/AAAA usando a data de hoje) e imagem (URL - busque fotos realistas de bancos de imagens gratuitos se não tiver a fonte).
 """
 
-    print("Enviando requisição para a API do Gemini...")
+    print("Enviando requisição para a API do Gemini usando o modelo PRO...")
     
-# 4. Faz a chamada usando o modelo mais eficiente
+    # 4. Faz a chamada usando o modelo PRO (mais estável e com maior disponibilidade)
     response = client.models.generate_content(
-        model='gemini-1.5-flash-latest', 
+        model='gemini-1.5-pro',
         contents=prompt,
         config=types.GenerateContentConfig(
-            temperature=0.4
+            temperature=0.4 
         )
     )
     
     texto_resposta = response.text
     
-    # 5. Tratamento de segurança: limpar qualquer markdown que a IA possa gerar por engano
     if "```json" in texto_resposta:
         texto_resposta = texto_resposta.split("```json")[1].split("```")[0].strip()
     elif "```" in texto_resposta:
@@ -85,14 +91,12 @@ Use EXCLUSIVAMENTE as estratégias e gatilhos listados no playbook da agência a
         
     texto_resposta = texto_resposta.strip()
 
-    # 6. Salva (sobrescreve) o arquivo oportunidades.json
     try:
-        # Testa se a string resultante é um JSON válido antes de salvar
         json.loads(texto_resposta)
         
         with open('oportunidades.json', 'w', encoding='utf-8') as f:
             f.write(texto_resposta)
-        print("Sucesso! oportunidades.json foi atualizado com base no novo prompt e playbook.")
+        print("Sucesso! oportunidades.json foi atualizado.")
         
     except json.JSONDecodeError:
         print("Erro: A resposta da API não foi um JSON válido. Veja a resposta crua:")
