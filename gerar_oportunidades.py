@@ -18,16 +18,12 @@ def gerar_oportunidades():
     
     client = genai.Client(api_key=api_key)
     
-    # =====================================================================
-    # BLOCO DE DIAGNÓSTICO: Imprime os modelos disponíveis no log do GitHub
-    # =====================================================================
     print("🔍 Diagnosticando modelos disponíveis para a sua chave de API...")
     try:
         modelos_disponiveis = [m.name for m in client.models.list() if "gemini" in m.name]
         print(f"Modelos encontrados: {modelos_disponiveis}")
     except Exception as e:
         print(f"Aviso: Não foi possível listar os modelos. Erro: {e}")
-    # =====================================================================
     
     playbook_texto = carregar_playbook()
 
@@ -71,9 +67,8 @@ Use EXCLUSIVAMENTE as estratégias e gatilhos listados no playbook da agência a
 4. Estrutura do objeto: tipo, titulo (se macro), agencia, setor, marcas (array), descricao (Fato + Tática baseada no playbook), produtos (array com 1 a 3 produtos de PR), link_noticia, data (formato DD/MM/AAAA usando a data de hoje) e imagem (URL - busque fotos realistas de bancos de imagens gratuitos se não tiver a fonte).
 """
 
-    print("Enviando requisição para a API do Gemini usando o modelo PRO...")
+    print("Enviando requisição para a API do Gemini usando o modelo 3.5 Flash...")
     
-# 4. Faz a chamada usando o modelo mais recente disponível
     response = client.models.generate_content(
         model='gemini-3.5-flash',
         contents=prompt,
@@ -92,11 +87,33 @@ Use EXCLUSIVAMENTE as estratégias e gatilhos listados no playbook da agência a
     texto_resposta = texto_resposta.strip()
 
     try:
-        json.loads(texto_resposta)
+        # 1. Transforma o resultado de hoje em uma lista Python
+        novas_oportunidades = json.loads(texto_resposta)
         
+        # 2. Prepara uma lista vazia para o histórico
+        historico = []
+        
+        # 3. Se o arquivo já existir, lê o que tem lá dentro e guarda na lista de histórico
+        if os.path.exists('oportunidades.json'):
+            with open('oportunidades.json', 'r', encoding='utf-8') as f:
+                conteudo = f.read()
+                if conteudo.strip():
+                    try:
+                        historico = json.loads(conteudo)
+                    except json.JSONDecodeError:
+                        print("Aviso: O arquivo antigo estava vazio ou inválido. Iniciando um novo.")
+        
+        # 4. Junta as duas listas (a velha e a nova)
+        if isinstance(historico, list) and isinstance(novas_oportunidades, list):
+            historico.extend(novas_oportunidades)
+        else:
+            historico = novas_oportunidades
+            
+        # 5. Salva a lista gigante e atualizada de volta no arquivo json, usando formatação bonita (indent=4)
         with open('oportunidades.json', 'w', encoding='utf-8') as f:
-            f.write(texto_resposta)
-        print("Sucesso! oportunidades.json foi atualizado.")
+            json.dump(historico, f, ensure_ascii=False, indent=4)
+            
+        print("Sucesso! As novas pautas foram adicionadas ao histórico do oportunidades.json.")
         
     except json.JSONDecodeError:
         print("Erro: A resposta da API não foi um JSON válido. Veja a resposta crua:")
