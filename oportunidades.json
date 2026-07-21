@@ -174,5 +174,126 @@
         "link_noticia": "https://g1.globo.com/economia/noticia/2024/05/banco-central-adia-lancamento-do-pix-automatico-para-2025.ghtml",
         "data": "24/05/2024",
         "imagem": "https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Bens de Consumo",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "Fato: A Ambev paralisou temporariamente a produção de cerveja em sua fábrica de Viamão (RS) para envasar água potável em latas e doar às vítimas das enchentes no estado. Tática: Implementando uma estratégia de Brand Publishing por meio da criação de um portal de notícias em tempo real mantido pela própria marca, centralizando a divulgação de dados logísticos e de doações para blindar a reputação corporativa contra fake news e maximizar o valor da marca perante os stakeholders.",
+        "produtos": [
+            "Brand Publishing Platform",
+            "ESG Content Strategy"
+        ],
+        "link_noticia": "https://g1.globo.com/rs/rio-grande-do-sul/noticia/2024/05/08/ambev-pausa-producao-de-cerveja-para-envasar-agua-para-doacao-ao-rs.ghtml",
+        "data": "16/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia",
+        "marcas": [
+            "Google"
+        ],
+        "descricao": "Fato: O Google apresentou suas novas ferramentas de inteligência artificial generativa integradas ao ecossistema de buscas e produtividade durante o evento global Google I/O 2024. Tática: Estruturando Fóruns Proprietários no formato de um Summit exclusivo para C-Levels e parceiros estratégicos no Brasil, debatendo a governança de IA e o impacto nos negócios locais, garantindo a liderança intelectual da marca e gerando novas frentes de receita corporativa.",
+        "produtos": [
+            "Proprietary Summit",
+            "Executive Positioning"
+        ],
+        "link_noticia": "https://g1.globo.com/tecnologia/noticia/2024/05/14/google-io-2024-veja-as-principais-novidades-do-evento-de-tecnologia.ghtml",
+        "data": "16/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "Fato: A Stone Co. divulgou seu balanço financeiro do primeiro trimestre de 2024, registrando um crescimento de 90% no lucro líquido ajustado, que atingiu R$ 450 milhões. Tática: Veiculando Op-Eds Híbridos assinados pelo CEO em veículos de finanças Tier 1, combinados com impulsionamento estratégico no LinkedIn Pulse para tomadores de decisão, com o objetivo de consolidar a percepção de robustez financeira da Stone e atrair novos clientes de médio e grande porte.",
+        "produtos": [
+            "Hybrid Op-Ed",
+            "LinkedIn Executive Program"
+        ],
+        "link_noticia": "https://valor.globo.com/financas/noticia/2024/05/13/lucro-liquido-ajustado-da-stone-sobe-90percent-no-1o-trimestre-para-r-450-milhoes.ghtml",
+        "data": "16/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: O iFood expandiu as operações de seu braço financeiro, o iFood Pago, focando na oferta de serviços bancários e de crédito sob medida para restaurantes parceiros. Tática: Realizando um PR Stunt em Dark Social por meio de vazamentos intencionais de dados de mercado e novas linhas de crédito em grupos fechados de WhatsApp de proprietários de restaurantes, gerando escassez e alta demanda orgânica antes do lançamento oficial do produto.",
+        "produtos": [
+            "Dark Social Engagement",
+            "Exclusive Insights Release"
+        ],
+        "link_noticia": "https://exame.com/bussola/ifood-pago-atinge-r-25-bilhoes-em-transacoes-e-mira-expansao-no-credito/",
+        "data": "16/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "Fato: O Mercado Livre anunciou um investimento recorde de R$ 23 bilhões no Brasil para 2024, com foco na expansão de sua malha logística e contratação de mais de 6.500 profissionais. Tática: Publicando Op-Eds Híbridos do VP de Operações no Valor Econômico detalhando o impacto do investimento no PIB logístico nacional, com amplificação focada no LinkedIn Pulse para fortalecer o employer branding e atrair talentos altamente qualificados.",
+        "produtos": [
+            "Hybrid Op-Ed",
+            "Employer Branding Campaign"
+        ],
+        "link_noticia": "https://exame.com/negocios/mercado-livre-vai-investir-r-23-bilhoes-no-brasil-em-2024-o-maior-aporte-da-historia/",
+        "data": "16/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Regulamentação do Pix Automático pelo Banco Central",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Abecs",
+            "Mercado Pago"
+        ],
+        "descricao": "Fato: O Banco Central do Brasil anunciou novas diretrizes de segurança e o cronograma final para a implementação do Pix Automático, previsto para o final de 2024. Tática: Desenvolvendo Dark Site Preparations com landing pages ocultas contendo Q&As detalhados sobre segurança e tarifas, prontas para ativação imediata caso ocorram ruídos de comunicação ou crises de desinformação no mercado financeiro.",
+        "produtos": [
+            "Dark Site Development",
+            "Crisis Q&A Preparation"
+        ],
+        "link_noticia": "https://g1.globo.com/economia/noticia/2024/05/15/banco-central-divulga-novas-regras-do-pix-automatico.ghtml",
+        "data": "16/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Transição Energética e Marco Legal do Hidrogênio Verde",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Engie",
+            "Siemens Energy"
+        ],
+        "descricao": "Fato: O governo brasileiro intensificou as discussões regulatórias sobre o marco legal do hidrogênio verde e a transição energética industrial. Tática: Promovendo Fóruns Proprietários focados em transição energética para reunir reguladores, cientistas e tomadores de decisão, posicionando as marcas parceiras como as principais viabilizadoras tecnológicas do setor e influenciando positivamente as políticas públicas.",
+        "produtos": [
+            "Proprietary Forum",
+            "Stakeholder Engagement"
+        ],
+        "link_noticia": "https://epbr.com.br/marco-legal-do-hidrogenio-verde-avanca-no-congresso-nacional/",
+        "data": "16/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80"
     }
 ]
