@@ -393,5 +393,116 @@
         "link_noticia": "https://www.infomoney.com/mercados-financeiros/banco-central-avanca-com-testes-do-drex-e-foca-em-privacidade-de-dados/",
         "data": "25/10/2024",
         "imagem": "https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: O debate sobre o Projeto de Lei 12/2024, que regulamenta o trabalho de motoristas e entregadores por aplicativos, avança no Congresso Nacional sob forte escrutínio público e pressão das categorias de trabalhadores. Tática: Desenvolvendo Dark Site Preparations com Q&As estruturados e simulações de cenários regulatórios para blindar a reputação institucional do iFood, garantindo respostas rápidas e alinhadas à imprensa e formadores de opinião assim que as votações ocorrerem.",
+        "produtos": [
+            "Mapeamento de Stakeholders",
+            "Comunicação de Crise",
+            "Q&A Institucional"
+        ],
+        "link_noticia": "https://www12.senado.leg.br/noticias/materias/2024/03/05/projeto-que-regulamenta-trabalho-por-aplicativo-chega-ao-congresso",
+        "data": "10/04/2024",
+        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "Fato: A StoneCo registrou forte crescimento em sua base de clientes ativos de micro, pequenas e médias empresas (MPMEs) e expandiu sua carteira de crédito após consolidar resultados financeiros robustos no último trimestre. Tática: Implementando Brand Publishing por meio da criação de um hub de conteúdo editorial focado em saúde financeira para MPMEs, posicionando a Stone como parceira estratégica de crescimento e reduzindo a dependência de canais de mídia paga tradicionais.",
+        "produtos": [
+            "Hub de Conteúdo Proprietário",
+            "Estratégia de Inbound PR"
+        ],
+        "link_noticia": "https://valor.globo.com/financas/noticia/2024/03/18/lucro-da-stone-salta-para-r-564-milhoes-no-quarto-trimestre.ghtml",
+        "data": "10/04/2024",
+        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Google"
+        ],
+        "descricao": "Fato: O Google apresentou inovações massivas em inteligência artificial generativa corporativa durante o evento global Google Cloud Next '24, incluindo o Gemini 1.5 Pro e novas ferramentas para desenvolvedores. Tática: Viabilizando Op-Eds Híbridos assinados pelo C-level da operação brasileira em veículos Tier 1 de negócios, combinados com impulsionamento estratégico no LinkedIn Pulse, para consolidar a liderança tecnológica da marca frente aos tomadores de decisão de TI.",
+        "produtos": [
+            "Artigo de Opinião (Op-Ed)",
+            "Amplificação Digital",
+            "Relações com a Mídia"
+        ],
+        "link_noticia": "https://g1.globo.com/tecnologia/noticia/2024/04/09/google-cloud-next-2024-veja-as-novidades.ghtml",
+        "data": "10/04/2024",
+        "imagem": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre",
+            "Mercado Pago"
+        ],
+        "descricao": "Fato: O Mercado Livre anunciou um plano de investimento recorde de R$ 23 bilhões no Brasil para 2024, com foco na expansão da malha logística, tecnologia financeira e contratação de milhares de colaboradores. Tática: Criando Fóruns Proprietários focados em debater o impacto do e-commerce no desenvolvimento regional e na empregabilidade, reunindo governantes, economistas e jornalistas influentes sob a chancela da marca.",
+        "produtos": [
+            "Planejamento de Evento Proprietário",
+            "Relações Governamentais",
+            "Media Relations"
+        ],
+        "link_noticia": "https://valor.globo.com/empresas/noticia/2024/04/09/mercado-livre-vai-investir-r-23-bilhoes-no-brasil-em-2024.ghtml",
+        "data": "10/04/2024",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Aviação e Turismo",
+        "marcas": [
+            "GOL/Smiles"
+        ],
+        "descricao": "Fato: A GOL Linhas Aéreas avança em seu processo de reestruturação financeira sob o Chapter 11 nos Estados Unidos, fechando acordos cruciais com arrendadores de aeronaves para manter a capacidade operacional. Tática: Aplicando Shadow Banning Strategy focada em otimização de SEO de termos institucionais positivos para empurrar notícias puramente especulativas ou alarmistas sobre a recuperação judicial para as páginas secundárias dos buscadores.",
+        "produtos": [
+            "SEO Reputacional",
+            "Monitoramento de Crise",
+            "Comunicação Interna"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2024/04/gol-fecha-acordo-com-arrendadores-para-manter-frota-de-avioes.shtml",
+        "data": "10/04/2024",
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Aprovação do PL do Combustível do Futuro e a Corrida pela Descarbonização",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Vibra",
+            "Yara",
+            "Engie",
+            "Siemens Energy"
+        ],
+        "descricao": "Fato: A aprovação do Projeto de Lei do Combustível do Futuro na Câmara dos Deputados acelera as metas de mistura de biocombustíveis e cria o marco legal para o SAF e hidrogênio verde. Tática: Viabilizando Op-Eds Híbridos assinados de forma coordenada pelos CEOs de Vibra, Yara e Engie no Valor Econômico, demonstrando como a sinergia entre distribuição, fertilizantes verdes e geração limpa posiciona o ecossistema de clientes da agência na vanguarda do ESG.",
+        "produtos": [
+            "Ghostwriting Executivo",
+            "Relações Públicas Institucionais",
+            "Estratégia de Thought Leadership"
+        ],
+        "link_noticia": "https://www12.senado.leg.br/noticias/materias/2024/03/14/projeto-combustivel-do-futuro-chega-ao-senado-e-vai-para-tres-comissoes",
+        "data": "10/04/2024",
+        "imagem": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80"
     }
 ]
