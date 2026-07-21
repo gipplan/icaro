@@ -295,5 +295,103 @@
         "link_noticia": "https://epbr.com.br/marco-legal-do-hidrogenio-verde-avanca-no-congresso-nacional/",
         "data": "16/05/2024",
         "imagem": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "Fato: Vale, BHP e Samarco firmam acordo definitivo de R$ 170 bilhões com autoridades públicas para a reparação integral dos danos causados pelo rompimento da barragem de Fundão, em Mariana (MG). Tática: Mitigando os impactos reputacionais de longo prazo por meio de Dark Site Preparations, estruturando uma plataforma digital transparente com dados auditados em tempo real sobre a destinação dos recursos para neutralizar narrativas adversas e restabelecer a confiança dos stakeholders.",
+        "produtos": [
+            "Dark Site Preparations"
+        ],
+        "link_noticia": "https://g1.globo.com/mg/minas-gerais/noticia/2024/10/25/acordo-de-mariana-governo-federal-e-estados-assinam-repactuacao-de-r-170-bilhoes.ghtml",
+        "data": "25/10/2024",
+        "imagem": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: O iFood expande o uso de ferramentas de Inteligência Artificial generativa para auxiliar pequenos e médios restaurantes parceiros a otimizarem seus cardápios e criarem peças de marketing personalizadas de forma automatizada. Tática: Posicionando a marca como a principal parceira de crescimento e tecnologia do pequeno empreendedor por meio de Op-Eds Híbridos assinados pelo VP de IA e publicados no Valor Econômico, casados com impulsionamento estratégico no LinkedIn Pulse para atrair novos parceiros B2B.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://exame.com/bussola/ifood-aposta-em-inteligencia-artificial-para-impulsionar-vendas-de-restaurantes/",
+        "data": "25/10/2024",
+        "imagem": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "Fato: A StoneCo acelera sua estratégia de integração de soluções de pagamento diretamente nos sistemas de gestão (ERPs) de micro e pequenas empresas, visando aumentar a retenção de clientes no varejo físico. Tática: Consolidando a autoridade da marca no ecossistema de PMEs por meio de Fóruns Proprietários, criando um Summit exclusivo voltado para debater a eficiência operacional e a digitalização do varejo de vizinhança.",
+        "produtos": [
+            "Fóruns Proprietários"
+        ],
+        "link_noticia": "https://valor.globo.com/financas/noticia/2024/10/24/stone-avanca-em-integracao-com-software-para-fidelizar-varejista.ghtml",
+        "data": "25/10/2024",
+        "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "Fato: O Mercado Livre anuncia a abertura de mais de 11 mil vagas temporárias de trabalho no Brasil para reforçar suas operações logísticas e de atendimento durante a Black Friday e o Natal de 2024. Tática: Gerando buzz e desejo de marca empregadora através de um PR Stunt em Dark Social, realizando vazamentos intencionais de bastidores da operação e benefícios exclusivos em comunidades fechadas de profissionais de logística no WhatsApp e Facebook.",
+        "produtos": [
+            "PR Stunt em Dark Social"
+        ],
+        "link_noticia": "https://g1.globo.com/trabalho-e-carreira/noticia/2024/10/23/mercado-livre-anuncia-vagas-temporarias-para-black-friday-e-fim-de-ano.ghtml",
+        "data": "25/10/2024",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Google"
+        ],
+        "descricao": "Fato: Google Cloud anuncia novos investimentos em infraestrutura de nuvem e segurança de dados no Brasil para suportar a alta demanda de grandes empresas por soluções locais de Inteligência Artificial generativa. Tática: Estabelecendo liderança de pensamento e soberania tecnológica por meio de Brand Publishing, lançando um portal de notícias mantido pela marca focado em desmistificar a segurança de dados e a governança de IA para o mercado corporativo.",
+        "produtos": [
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://valor.globo.com/empresas/noticia/2024/10/24/google-cloud-amplia-infraestrutura-no-brasil-para-atender-demanda-de-ia.ghtml",
+        "data": "25/10/2024",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Avanço do Drex e Regulamentação de Ativos Digitais pelo Banco Central",
+        "agencia": "Setorial",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Mercado Bitcoin",
+            "Banco Mercantil",
+            "Sicredi"
+        ],
+        "descricao": "Fato: O Banco Central do Brasil avança nos testes de privacidade e contratos inteligentes da segunda fase do Drex, exigindo que as instituições financeiras participantes adaptem suas estruturas tecnológicas. Tática: Antecipando o posicionamento regulatório e demonstrando robustez técnica por meio de Op-Eds Híbridos assinados em conjunto pelos diretores de inovação dos clientes, publicados no Valor Econômico e amplificados no LinkedIn para consolidar as marcas como pioneiras na economia tokenizada.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://www.infomoney.com/mercados-financeiros/banco-central-avanca-com-testes-do-drex-e-foca-em-privacidade-de-dados/",
+        "data": "25/10/2024",
+        "imagem": "https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&w=800&q=80"
     }
 ]
