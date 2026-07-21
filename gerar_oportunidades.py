@@ -30,7 +30,8 @@ def gerar_oportunidades():
     prompt = f"""
 Atue como Í.C.A.R.O., o motor de inteligência e curadoria editorial corporativa. Execute a varredura comercial diária e cruzamento de dados de hoje, identificando riscos e oportunidades de relações públicas e comunicação corporativa. Foque nas 5 a 10 pautas mais quentes do dia no total.
 
-⚠️ PRIORIDADE MÁXIMA (FORÇAR BUSCA): É obrigatório incluir resultados recentes para **iFood** e **Stone**. Caso a varredura inicial geral não identifique fatos relevantes sobre elas, execute uma busca adicional e direcionada exclusivamente para estas duas marcas. O sistema não deve ignorar as outras marcas com notícias quentes, mas o JSON final DEVE conter pautas para iFood e Stone.
+⚠️ PRIORIDADE DE BUSCA: Dê prioridade máxima na varredura para identificar notícias reais sobre **iFood** e **Stone**. 
+**REGRA DE VERACIDADE ESTRITA:** Você SÓ deve incluir pautas para essas marcas se houver fatos factuais e comprovados na mídia nas últimas 48h. Se não houver nenhum fato real e noticioso sobre elas, **NÃO INVENTE, NÃO ALUCINE e NÃO AS INCLUA no JSON final**. Prefira entregar um JSON sem iFood e Stone a entregar um fato fictício. Preencha a cota de 5 a 10 pautas com outras marcas da lista que tenham notícias reais.
 
 Você deve executar OBRIGATORIAMENTE duas frentes de busca:
 
