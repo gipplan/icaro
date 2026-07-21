@@ -86,9 +86,19 @@
                         <h2 class="text-5xl md:text-7xl font-extrabold font-editorial text-white tracking-widest leading-none mb-4">
                             I.C.A.R.O.
                         </h2>
-                        <p class="text-[10px] md:text-xs text-stone-300 font-bold tracking-widest uppercase leading-tight border-t border-white/20 pt-4 w-full">
+                        <p class="text-[10px] md:text-xs text-stone-300 font-bold tracking-widest uppercase leading-tight border-t border-white/20 pt-4 pb-2 w-full">
                             Inteligência em Comunicação, Análise, Riscos e Oportunidades
                         </p>
+                        
+                        <!-- NOVO: Aviso de Alucinação IA -->
+                        <div class="mt-2 inline-flex items-center gap-2 bg-inpress-red/10 border border-inpress-red/30 text-stone-300 px-4 py-2 rounded-lg backdrop-blur-sm max-w-2xl text-left">
+                            <svg class="h-5 w-5 text-inpress-red flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                            <span class="text-[9px] md:text-[10px] font-medium tracking-wide leading-snug">
+                                O Sistema I.C.A.R.O. utiliza o Gemini para automação e pode conter alucinações. Lembre-se de conferir os dados antes de usá-los e alerte o time de planejamento.
+                            </span>
+                        </div>
                     </div>
                 </div>
                 
@@ -154,7 +164,7 @@
                         </div>
                     </div>
 
-                    <!-- NOVO: Campo de Busca por Texto -->
+                    <!-- Campo de Busca por Texto -->
                     <div class="relative inline-block w-full md:w-auto min-w-[200px] z-50 flex-grow max-w-[280px]">
                         <input type="text" id="campoBusca" oninput="filtrarGeral()" placeholder="Pesquisar pautas..." 
                                class="w-full bg-white/15 text-white placeholder:text-stone-300/70 text-xs p-2.5 pl-9 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red font-semibold tracking-wide transition-all">
@@ -527,7 +537,6 @@
         }
 
         function filtrarGeral() {
-            // Verifica opções de Visão
             const checkboxesTipos = Array.from(document.querySelectorAll('.filtro-tipo-checkbox:checked'));
             const tiposSelecionados = checkboxesTipos.map(cb => cb.value);
             
@@ -545,11 +554,9 @@
                 }
             }
 
-            // Verifica opções de Agência
             const fAgencia = document.getElementById('filtroAgencia');
             const agencia = fAgencia ? fAgencia.value : "";
 
-            // Verifica opções de Clientes
             const checkboxesClientes = Array.from(document.querySelectorAll('#clientesContainer input:checked'));
             const clientesSelecionados = checkboxesClientes.map(cb => cb.value);
 
@@ -566,7 +573,6 @@
                 }
             }
 
-            // Verifica opções de Serviços
             const checkboxesServicos = Array.from(document.querySelectorAll('#servicosContainer input:checked'));
             const servicosSelecionados = checkboxesServicos.map(cb => cb.value);
 
@@ -583,11 +589,9 @@
                 }
             }
 
-            // NOVA LÓGICA DE BUSCA: Pega o que o usuário digitou
             const fBusca = document.getElementById('campoBusca');
             const termoBusca = fBusca ? fBusca.value.toLowerCase().trim() : "";
 
-            // Filtra os Dados Finais
             const dadosFiltrados = dadosOportunidades.filter(item => {
                 let bateTipo = true;
                 if (tiposSelecionados.length === 1) {
@@ -607,7 +611,6 @@
                     bateTempo = (diasDiferenca >= 0 && diasDiferenca <= 7);
                 }
 
-                // Avalia a Busca por Texto
                 let bateTextoBusca = true;
                 if (termoBusca !== "") {
                     const tituloStr = (item.titulo || "").toLowerCase();
@@ -621,11 +624,9 @@
                                      marcasStr.includes(termoBusca);
                 }
 
-                // A pauta precisa passar em TODOS os testes para ser mostrada
                 return bateTipo && bateAgencia && bateCliente && bateServico && bateTempo && bateTextoBusca;
             });
 
-            // Ordena o array final: mais recentes no topo
             dadosFiltrados.sort((a, b) => calcularDiferencaDias(a.data) - calcularDiferencaDias(b.data));
 
             renderizarTimeline(dadosFiltrados);
