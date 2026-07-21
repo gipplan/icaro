@@ -897,5 +897,114 @@
         "link_noticia": "https://www12.senado.leg.br/noticias/materias/2024/05/fim-de-isencao-para-compras-de-ate-us-50-divide-opinioes-no-senado",
         "data": "24/05/2024",
         "imagem": "https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: O iFood expande os serviços do iFood Pago, focando em soluções financeiras customizadas para restaurantes parceiros aumentarem sua rentabilidade e fluxo de caixa. Tática: Estruturando um Fórum Proprietário voltado para a saúde financeira e digitalização de pequenos negócios gastronômicos, visando consolidar a marca como parceira estratégica de crescimento e neutralizar debates sobre taxas de intermediação.",
+        "produtos": [
+            "Fórum de Negócios",
+            "Media Training",
+            "Relatório de Impacto Setorial"
+        ],
+        "link_noticia": "https://exame.com/negocios/ifood-pago-avanca-com-solucoes-financeiras-para-restaurantes/",
+        "data": "24/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "Fato: A Stone Co. registrou lucro líquido de R$ 450 milhões no primeiro trimestre de 2024, um crescimento de 90% impulsionado pela integração de soluções de pagamento e software para PMEs. Tática: Posicionando o C-level por meio de Op-Eds Híbridos no Valor Econômico combinados com impulsionamento estratégico no LinkedIn Pulse, justificando a solidez financeira da companhia e atraindo investidores institucionais de longo prazo.",
+        "produtos": [
+            "Artigo de Opinião (Op-Ed)",
+            "Press Briefing",
+            "Social Media Executive Positioning"
+        ],
+        "link_noticia": "https://valor.globo.com/financas/noticia/2024/05/15/lucro-da-stone-cresce-90percent-no-primeiro-trimestre.ghtml",
+        "data": "24/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "Fato: A Vale entra em fase decisiva nas negociações do acordo global de reparação pelo rompimento da barragem de Mariana, enfrentando forte escrutínio público e político. Tática: Implementando Dark Site Preparations robustos com Q&As detalhados e dados auditados de ESG, garantindo que a narrativa institucional de reparação integral esteja pronta para publicação imediata assim que o acordo for homologado, mitigando riscos de reputação global.",
+        "produtos": [
+            "Dark Site de Crise",
+            "Q&A de Contingência",
+            "Monitoramento de Mídia em Tempo Real"
+        ],
+        "link_noticia": "https://g1.globo.com/mg/minas-gerais/noticia/2024/05/vale-apresenta-nova-proposta-para-acordo-de-mariana.ghtml",
+        "data": "24/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Google"
+        ],
+        "descricao": "Fato: O Google enfrenta debates regulatórios intensos no Brasil sobre direitos autorais e segurança de dados após a expansão de suas ferramentas de Inteligência Artificial Generativa. Tática: Desenvolvendo uma estratégia de Brand Publishing por meio de um portal proprietário focado em ética e inovação em IA, educando formadores de opinião e reguladores para blindar a marca contra sanções legislativas precipitadas.",
+        "produtos": [
+            "Portal de Conteúdo Proprietário",
+            "Whitepaper Setorial",
+            "Relações Governamentais (PR Support)"
+        ],
+        "link_noticia": "https://tecnoblog.net/noticias/google-anuncia-novidades-de-ia-para-o-mercado-brasileiro/",
+        "data": "24/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "Fato: O Mercado Livre anuncia investimento recorde de R$ 23 bilhões no Brasil em 2024 para expandir sua malha logística e operações do Mercado Pago. Tática: Executando um PR Stunt em Dark Social com vazamentos intencionais de novos hubs logísticos sustentáveis em comunidades fechadas de e-commerce no WhatsApp e Discord, gerando escassez de informação e buzz orgânico altamente qualificado antes do anúncio oficial na grande imprensa.",
+        "produtos": [
+            "Campanha de Dark Social",
+            "Press Release Exclusivo",
+            "Encontro de Relacionamento com Key Opinion Leaders"
+        ],
+        "link_noticia": "https://valor.globo.com/empresas/noticia/2024/04/mercado-livre-vai-investir-r-23-bilhoes-no-brasil.ghtml",
+        "data": "24/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Adiantamento do Pix Automático pelo Banco Central do Brasil para 2025",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone",
+            "Mercado Pago"
+        ],
+        "descricao": "Fato: O Banco Central adiou o lançamento do Pix Automático para abril de 2025, impactando o planejamento de receitas recorrentes de fintechs e varejistas. Tática: Posicionando os executivos das marcas afetadas por meio de Op-Eds Híbridos focados em soluções alternativas de recorrência financeira, mantendo a percepção de agilidade tecnológica e liderança de mercado frente aos concorrentes tradicionais.",
+        "produtos": [
+            "Artigo de Opinião (Op-Ed)",
+            "Mesa Redonda com Jornalistas de Finanças",
+            "Análise de Impacto Regulatório"
+        ],
+        "link_noticia": "https://g1.globo.com/economia/noticia/2024/05/banco-central-adia-lancamento-do-pix-automatico-para-2025.ghtml",
+        "data": "24/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&w=800&q=80"
     }
 ]
