@@ -62,7 +62,7 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <div>
         <!-- Header Editorial Corporativo -->
-        <header class="relative py-8 px-8 shadow-md bg-cover bg-center z-30" style="background-image: linear-gradient(rgba(17, 17, 17, 0.8), rgba(28, 25, 23, 0.95)), url('http://googleusercontent.com/image_collection/image_retrieval/1646351935261000525_0');">
+        <header class="relative py-8 px-8 bg-cover bg-center z-30" style="background-image: linear-gradient(rgba(17, 17, 17, 0.8), rgba(28, 25, 23, 0.95)), url('http://googleusercontent.com/image_collection/image_retrieval/1646351935261000525_0');">
             <div class="absolute inset-0 overflow-hidden pointer-events-none">
                 <svg class="absolute -right-12 -top-12 h-56 w-56 text-stone-100/10 pointer-events-none hidden md:block" viewBox="0 0 100 100">
                     <circle cx="100" cy="0" r="15" fill="none" stroke="currentColor" stroke-width="0.4"/>
@@ -81,7 +81,7 @@
                     <span id="fallbackTitle" class="hidden text-base font-bold text-white tracking-widest uppercase font-sans-custom">Grupo <span class="text-inpress-red">In</span> Press</span>
                 </div>
                 
-                <div class="flex flex-col items-center text-center max-w-3xl w-full">
+                <div class="flex flex-col items-center text-center max-w-3xl w-full pb-4">
                     <div class="pt-2">
                         <h2 class="text-5xl md:text-7xl font-extrabold font-editorial text-white tracking-widest leading-none mb-4">
                             I.C.A.R.O.
@@ -90,7 +90,7 @@
                             Inteligência em Comunicação, Análise, Riscos e Oportunidades
                         </p>
                         
-                        <!-- NOVO: Aviso de Alucinação IA -->
+                        <!-- Aviso de Alucinação IA -->
                         <div class="mt-2 inline-flex items-center gap-2 bg-inpress-red/10 border border-inpress-red/30 text-stone-300 px-4 py-2 rounded-lg backdrop-blur-sm max-w-2xl text-left">
                             <svg class="h-5 w-5 text-inpress-red flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
@@ -101,84 +101,86 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Barra de Filtros -->
-                <div class="flex flex-wrap gap-3 bg-white/10 backdrop-blur-md p-3 rounded-xl w-full max-w-6xl justify-center items-center border border-white/10 mt-8 relative z-40">
-                    
-                    <!-- Filtro: Origem da Oportunidade (Visões) -->
-                    <div class="relative inline-block text-left w-full md:w-auto min-w-[150px] z-50 flex-grow max-w-[200px]">
-                        <button id="dropdownBtnTipos" onclick="toggleDropdown(event, 'dropdownMenuTipos')" class="w-full bg-white/15 text-white text-xs p-2.5 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
-                            <span id="dropdownLabelTipos" class="truncate font-bold">Visão: Todas</span>
-                            <svg class="h-4 w-4 text-stone-300 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div id="dropdownMenuTipos" class="hidden absolute left-0 sm:right-0 mt-2 w-full sm:w-56 rounded-lg shadow-lg bg-white border border-stone-200 z-[100] max-h-60 overflow-y-auto">
-                            <div class="p-2 space-y-1">
-                                <label class="flex items-center gap-2 p-2 hover:bg-stone-50 rounded cursor-pointer text-xs text-stone-700 transition-colors">
-                                    <input type="checkbox" value="marca" class="filtro-tipo-checkbox w-4 h-4 rounded text-inpress-red focus:ring-red-500 bg-white border-stone-300" onchange="filtrarGeral()">
-                                    <span class="font-semibold tracking-wide">Foco em Marcas</span>
-                                </label>
-                                <label class="flex items-center gap-2 p-2 hover:bg-stone-50 rounded cursor-pointer text-xs text-stone-700 transition-colors">
-                                    <input type="checkbox" value="setor" class="filtro-tipo-checkbox w-4 h-4 rounded text-inpress-red focus:ring-red-500 bg-white border-stone-300" onchange="filtrarGeral()">
-                                    <span class="font-semibold tracking-wide">Radar Setorial (Macro)</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Filtro 1: Agência -->
-                    <select id="filtroAgencia" class="bg-white/15 text-white text-xs p-2.5 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red font-semibold tracking-wide transition-all w-full md:w-auto min-w-[150px] flex-grow max-w-[200px] cursor-pointer">
-                        <option value="" class="bg-stone-900 text-white">Todas as Agências</option>
-                        <option value="In Press Porter Novelli" class="bg-stone-900 text-white">In Press</option>
-                        <option value="FleishmanHillard" class="bg-stone-900 text-white">FleishmanHillard</option>
-                    </select>
-                    
-                    <!-- Filtro 2: Cliente -->
-                    <div class="relative inline-block text-left w-full md:w-auto min-w-[160px] z-50 flex-grow max-w-[200px]">
-                        <button id="dropdownBtn" onclick="toggleDropdown(event, 'dropdownMenu')" class="w-full bg-white/15 text-white text-xs p-2.5 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
-                            <span id="dropdownLabel" class="truncate text-stone-300">Todos os Clientes</span>
-                            <svg class="h-4 w-4 text-stone-300 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div id="dropdownMenu" class="hidden absolute left-0 sm:right-0 mt-2 w-full sm:w-64 rounded-lg shadow-lg bg-white border border-stone-200 z-[100] max-h-60 overflow-y-auto">
-                            <div id="clientesContainer" class="p-2 space-y-1">
-                                <p class="text-[10px] text-stone-400 p-2">Carregando marcas...</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Filtro 3: Serviços -->
-                    <div class="relative inline-block text-left w-full md:w-auto min-w-[160px] z-50 flex-grow max-w-[200px]">
-                        <button id="dropdownBtnServicos" onclick="toggleDropdown(event, 'dropdownMenuServicos')" class="w-full bg-white/15 text-white text-xs p-2.5 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
-                            <span id="dropdownLabelServicos" class="truncate text-stone-300">Todos os Serviços</span>
-                            <svg class="h-4 w-4 text-stone-300 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div id="dropdownMenuServicos" class="hidden absolute left-0 sm:right-0 mt-2 w-full sm:w-64 rounded-lg shadow-lg bg-white border border-stone-200 z-[100] max-h-60 overflow-y-auto">
-                            <div id="servicosContainer" class="p-2 space-y-1">
-                                <p class="text-[10px] text-stone-400 p-2">Carregando serviços...</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Campo de Busca por Texto -->
-                    <div class="relative inline-block w-full md:w-auto min-w-[200px] z-50 flex-grow max-w-[280px]">
-                        <input type="text" id="campoBusca" oninput="filtrarGeral()" placeholder="Pesquisar pautas..." 
-                               class="w-full bg-white/15 text-white placeholder:text-stone-300/70 text-xs p-2.5 pl-9 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red font-semibold tracking-wide transition-all">
-                        <svg class="absolute left-3 top-2.5 h-4 w-4 text-stone-300/80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </div>
-
-                </div>
             </div>
         </header>
 
+        <!-- NOVO: Barra de Filtros FIXA NO TOPO (Sticky) -->
+        <div class="sticky top-0 z-[100] w-full bg-[#292929] border-b border-stone-800 shadow-xl py-4 px-4 transition-all">
+            <div class="max-w-6xl mx-auto flex flex-wrap gap-3 justify-center items-center">
+                
+                <!-- Filtro: Origem da Oportunidade (Visões) -->
+                <div class="relative inline-block text-left w-full md:w-auto min-w-[150px] flex-grow max-w-[200px]">
+                    <button id="dropdownBtnTipos" onclick="toggleDropdown(event, 'dropdownMenuTipos')" class="w-full bg-white/10 hover:bg-white/15 text-white text-xs p-2.5 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
+                        <span id="dropdownLabelTipos" class="truncate font-bold">Visão: Todas</span>
+                        <svg class="h-4 w-4 text-stone-300 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="dropdownMenuTipos" class="hidden absolute left-0 sm:right-0 mt-2 w-full sm:w-56 rounded-lg shadow-lg bg-white border border-stone-200 z-[101] max-h-60 overflow-y-auto">
+                        <div class="p-2 space-y-1">
+                            <label class="flex items-center gap-2 p-2 hover:bg-stone-50 rounded cursor-pointer text-xs text-stone-700 transition-colors">
+                                <input type="checkbox" value="marca" class="filtro-tipo-checkbox w-4 h-4 rounded text-inpress-red focus:ring-red-500 bg-white border-stone-300" onchange="filtrarGeral()">
+                                <span class="font-semibold tracking-wide">Foco em Marcas</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-2 hover:bg-stone-50 rounded cursor-pointer text-xs text-stone-700 transition-colors">
+                                <input type="checkbox" value="setor" class="filtro-tipo-checkbox w-4 h-4 rounded text-inpress-red focus:ring-red-500 bg-white border-stone-300" onchange="filtrarGeral()">
+                                <span class="font-semibold tracking-wide">Radar Setorial (Macro)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filtro 1: Agência -->
+                <select id="filtroAgencia" class="bg-white/10 hover:bg-white/15 text-white text-xs p-2.5 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red font-semibold tracking-wide transition-all w-full md:w-auto min-w-[150px] flex-grow max-w-[200px] cursor-pointer">
+                    <option value="" class="bg-stone-900 text-white">Todas as Agências</option>
+                    <option value="In Press Porter Novelli" class="bg-stone-900 text-white">In Press</option>
+                    <option value="FleishmanHillard" class="bg-stone-900 text-white">FleishmanHillard</option>
+                </select>
+                
+                <!-- Filtro 2: Cliente -->
+                <div class="relative inline-block text-left w-full md:w-auto min-w-[160px] flex-grow max-w-[200px]">
+                    <button id="dropdownBtn" onclick="toggleDropdown(event, 'dropdownMenu')" class="w-full bg-white/10 hover:bg-white/15 text-white text-xs p-2.5 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
+                        <span id="dropdownLabel" class="truncate text-stone-300">Todos os Clientes</span>
+                        <svg class="h-4 w-4 text-stone-300 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="dropdownMenu" class="hidden absolute left-0 sm:right-0 mt-2 w-full sm:w-64 rounded-lg shadow-lg bg-white border border-stone-200 z-[101] max-h-60 overflow-y-auto">
+                        <div id="clientesContainer" class="p-2 space-y-1">
+                            <p class="text-[10px] text-stone-400 p-2">Carregando marcas...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filtro 3: Serviços -->
+                <div class="relative inline-block text-left w-full md:w-auto min-w-[160px] flex-grow max-w-[200px]">
+                    <button id="dropdownBtnServicos" onclick="toggleDropdown(event, 'dropdownMenuServicos')" class="w-full bg-white/10 hover:bg-white/15 text-white text-xs p-2.5 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red flex justify-between items-center font-semibold tracking-wide transition-all">
+                        <span id="dropdownLabelServicos" class="truncate text-stone-300">Todos os Serviços</span>
+                        <svg class="h-4 w-4 text-stone-300 ml-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="dropdownMenuServicos" class="hidden absolute left-0 sm:right-0 mt-2 w-full sm:w-64 rounded-lg shadow-lg bg-white border border-stone-200 z-[101] max-h-60 overflow-y-auto">
+                        <div id="servicosContainer" class="p-2 space-y-1">
+                            <p class="text-[10px] text-stone-400 p-2">Carregando serviços...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Campo de Busca por Texto -->
+                <div class="relative inline-block w-full md:w-auto min-w-[200px] flex-grow max-w-[280px]">
+                    <input type="text" id="campoBusca" oninput="filtrarGeral()" placeholder="Pesquisar pautas..." 
+                           class="w-full bg-white/10 hover:bg-white/15 text-white placeholder:text-stone-300/70 text-xs p-2.5 pl-9 rounded-lg border border-white/20 focus:outline-none focus:border-inpress-red focus:bg-white/15 font-semibold tracking-wide transition-all">
+                    <svg class="absolute left-3 top-2.5 h-4 w-4 text-stone-300/80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+
         <!-- Sub-Header Editorial (Filtros de Data Interativos) -->
-        <div class="max-w-6xl mx-auto px-4 mt-10">
+        <div class="max-w-6xl mx-auto px-4 mt-8">
             <div class="flex justify-end border-b border-stone-300 pb-2">
                 <div class="flex flex-wrap items-center gap-6 text-[10px] font-bold uppercase tracking-wider font-sans-custom select-none" id="filtrosTempo">
                     <button onclick="setFiltroTempo('hoje')" id="btn-hoje" class="flex items-center gap-1.5 transition-all text-stone-400 hover:text-inpress-dark">
