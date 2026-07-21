@@ -1,128 +1,76 @@
 [
-{
-    "tipo": "marca",
-    "titulo": "",
-    "agencia": "In Press Porter Novelli",
-    "setor": "E-commerce, Varejo e Logística",
-    "marcas": [
-      "iFood"
-    ],
-    "descricao": "O iFood anunciou a expansão agressiva de sua rede de entregas por drones para 15 novas cidades no Brasil, integrando um novo modelo de IA para gestão de tráfego aéreo urbano visando zerar a pegada de carbono da última milha. Articulando uma série de encontros institucionais estratégicos (Public Affairs) com prefeitos e agências reguladoras para pautar a liderança da empresa em mobilidade urbana verde, consolidando a percepção de inovação disruptiva e influenciando políticas públicas favoráveis por meio da publicação de um Op-Ed assinado pelo CEO em veículos Tier 1 de economia e ESG.",
-    "produtos": [
-      "Public Affairs",
-      "Op-Ed C-Level"
-    ],
-    "link_noticia": "https://news.google.com/search?q=iFood+drones+entregas+IA+Brasil",
-    "data": "21/07/2026",
-    "imagem": "https://images.unsplash.com/photo-1579621970222-19f85c13865c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    "tipo": "marca",
-    "titulo": "",
-    "agencia": "FleishmanHillard",
-    "setor": "Finanças e Fintechs",
-    "marcas": [
-      "Stone"
-    ],
-    "descricao": "A Stone lançou hoje um novo produto de crédito rural e para microempreendedores focado puramente em análise comportamental via Inteligência Artificial, aprovando microcréditos instantâneos sem depender dos scores tradicionais do mercado financeiro. Estruturando fóruns proprietários com associações comerciais regionais para desmistificar o uso de IA no crédito, posicionando os executivos de inovação da Stone como líderes da narrativa de hiper-inclusão financeira, além de mobilizar micro-influenciadores de nicho financeiro em grupos de Dark Social (WhatsApp e Telegram) para acelerar a adoção do produto na base da pirâmide.",
-    "produtos": [
-      "Fóruns Proprietários",
-      "Ativação em Dark Social"
-    ],
-    "link_noticia": "https://news.google.com/search?q=Stone+credito+rural+microempreendedor+IA",
-    "data": "21/07/2026",
-    "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    "tipo": "marca",
-    "titulo": "",
-    "agencia": "FleishmanHillard",
-    "setor": "Tecnologia, IA e Eletroeletrônicos",
-    "marcas": [
-      "Google",
-      "Samsung"
-    ],
-    "descricao": "Google e Samsung fecharam uma joint venture estratégica para o mercado brasileiro para desenvolver um modelo fundacional de IA (LLM) totalmente treinado com dados e nuances culturais locais, focado nos próximos dispositivos Galaxy. Desenvolvendo um Brand Publishing imersivo focado em 'Soberania Algorítmica', atrelado à organização de briefings confidenciais embargados para jornalistas de tecnologia e policy makers, dominando a narrativa de IA segura e local antes da concorrência e fortalecendo o valor das ações institucionais de ambas as marcas no país.",
-    "produtos": [
-      "Brand Publishing",
-      "Media Briefing Confidencial"
-    ],
-    "link_noticia": "https://news.google.com/search?q=Google+Samsung+IA+Brasil+LLM",
-    "data": "21/07/2026",
-    "imagem": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    "tipo": "marca",
-    "titulo": "",
-    "agencia": "In Press Porter Novelli",
-    "setor": "Energia, Mineração e Siderurgia (ESG)",
-    "marcas": [
-      "Vale",
-      "Engie"
-    ],
-    "descricao": "A Vale e a Engie anunciaram o maior contrato de compra de energia renovável (PPA) corporativa da América Latina, garantindo que 100% das grandes operações de mineração no Pará sejam abastecidas por novos parques eólicos e solares até 2028. Mobilizando uma tática intensiva de Relações com Investidores cruzada com Relações Governamentais, engajando grandes fundos ESG globais através de roundtables exclusivas no Brasil e posicionando o board das empresas em painéis internacionais (Thought Leadership) para tangibilizar o compromisso com a descarbonização industrial pesada.",
-    "produtos": [
-      "Relações com Investidores",
-      "Lobby Verde"
-    ],
-    "link_noticia": "https://news.google.com/search?q=Vale+Engie+PPA+energia+renovavel",
-    "data": "21/07/2026",
-    "imagem": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    "tipo": "setor",
-    "titulo": "Implementação e Consulta Pública Final do Drex (Real Digital)",
-    "agencia": "",
-    "setor": "Finanças e Fintechs",
-    "marcas": [
-      "Mercado Pago",
-      "Stone",
-      "Mastercard"
-    ],
-    "descricao": "O Banco Central do Brasil iniciou a etapa derradeira da consulta pública para o roll-out massivo do Drex, gerando intensos debates de mercado sobre as regras de liquidez bancária e o futuro dos depósitos à vista nas instituições financeiras. Conduzindo uma robusta estratégia de Gestão de Crise Preventiva e Public Affairs em Brasília, fomentando a publicação de whitepapers e Op-Eds assinados por economistas das fintechs clientes para acalmar os ânimos do mercado corporativo, garantindo um ambiente regulatório pró-inovação e posicionando as plataformas como as infraestruturas mais seguras da nova economia tokenizada.",
-    "produtos": [
-      "Gestão de Crise Preventiva",
-      "Public Affairs"
-    ],
-    "link_noticia": "https://news.google.com/search?q=Drex+Banco+Central+consulta+publica+bancos",
-    "data": "21/07/2026",
-    "imagem": "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    "tipo": "marca",
-    "titulo": "",
-    "agencia": "In Press Porter Novelli",
-    "setor": "E-commerce, Varejo e Logística",
-    "marcas": [
-      "McDonalds",
-      "Ambev"
-    ],
-    "descricao": "McDonald's e Ambev formaram uma aliança inédita de co-branding para lançar embalagens inteligentes e biodegradáveis baseadas em resíduos de cevada em todos os restaurantes da rede no Brasil, com meta de zerar o plástico de uso único. Orquestrando um PR Stunt de altíssimo impacto ambiental em praças centrais de capitais brasileiras para chocar o público positivamente com a dissolução do material ao vivo, complementado por um intenso vazamento estratégico de conteúdo nos grupos de Dark Social de ativistas ambientais, garantindo endosso de base antes do anúncio oficial corporativo.",
-    "produtos": [
-      "PR Stunt",
-      "Dark Social Activation"
-    ],
-    "link_noticia": "https://news.google.com/search?q=McDonalds+Ambev+embalagem+sustentavel+cevada",
-    "data": "21/07/2026",
-    "imagem": "https://images.unsplash.com/photo-1606787620819-8bdf0c44c293?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-  },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Google",
+            "Samsung"
+        ],
+        "descricao": "Google e Samsung fecharam uma joint venture estratégica para o mercado brasileiro para desenvolver um modelo fundacional de IA (LLM) totalmente treinado com dados e nuances culturais locais, focado nos próximos dispositivos Galaxy. Desenvolvendo um Brand Publishing imersivo focado em 'Soberania Algorítmica', atrelado à organização de briefings confidenciais embargados para jornalistas de tecnologia e policy makers, dominando a narrativa de IA segura e local antes da concorrência e fortalecendo o valor das ações institucionais de ambas as marcas no país.",
+        "produtos": [
+            "Brand Publishing",
+            "Media Briefing Confidencial"
+        ],
+        "link_noticia": "https://news.google.com/search?q=Google+Samsung+IA+Brasil+LLM",
+        "data": "21/07/2026",
+        "imagem": "https://img.global.news.samsung.com/br/wp-content/uploads/2024/01/thumbnail_Samsung-Galaxy-x-Google-Cloud-Color.jpg"
+    },
     {
         "tipo": "marca",
         "titulo": "",
         "agencia": "In Press Porter Novelli",
-        "setor": "Tecnologia e Logística",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
         "marcas": [
-            "iFood"
+            "Vale",
+            "Engie"
         ],
-        "descricao": "O iFood iniciou hoje o piloto de um novo modelo de precificação dinâmica B2B orientado por IA generativa, que ajusta automaticamente os custos de insumos e taxas logísticas em tempo real para blindar restaurantes parceiros contra picos de inflação local. Articulando roadshows fechados com analistas de mercado (Relações com Investidores) para demonstrar o impacto do novo algoritmo na expansão das margens de lucro de longo prazo, combinado a um projeto de Brand Publishing focado em literacia econômica para donos de restaurantes, neutralizando possíveis fricções com o ecossistema parceiro.",
+        "descricao": "A Vale e a Engie anunciaram o maior contrato de compra de energia renovável (PPA) corporativa da América Latina, garantindo que 100% das grandes operações de mineração no Pará sejam abastecidas por novos parques eólicos e solares até 2028. Mobilizando uma tática intensiva de Relações com Investidores cruzada com Relações Governamentais, engajando grandes fundos ESG globais através de roundtables exclusivas no Brasil e posicionando o board das empresas em painéis internacionais (Thought Leadership) para tangibilizar o compromisso com a descarbonização industrial pesada.",
         "produtos": [
             "Relações com Investidores",
-            "Brand Publishing",
-            "Reputação Corporativa"
+            "Lobby Verde"
         ],
-        "link_noticia": "https://braziljournal.com/ifood-ia-precificacao-dinamica-b2b-inflacao-2026/",
-        "data": "20/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600"
+        "link_noticia": "https://news.google.com/search?q=Vale+Engie+PPA+energia+renovavel",
+        "data": "21/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Implementação e Consulta Pública Final do Drex (Real Digital)",
+        "agencia": "",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Mercado Pago",
+            "Stone",
+            "Mastercard"
+        ],
+        "descricao": "O Banco Central do Brasil iniciou a etapa derradeira da consulta pública para o roll-out massivo do Drex, gerando intensos debates de mercado sobre as regras de liquidez bancária e o futuro dos depósitos à vista nas instituições financeiras. Conduzindo uma robusta estratégia de Gestão de Crise Preventiva e Public Affairs em Brasília, fomentando a publicação de whitepapers e Op-Eds assinados por economistas das fintechs clientes para acalmar os ânimos do mercado corporativo, garantindo um ambiente regulatório pró-inovação e posicionando as plataformas como as infraestruturas mais seguras da nova economia tokenizada.",
+        "produtos": [
+            "Gestão de Crise Preventiva",
+            "Public Affairs"
+        ],
+        "link_noticia": "https://news.google.com/search?q=Drex+Banco+Central+consulta+publica+bancos",
+        "data": "21/07/2026",
+        "imagem": "https://cdn.borainvestir.b3.com.br/2023/09/28160329/Drex.webp"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "McDonalds",
+            "Ambev"
+        ],
+        "descricao": "McDonald's e Ambev formaram uma aliança inédita de co-branding para lançar embalagens inteligentes e biodegradáveis baseadas em resíduos de cevada em todos os restaurantes da rede no Brasil, com meta de zerar o plástico de uso único. Orquestrando um PR Stunt de altíssimo impacto ambiental em praças centrais de capitais brasileiras para chocar o público positivamente com a dissolução do material ao vivo, complementado por um intenso vazamento estratégico de conteúdo nos grupos de Dark Social de ativistas ambientais, garantindo endosso de base antes do anúncio oficial corporativo.",
+        "produtos": [
+            "PR Stunt",
+            "Dark Social Activation"
+        ],
+        "link_noticia": "https://news.google.com/search?q=McDonalds+Ambev+embalagem+sustentavel+cevada",
+        "data": "21/07/2026",
+        "imagem": "https://agenciasertao.com/wp-content/uploads/2022/09/vagas-de-emprego-Mcdonalds.jpg"
     },
     {
         "tipo": "marca",
@@ -140,7 +88,7 @@
         ],
         "link_noticia": "https://valor.globo.com/financas/noticia/2026/07/20/stone-alianca-cross-border-stablecoin-asia.ghtml",
         "data": "20/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600"
+        "imagem": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/09/stone.png?w=893"
     },
     {
         "tipo": "setor",
@@ -179,7 +127,7 @@
         ],
         "link_noticia": "https://exame.com/esg/uniao-europeia-inicia-rastreabilidade-diaria-commodities/",
         "data": "20/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1622322588320-96f2641e7fde?w=600"
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQSqtSwdf0KAN3oOkOdt20q_wRFxAAWLJ9yj5OJdiGjB6MfTKPQ2E7vo&s=10"
     },
     {
         "tipo": "marca",
