@@ -96,7 +96,8 @@
         }
 
         document.addEventListener("DOMContentLoaded", () => {
-            fetch('oportunidades.json')
+            // Adicionado parâmetro de tempo para forçar atualização e ignorar o cache
+            fetch(`oportunidades.json?t=${new Date().getTime()}`)
                 .then(response => {
                     if (!response.ok) throw new Error('Arquivo JSON inacessível.');
                     return response.json();
@@ -348,7 +349,3 @@
     </style>
 </body>
 </html>
-```eof
-
-### Detalhe Funcional:
-Note que se o usuário deixar o campo de "URL da Imagem" em branco durante a edição, o código está programado com um sistema de *fallback* inteligente. Ele identificará o campo vazio e automaticamente renderizará a imagem "default" baseada no contexto (as fotos geradas por algoritmo), exatamente como fazíamos no `index.html`. Isso evita *quebra* do layout caso o usuário apague um link de imagem acidentalmente.
