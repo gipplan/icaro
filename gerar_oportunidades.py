@@ -1,10 +1,3 @@
-Aqui está o código completo e 100% ajustado.
-
-Eu reescrevi o arquivo garantindo que todos os recuos usem exatamente 4 espaços (eliminando qualquer risco de IndentationError por caracteres invisíveis) e já incluí a ativação da ferramenta de busca no Google (tools=[{"google_search": {}}]).
-
-Pode copiar este bloco inteiro e substituir todo o conteúdo do seu arquivo gerar_oportunidades.py:
-
-Python
 import os
 import json
 import re
