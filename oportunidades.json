@@ -504,5 +504,109 @@
         "link_noticia": "https://www12.senado.leg.br/noticias/materias/2024/03/14/projeto-combustivel-do-futuro-chega-ao-senado-e-vai-para-tres-comissoes",
         "data": "10/04/2024",
         "imagem": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Google"
+        ],
+        "descricao": "Fato: Durante o Google I/O 2024, a empresa anunciou a maior reformulação de seu mecanismo de busca em 25 anos, integrando resumos gerados por Inteligência Artificial (Gemini) diretamente no topo dos resultados de pesquisa. Tática: Implementando Op-Eds Híbridos assinados pelo Diretor de Engenharia do Google Brasil em veículos Tier 1 como o Valor Econômico, combinados com impulsionamento estratégico no LinkedIn Pulse, para posicionar a marca como pioneira ética na transição para a era da busca generativa, mitigando preocupações de criadores de conteúdo sobre a queda de tráfego orgânico.",
+        "produtos": [
+            "Op-Ed Híbrido",
+            "Artigo de Opinião",
+            "Estratégia de LinkedIn Pulse"
+        ],
+        "link_noticia": "https://g1.globo.com/tecnologia/noticia/2024/05/14/google-io-2024-ao-vivo.ghtml",
+        "data": "16/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "Fato: A StoneCo divulgou seus resultados financeiros do primeiro trimestre de 2024, registrando um lucro líquido ajustado de R$ 450 milhões, um crescimento expressivo impulsionado pela expansão de sua base de clientes ativos de micro, pequenas e médias empresas. Tática: Estruturando Fóruns Proprietários em formato de Summit digital fechado para debater a saúde financeira e digitalização de PMEs brasileiras, utilizando os dados positivos de crescimento da Stone como pano de fundo para atrair novos leads qualificados e consolidar a autoridade da marca no ecossistema de pagamentos.",
+        "produtos": [
+            "Fórum Proprietário",
+            "Encontro de Relacionamento",
+            "Media Briefing"
+        ],
+        "link_noticia": "https://valor.globo.com/empresas/noticia/2024/05/13/lucro-da-stone-sobe-90percent-no-1o-trimestre-para-r-450-milhoes.ghtml",
+        "data": "16/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: O iFood anunciou a isenção temporária de taxas de serviço para todos os restaurantes parceiros localizados nos municípios afetados pelas enchentes no Rio Grande do Sul, além de criar um fundo de auxílio financeiro para entregadores da região. Tática: Desenvolvendo Brand Publishing por meio de um portal de notícias proprietário focado em documentar as histórias de resiliência e reconstrução dos pequenos negócios gaúchos, gerando valor reputacional orgânico e genuíno para a marca sem depender exclusivamente do espaço cada vez mais concorrido na imprensa tradicional.",
+        "produtos": [
+            "Brand Publishing",
+            "Portal de Conteúdo",
+            "Gestão de Reputação"
+        ],
+        "link_noticia": "https://exame.com/negocios/ifood-anuncia-medidas-de-apoio-a-restaurantes-e-entregadores-no-rs-veja-quais/",
+        "data": "16/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "Fato: O Mercado Livre anunciou a expansão de sua frota de veículos elétricos na América Latina para mais de 2.300 unidades, visando acelerar suas metas de descarbonização logística e atender à crescente demanda por entregas sustentáveis. Tática: Articulando Op-Eds Híbridos assinados pelo Vice-Presidente de Sustentabilidade na Exame, demonstrando como a transição energética na logística de última milha gera eficiência operacional direta e atrai fundos de investimento focados em critérios ESG rígidos.",
+        "produtos": [
+            "Op-Ed Híbrido",
+            "Artigo de Opinião",
+            "Estratégia de PR ESG"
+        ],
+        "link_noticia": "https://valor.globo.com/empresas/esg/noticia/2024/05/15/mercado-livre-amplia-frota-eletrica-na-america-latina.ghtml",
+        "data": "16/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Regulação e Segurança de Dados no Open Finance",
+        "agencia": "Setorial",
+        "setor": "Finanças e Fintechs",
+        "marcas": [],
+        "descricao": "Fato: O Banco Central do Brasil anunciou novos requisitos de segurança cibernética e compartilhamento de dados para as instituições participantes do Open Finance, visando coibir fraudes e vazamento de informações confidenciais de usuários. Tática: Preparando Dark Site Preparations com páginas de contingência invisíveis e Q&As extremamente detalhados sobre criptografia e conformidade com a LGPD, garantindo que as fintechs clientes estejam prontas para responder instantaneamente a qualquer questionamento da imprensa ou incidentes de segurança.",
+        "produtos": [
+            "Dark Site Preparation",
+            "Q&A de Crise",
+            "Playbook de Resposta Rápida"
+        ],
+        "link_noticia": "https://www.infomoney.com/onde-investir/open-finance-banco-central-muda-regras-para-compartilhamento-de-dados/",
+        "data": "16/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Malha Aérea Emergencial no Rio Grande do Sul",
+        "agencia": "Setorial",
+        "setor": "Aviação e Turismo",
+        "marcas": [],
+        "descricao": "Fato: O Ministério dos Portos e Aeroportos estruturou uma malha aérea emergencial com mais de 100 voos semanais para aeroportos regionais do Rio Grande do Sul e bases militares, contornando o fechamento por tempo indeterminado do Aeroporto Salgado Filho em Porto Alegre. Tática: Executando PR Stunt em Dark Social por meio de canais fechados e comunidades de agências de viagens no WhatsApp e Telegram, distribuindo guias logísticos em tempo real para combater a desinformação e garantir que o fluxo de turistas corporativos e ajuda humanitária ocorra sem pânico no mercado.",
+        "produtos": [
+            "PR Stunt em Dark Social",
+            "Guia de Contingência Logística",
+            "Mapeamento de Influenciadores B2B"
+        ],
+        "link_noticia": "https://g1.globo.com/rs/rio-grande-do-sul/noticia/2024/05/14/governo-anuncia-malha-aerea-emergencial-para-o-rs.ghtml",
+        "data": "16/05/2024",
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
     }
 ]
