@@ -192,5 +192,118 @@
         "data": "13/07/2026",
         "imagem": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600",
         "tipo": "marca"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "Fato: No dia 22 de julho de 2026, a Samsung realizou o Galaxy Unpacked em Londres, revelando a oitava geração de dobráveis (Galaxy Z Fold 8, Z Fold 8 Ultra e Galaxy Z Flip 8) e novos wearables (Galaxy Watch Ultra 2 e Watch 9) integrados com inteligência artificial agente. Tática sugerida: Lançando um PR Stunt em Dark Social por meio de vazamentos controlados e conteúdos exclusivos em comunidades fechadas de entusiastas de tecnologia no WhatsApp e Discord, gerando escassez e desejo de compra imediata antes do início das vendas oficiais em agosto, maximizando o impacto comercial do lançamento.",
+        "produtos": [
+            "PR Stunt em Dark Social"
+        ],
+        "link_noticia": "https://news.samsung.com/global/unveiled-at-galaxy-unpacked-july-2026-a-first-look-at-galaxy-z-fold8-ultra-galaxy-z-fold8-and-galaxy-z-flip8",
+        "data": "22/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: Em 22 de julho de 2026, o iFood iniciou sua maior campanha de recrutamento de entregadores do ano, estrelada por Luciano Huck ('O App que mais toca no Brasil'). Simultaneamente, a Folha de S.Paulo revelou que a plataforma registra quase 4 relatos de violência por dia contra entregadores, enquanto um movimento de greve ('Breque dos apps') foi iniciado em Florianópolis. Tática sugerida: Desenvolvendo um Dark Site Preparation com Q&As detalhados sobre as políticas de segurança física, apoio psicológico e canais de denúncia da plataforma, antecipando-se a possíveis escaladas da crise reputacional gerada pela sobreposição da campanha de marketing com os dados de violência e a greve local.",
+        "produtos": [
+            "Dark Site Preparations"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/cotidiano/2026/07/cerca-de-4-entregadores-relataram-violencia-por-dia-nos-ultimos-3-anos-aponta-ifood.shtml",
+        "data": "22/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "Fato: Em 21 de julho de 2026, o Banco Safra divulgou um relatório projetando um segundo trimestre de 2026 desafiador para a StoneCo (STNE), com pressão sobre as margens operacionais, aumento nas perdas de crédito esperadas e compressão do take rate devido à maior participação das transações via Pix. Tática sugerida: Posicionando o C-Level por meio de Op-Eds Híbridos assinados pelo novo CEO Mateus Scherer em veículos Tier 1 de finanças, como o Valor Econômico, combinados com impulsionamento estratégico no LinkedIn Pulse para detalhar a resiliência da carteira de crédito e a estratégia de monetização além das maquininhas tradicionais, acalmando o mercado antes da divulgação oficial de resultados em agosto.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://oespecialista.com.br/analise-safra/stone-e-pagbank-devem-ter-trimestre-pressionado-por-credito/",
+        "data": "22/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Mercado Livre",
+            "Mercado Pago"
+        ],
+        "descricao": "Fato: Em 21 de julho de 2026, o Mercado Livre captou R$ 1,5 bilhão em sua quarta emissão pública de Letras Financeiras (LFs) no Brasil para expandir as operações do Mercado Crédito. A demanda pelos papéis atingiu R$ 3,3 bilhões, superando em 2,2 vezes o volume ofertado. Tática sugerida: Criando um Fórum Proprietário focado em democratização do crédito para PMEs e inovação em fintechs, reunindo os principais executivos do Mercado Pago e especialistas do setor para debater o futuro do financiamento corporativo no Brasil, consolidando a autoridade da marca no mercado de capitais e atraindo novos tomadores de crédito de alta qualidade.",
+        "produtos": [
+            "Fóruns Proprietários"
+        ],
+        "link_noticia": "https://einvestidor.estadao.com.br/cenarios-e-mercado/mercado-livre-capta-letras-financeiras-demanda-ofertado/",
+        "data": "22/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "Fato: Em 22 de julho de 2026, os acionistas da Vale elegeram Manuel Lino Oliveira (Ollie) como novo presidente do conselho de administração, em uma movimentação apoiada pela Previ que encerra semanas de tensões de governança na mineradora, coincidindo com a divulgação de dados operacionais consistentes de produção no 2T26. Tática sugerida: Implementando uma Shadow Banning Strategy focada em otimização de SEO positivo e produção de conteúdos institucionais robustos sobre governança corporativa e estabilidade operacional para empurrar os registros de conflitos passados do conselho para as páginas secundárias de busca, blindando a reputação da nova liderança.",
+        "produtos": [
+            "Shadow Banning Strategy"
+        ],
+        "link_noticia": "https://www.mining.com/web/vale-shareholders-elect-oliveira-chairman-after-governance-tensions/",
+        "data": "22/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Ofensiva comercial dos EUA contra o Pix e o impacto no mercado de pagamentos",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Mastercard"
+        ],
+        "descricao": "Fato: Em 21-22 de julho de 2026, o Pix brasileiro tornou-se um dos alvos geopolíticos centrais dos EUA para justificar o tarifaço de 25% sobre produtos brasileiros, sob a alegação do USTR de que o sistema público operado pelo Banco Central gera concorrência desigual para bandeiras americanas. Em resposta, o presidente do BC, Gabriel Galípolo, defendeu a soberania e a gratuidade do sistema. Tática sugerida: Desenvolvendo um Brand Publishing por meio de um portal de notícias mantido pela marca focado em inovação financeira e infraestrutura de pagamentos, posicionando a Mastercard como uma parceira de coexistência e evolução tecnológica do ecossistema de pagamentos instantâneos (Pix e Pix Automático), mitigando narrativas de conflito protecionista.",
+        "produtos": [
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://convergenciadigital.com.br/governo/banco-central-pix-sera-sempre-um-meio-de-payment-gratuito-seguro-e-instantaneo/",
+        "data": "22/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Adiamento do AI Act na Europa e o compasso de espera da regulação de IA no Brasil",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Google"
+        ],
+        "descricao": "Fato: Em julho de 2026, a proximidade da entrada em vigor das regras de transparência da Lei de IA da União Europeia (2 de agosto) contrasta com o recente recuo do bloco, que adiou as obrigações mais rígidas de 'alto risco' para o final de 2027. No Brasil, o marco regulatório (PL 2338) segue travado na Câmara dos Deputados sob forte lobby de big techs. Tática sugerida: Posicionando o C-Level do Google por meio de Op-Eds Híbridos em veículos de grande circulação para defender uma regulação equilibrada e baseada em riscos que não sufoque a inovação local, alinhando o discurso corporativo com a nova flexibilidade adotada pela União Europeia.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://convergenciadigital.com.br/inovacao/no-brasil-o-marco-regulatorio-de-ia-dorme-na-gaveta-do-congresso-na-europa-leis-entram-em-vigor-no-dia-02-de-agosto/",
+        "data": "22/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=800&q=80"
     }
 ]
