@@ -608,5 +608,116 @@
         "link_noticia": "https://g1.globo.com/rs/rio-grande-do-sul/noticia/2024/05/14/governo-anuncia-malha-aerea-emergencial-para-o-rs.ghtml",
         "data": "16/05/2024",
         "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Samsung",
+            "Google"
+        ],
+        "descricao": "No evento Galaxy Unpacked de 22 de julho de 2026, a Samsung e o Google anunciaram o lançamento dos novos dobráveis Galaxy Z Fold8 e Flip8 integrados com a inteligência artificial Gemini, além de novos vestíveis e óculos inteligentes. Tática sugerida: Vazando intencionalmente em comunidades fechadas de WhatsApp e Discord (Dark Social) detalhes exclusivos do funcionamento da IA Gemini nos novos dispositivos antes do início das vendas gerais, gerando um senso de escassez e exclusividade que atrai early adopters de tecnologia e impulsiona a pré-venda orgânica.",
+        "produtos": [
+            "PR Stunt em Dark Social"
+        ],
+        "link_noticia": "https://blog.google/products/android/google-samsung-galaxy-unpacked-july-2026/",
+        "data": "22/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "A Vale elegeu Manuel Lino Silva de Sousa Oliveira como presidente do conselho de administração em Assembleia Geral Extraordinária realizada em 22 de julho de 2026, em meio a questionamentos de acionistas minoritários enviados à CVM, enquanto divulgava resultados operacionais robustos no segundo trimestre. Tática sugerida: Posicionando o novo presidente do conselho por meio de artigos de opinião (Op-Eds) assinados em veículos Tier 1 como Valor Econômico e Exame, casados com impulsionamento estratégico no LinkedIn Pulse, para detalhar a solidez da governança corporativa da mineradora e neutralizar os ruídos gerados pelos questionamentos na CVM.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://www.tipranks.com/news/vale-discloses-cvm-inquiry-on-board-chair-election-ahead-of-july-22-egm",
+        "data": "22/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "O Mercado Livre captou R$ 1,5 bilhão em sua quarta emissão pública de Letras Financeiras em 21 de julho de 2026, registrando uma demanda recorde de R$ 3,3 bilhões (2,2 vezes o volume ofertado) para financiar a expansão de suas operações de crédito e logística no Brasil. Tática sugerida: Criando um Summit proprietário focado em debater o futuro do crédito e do e-commerce na América Latina, reunindo grandes players do mercado financeiro e varejo para consolidar a liderança do Mercado Livre no setor e demonstrar como a captação recorde será revertida em fomento para os vendedores da plataforma.",
+        "produtos": [
+            "Fóruns Proprietários"
+        ],
+        "link_noticia": "https://einvestidor.estadao.com.br/radar-comercial/mercado-livre-capta-letras-financeiras/",
+        "data": "22/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Natura"
+        ],
+        "descricao": "A Natura anunciou em 21 de julho de 2026 uma parceria estratégica com a empresa de biotecnologia Debut para desenvolver um ingrediente de longevidade da pele descoberto por inteligência artificial, prometendo acelerar um processo que levaria milhares de anos por métodos tradicionais. Tática sugerida: Criando um portal de notícias proprietário (Brand Publishing) focado em longevidade, biotecnologia e bem-estar para divulgar de forma contínua os avanços científicos da parceria, educando o mercado sobre a aplicação de IA na cosmética sem depender exclusivamente da cobertura da imprensa tradicional.",
+        "produtos": [
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://longevity.technology/news/ai-meets-amazon-in-longevity-beauty-push/",
+        "data": "22/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Unilever"
+        ],
+        "descricao": "O órgão antitruste do Reino Unido (CMA) abriu em 21 de julho de 2026 uma consulta pública sobre a proposta de fusão de US$ 44,8 bilhões entre a McCormick e a divisão de alimentos da Unilever, marcando a primeira etapa da análise regulatória do negócio. Tática sugerida: Estruturando landing pages invisíveis com Q&As detalhados e posicionamentos prontos (Dark Site Preparations) sobre os benefícios concorrenciais da fusão, garantindo que a Unilever esteja preparada para responder instantaneamente a qualquer desdobramento ou questionamento regulatório que possa gerar crise de imagem.",
+        "produtos": [
+            "Dark Site Preparations"
+        ],
+        "link_noticia": "https://www.foodbev.com/news/cma-opens-review-of-proposed-merger-between-mccormick-and-unilever/",
+        "data": "22/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Aviação e Turismo",
+        "marcas": [
+            "GOL"
+        ],
+        "descricao": "O Grupo Abra, controlador da GOL e da Avianca, assinou em 21 de julho de 2026 um acordo para a aquisição de até 45 aeronaves Embraer E195-E2 e expandiu sua parceria com a CFM para motores LEAP-1A, impulsionando sua estratégia de conectividade regional e internacional. Tática sugerida: Publicando artigos assinados (Op-Eds) pelo CEO do Grupo Abra no Valor Econômico, integrados a campanhas de alcance no LinkedIn Pulse, para justificar o impacto financeiro da aquisição de frota e o reposicionamento premium da GOL (com a nova classe Insignia), fortalecendo a confiança de investidores.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://www.prnewswire.com/news-releases/abra-group-announces-an-agreement-to-purchase-up-to-45-e195-e2-aircraft-from-embraer-providing-additional-flexibility-to-abras-growth-and-connectivity-strategy-302202111.html",
+        "data": "22/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Impacto das Novas Tarifas de Importação dos EUA sobre Exportações Brasileiras",
+        "agencia": "N/A",
+        "setor": "Finanças e Fintechs",
+        "marcas": [],
+        "descricao": "Em 22 de julho de 2026, entraram em vigor as novas tarifas de 25% impostas pelo governo dos EUA sobre diversos produtos brasileiros, embora agentes de carga locais demonstrem otimismo devido a uma ampla lista de isenções que protege commodities essenciais. Tática sugerida: Promovendo um painel de discussão exclusivo (Fórum Proprietário) para debater os impactos das novas tarifas sobre as exportações brasileiras, reunindo especialistas em comércio exterior e logística para orientar os exportadores sobre como navegar pelas isenções e mitigar o impacto financeiro nos negócios.",
+        "produtos": [
+            "Fóruns Proprietários"
+        ],
+        "link_noticia": "https://theloadstar.com/brazilian-forwarders-unfazed-as-trump-unleashes-new-tariff/",
+        "data": "22/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80"
     }
 ]
