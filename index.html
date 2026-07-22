@@ -282,7 +282,7 @@
 
            fetch(`oportunidades.json?t=${new Date().getTime()}`)
   .then(response => response.json())
-  .then(data => {
+  .then(dados => {
                     dadosOportunidades = dados;
                     inicializarDropdownClientes(dadosOportunidades);
                     inicializarDropdownServicos(dadosOportunidades);
