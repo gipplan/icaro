@@ -280,9 +280,13 @@
             });
             document.getElementById('filtroAgencia').addEventListener('change', filtrarGeral);
 
-           fetch(`oportunidades.json?t=${new Date().getTime()}`)
-  .then(response => response.json())
-  .then(dados => {
+            // Adicionado parâmetro de tempo (?t=) para quebrar o cache do navegador e garantir os dados mais recentes
+            fetch(`oportunidades.json?t=${new Date().getTime()}`)
+                .then(response => {
+                    if (!response.ok) throw new Error('Arquivo JSON inacessível.');
+                    return response.json();
+                })
+                .then(dados => {
                     dadosOportunidades = dados;
                     inicializarDropdownClientes(dadosOportunidades);
                     inicializarDropdownServicos(dadosOportunidades);
