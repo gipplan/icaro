@@ -1,3 +1,10 @@
+Aqui está o código completo e 100% ajustado.
+
+Eu reescrevi o arquivo garantindo que todos os recuos usem exatamente 4 espaços (eliminando qualquer risco de IndentationError por caracteres invisíveis) e já incluí a ativação da ferramenta de busca no Google (tools=[{"google_search": {}}]).
+
+Pode copiar este bloco inteiro e substituir todo o conteúdo do seu arquivo gerar_oportunidades.py:
+
+Python
 import os
 import json
 import re
@@ -70,12 +77,12 @@ Use EXCLUSIVAMENTE as estratégias e gatilhos listados no playbook da agência a
 
     print("Enviando requisição para a API do Gemini usando o modelo 3.5 Flash...")
     
-  response = client.models.generate_content(
+    response = client.models.generate_content(
         model='gemini-3.5-flash',
         contents=prompt,
         config=types.GenerateContentConfig(
             temperature=0.4,
-            tools=[{"google_search": {}}] # Ativa a navegação na internet em tempo real
+            tools=[{"google_search": {}}]
         )
     )
     
@@ -111,7 +118,7 @@ Use EXCLUSIVAMENTE as estratégias e gatilhos listados no playbook da agência a
         else:
             historico = novas_oportunidades
             
-        # 5. Salva a lista gigante e atualizada de volta no arquivo json, usando formatação bonita (indent=4)
+        # 5. Salva a lista gigante e atualizada de volta no arquivo json, usando formatação bonita
         with open('oportunidades.json', 'w', encoding='utf-8') as f:
             json.dump(historico, f, ensure_ascii=False, indent=4)
             
