@@ -280,12 +280,9 @@
             });
             document.getElementById('filtroAgencia').addEventListener('change', filtrarGeral);
 
-            fetch('oportunidades.json')
-                .then(response => {
-                    if (!response.ok) throw new Error('Arquivo JSON inacessível.');
-                    return response.json();
-                })
-                .then(dados => {
+           fetch(`oportunidades.json?t=${new Date().getTime()}`)
+  .then(response => response.json())
+  .then(data => {
                     dadosOportunidades = dados;
                     inicializarDropdownClientes(dadosOportunidades);
                     inicializarDropdownServicos(dadosOportunidades);
