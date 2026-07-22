@@ -1,615 +1,5 @@
 [
     {
-        "agencia": "FleishmanHillard",
-        "setor": "Saúde",
-        "marcas": [
-            "Bayer"
-        ],
-        "descricao": "A Bayer firmou acordo de €3 bilhões com a Apollo para venda de participação minoritária na divisão de contraceptivos (LARC). A captação visa cobrir liquidez e litígios, enquanto mantém o controle operacional, exigindo comunicação estratégica transparente para investidores e público interno.",
-        "produtos": [
-            "Assessoria de Imprensa",
-            "Comunicação Interna",
-            "Posicionamento Executivo"
-        ],
-        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/bayer-vende-participacao-em-empresa-de-anticoncepcionais-por-r-175-bilhoes.shtml",
-        "data": "16/07/2026",
-        "imagem": "https://www.bloomberglinea.com.br/resizer/v2/D3CMJ5FGNVGBZETJNFMWRXNRZA.jpeg?auth=c68e64e842838b1d529a33daffdddd998ad6f3e2345fdc9f95e9d894c5035a58"
-    },
-    {
-        "agencia": "In Press Porter Novelli",
-        "setor": "Serviços Financeiros",
-        "marcas": [
-            "Mercado Pago"
-        ],
-        "descricao": "Em 15/07/2026, o Mercado Pago anunciou a expansão de sua vertical de seguros integrados à rotina financeira via Inteligência Artificial, em parceria com Porto e Chubb. O gatilho factual viabiliza forte atuação de assessoria de imprensa e campanhas com foco em tecnologia e inovação no setor.",
-        "produtos": [
-            "Assessoria de Imprensa",
-            "Campanha",
-            "Presença Digital"
-        ],
-        "link_noticia": "https://www.segs.com.br/seguros/mercado-livre-anuncia-venda-de-seguro-atraves-da-ia",
-        "data": "16/07/2026",
-        "imagem": "https://gironews.com/wp-content/uploads/2024/06/mlcd-925x400.jpg"
-    },
-    {
-        "agencia": "In Press Porter Novelli",
-        "setor": "Finanças e E-commerce",
-        "marcas": [
-            "Mercado Livre",
-            "Mercado Pago"
-        ],
-        "descricao": "O Mercado Pago anunciou no dia 15 de julho de 2026 a ampliação de sua oferta de seguros baseados em inteligência artificial (IA) para simplificar a contratação e potencializar seu ecossistema. Um gatilho para ações de PR com foco em inovação tecnológica.",
-        "produtos": [
-            "Assessoria de Imprensa",
-            "Campanha",
-            "Mídia"
-        ],
-        "link_noticia": "https://cqcs.com.br/noticia/mercado-livre-anuncia-venda-de-seguro-atraves-da-ia/",
-        "data": "15/07/2026",
-        "imagem": "https://mambadigital.com.br/wp-content/webp-express/webp-images/uploads/2024/05/o-guia-completo-para-vender-no-mercado-livre.jpg.webp"
-    },
-    {
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce e Varejo",
-        "marcas": [
-            "Mercado Livre"
-        ],
-        "descricao": "No dia 13/07/2026, o Mercado Livre bateu recorde histórico no Brasil com a campanha 7.7, superando o volume de vendas da Black Friday de 2025. O sucesso foi impulsionado pela estreia de Anitta como nova embaixadora da marca, gerando excelente gancho para PR focado em conversão e influência.",
-        "produtos": [
-            "Influenciadores",
-            "Campanha",
-            "Mídia"
-        ],
-        "link_noticia": "https://www.ecommercebrasil.com.br/noticias/mercado-livre-bate-recorde-historico-de-vendas-e-supera-black-friday-no-7-7",
-        "data": "14/07/2026",
-        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr1wWmxZQjBJ3ZuTT6Bo6k3R3VEu11wFDirKOKZRQWWRj6ZDFa6qJ93oI&s=10?w=600",
-        "tipo": "marca"
-    },
-    {
-        "agencia": "FleishmanHillard",
-        "setor": "Varejo",
-        "marcas": [
-            "Shein"
-        ],
-        "descricao": "Segundo relatório do BTG Pactual de 13 de julho de 2026, a base de usuários ativos mensais da Shein no Brasil cresceu 34% no 2T26, liderando a expansão do e-commerce. O avanço demonstra a resiliência da marca no país e abra caminho para campanhas de Presença Digital e Assessoria de Imprensa.",
-        "produtos": [
-            "Presença Digital",
-            "Assessoria de Imprensa",
-            "Campanha"
-        ],
-        "link_noticia": "https://www.seudinheiro.com/2026/negocios/shein-com-ainda-mais-poder-de-fogo-por-que-o-ipo-da-asiatica-pode-tornar-a-vida-das-varejistas-brasileiras-ainda-mais-dificil/",
-        "data": "13/07/2026",
-        "imagem": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600",
-        "tipo": "marca"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "Mercado Livre"
-        ],
-        "descricao": "Fato: O Mercado Livre anunciou um investimento recorde de R$ 23 bilhões no Brasil para 2024, focando na expansão de sua malha logística e contratação de novos colaboradores. Tática: Orquestrando um PR Stunt em Dark Social através do vazamento controlado de novas funcionalidades logísticas ultra-rápidas em grupos fechados de e-commerce no WhatsApp, gerando buzz orgânico e senso de exclusividade antes do anúncio oficial ao mercado de capitais.",
-        "produtos": [
-            "PR Stunt em Dark Social",
-            "Relações Públicas Digitais",
-            "Influencer Engagement"
-        ],
-        "link_noticia": "https://g1.globo.com/economia/noticia/2024/04/mercado-livre-anuncia-investimento-recorde-de-r-23-bilhoes-no-brasil.ghtml",
-        "data": "24/05/2024",
-        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "Finanças e Fintechs",
-        "marcas": [
-            "Stone"
-        ],
-        "descricao": "Fato: A Stone registrou forte crescimento no primeiro trimestre de 2024, impulsionada pela expansão de sua carteira de crédito e soluções de banking para micro e pequenas empresas. Tática: Posicionando o CEO da Stone através de Op-Eds Híbridos em veículos de finanças de Tier 1 integrados a uma campanha de engajamento no LinkedIn Pulse, demonstrando como o acesso ao microcrédito inteligente impulsiona o PIB local e blindando a marca contra críticas sobre taxas de juros do setor.",
-        "produtos": [
-            "Op-Eds Híbridos",
-            "Thought Leadership",
-            "Executive Communications"
-        ],
-        "link_noticia": "https://valor.globo.com/financas/noticia/2024/05/stone-tem-lucro-liquido-no-primeiro-trimestre.ghtml",
-        "data": "24/05/2024",
-        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "setor",
-        "titulo": "Isenção de Imposto de Importação e a Taxação do E-commerce Internacional",
-        "agencia": "FleishmanHillard",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "Shein",
-            "Mercado Livre"
-        ],
-        "descricao": "O debate no Congresso Nacional sobre o fim da isenção tributária para compras internacionais de até US$ 50 acirra a disputa entre varejistas nacionais e plataformas globais de e-commerce. Executando PR Stunt em Dark Social através do compartilhamento controlado de estudos de impacto econômico e social em comunidades fechadas de criadores de conteúdo e influenciadores de finanças para gerar mobilização orgânica contra o retrocesso no poder de compra do consumidor.",
-        "produtos": [
-            "Mapeamento de Dark Social",
-            "Estudo de Impacto Setorial",
-            "Advocacy Digital"
-        ],
-        "link_noticia": "https://www12.senado.leg.br/noticias/materias/2024/05/fim-de-isencao-para-compras-de-ate-us-50-divide-opinioes-no-senado",
-        "data": "24/05/2024",
-        "imagem": "https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "setor",
-        "titulo": "Aceleração da Transição Energética e Novas Regras de Hidrogênio Verde",
-        "agencia": "In Press Porter Novelli",
-        "setor": "Energia, Mineração e Siderurgia (ESG)",
-        "marcas": [
-            "Engie",
-            "Siemens Energy"
-        ],
-        "descricao": "Fato: O governo federal sanciona o marco legal do Hidrogênio Verde, abrindo caminho para bilhões em investimentos internacionais. Tática: Estruturando Fóruns Proprietários focados na viabilidade econômica do hidrogênio de baixo carbono no Brasil, reunindo os principais players do setor para debater a infraestrutura necessária e posicionando as marcas clientes como as grandes catalisadoras dessa transição.",
-        "produtos": [
-            "Fóruns Proprietários",
-            "Stakeholder Engagement",
-            "Press Trip"
-        ],
-        "link_noticia": "https://www.cnnbrasil.com.br/economia/macro-legal-hidrogenio-verde-sancionado",
-        "data": "24/10/2024",
-        "imagem": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "setor",
-        "titulo": "Adiantamento do Pix Automático pelo Banco Central do Brasil para 2025",
-        "agencia": "FleishmanHillard",
-        "setor": "Finanças e Fintechs",
-        "marcas": [
-            "Stone",
-            "Mercado Pago"
-        ],
-        "descricao": "Fato: O Banco Central adiou o lançamento do Pix Automático para abril de 2025, impactando o planejamento de receitas recorrentes de fintechs e varejistas. Tática: Posicionando os executivos das marcas afetadas por meio de Op-Eds Híbridos focados em soluções alternativas de recorrência financeira, mantendo a percepção de agilidade tecnológica e liderança de mercado frente aos concorrentes tradicionais.",
-        "produtos": [
-            "Artigo de Opinião (Op-Ed)",
-            "Mesa Redonda com Jornalistas de Finanças",
-            "Análise de Impacto Regulatório"
-        ],
-        "link_noticia": "https://g1.globo.com/economia/noticia/2024/05/banco-central-adia-lancamento-do-pix-automatico-para-2025.ghtml",
-        "data": "24/05/2024",
-        "imagem": "https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "Bens de Consumo",
-        "marcas": [
-            "Ambev"
-        ],
-        "descricao": "Fato: A Ambev paralisou temporariamente a produção de cerveja em sua fábrica de Viamão (RS) para envasar água potável em latas e doar às vítimas das enchentes no estado. Tática: Implementando uma estratégia de Brand Publishing por meio da criação de um portal de notícias em tempo real mantido pela própria marca, centralizando a divulgação de dados logísticos e de doações para blindar a reputação corporativa contra fake news e maximizar o valor da marca perante os stakeholders.",
-        "produtos": [
-            "Brand Publishing Platform",
-            "ESG Content Strategy"
-        ],
-        "link_noticia": "https://g1.globo.com/rs/rio-grande-do-sul/noticia/2024/05/08/ambev-pausa-producao-de-cerveja-para-envasar-agua-para-doacao-ao-rs.ghtml",
-        "data": "16/05/2024",
-        "imagem": "https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "Tecnologia",
-        "marcas": [
-            "Google"
-        ],
-        "descricao": "Fato: O Google apresentou suas novas ferramentas de inteligência artificial generativa integradas ao ecossistema de buscas e produtividade durante o evento global Google I/O 2024. Tática: Estruturando Fóruns Proprietários no formato de um Summit exclusivo para C-Levels e parceiros estratégicos no Brasil, debatendo a governança de IA e o impacto nos negócios locais, garantindo a liderança intelectual da marca e gerando novas frentes de receita corporativa.",
-        "produtos": [
-            "Proprietary Summit",
-            "Executive Positioning"
-        ],
-        "link_noticia": "https://g1.globo.com/tecnologia/noticia/2024/05/14/google-io-2024-veja-as-principais-novidades-do-evento-de-tecnologia.ghtml",
-        "data": "16/05/2024",
-        "imagem": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "Finanças",
-        "marcas": [
-            "Stone"
-        ],
-        "descricao": "Fato: A Stone Co. divulgou seu balanço financeiro do primeiro trimestre de 2024, registrando um crescimento de 90% no lucro líquido ajustado, que atingiu R$ 450 milhões. Tática: Veiculando Op-Eds Híbridos assinados pelo CEO em veículos de finanças Tier 1, combinados com impulsionamento estratégico no LinkedIn Pulse para tomadores de decisão, com o objetivo de consolidar a percepção de robustez financeira da Stone e atrair novos clientes de médio e grande porte.",
-        "produtos": [
-            "Hybrid Op-Ed",
-            "LinkedIn Executive Program"
-        ],
-        "link_noticia": "https://valor.globo.com/financas/noticia/2024/05/13/lucro-liquido-ajustado-da-stone-sobe-90percent-no-1o-trimestre-para-r-450-milhoes.ghtml",
-        "data": "16/05/2024",
-        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce",
-        "marcas": [
-            "iFood"
-        ],
-        "descricao": "Fato: O iFood expandiu as operações de seu braço financeiro, o iFood Pago, focando na oferta de serviços bancários e de crédito sob medida para restaurantes parceiros. Tática: Realizando um PR Stunt em Dark Social por meio de vazamentos intencionais de dados de mercado e novas linhas de crédito em grupos fechados de WhatsApp de proprietários de restaurantes, gerando escassez e alta demanda orgânica antes do lançamento oficial do produto.",
-        "produtos": [
-            "Dark Social Engagement",
-            "Exclusive Insights Release"
-        ],
-        "link_noticia": "https://exame.com/bussola/ifood-pago-atinge-r-25-bilhoes-em-transacoes-e-mira-expansao-no-credito/",
-        "data": "16/05/2024",
-        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce",
-        "marcas": [
-            "Mercado Livre"
-        ],
-        "descricao": "Fato: O Mercado Livre anunciou um investimento recorde de R$ 23 bilhões no Brasil para 2024, com foco na expansão de sua malha logística e contratação de mais de 6.500 profissionais. Tática: Publicando Op-Eds Híbridos do VP de Operações no Valor Econômico detalhando o impacto do investimento no PIB logístico nacional, com amplificação focada no LinkedIn Pulse para fortalecer o employer branding e atrair talentos altamente qualificados.",
-        "produtos": [
-            "Hybrid Op-Ed",
-            "Employer Branding Campaign"
-        ],
-        "link_noticia": "https://exame.com/negocios/mercado-livre-vai-investir-r-23-bilhoes-no-brasil-em-2024-o-maior-aporte-da-historia/",
-        "data": "16/05/2024",
-        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "setor",
-        "titulo": "Regulamentação do Pix Automático pelo Banco Central",
-        "agencia": "In Press Porter Novelli",
-        "setor": "Finanças e Fintechs",
-        "marcas": [
-            "Abecs",
-            "Mercado Pago"
-        ],
-        "descricao": "Fato: O Banco Central do Brasil anunciou novas diretrizes de segurança e o cronograma final para a implementação do Pix Automático, previsto para o final de 2024. Tática: Desenvolvendo Dark Site Preparations com landing pages ocultas contendo Q&As detalhados sobre segurança e tarifas, prontas para ativação imediata caso ocorram ruídos de comunicação ou crises de desinformação no mercado financeiro.",
-        "produtos": [
-            "Dark Site Development",
-            "Crisis Q&A Preparation"
-        ],
-        "link_noticia": "https://g1.globo.com/economia/noticia/2024/05/15/banco-central-divulga-novas-regras-do-pix-automatico.ghtml",
-        "data": "16/05/2024",
-        "imagem": "https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "setor",
-        "titulo": "Transição Energética e Marco Legal do Hidrogênio Verde",
-        "agencia": "In Press Porter Novelli",
-        "setor": "Energia, Mineração e Siderurgia (ESG)",
-        "marcas": [
-            "Engie",
-            "Siemens Energy"
-        ],
-        "descricao": "Fato: O governo brasileiro intensificou as discussões regulatórias sobre o marco legal do hidrogênio verde e a transição energética industrial. Tática: Promovendo Fóruns Proprietários focados em transição energética para reunir reguladores, cientistas e tomadores de decisão, posicionando as marcas parceiras como as principais viabilizadoras tecnológicas do setor e influenciando positivamente as políticas públicas.",
-        "produtos": [
-            "Proprietary Forum",
-            "Stakeholder Engagement"
-        ],
-        "link_noticia": "https://epbr.com.br/marco-legal-do-hidrogenio-verde-avanca-no-congresso-nacional/",
-        "data": "16/05/2024",
-        "imagem": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "Energia, Mineração e Siderurgia (ESG)",
-        "marcas": [
-            "Vale"
-        ],
-        "descricao": "Fato: Vale, BHP e Samarco firmam acordo definitivo de R$ 170 bilhões com autoridades públicas para a reparação integral dos danos causados pelo rompimento da barragem de Fundão, em Mariana (MG). Tática: Mitigando os impactos reputacionais de longo prazo por meio de Dark Site Preparations, estruturando uma plataforma digital transparente com dados auditados em tempo real sobre a destinação dos recursos para neutralizar narrativas adversas e restabelecer a confiança dos stakeholders.",
-        "produtos": [
-            "Dark Site Preparations"
-        ],
-        "link_noticia": "https://g1.globo.com/mg/minas-gerais/noticia/2024/10/25/acordo-de-mariana-governo-federal-e-estados-assinam-repactuacao-de-r-170-bilhoes.ghtml",
-        "data": "25/10/2024",
-        "imagem": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "iFood"
-        ],
-        "descricao": "Fato: O iFood expande o uso de ferramentas de Inteligência Artificial generativa para auxiliar pequenos e médios restaurantes parceiros a otimizarem seus cardápios e criarem peças de marketing personalizadas de forma automatizada. Tática: Posicionando a marca como a principal parceira de crescimento e tecnologia do pequeno empreendedor por meio de Op-Eds Híbridos assinados pelo VP de IA e publicados no Valor Econômico, casados com impulsionamento estratégico no LinkedIn Pulse para atrair novos parceiros B2B.",
-        "produtos": [
-            "Op-Eds Híbridos"
-        ],
-        "link_noticia": "https://exame.com/bussola/ifood-aposta-em-inteligencia-artificial-para-impulsionar-vendas-de-restaurantes/",
-        "data": "25/10/2024",
-        "imagem": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "Finanças e Fintechs",
-        "marcas": [
-            "Stone"
-        ],
-        "descricao": "Fato: A StoneCo acelera sua estratégia de integração de soluções de pagamento diretamente nos sistemas de gestão (ERPs) de micro e pequenas empresas, visando aumentar a retenção de clientes no varejo físico. Tática: Consolidando a autoridade da marca no ecossistema de PMEs por meio de Fóruns Proprietários, criando um Summit exclusivo voltado para debater a eficiência operacional e a digitalização do varejo de vizinhança.",
-        "produtos": [
-            "Fóruns Proprietários"
-        ],
-        "link_noticia": "https://valor.globo.com/financas/noticia/2024/10/24/stone-avanca-em-integracao-com-software-para-fidelizar-varejista.ghtml",
-        "data": "25/10/2024",
-        "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "Mercado Livre"
-        ],
-        "descricao": "Fato: O Mercado Livre anuncia a abertura de mais de 11 mil vagas temporárias de trabalho no Brasil para reforçar suas operações logísticas e de atendimento durante a Black Friday e o Natal de 2024. Tática: Gerando buzz e desejo de marca empregadora através de um PR Stunt em Dark Social, realizando vazamentos intencionais de bastidores da operação e benefícios exclusivos em comunidades fechadas de profissionais de logística no WhatsApp e Facebook.",
-        "produtos": [
-            "PR Stunt em Dark Social"
-        ],
-        "link_noticia": "https://g1.globo.com/trabalho-e-carreira/noticia/2024/10/23/mercado-livre-anuncia-vagas-temporarias-para-black-friday-e-fim-de-ano.ghtml",
-        "data": "25/10/2024",
-        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "Tecnologia, IA e Eletroeletrônicos",
-        "marcas": [
-            "Google"
-        ],
-        "descricao": "Fato: Google Cloud anuncia novos investimentos em infraestrutura de nuvem e segurança de dados no Brasil para suportar a alta demanda de grandes empresas por soluções locais de Inteligência Artificial generativa. Tática: Estabelecendo liderança de pensamento e soberania tecnológica por meio de Brand Publishing, lançando um portal de notícias mantido pela marca focado em desmistificar a segurança de dados e a governança de IA para o mercado corporativo.",
-        "produtos": [
-            "Brand Publishing"
-        ],
-        "link_noticia": "https://valor.globo.com/empresas/noticia/2024/10/24/google-cloud-amplia-infraestrutura-no-brasil-para-atender-demanda-de-ia.ghtml",
-        "data": "25/10/2024",
-        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "setor",
-        "titulo": "Avanço do Drex e Regulamentação de Ativos Digitais pelo Banco Central",
-        "agencia": "Setorial",
-        "setor": "Finanças e Fintechs",
-        "marcas": [
-            "Mercado Bitcoin",
-            "Banco Mercantil",
-            "Sicredi"
-        ],
-        "descricao": "Fato: O Banco Central do Brasil avança nos testes de privacidade e contratos inteligentes da segunda fase do Drex, exigindo que as instituições financeiras participantes adaptem suas estruturas tecnológicas. Tática: Antecipando o posicionamento regulatório e demonstrando robustez técnica por meio de Op-Eds Híbridos assinados em conjunto pelos diretores de inovação dos clientes, publicados no Valor Econômico e amplificados no LinkedIn para consolidar as marcas como pioneiras na economia tokenizada.",
-        "produtos": [
-            "Op-Eds Híbridos"
-        ],
-        "link_noticia": "https://www.infomoney.com/mercados-financeiros/banco-central-avanca-com-testes-do-drex-e-foca-em-privacidade-de-dados/",
-        "data": "25/10/2024",
-        "imagem": "https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "iFood"
-        ],
-        "descricao": "Fato: O debate sobre o Projeto de Lei 12/2024, que regulamenta o trabalho de motoristas e entregadores por aplicativos, avança no Congresso Nacional sob forte escrutínio público e pressão das categorias de trabalhadores. Tática: Desenvolvendo Dark Site Preparations com Q&As estruturados e simulações de cenários regulatórios para blindar a reputação institucional do iFood, garantindo respostas rápidas e alinhadas à imprensa e formadores de opinião assim que as votações ocorrerem.",
-        "produtos": [
-            "Mapeamento de Stakeholders",
-            "Comunicação de Crise",
-            "Q&A Institucional"
-        ],
-        "link_noticia": "https://www12.senado.leg.br/noticias/materias/2024/03/05/projeto-que-regulamenta-trabalho-por-aplicativo-chega-ao-congresso",
-        "data": "10/04/2024",
-        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "Finanças e Fintechs",
-        "marcas": [
-            "Stone"
-        ],
-        "descricao": "Fato: A StoneCo registrou forte crescimento em sua base de clientes ativos de micro, pequenas e médias empresas (MPMEs) e expandiu sua carteira de crédito após consolidar resultados financeiros robustos no último trimestre. Tática: Implementando Brand Publishing por meio da criação de um hub de conteúdo editorial focado em saúde financeira para MPMEs, posicionando a Stone como parceira estratégica de crescimento e reduzindo a dependência de canais de mídia paga tradicionais.",
-        "produtos": [
-            "Hub de Conteúdo Proprietário",
-            "Estratégia de Inbound PR"
-        ],
-        "link_noticia": "https://valor.globo.com/financas/noticia/2024/03/18/lucro-da-stone-salta-para-r-564-milhoes-no-quarto-trimestre.ghtml",
-        "data": "10/04/2024",
-        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "Tecnologia, IA e Eletroeletrônicos",
-        "marcas": [
-            "Google"
-        ],
-        "descricao": "Fato: O Google apresentou inovações massivas em inteligência artificial generativa corporativa durante o evento global Google Cloud Next '24, incluindo o Gemini 1.5 Pro e novas ferramentas para desenvolvedores. Tática: Viabilizando Op-Eds Híbridos assinados pelo C-level da operação brasileira em veículos Tier 1 de negócios, combinados com impulsionamento estratégico no LinkedIn Pulse, para consolidar a liderança tecnológica da marca frente aos tomadores de decisão de TI.",
-        "produtos": [
-            "Artigo de Opinião (Op-Ed)",
-            "Amplificação Digital",
-            "Relações com a Mídia"
-        ],
-        "link_noticia": "https://g1.globo.com/tecnologia/noticia/2024/04/09/google-cloud-next-2024-veja-as-novidades.ghtml",
-        "data": "10/04/2024",
-        "imagem": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "Mercado Livre",
-            "Mercado Pago"
-        ],
-        "descricao": "Fato: O Mercado Livre anunciou um plano de investimento recorde de R$ 23 bilhões no Brasil para 2024, com foco na expansão da malha logística, tecnologia financeira e contratação de milhares de colaboradores. Tática: Criando Fóruns Proprietários focados em debater o impacto do e-commerce no desenvolvimento regional e na empregabilidade, reunindo governantes, economistas e jornalistas influentes sob a chancela da marca.",
-        "produtos": [
-            "Planejamento de Evento Proprietário",
-            "Relações Governamentais",
-            "Media Relations"
-        ],
-        "link_noticia": "https://valor.globo.com/empresas/noticia/2024/04/09/mercado-livre-vai-investir-r-23-bilhoes-no-brasil-em-2024.ghtml",
-        "data": "10/04/2024",
-        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "Aviação e Turismo",
-        "marcas": [
-            "GOL/Smiles"
-        ],
-        "descricao": "Fato: A GOL Linhas Aéreas avança em seu processo de reestruturação financeira sob o Chapter 11 nos Estados Unidos, fechando acordos cruciais com arrendadores de aeronaves para manter a capacidade operacional. Tática: Aplicando Shadow Banning Strategy focada em otimização de SEO de termos institucionais positivos para empurrar notícias puramente especulativas ou alarmistas sobre a recuperação judicial para as páginas secundárias dos buscadores.",
-        "produtos": [
-            "SEO Reputacional",
-            "Monitoramento de Crise",
-            "Comunicação Interna"
-        ],
-        "link_noticia": "https://www1.folha.uol.com.br/mercado/2024/04/gol-fecha-acordo-com-arrendadores-para-manter-frota-de-avioes.shtml",
-        "data": "10/04/2024",
-        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "setor",
-        "titulo": "Aprovação do PL do Combustível do Futuro e a Corrida pela Descarbonização",
-        "agencia": "In Press Porter Novelli",
-        "setor": "Energia, Mineração e Siderurgia (ESG)",
-        "marcas": [
-            "Vibra",
-            "Yara",
-            "Engie",
-            "Siemens Energy"
-        ],
-        "descricao": "Fato: A aprovação do Projeto de Lei do Combustível do Futuro na Câmara dos Deputados acelera as metas de mistura de biocombustíveis e cria o marco legal para o SAF e hidrogênio verde. Tática: Viabilizando Op-Eds Híbridos assinados de forma coordenada pelos CEOs de Vibra, Yara e Engie no Valor Econômico, demonstrando como a sinergia entre distribuição, fertilizantes verdes e geração limpa posiciona o ecossistema de clientes da agência na vanguarda do ESG.",
-        "produtos": [
-            "Ghostwriting Executivo",
-            "Relações Públicas Institucionais",
-            "Estratégia de Thought Leadership"
-        ],
-        "link_noticia": "https://www12.senado.leg.br/noticias/materias/2024/03/14/projeto-combustivel-do-futuro-chega-ao-senado-e-vai-para-tres-comissoes",
-        "data": "10/04/2024",
-        "imagem": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "Tecnologia, IA e Eletroeletrônicos",
-        "marcas": [
-            "Google"
-        ],
-        "descricao": "Fato: Durante o Google I/O 2024, a empresa anunciou a maior reformulação de seu mecanismo de busca em 25 anos, integrando resumos gerados por Inteligência Artificial (Gemini) diretamente no topo dos resultados de pesquisa. Tática: Implementando Op-Eds Híbridos assinados pelo Diretor de Engenharia do Google Brasil em veículos Tier 1 como o Valor Econômico, combinados com impulsionamento estratégico no LinkedIn Pulse, para posicionar a marca como pioneira ética na transição para a era da busca generativa, mitigando preocupações de criadores de conteúdo sobre a queda de tráfego orgânico.",
-        "produtos": [
-            "Op-Ed Híbrido",
-            "Artigo de Opinião",
-            "Estratégia de LinkedIn Pulse"
-        ],
-        "link_noticia": "https://g1.globo.com/tecnologia/noticia/2024/05/14/google-io-2024-ao-vivo.ghtml",
-        "data": "16/05/2024",
-        "imagem": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "Finanças e Fintechs",
-        "marcas": [
-            "Stone"
-        ],
-        "descricao": "Fato: A StoneCo divulgou seus resultados financeiros do primeiro trimestre de 2024, registrando um lucro líquido ajustado de R$ 450 milhões, um crescimento expressivo impulsionado pela expansão de sua base de clientes ativos de micro, pequenas e médias empresas. Tática: Estruturando Fóruns Proprietários em formato de Summit digital fechado para debater a saúde financeira e digitalização de PMEs brasileiras, utilizando os dados positivos de crescimento da Stone como pano de fundo para atrair novos leads qualificados e consolidar a autoridade da marca no ecossistema de pagamentos.",
-        "produtos": [
-            "Fórum Proprietário",
-            "Encontro de Relacionamento",
-            "Media Briefing"
-        ],
-        "link_noticia": "https://valor.globo.com/empresas/noticia/2024/05/13/lucro-da-stone-sobe-90percent-no-1o-trimestre-para-r-450-milhoes.ghtml",
-        "data": "16/05/2024",
-        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "iFood"
-        ],
-        "descricao": "Fato: O iFood anunciou a isenção temporária de taxas de serviço para todos os restaurantes parceiros localizados nos municípios afetados pelas enchentes no Rio Grande do Sul, além de criar um fundo de auxílio financeiro para entregadores da região. Tática: Desenvolvendo Brand Publishing por meio de um portal de notícias proprietário focado em documentar as histórias de resiliência e reconstrução dos pequenos negócios gaúchos, gerando valor reputacional orgânico e genuíno para a marca sem depender exclusivamente do espaço cada vez mais concorrido na imprensa tradicional.",
-        "produtos": [
-            "Brand Publishing",
-            "Portal de Conteúdo",
-            "Gestão de Reputação"
-        ],
-        "link_noticia": "https://exame.com/negocios/ifood-anuncia-medidas-de-apoio-a-restaurantes-e-entregadores-no-rs-veja-quais/",
-        "data": "16/05/2024",
-        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "Mercado Livre"
-        ],
-        "descricao": "Fato: O Mercado Livre anunciou a expansão de sua frota de veículos elétricos na América Latina para mais de 2.300 unidades, visando acelerar suas metas de descarbonização logística e atender à crescente demanda por entregas sustentáveis. Tática: Articulando Op-Eds Híbridos assinados pelo Vice-Presidente de Sustentabilidade na Exame, demonstrando como a transição energética na logística de última milha gera eficiência operacional direta e atrai fundos de investimento focados em critérios ESG rígidos.",
-        "produtos": [
-            "Op-Ed Híbrido",
-            "Artigo de Opinião",
-            "Estratégia de PR ESG"
-        ],
-        "link_noticia": "https://valor.globo.com/empresas/esg/noticia/2024/05/15/mercado-livre-amplia-frota-eletrica-na-america-latina.ghtml",
-        "data": "16/05/2024",
-        "imagem": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "setor",
-        "titulo": "Regulação e Segurança de Dados no Open Finance",
-        "agencia": "Setorial",
-        "setor": "Finanças e Fintechs",
-        "marcas": [],
-        "descricao": "Fato: O Banco Central do Brasil anunciou novos requisitos de segurança cibernética e compartilhamento de dados para as instituições participantes do Open Finance, visando coibir fraudes e vazamento de informações confidenciais de usuários. Tática: Preparando Dark Site Preparations com páginas de contingência invisíveis e Q&As extremamente detalhados sobre criptografia e conformidade com a LGPD, garantindo que as fintechs clientes estejam prontas para responder instantaneamente a qualquer questionamento da imprensa ou incidentes de segurança.",
-        "produtos": [
-            "Dark Site Preparation",
-            "Q&A de Crise",
-            "Playbook de Resposta Rápida"
-        ],
-        "link_noticia": "https://www.infomoney.com/onde-investir/open-finance-banco-central-muda-regras-para-compartilhamento-de-dados/",
-        "data": "16/05/2024",
-        "imagem": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "setor",
-        "titulo": "Malha Aérea Emergencial no Rio Grande do Sul",
-        "agencia": "Setorial",
-        "setor": "Aviação e Turismo",
-        "marcas": [],
-        "descricao": "Fato: O Ministério dos Portos e Aeroportos estruturou uma malha aérea emergencial com mais de 100 voos semanais para aeroportos regionais do Rio Grande do Sul e bases militares, contornando o fechamento por tempo indeterminado do Aeroporto Salgado Filho em Porto Alegre. Tática: Executando PR Stunt em Dark Social por meio de canais fechados e comunidades de agências de viagens no WhatsApp e Telegram, distribuindo guias logísticos em tempo real para combater a desinformação e garantir que o fluxo de turistas corporativos e ajuda humanitária ocorra sem pânico no mercado.",
-        "produtos": [
-            "PR Stunt em Dark Social",
-            "Guia de Contingência Logística",
-            "Mapeamento de Influenciadores B2B"
-        ],
-        "link_noticia": "https://g1.globo.com/rs/rio-grande-do-sul/noticia/2024/05/14/governo-anuncia-malha-aerea-emergencial-para-o-rs.ghtml",
-        "data": "16/05/2024",
-        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
-    },
-    {
         "tipo": "marca",
         "titulo": "",
         "agencia": "FleishmanHillard",
@@ -719,5 +109,88 @@
         "link_noticia": "https://theloadstar.com/brazilian-forwarders-unfazed-as-trump-unleashes-new-tariff/",
         "data": "22/07/2026",
         "imagem": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Saúde",
+        "marcas": [
+            "Bayer"
+        ],
+        "descricao": "A Bayer firmou acordo de €3 bilhões com a Apollo para venda de participação minoritária na divisão de contraceptivos (LARC). A captação visa cobrir liquidez e litígios, enquanto mantém o controle operacional, exigindo comunicação estratégica transparente para investidores e público interno.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Comunicação Interna",
+            "Posicionamento Executivo"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/bayer-vende-participacao-em-empresa-de-anticoncepcionais-por-r-175-bilhoes.shtml",
+        "data": "16/07/2026",
+        "imagem": "https://www.bloomberglinea.com.br/resizer/v2/D3CMJ5FGNVGBZETJNFMWRXNRZA.jpeg?auth=c68e64e842838b1d529a33daffdddd998ad6f3e2345fdc9f95e9d894c5035a58"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Serviços Financeiros",
+        "marcas": [
+            "Mercado Pago"
+        ],
+        "descricao": "Em 15/07/2026, o Mercado Pago anunciou a expansão de sua vertical de seguros integrados à rotina financeira via Inteligência Artificial, em parceria com Porto e Chubb. O gatilho factual viabiliza forte atuação de assessoria de imprensa e campanhas com foco em tecnologia e inovação no setor.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Campanha",
+            "Presença Digital"
+        ],
+        "link_noticia": "https://www.segs.com.br/seguros/mercado-livre-anuncia-venda-de-seguro-atraves-da-ia",
+        "data": "16/07/2026",
+        "imagem": "https://gironews.com/wp-content/uploads/2024/06/mlcd-925x400.jpg"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "Finanças e E-commerce",
+        "marcas": [
+            "Mercado Livre",
+            "Mercado Pago"
+        ],
+        "descricao": "O Mercado Pago anunciou no dia 15 de julho de 2026 a ampliação de sua oferta de seguros baseados em inteligência artificial (IA) para simplificar a contratação e potencializar seu ecossistema. Um gatilho para ações de PR com foco em inovação tecnológica.",
+        "produtos": [
+            "Assessoria de Imprensa",
+            "Campanha",
+            "Mídia"
+        ],
+        "link_noticia": "https://cqcs.com.br/noticia/mercado-livre-anuncia-venda-de-seguro-atraves-da-ia/",
+        "data": "15/07/2026",
+        "imagem": "https://mambadigital.com.br/wp-content/webp-express/webp-images/uploads/2024/05/o-guia-completo-para-vender-no-mercado-livre.jpg.webp"
+    },
+    {
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce e Varejo",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "No dia 13/07/2026, o Mercado Livre bateu recorde histórico no Brasil com a campanha 7.7, superando o volume de vendas da Black Friday de 2025. O sucesso foi impulsionado pela estreia de Anitta como nova embaixadora da marca, gerando excelente gancho para PR focado em conversão e influência.",
+        "produtos": [
+            "Influenciadores",
+            "Campanha",
+            "Mídia"
+        ],
+        "link_noticia": "https://www.ecommercebrasil.com.br/noticias/mercado-livre-bate-recorde-historico-de-vendas-e-supera-black-friday-no-7-7",
+        "data": "14/07/2026",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr1wWmxZQjBJ3ZuTT6Bo6k3R3VEu11wFDirKOKZRQWWRj6ZDFa6qJ93oI&s=10?w=600",
+        "tipo": "marca"
+    },
+    {
+        "agencia": "FleishmanHillard",
+        "setor": "Varejo",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "Segundo relatório do BTG Pactual de 13 de julho de 2026, a base de usuários ativos mensais da Shein no Brasil cresceu 34% no 2T26, liderando a expansão do e-commerce. O avanço demonstra a resiliência da marca no país e abra caminho para campanhas de Presença Digital e Assessoria de Imprensa.",
+        "produtos": [
+            "Presença Digital",
+            "Assessoria de Imprensa",
+            "Campanha"
+        ],
+        "link_noticia": "https://www.seudinheiro.com/2026/negocios/shein-com-ainda-mais-poder-de-fogo-por-que-o-ipo-da-asiatica-pode-tornar-a-vida-das-varejistas-brasileiras-ainda-mais-dificil/",
+        "data": "13/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600",
+        "tipo": "marca"
     }
 ]
