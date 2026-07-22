@@ -70,11 +70,12 @@ Use EXCLUSIVAMENTE as estratégias e gatilhos listados no playbook da agência a
 
     print("Enviando requisição para a API do Gemini usando o modelo 3.5 Flash...")
     
-    response = client.models.generate_content(
+  response = client.models.generate_content(
         model='gemini-3.5-flash',
         contents=prompt,
         config=types.GenerateContentConfig(
-            temperature=0.4 
+            temperature=0.4,
+            tools=[{"google_search": {}}] # Ativa a navegação na internet em tempo real
         )
     )
     
