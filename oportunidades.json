@@ -305,5 +305,125 @@
         "link_noticia": "https://convergenciadigital.com.br/inovacao/no-brasil-o-marco-regulatorio-de-ia-dorme-na-gaveta-do-congresso-na-europa-leis-entram-em-vigor-no-dia-02-de-agosto/",
         "data": "22/07/2026",
         "imagem": "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: O iFood anunciou a ampliação de sua rede de pontos de apoio para entregadores, planejando chegar a 72 unidades até o fim de 2026, o que representa um crescimento de 90% em relação ao início do ano. Tática: Estruturando um Op-Ed Híbrido assinado pelo CEO Diego Barreto no Valor Econômico, focado na responsabilidade social e infraestrutura para a gig economy, impulsionado via LinkedIn Pulse para tomadores de decisão e reguladores, neutralizando pressões regulatórias e fortalecendo a reputação ESG da marca perante o governo.",
+        "produtos": [
+            "Op-Ed Híbrido",
+            "LinkedIn Pulse Amplification"
+        ],
+        "link_noticia": "https://oglobo.globo.com/rio/noticia/2026/07/23/ifood-vai-ampliar-para-72-unidades-os-pontos-de-apoio-para-entregadores-de-aplicativos-ate-o-fim-deste-ano.ghtml",
+        "data": "23/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1617347454431-f49d7ff5c3b1?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "Fato: A Jefferies iniciou a cobertura das ações da StoneCo (STNE) com recomendação de manutenção (Hold) e preço-alvo de US$ 12,60, refletindo uma postura cautelosa do mercado antes dos resultados do 2T26. Tática: Implementando uma Shadow Banning Strategy focada em SEO de reputação financeira para diluir o impacto da recomendação neutra da Jefferies, empurrando as notícias de 'Hold' para as páginas secundárias do Google e destacando análises que apontam a subvalorização da ação, preservando o valor de mercado da companhia antes da divulgação de resultados.",
+        "produtos": [
+            "Shadow Banning Strategy",
+            "SEO de Reputação Financeira"
+        ],
+        "link_noticia": "https://br.investing.com/news/stock-market-news/jefferies-inicia-cobertura-da-stoneco-com-recomendacao-de-manutencao-1423985",
+        "data": "23/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "Fato: A Ambev anunciou o lançamento da Spaten Pro, a primeira cerveja sem álcool enriquecida com proteína (whey protein e colágeno) do portfólio global da AB InBev, desenvolvida no Brasil. Tática: Orquestrando um PR Stunt em Dark Social por meio de vazamentos intencionais de amostras exclusivas da Spaten Pro em comunidades fechadas de fisiculturismo e corrida no WhatsApp e Discord, gerando escassez e desejo orgânico antes do início das vendas oficiais em agosto, o que acelerará a adoção do produto pelo público fitness.",
+        "produtos": [
+            "PR Stunt em Dark Social",
+            "Seeding de Comunidades Fechadas"
+        ],
+        "link_noticia": "https://exame.com/bussiness/spaten-pro-ambev-aposta-em-cerveja-com-proteina-para-conquistar-consumidor-fitness/",
+        "data": "23/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Expansão do E-commerce no Varejo Farmacêutico Latino-Americano",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "Fato: O Mercado Livre propôs às autoridades do Chile a operação de uma farmácia própria e exclusivamente online no país, o que exigirá mudanças nas regulações locais de saúde. Tática: Criando um Fórum Proprietário (um Summit de Saúde Digital e Logística Farmacêutica) para debater a modernização regulatória do setor no Chile, reunindo autoridades de saúde e especialistas em tecnologia para legitimar a entrada da marca no varejo farmacêutico chileno e acelerar a aprovação regulatória do modelo de negócios.",
+        "produtos": [
+            "Fórum Proprietário",
+            "Relações Governamentais e Advocacy"
+        ],
+        "link_noticia": "https://www.moneytimes.com.br/mercado-livre-propoe-operacao-propria-de-farmacia-no-chile-apos-lancamento-no-brasil/",
+        "data": "23/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "Fato: A Vale elegeu Manuel Lino Silva de Sousa Oliveira (Ollie) como novo presidente do conselho de administração após a renúncia de Daniel Stieler, em meio a tensões corporativas e alegações de vazamento de informações. Tática: Desenvolvendo Dark Site Preparations com Q&As detalhados e posicionamentos jurídicos prontos para serem ativados caso as disputas internas do conselho e os vazamentos de informações escalem na imprensa tradicional, blindando a nova liderança e garantindo a estabilidade da governança corporativa perante os acionistas.",
+        "produtos": [
+            "Dark Site Preparations",
+            "Q&A de Crise de Governança"
+        ],
+        "link_noticia": "https://br.advfn.com/jornal/2026/07/vale-elege-ollie-como-presidente-do-conselho-apos-saida-de-daniel-stieler",
+        "data": "23/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Desafios Regulatórios e de Supply Chain em IPOs Globais",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "Fato: A Shein recebeu aprovação para avançar com seu IPO em Hong Kong, mas enfrenta pressões de valuation (estimado entre US$ 40 bi e US$ 50 bi) devido a novas taxas de importação da União Europeia e escrutínio sobre sua cadeia de suprimentos. Tática: Lançando uma plataforma de Brand Publishing focada em transparência logística e conformidade ESG, publicando relatórios de auditoria de fornecedores e iniciativas de sustentabilidade para neutralizar o ceticismo dos investidores antes do IPO em Hong Kong, garantindo a atratividade da oferta pública.",
+        "produtos": [
+            "Brand Publishing",
+            "Plataforma de Transparência ESG"
+        ],
+        "link_noticia": "https://www.reuters.com/markets/ipos/shein-clears-hong-kong-ipo-hurdle-valuation-challenges-remain-2026-07-23/",
+        "data": "23/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "A Ascensão da IA Agêntica nos Dispositivos Móveis",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Samsung",
+            "Google"
+        ],
+        "descricao": "Fato: A Samsung realizou o Galaxy Unpacked em Londres, revelando a oitava geração de dobráveis (Galaxy Z Fold8 Ultra, Z Fold8 e Z Flip8) integrados com IA agêntica (Gemini). Tática: Publicando Op-Eds Híbridos assinados pelo head global de mobile da Samsung em veículos Tier 1 de negócios, discutindo a transição da IA generativa para a IA agêntica (Agentic AI) em dispositivos dobráveis, amplificado via LinkedIn Pulse para o ecossistema de desenvolvedores e tech-enthusiasts, consolidando a liderança tecnológica da marca na era da inteligência artificial.",
+        "produtos": [
+            "Op-Ed Híbrido",
+            "LinkedIn Pulse Amplification"
+        ],
+        "link_noticia": "https://news.samsung.com/us/recap-galaxy-unpacked-july-2026-new-shape-unfolds/",
+        "data": "23/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80"
     }
 ]
