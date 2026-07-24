@@ -565,5 +565,149 @@
         "link_noticia": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2_zW9WHgdoeeGm4IPEYyOyE_o8VPaBtl1XVCjs9MOKH386RrekJbTmDw7bX6mhkUpT-mqpxFThSMINTrJsnHUqfYJMWuC8q2NaOpH67FNjndMO5GXe8V5ExtLh8nT9HGzmDnRQ_8Ty9KcFMbybTcoScqqzmBnZb3yPk3HqxM9PK6UUE8eDYqUi7jxb4L9LxL0Z7b1KDdICop2SrIppLSlvyK1_qR8HUSc-cLQ",
         "data": "23/07/2026",
         "imagem": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: O iFood recuou em seu projeto-piloto de logística integrada em Uberaba, permitindo que restaurantes com nota acima de 3 continuem utilizando entregadores próprios após polêmicas e pressão local. Tática: Mitigando o desgaste reputacional e a resistência de parceiros locais por meio de Dark Site Preparations, estruturando páginas de Q&A invisíveis e canais de atendimento direto focados em esclarecer as regras de transição logística e os benefícios de crescimento de 40% em vendas antes que a polêmica regional se espalhe nacionalmente ou atraia a atenção de órgãos reguladores.",
+        "produtos": [
+            "Q&As de Contingência",
+            "Monitoramento de Crise Regional",
+            "Media Training para Porta-vozes Locais"
+        ],
+        "link_noticia": "https://jmonline.com.br/cidade/ifood-recua-e-libera-entrega-propria-para-parte-dos-restaurantes-1.424694",
+        "data": "24/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "Fato: A Stone lançou um rebranding massivo para se posicionar como o banco digital dos pequenos negócios, mas a Jefferies iniciou a cobertura das ações (STNE) com recomendação 'Hold', apontando cautela sobre a expansão de crédito e margens sob pressão. Tática: Consolidando o novo posicionamento de banco digital e neutralizando o ceticismo do mercado financeiro por meio de Op-Eds Híbridos, emplacando artigos assinados pelo CEO Pedro Zinner em veículos Tier 1 (como o Valor Econômico) para detalhar a solidez da carteira de crédito e a estratégia de banking para PMEs, combinados com impulsionamento de alta performance no LinkedIn Pulse direcionado a investidores.",
+        "produtos": [
+            "Artigos de Op-Ed",
+            "Planejamento de LinkedIn C-Level",
+            "Relações com Investidores e Mídia Financeira"
+        ],
+        "link_noticia": "https://exame.com/bussola/com-rebranding-stone-busca-consolidar-imagem-de-banco-para-pequenos-negocios/",
+        "data": "24/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "Fato: A Ambev anunciou o lançamento da Spaten Pro, uma cerveja sem álcool com 10 gramas de proteína, mirando o público fitness e de bem-estar. Tática: Amplificando o lançamento disruptivo da Spaten Pro por meio de um PR Stunt em Dark Social, promovendo vazamentos intencionais de amostras exclusivas e reviews em comunidades fechadas de entusiastas fitness no WhatsApp e Discord para gerar escassez e desejo orgânico antes da distribuição oficial no Zé Delivery.",
+        "produtos": [
+            "Estratégia de Dark Social",
+            "Ativação de Microinfluenciadores",
+            "Press Kits Exclusivos"
+        ],
+        "link_noticia": "https://forbes.com.br/forbes-money/2026/07/mercado-de-cerveja-se-rende-a-proteina-e-ambev-sai-na-frente/",
+        "data": "24/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "Fato: A Vale divulgou relatório de produção do 2T26 com alta de 21% na produção de minério de ferro, mas enfrenta crise política com o conselho tentando destituir conselheiro por suposto vazamento de informações. Tática: Abafando o ruído político e as acusações de interferência governamental no conselho por meio de uma Shadow Banning Strategy, focando em SEO positivo para destacar o recorde de produção de 84,3 milhões de toneladas de minério de ferro e o desempenho do complexo S11D, empurrando as notícias de disputas corporativas para as páginas secundárias de busca.",
+        "produtos": [
+            "SEO de Reputação",
+            "Gestão de Crise de Relações com Investidores",
+            "Monitoramento de Mídia"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/conselho-da-vale-quer-destituir-adversario-de-ollie-por-suposto-vazamento-de-informacoes.shtml",
+        "data": "24/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "Fato: O Mercado Livre propôs uma operação própria de farmácia online no Chile, expandindo seu modelo de varejo direto após projetos-piloto de sucesso no Brasil. Tática: Posicionando o Mercado Livre como líder absoluto em inovação regulatória e expansão de e-commerce na América Latina por meio de Fóruns Proprietários, criando um Summit exclusivo para debater a digitalização do setor farmacêutico e de saúde na região, atraindo reguladores e parceiros estratégicos para pavimentar o caminho de sua farmácia online.",
+        "produtos": [
+            "Organização de Summit Proprietário",
+            "Relações Governamentais",
+            "PR Corporativo Regional"
+        ],
+        "link_noticia": "https://www.reuters.com/business/retail-consumer/mercado-libre-proposes-own-pharmacy-operation-chile-after-brazil-launch-2026-07-23/",
+        "data": "24/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "Fato: A Shein avança com seu IPO em Hong Kong após aprovação de reguladores chineses, mas enfrenta pressão de novas taxas de importação na Europa. Tática: Construindo uma narrativa de transparência e conformidade global por meio de Brand Publishing, desenvolvendo um portal de notícias proprietário focado em sustentabilidade na cadeia de suprimentos e impacto econômico positivo nos mercados locais (como o Brasil), reduzindo a dependência da imprensa tradicional que foca nas pressões regulatórias e taxas de importação.",
+        "produtos": [
+            "Portal de Brand Publishing",
+            "Gestão de Reputação de IPO",
+            "PR Internacional"
+        ],
+        "link_noticia": "https://g1.globo.com/economia/noticia/2026/07/10/shein-avanca-com-ipo-em-hong-kong.ghtml",
+        "data": "24/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Reforma Tributária e Corresponsabilidade dos Marketplaces",
+        "agencia": "N/A",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre",
+            "Amazon",
+            "Shopee"
+        ],
+        "descricao": "Fato: O Comitê Gestor do IBS e a Receita Federal adiaram a exigência de CNPJ e emissão de notas fiscais com IBS/CBS para pessoas físicas e produtores rurais para 2027, mas mantiveram o prazo de agosto de 2026 para empresas. Além disso, a nova corresponsabilidade tributária solidária das plataformas de marketplace pelo IBS/CBS de vendedores informais está transformando as plataformas em fiscais de seus próprios vendedores. Tática: Orientando os players de e-commerce e fintechs a criarem Fóruns Proprietários para debater a transição tributária e o split payment, reunindo especialistas fiscais e reguladores para educar os sellers e mitigar os riscos de conformidade antes de agosto de 2026.",
+        "produtos": [
+            "Organização de Webinars Setoriais",
+            "Produção de Guias de Transição Tributária",
+            "PR de Liderança de Pensamento"
+        ],
+        "link_noticia": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/julho/emissao-do-cnpj-e-de-documentos-fiscais-por-pessoas-fisicas-contribuintes-da-cbs-comecara-em-1o-de-janeiro-de-2027",
+        "data": "24/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Combate à Desinformação e Regulação de IA nas Eleições 2026",
+        "agencia": "N/A",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [],
+        "descricao": "Fato: O TSE orientou os TREs a firmarem acordos de cooperação técnica com instituições especializadas em inteligência artificial, perícia digital e análise de dados para combater a desinformação nas Eleições de 2026. Tática: Posicionando as empresas de tecnologia e segurança digital como parceiras estratégicas da democracia por meio de Brand Publishing, criando portais de conteúdo especializados que expliquem de forma didática o funcionamento de algoritmos de detecção de deepfakes e perícia digital, gerando autoridade e confiança no mercado.",
+        "produtos": [
+            "Portal de Conteúdo Proprietário",
+            "Artigos de Op-Ed sobre Segurança Digital",
+            "Media Relations"
+        ],
+        "link_noticia": "https://www.tse.jus.br/comunicacao/noticias/2026/Julho/tse-pede-que-tres-firmem-parcerias-para-fortalecer-a-analise-tecnica-de-casos-de-desinformacao-eleitoral",
+        "data": "24/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80"
     }
 ]
