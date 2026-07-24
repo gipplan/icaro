@@ -709,5 +709,145 @@
         "link_noticia": "https://www.tse.jus.br/comunicacao/noticias/2026/Julho/tse-pede-que-tres-firmem-parcerias-para-fortalecer-a-analise-tecnica-de-casos-de-desinformacao-eleitoral",
         "data": "24/07/2026",
         "imagem": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: O iFood recuou em seu projeto-piloto de logística integrada em Uberaba (MG) após tensões e diálogos com restaurantes locais, permitindo que estabelecimentos com score Super acima de 3 continuem utilizando entregadores próprios. Tática: Implementando uma Shadow Banning Strategy focada em SEO positivo para empurrar as notícias sobre o recuo logístico e as tensões locais com restaurantes para a página 3 do Google, garantindo que o foco das buscas orgânicas se concentre nas recentes expansões dos Pontos de Apoio e nos patrocínios de entretenimento, mitigando o impacto reputacional na relação com novos parceiros comerciais.",
+        "produtos": [
+            "SEO de Reputação",
+            "Monitoramento de Crise",
+            "Relações com a Mídia"
+        ],
+        "link_noticia": "https://jmonline.com.br/cidade/ifood-recua-e-libera-entrega-propria-para-parte-dos-restaurantes-1.412345",
+        "data": "24/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "Fato: A Stone lançou a campanha nacional de rebranding 'Nasceu pra Empreender', estrelada por Milhem Cortaz, com o objetivo de reposicionar a marca como um banco completo para PMEs, indo além das maquininhas de cartão. Tática: Criando um Fórum Proprietário (um Summit exclusivo para PMEs e prestadores de serviços) para debater os desafios de gestão financeira no Brasil, posicionando a Stone como um parceiro bancário estratégico e gerando leads qualificados diretamente para as novas soluções de crédito e banking da marca.",
+        "produtos": [
+            "Planejamento de Evento Proprietário",
+            "Relações Públicas de Marca",
+            "Ativação de Influenciadores"
+        ],
+        "link_noticia": "https://marcaspelomundo.com.br/anunciantes/stone-usa-campanha-para-reforcar-sua-marca-como-banco-para-pmes/",
+        "data": "24/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "Fato: A Vale elegeu Manuel Lino Silva de Sousa Oliveira (Ollie) como novo presidente do conselho de administração, com amplo apoio da Previ, após a renúncia de Daniel Stieler. Tática: Estruturando Op-Eds Híbridos assinados pelo novo presidente do conselho, Ollie, em veículos Tier 1 como Valor Econômico e Exame, casados com impulsionamento estratégico no LinkedIn Pulse, para reafirmar o compromisso inabalável da Vale com o planejamento estratégico de longo prazo e a disciplina na alocação de capital, acalmando o mercado financeiro e blindando o valor das ações contra a volatilidade.",
+        "produtos": [
+            "Artigo de Opinião (Op-Ed)",
+            "Relações com Investidores",
+            "Comunicação Corporativa"
+        ],
+        "link_noticia": "https://www.estadao.com.br/economia/novo-presidente-do-conselho-da-vale-reafirma-compromisso-com-planejamento-estrategico-leia-carta/",
+        "data": "24/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "Fato: O Mercado Livre captou R$ 1,5 bilhão por meio de sua quarta emissão pública de Letras Financeiras com forte demanda (procura superou a oferta em mais de duas vezes) para expandir suas operações de crédito e pagamentos no Brasil. Tática: Fortalecendo o canal de Brand Publishing do Mercado Livre para produzir e disseminar análises aprofundadas sobre a democratização do crédito para PMEs e o crescimento do e-commerce no Brasil, reduzindo a dependência da mídia tradicional e consolidando a percepção de solidez financeira da empresa perante investidores e parceiros comerciais.",
+        "produtos": [
+            "Brand Publishing",
+            "Relações com a Mídia",
+            "Comunicação Financeira"
+        ],
+        "link_noticia": "https://economia.uol.com.br/noticias/redacao/2026/07/21/mercado-livre-capta-r-15-bi-sob-forte-demanda-e-reduz-custo-de-credito.htm",
+        "data": "24/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Google"
+        ],
+        "descricao": "Fato: A Comissão Europeia multou o Google em 890 milhões de euros por violar a Lei dos Mercados Digitais (DMA), acusando a empresa de favorecer seus próprios serviços de busca em detrimento de concorrentes. Tática: Desenvolvendo Dark Site Preparations com Q&As robustos e posicionamentos jurídicos prontos para serem ativados imediatamente caso a repercussão da multa da União Europeia respingue no mercado brasileiro, assegurando uma resposta rápida e controlada que minimize o desgaste da confiança de anunciantes locais e parceiros de tecnologia.",
+        "produtos": [
+            "Gestão de Crise",
+            "Dark Site Preparations",
+            "Q&A de Contingência"
+        ],
+        "link_noticia": "https://www.sbtnews.com.br/noticia/mundo/ue-multa-google-em-us-1-bilhao-por-violar-regras-digitais",
+        "data": "24/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "Fato: A Samsung realizou o Galaxy Unpacked em Londres e revelou a oitava geração do Galaxy Z Series (Z Fold8 Ultra, Z Fold8, Z Flip8) com IA Agêntica, além do Galaxy Watch Ultra2 e Galaxy Watch9. Tática: Executando um PR Stunt em Dark Social por meio de vazamentos intencionais e controlados de recursos exclusivos da IA Agêntica do Galaxy Z Fold8 Ultra em comunidades fechadas de entusiastas de tecnologia no WhatsApp e Discord, gerando escassez e desejo de compra antes do início da pré-venda oficial no Brasil, impulsionando a conversão de vendas no segmento premium.",
+        "produtos": [
+            "PR Stunt",
+            "Ativação de Comunidades",
+            "Relações com a Mídia de Tecnologia"
+        ],
+        "link_noticia": "https://news.samsung.com/br/galaxy-unpacked-julho-de-2026-uma-previa-do-galaxy-z-fold8-ultra-galaxy-z-fold8-e-galaxy-z-flip8",
+        "data": "24/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Novo Tarifaço dos EUA sobre Produtos Brasileiros",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [],
+        "descricao": "Fato: A nova tarifa de 12,5% imposta pelos Estados Unidos sobre produtos brasileiros entrou em vigor hoje, podendo elevar a sobretaxa total sobre parte das exportações a 37,5%. O ministro Dario Durigan classificou a medida como indevida e unilateral, e o governo estuda retaliações via Lei da Reciprocidade Econômica. Tática: Coordenando Op-Eds Híbridos assinados por lideranças de grandes exportadores afetados (como os setores de mineração e agronegócio) em veículos de grande circulação econômica, combinados com amplificação no LinkedIn Pulse, para pressionar o governo federal a acelerar a liberação das linhas de crédito do programa Brasil Soberano, mitigando o impacto no fluxo de caixa e na competitividade internacional das empresas.",
+        "produtos": [
+            "Artigo de Opinião (Op-Ed)",
+            "Relações Governamentais",
+            "Comunicação Setorial"
+        ],
+        "link_noticia": "https://exame.com.br/economia/durigan-diz-que-tarifa-dos-eua-tenta-retomar-na-marra-cobranca-derrubada-pela-suprema-corte/",
+        "data": "24/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Vigência de Novos Decretos de Responsabilização de Big Techs no Brasil",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [],
+        "descricao": "Fato: Entraram em vigor os decretos 12.975/2026 e 12.976/2026, assinados pelo presidente Lula, que ampliam os deveres e a responsabilização de plataformas digitais no combate a crimes, fraudes e violência contra mulheres na internet. Tática: Organizando um Fórum Proprietário focado em governança digital, reunindo especialistas em direito digital, representantes do setor de tecnologia e autoridades reguladoras para debater a implementação prática dos novos decretos de responsabilização, posicionando as marcas de tecnologia como agentes colaborativos e proativos na construção de um ambiente digital seguro, reduzindo o risco de sanções e multas.",
+        "produtos": [
+            "Fórum de Discussão",
+            "Relações Governamentais",
+            "Comunicação de Assuntos Públicos"
+        ],
+        "link_noticia": "https://congressoemfoco.uol.com.br/area/pais/decretos-de-lula-sobre-big-techs-entram-em-vigor-veja-o-que-muda/",
+        "data": "24/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80"
     }
 ]
