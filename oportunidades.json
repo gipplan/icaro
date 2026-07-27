@@ -995,5 +995,153 @@
         "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/samsung-fecha-contrato-de-us-200-bilhoes-para-fornecer-chips-a-americana-broadcom.shtml",
         "data": "27/07/2026",
         "imagem": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "Gerenciando a crise de governança corporativa gerada pela renúncia do vice-presidente do conselho, Marcelo Gasparino, após acusações de vazamento de dados confidenciais, por meio de uma Shadow Banning Strategy focada em SEO positivo e produção de conteúdo corporativo de alto nível sobre a nova gestão de Manuel Lino (Ollie) para empurrar as menções ao escândalo para as páginas secundárias dos mecanismos de busca, preservando a reputação institucional da mineradora.",
+        "produtos": [
+            "Shadow Banning Strategy",
+            "SEO Reputacional",
+            "Q&A de Crise"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/opositor-de-novo-presidente-do-conselho-da-vale-renuncia-apos-acusacao-de-vazamento-de-reuniao.shtml",
+        "data": "27/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Varejo e Consumo",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "Consolidando a liderança da Ambev no mercado de bebidas funcionais e saudabilidade com o lançamento da Spaten Pro, por meio de uma estratégia de Brand Publishing que consiste na criação de um portal proprietário de conteúdo focado em 'wellness', longevidade e consumo equilibrado, reduzindo a dependência da mídia tradicional e educando o consumidor sobre a nova categoria de cervejas proteicas.",
+        "produtos": [
+            "Brand Publishing Portal",
+            "Estratégia de Conteúdo Proprietário",
+            "Mídia de Influência Wellness"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/colunas/painelsa/2026/07/ambev-lanca-spaten-com-proteina-fronteira-e-criar-novas-ocasioes-de-consumo-diz-vp-de-marketing.shtml",
+        "data": "27/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1567696911980-2eed69a46042?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "Aproveitando o protagonismo do Mercado Livre no recorde histórico de ocupação de galpões logísticos no Brasil, por meio de Op-Eds Híbridos assinados pelo VP de Commerce Fernando Yunes em veículos Tier 1 (como Valor Econômico e Exame) detalhando o impacto socioeconômico do plano de expansão de 14 novos CDs e 28 mil vagas de emprego, amplificados via LinkedIn Pulse para atingir stakeholders estratégicos e investidores.",
+        "produtos": [
+            "Op-Ed Híbrido",
+            "LinkedIn Pulse Amplification",
+            "Relações com a Mídia de Negócios"
+        ],
+        "link_noticia": "https://forbes.com.br/forbes-money/2026/07/mercado-livre-e-shopee-locam-milhoes-de-m%c2%b2-e-mercado-de-galpoes-logisticos-bate-recorde-de-vacancia-e-abosrcao/",
+        "data": "27/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "Gerando buzz orgânico e desejo de compra para a nova linha de dobráveis com Agentic AI revelada no Galaxy Unpacked, por meio de um PR Stunt em Dark Social com vazamentos intencionais e controlados de demonstrações exclusivas dos recursos de IA agêntica em comunidades fechadas de entusiastas de tecnologia no Discord e WhatsApp, criando um senso de escassez e exclusividade antes do início das vendas oficiais.",
+        "produtos": [
+            "PR Stunt em Dark Social",
+            "Vazamento Controlado de Hype",
+            "Engajamento de Comunidades Fechadas"
+        ],
+        "link_noticia": "https://news.samsung.com/br/galaxy-unpacked-julho-de-2026-uma-previa-do-galaxy-z-fold8-ultra-galaxy-z-fold8-e-galaxy-z-flip8",
+        "data": "27/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "Posicionando a Stone como referência em governança e infraestrutura de IA corporativa após o lançamento interno da plataforma Vela, por meio da criação de um Fórum Proprietário (como o 'Stone AI Governance Summit') para debater a dor do mercado em relação à 'IA sombra' (Shadow AI) e segurança de dados corporativos, reunindo CTOs e líderes de tecnologia do país para discutir as melhores práticas do setor.",
+        "produtos": [
+            "Fórum Proprietário",
+            "Summit de Governança de IA",
+            "Thought Leadership de C-Level"
+        ],
+        "link_noticia": "https://es.wedoany.com/noticia/la-empresa-brasilena-stone-ha-lanzado-la-plataforma-empresarial-de-inteligencia-artificial-vela-que-ya-esta-operativa-internamente/",
+        "data": "27/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fortalecendo a reputação ESG e a agenda de valorização social do iFood após o anúncio da expansão de 90% na rede de Pontos de Apoio para entregadores, por meio de Op-Eds Híbridos assinados pelo CEO Diego Barreto em veículos Tier 1 discutindo a responsabilidade das plataformas de tecnologia na infraestrutura urbana e no bem-estar dos trabalhadores gig economy, com impulsionamento estratégico no LinkedIn Pulse.",
+        "produtos": [
+            "Op-Ed Híbrido",
+            "LinkedIn Pulse Amplification",
+            "Estratégia de PR ESG"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/ifood-vai-expandir-rede-de-pontos-de-apoio-para-entregadores-ate-o-fim-de-2026.shtml",
+        "data": "27/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1521791136368-1a46827d0adf?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Impacto do Split Payment no Fluxo de Caixa das PMEs",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Mercado Pago",
+            "Stone",
+            "Nubank"
+        ],
+        "descricao": "Debatendo os impactos críticos do split payment e o fim do float tributário no fluxo de caixa das PMEs brasileiras, por meio de um Fórum Proprietário focado em soluções financeiras e contábeis para a transição tributária, reunindo especialistas, fintechs e reguladores para discutir como as empresas de tecnologia de pagamento podem apoiar o mercado nessa adaptação.",
+        "produtos": [
+            "Fórum Proprietário",
+            "Mesa Redonda Regulatória",
+            "Whitepaper de Impacto Tributário"
+        ],
+        "link_noticia": "https://braziljournal.com/o-split-payment-pode-acabar-com-a-sonega%c3%a7%c3%a3o-mas-vai-ser-bem-confuso/",
+        "data": "27/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Reajuste de Tarifas Aeroportuárias pela ANAC",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Aviação e Turismo",
+        "marcas": [
+            "GOL",
+            "LATAM",
+            "Azul"
+        ],
+        "descricao": "Mitigando os riscos de crise reputacional e o repasse de custos de passagens aéreas decorrentes do reajuste de tarifas aeroportuárias anunciado pela ANAC, por meio de Dark Site Preparations com Q&As prontos e simuladores de impacto de custos operacionais para serem ativados imediatamente caso a opinião pública pressione as companhias aéreas sobre o aumento de preços.",
+        "produtos": [
+            "Dark Site Preparation",
+            "Q&A de Gestão de Crise",
+            "Monitoramento de Opinião Pública"
+        ],
+        "link_noticia": "https://www.otm-editora.com.br/alta-das-tarifas-aeroportuarias-aumentam-pressao-sobre-custos-da-aviacao/",
+        "data": "27/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
     }
 ]
