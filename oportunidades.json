@@ -1143,5 +1143,133 @@
         "link_noticia": "https://www.otm-editora.com.br/alta-das-tarifas-aeroportuarias-aumentam-pressao-sobre-custos-da-aviacao/",
         "data": "27/07/2026",
         "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Entregadores do iFood realizaram paralisações em Florianópolis no Dia do Motociclista contra a nova modalidade '+Entregas' e preparam um 'breque' nacional de três dias para esta semana. Tática sugerida: Estruturando landing pages invisíveis com Q&As detalhados sobre as condições de repasse e a nova modalidade '+Entregas' antes que a greve nacional ganhe tração na grande mídia, mitigando o impacto reputacional e garantindo respostas rápidas aos stakeholders.",
+        "produtos": [
+            "Dark Site Preparations"
+        ],
+        "link_noticia": "https://ndmais.com.br/tecnologia/entregadores-do-ifood-realizam-paralisacao-em-sc-e-anunciam-novo-breque-nacional-nesta-semana/",
+        "data": "28/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Finanças",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "O iFood anunciou a captação de R$ 600 milhões por meio de uma oferta de cotas seniores de um de seus fundos de crédito (FIDCs), consolidando uma estrutura de R$ 3,2 bilhões em patrimônio líquido para financiar parceiros e restaurantes. Tática sugerida: Posicionando artigos assinados pelo CFO ou CEO no Valor Econômico detalhando o papel da fintech do iFood na democratização do crédito para PMEs, casando a publicação com impulsionamento direcionado no LinkedIn Pulse para atrair investidores institucionais.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://neofeed.com.br/tecnologia/apps-de-entrega-e-e-commerce-aceleram-carteiras-de-fidcs-e-superam-r-25-bi-em-concessao-de-credito/",
+        "data": "28/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "A Stone acelera sua estratégia de transição para se consolidar como um banco digital focado em PMEs, indo além das maquininhas de cartão e integrando soluções de pagamentos online diretamente à operação física. Tática sugerida: Criando o 'Stone Banking Summit' focado em debater a dor do mercado de PMEs e a desmistificação de serviços bancários tradicionais, em vez de apenas patrocinar eventos de terceiros, posicionando os C-levels da Stone como autoridades na transição de adquirência para banking.",
+        "produtos": [
+            "Fóruns Proprietários"
+        ],
+        "link_noticia": "https://www.estadao.com.br/economia/coluna-do-broadcast/stone-integra-solucao-de-pagamentos-online-a-operacao-das-maquininhas/",
+        "data": "28/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Varejo",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "O Mercado Livre e a Shopee lideraram a absorção de galpões logísticos de alto padrão no Brasil, levando a taxa de vacância ao menor nível histórico de 5,5% no primeiro semestre de 2026, impulsionados pelo plano de investimentos bilionário do Meli. Tática sugerida: Desenvolvendo um portal de notícias proprietário focado em logística e e-commerce para publicar análises de dados de mercado e insights de armazenagem, reduzindo a dependência de veículos tradicionais e estabelecendo a marca como a principal fonte de inteligência do setor.",
+        "produtos": [
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://forbes.com.br/forbes-money/2026/07/mercado-livre-e-shopee-locam-milhoes-de-m-e-mercado-de-galpoes-logisticos-bate-recorde-de-vacancia-e-abosrcao/",
+        "data": "28/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Mineração",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "A Vale oficializou a renúncia de Marcelo Gasparino ao cargo de vice-presidente do Conselho de Administração após controvérsias sobre vazamento de informações, iniciando a reestruturação de sua governança corporativa. Tática sugerida: Implementando uma estratégia de abafamento orgânico com foco em SEO positivo para empurrar as notícias negativas sobre a disputa de governança no conselho para a página 3 dos motores de busca, priorizando conteúdos institucionais sobre as metas de produção recorde do 2T26.",
+        "produtos": [
+            "Shadow Banning Strategy"
+        ],
+        "link_noticia": "https://br.advfn.com/jornal/2026/07/vale-comunica-renuncia-de-vice-presidente-do-conselho-e-inicia-processo-para-recompor-governanca",
+        "data": "28/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Varejo",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "A Ambev anunciou uma parceria nacional com o festival Restaurant Week, promovendo Stella Artois Pure Gold e Corona Cero em Brasília para capturar a tendência de escolhas equilibradas e moderação de consumo. Tática sugerida: Coordenando vazamentos intencionais de cupons exclusivos e convites para jantares secretos harmonizados com Corona Cero e Stella Pure Gold em comunidades fechadas de WhatsApp e Discord de entusiastas de gastronomia e fitness, gerando escassez e buzz orgânico.",
+        "produtos": [
+            "PR Stunt em Dark Social"
+        ],
+        "link_noticia": "https://visitebrasilia.com.br/noticias/ambev-anuncia-parceria-nacional-com-a-restaurant-week-e-estreia-em-brasilia",
+        "data": "28/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "Após o Galaxy Unpacked, a Samsung realizou um painel de saúde focado em medicina preventiva e conectividade de dados de wearables, promovendo o Galaxy Watch Ultra2 e o Galaxy Watch9. Tática sugerida: Estruturando uma edição nacional do Health Forum no Brasil para reunir médicos, influenciadores de bem-estar e executivos de saúde para debater o papel da tecnologia vestível na medicina preventiva, consolidando a Samsung como líder em saúde digital.",
+        "produtos": [
+            "Fóruns Proprietários"
+        ],
+        "link_noticia": "https://news.samsung.com/us/galaxy-unpacked-july-2026-samsung-partners-envision-connected-care-future/",
+        "data": "28/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1510017808632-95f56e7b96cd?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Impacto Regulatório de R$ 1 Trilhão na Conta de Luz",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia",
+        "marcas": [
+            "Abrace"
+        ],
+        "descricao": "A aprovação relâmpago do PL 5.017/2019 na Comissão de Infraestrutura do Senado insere emendas que podem gerar custos extras de R$ 1 trilhão na conta de luz, afetando diretamente grandes consumidores industriais de mineração e siderurgia. Tática sugerida: Articulando a publicação de artigos de opinião assinados por líderes de associações setoriais (como Abrace) em veículos Tier 1 (Valor, O Globo) para alertar sobre o impacto desastroso do PL 5.017/2019 na competitividade industrial brasileira, amplificando o debate no LinkedIn.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/07/comissao-do-senado-cria-mais-de-r-1-tri-em-custo-extra-na-conta-de-luz-em-votacao-relampago.shtml",
+        "data": "28/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80"
     }
 ]
