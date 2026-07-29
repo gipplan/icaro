@@ -95,6 +95,17 @@
             return hash.toString();
         }
 
+        // Função para converter string de data (DD/MM/AAAA) em Date comparável
+        function converterDataParaISODate(dataStr) {
+            if (!dataStr) return new Date(0); // Data muito antiga como fallback
+            const partes = dataStr.split('/');
+            if (partes.length === 3) {
+                // Formato ISO: AAAA-MM-DD
+                return new Date(`${partes[2]}-${partes[1]}-${partes[0]}T00:00:00`);
+            }
+            return new Date(0);
+        }
+
         document.addEventListener("DOMContentLoaded", () => {
             // Adicionado parâmetro de tempo para forçar atualização e ignorar o cache
             fetch(`oportunidades.json?t=${new Date().getTime()}`)
@@ -103,6 +114,13 @@
                     return response.json();
                 })
                 .then(dados => {
+                    // ORDENAÇÃO: Organiza os dados da data mais recente para a mais antiga
+                    dados.sort((a, b) => {
+                        const dataA = converterDataParaISODate(a.data);
+                        const dataB = converterDataParaISODate(b.data);
+                        return dataB - dataA; // Retorna negativo se B for mais recente
+                    });
+
                     dadosOportunidades = dados;
                     renderizarTimelineAdmin(dadosOportunidades);
                 })
@@ -312,7 +330,7 @@
             const novaRec = document.getElementById(`edit-rec-${index}`).value;
             item.descricao = mesclarFatoERecomendacao(novoFato, novaRec);
             
-            // Atualiza Interface
+            // Atualiza Interface (Já vai re-ordenar se salvar os dados modificados, pois os dados já estão no array. A ordem do array é mantida.)
             renderizarTimelineAdmin(dadosOportunidades);
         }
 
@@ -325,7 +343,12 @@
 
         // --- FUNÇÃO DE EXPORTAÇÃO ---
         function exportarJSON() {
-            const jsonString = JSON.stringify(dadosOportunidades, null, 4);
+            // Garante a ordenação também no JSON final salvo, pra index manter a ordem correta
+            const jsonOrdenado = [...dadosOportunidades].sort((a, b) => {
+                return converterDataParaISODate(b.data) - converterDataParaISODate(a.data);
+            });
+
+            const jsonString = JSON.stringify(jsonOrdenado, null, 4);
             const blob = new Blob([jsonString], { type: "application/json" });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
@@ -348,4 +371,4 @@
         .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #a8a29e; }
     </style>
 </body>
-</html
+</html>
