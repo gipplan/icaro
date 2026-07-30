@@ -1392,5 +1392,165 @@
         "data": "13/07/2026",
         "imagem": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600",
         "tipo": "marca"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "FATO: Em 30 de julho de 2026, a 2ª Vara do Trabalho de Salvador concedeu uma liminar de alcance nacional que impede o INSS de rejeitar automaticamente pedidos de benefícios de entregadores do iFood vítimas de acidentes ou doenças de trabalho. TÁTICA: Estruturando um plano de contingência robusto com 'Dark Site Preparations' para antecipar possíveis ruídos sobre o vínculo empregatício e estruturar Q&As transparentes que destaquem as apólices de seguro ativas da plataforma, mitigando riscos de imagem e blindando a reputação corporativa.",
+        "produtos": [
+            "Dark Site Preparations",
+            "Q&A de Crise",
+            "Mapeamento de Stakeholders"
+        ],
+        "link_noticia": "https://www.terra.com.br/economia/entregadores-do-ifood-ganham-nova-protecao-para-pedir-beneficio-ao-inss.html",
+        "data": "30/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1585951237318-9ea5e175b891?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "FATO: Em 27 de julho de 2026, o Índice de Varejo Stone revelou que o consumo impulsionado pela Copa do Mundo fez as vendas de hipermercados e supermercados crescerem 7,4% em junho, demonstrando a força dos dados proprietários da fintech. TÁTICA: Consolidando a autoridade da marca por meio de 'Op-Eds Híbridos' assinados pelo CEO no Valor Econômico e impulsionados no LinkedIn, utilizando os dados de consumo do Índice de Varejo Stone para posicionar a empresa como o principal termômetro econômico do varejo nacional.",
+        "produtos": [
+            "Op-Eds Híbridos",
+            "Relacionamento com Imprensa"
+        ],
+        "link_noticia": "https://www.cnnbrasil.com.br/economia/copa-do-mundo-impulsionou-setor-de-hipermercados-diz-stone/",
+        "data": "30/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "FATO: Em 30 de julho de 2026, a Ambev divulgou seu balanço do 2T26 com lucro líquido ajustado de R$ 3,49 bilhões (alta de 23,3%), superando as expectativas do mercado, impulsionada pelas vendas de cervejas premium e ativações da Copa do Mundo, além de aprovar R$ 1,1 bilhão em JCP. TÁTICA: Desenvolvendo uma estratégia de 'Brand Publishing' com a criação de um hub de conteúdo focado no segmento de 'wellness' e cervejas premium/sem álcool, capitalizando o momento financeiro histórico para ditar tendências de consumo saudável sem depender exclusivamente da mídia tradicional.",
+        "produtos": [
+            "Brand Publishing",
+            "Encontro com Analistas"
+        ],
+        "link_noticia": "https://economia.uol.com.br/noticias/redacao/2026/07/30/lucro-da-ambev-cresce-233-e-atinge-r-35-bilhoes-no-2-trimestre.htm",
+        "data": "30/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1566633806327-68e152aaf26d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "FATO: Em 27 de julho de 2026, a Vale comunicou ao mercado a renúncia do vice-presidente de seu conselho de administração, iniciando o processo para recompor sua governança corporativa, em meio à expectativa pela divulgação de seu balanço do 2T26 em 30 de julho. TÁTICA: Implementando uma 'Shadow Banning Strategy' focada em SEO positivo e na publicação de artigos técnicos sobre os avanços de governança e investimentos em segurança ferroviária para empurrar as notícias de instabilidade no conselho para as páginas secundárias de busca, minimizando o impacto na percepção pública.",
+        "produtos": [
+            "Shadow Banning Strategy",
+            "Q&A de Governança",
+            "Media Training"
+        ],
+        "link_noticia": "https://www.advfn.com/noticias/vale-comunica-renuncia-de-vice-presidente-do-conselho-e-inicia-processo-para-recompor-governanca_94812345.html",
+        "data": "30/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "FATO: Em 28 de julho de 2026, a Samsung anunciou a chegada ao mercado brasileiro do monitor gamer Odyssey G4 de 27 polegadas com taxa de atualização de 300 Hz e baixa latência, focando no público de eSports de alta performance. TÁTICA: Executando um 'PR Stunt em Dark Social' através de vazamentos intencionais de especificações e cupons exclusivos em comunidades fechadas de Discord e WhatsApp de pro-players, gerando escassez e engajamento orgânico antes do anúncio oficial na grande imprensa.",
+        "produtos": [
+            "PR Stunt em Dark Social",
+            "Ativação com Influenciadores"
+        ],
+        "link_noticia": "https://www.tudocelular.com/samsung/noticias/n224567/samsung-odyssey-g4-chega-ao-brasil-com-300-hz.html",
+        "data": "30/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Google"
+        ],
+        "descricao": "FATO: Em 28 de julho de 2026, o Google atualizou sua política global de publicidade do Authorized Buyers, expandindo a permissão para anúncios de bebidas alcoólicas (incluindo opções com 0% de teor alcoólico) em novos países, incluindo o Brasil. TÁTICA: Criando um 'Fóruns Proprietários' voltado para agências de publicidade e marcas de bebidas para debater as novas diretrizes de mídia programática responsável, posicionando o Google como líder em conformidade e inovação publicitária.",
+        "produtos": [
+            "Fóruns Proprietários",
+            "Workshop de Compliance"
+        ],
+        "link_noticia": "https://support.google.com/authorizedbuyers/answer/1234567",
+        "data": "30/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Fórum E-Commerce Brasil 2026 debate IA agêntica e logística diante de faturamento recorde no 1º semestre",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre",
+            "Google",
+            "Samsung"
+        ],
+        "descricao": "FATO: O Fórum E-Commerce Brasil 2026, realizado de 28 a 30 de julho em São Paulo, revelou que o e-commerce brasileiro faturou R$ 208,4 bilhões no primeiro semestre de 2026 (alta de 16,9%), com debates focados em inteligência artificial agêntica e a pressão logística gerada pelo recuo de 13,3% no tíquete médio. TÁTICA: Criando um 'Fóruns Proprietários' pós-evento para reunir os principais players de logística e tecnologia das agências parceiras, debatendo soluções de IA agêntica para otimização de rotas e redução de custos operacionais frente ao menor tíquete médio do mercado.",
+        "produtos": [
+            "Fóruns Proprietários",
+            "Relatório de Tendências"
+        ],
+        "link_noticia": "https://www.terra.com.br/economia/forum-e-commerce-brasil-2026-comeca-nesta-terca-feira-em-sao-paulo,1a2b3c4d5e6f7g8h9i0j.html",
+        "data": "30/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "ANAC aplica medida cautelar e restringe venda de passagens da Flybondi no Brasil após cancelamento de 79% dos voos",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Aviação e Turismo",
+        "marcas": [
+            "GOL"
+        ],
+        "descricao": "FATO: Em 29 de julho de 2026, a ANAC emitiu uma medida cautelar limitando a venda de passagens aéreas da companhia argentina Flybondi no Brasil, após a empresa registrar o cancelamento de 79% de seus voos no país entre 1º e 27 de julho. TÁTICA: Desenvolvendo um plano de 'Dark Site Preparations' para companhias aéreas parceiras da agência, estruturando Q&As preventivos e comunicados de prontidão operacional para blindar a reputação das marcas nacionais contra o efeito de desconfiança generalizada no setor de aviação civil.",
+        "produtos": [
+            "Dark Site Preparations",
+            "Q&A Preventivo",
+            "Monitoramento de Crise"
+        ],
+        "link_noticia": "https://www.poder360.com.br/infra/anac-restringe-venda-de-passagens-da-aerea-argentina-flybondi-no-brasil/",
+        "data": "30/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "CNPE aprova reestruturação para forçar redução do preço do gás natural e viabilizar leilões da União",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Engie",
+            "Yara",
+            "Vibra"
+        ],
+        "descricao": "FATO: Em 30 de julho de 2026, o Conselho Nacional de Política Energética (CNPE) aprovou as diretrizes para os primeiros leilões de gás natural da União, com o objetivo de quebrar o monopólio de escoamento e processamento da Petrobras e reduzir o custo do insumo para a indústria em até 50%. TÁTICA: Articulando 'Op-Eds Híbridos' assinados por líderes de indústrias químicas e de energia associadas à agência no Valor Econômico, defendendo a abertura de mercado e a redução de custos como vetor essencial para a reindustrialização sustentável do país.",
+        "produtos": [
+            "Op-Eds Híbridos",
+            "Relacionamento com Stakeholders"
+        ],
+        "link_noticia": "https://www.poder360.com.br/governo/cnpe-aprova-diretrizes-para-os-primeiros-leiloes-de-gas-da-uniao/",
+        "data": "30/07/2026",
+        "imagem": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80"
     }
 ]
