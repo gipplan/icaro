@@ -1837,5 +1837,150 @@
         "link_noticia": "https://teletime.com.br/2026/07/13/anatel-abre-consulta-para-discutir-uso-de-ia-na-regulacao-das-telecomunicacoes/",
         "data": "03/08/2026",
         "imagem": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: O iFood registrou mais de 1,3 milhão de pedidos parcelados em seus primeiros dois meses de operação do iFood Pago, acendendo alertas de especialistas sobre o endividamento das famílias brasileiras para consumo imediato de alimentos. Tática: Implementando uma estratégia de Brand Publishing para criar um portal proprietário de educação financeira e consumo consciente, desvinculando a imagem da marca do endividamento familiar e posicionando o iFood Pago como um facilitador de fluxo de caixa doméstico, mitigando riscos de imagem e regulação.",
+        "produtos": [
+            "Brand Publishing",
+            "Plano de Gestão de Crise",
+            "Mapeamento de Stakeholders"
+        ],
+        "link_noticia": "https://www.youtube.com/watch?v=AUZIYQFe84dL_ki04Z-GY9LJ3j6Tkxz1prwvSNPAANMLYpiUaZA-bV290CBfCtwBgWhwpGq4-yMS8M1RNQD7kaPmqVZ9tcGAwuujeoUBhd5vvhARJvsQkJptC-CTJhAZN1F9JMg=",
+        "data": "03/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Bebidas e Consumo",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "Fato: A Ambev divulgou seu balanço do 2T26 com lucro líquido ajustado de R$ 3,49 bilhões (alta de 23,3%), impulsionado pelo crescimento consistente de marcas premium e ativações estratégicas durante a Copa do Mundo de 2026. Tática: Desenvolvendo Op-Eds Híbridos assinados pelo CEO e CFO no Valor Econômico e Exame, amplificados via LinkedIn Pulse, para detalhar como a digitalização (Zé Delivery e BEES) e a premiumização do portfólio blindam a receita contra flutuações sazonais, atraindo investidores institucionais de longo prazo.",
+        "produtos": [
+            "Op-Eds Híbridos",
+            "Relações com Investidores (PR)",
+            "Media Training"
+        ],
+        "link_noticia": "https://www.bloomberglinea.com.br/negocios/ambev-tem-ganho-de-market-share-consistente-com-maior-volume-de-cerveja-diz-cfo",
+        "data": "03/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1566633806327-68e152aaf26d?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Varejo e Cosméticos",
+        "marcas": [
+            "Natura"
+        ],
+        "descricao": "Fato: Os acionistas controladores da Natura convocaram duas Assembleias Gerais Extraordinárias (AGEs) para votar a dispensa de OPA (Oferta Pública de Aquisição) e a eleição de dois conselheiros indicados pela Advent International, que atingiu 8% de participação na empresa. Tática: Estruturando Fóruns Proprietários fechados com acionistas minoritários e analistas de mercado para debater a governança corporativa e demonstrar como a entrada da Advent acelera a desalavancagem e a recuperação operacional da marca, garantindo a aprovação da dispensa de OPA sem ruídos na mídia.",
+        "produtos": [
+            "Fóruns Proprietários",
+            "Comunicação Societária",
+            "Mapeamento de Influenciadores de Mercado"
+        ],
+        "link_noticia": "https://www.moneytimes.com.br/controladores-da-natura-natu3-pedem-dispensa-de-opa-em-acordo-de-investimento-com-advent/",
+        "data": "03/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "Fato: A Vale reportou seus resultados do 2T26 com um lucro líquido de US$ 1,38 bilhão, o que representa uma queda de 35% em relação ao ano anterior, refletindo a forte pressão global sobre os preços do minério de ferro e metais básicos. Tática: Desenvolvendo Op-Eds Híbridos focados na transição energética e na resiliência operacional da companhia, assinados pela liderança executiva e publicados em veículos Tier 1, para reforçar o compromisso de longo prazo com a eficiência de custos e investimentos em minerais críticos.",
+        "produtos": [
+            "Op-Eds Híbridos",
+            "Relações com a Imprensa de Negócios",
+            "Q&A de Resultados Financeiros"
+        ],
+        "link_noticia": "https://www.elpregonminero.com/vale-caida-de-35-en-utilidades-refleja-presion-global-sobre-hierro-y-metales-base/",
+        "data": "03/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "General Motors"
+        ],
+        "descricao": "Fato: A General Motors confirmou que estuda a fabricação de baterias para veículos elétricos no Brasil para aumentar a nacionalização de componentes, além de otimizar sua cadeia de suprimentos global através de parcerias estratégicas com Samsung e Micron. Tática: Elaborando Op-Eds Híbridos com o VP da GM América do Sul para veículos Tier 1 de economia e negócios, justificando o impacto econômico da produção local de baterias na reindustrialização verde do Brasil e no fortalecimento da cadeia de suprimentos regional.",
+        "produtos": [
+            "Op-Eds Híbridos",
+            "Relações Governamentais",
+            "Press Kit Digital"
+        ],
+        "link_noticia": "https://www.16valvulas.com.ar/el-proximo-paso-gm-estudia-fabricar-baterias-para-vehiculos-electricos-en-brasil-reforzando-su-apuesta-por-la-produccion-regional/",
+        "data": "03/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "Fato: A Shein propôs compensações de US$ 1,1 bilhão em dinheiro e ações adicionais para investidores de rodadas anteriores de financiamento para mitigar o impacto da redução de seu valor de mercado antes de seu IPO em Hong Kong. Tática: Conduzindo um PR Stunt em Dark Social através de canais fechados e grupos de WhatsApp de investidores de venture capital e private equity, vazando estrategicamente os termos de compensação para gerar percepção de responsabilidade fiduciária e governança robusta, sustentando o interesse de mercado mesmo sob valuation menor.",
+        "produtos": [
+            "PR Stunt em Dark Social",
+            "Comunicação de M&A e IPO",
+            "Q&A de Crise Financeira"
+        ],
+        "link_noticia": "https://exame.com.br/invest/shein-oferece-us-11-bilhao-para-compensar-investidores-antes-de-ipo/",
+        "data": "03/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Exigência de Qualidade de Dados do Banco Central pressiona Bancos e Fintechs",
+        "agencia": "",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Banco Central do Brasil"
+        ],
+        "descricao": "Fato: Bancos e fintechs correm contra o tempo para se adequar à Resolução Conjunta nº 18 do Banco Central, que exige a comprovação de processos controlados e auditáveis de qualidade de dados reportados até 31 de dezembro de 2026. Tática: Criando Dark Site Preparations com Q&As detalhados e posicionamentos institucionais prontos sobre governança de dados e conformidade regulatória, antecipando-se a possíveis vazamentos ou questionamentos da mídia sobre a capacidade de adequação das instituições financeiras.",
+        "produtos": [
+            "Dark Site Preparations",
+            "Consultoria de Compliance de Comunicação",
+            "Mapeamento de Riscos Regulatórios"
+        ],
+        "link_noticia": "https://finsidersbrasil.com.br/2026/08/03/bancos-e-fintechs-correm-contra-o-tempo-para-atender-exigencia-de-dados-do-bc/",
+        "data": "03/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Nova Fase do Mercado Livre de Energia Exige Maior Governança de Comercializadoras",
+        "agencia": "",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "CCEE",
+            "ANEEL"
+        ],
+        "descricao": "Fato: O mercado livre de energia entra em uma nova fase de migração onde os consumidores priorizam a governança corporativa, gestão de risco e solidez financeira das comercializadoras devido à alta volatilidade de preços (PLD) e maior complexidade regulatória. Tática: Implementando uma estratégia de Brand Publishing por meio de um portal de conteúdo focado em segurança energética e transição regulatória, educando o mercado de baixa tensão sobre os riscos de migração e posicionando as comercializadoras parceiras como referências de solidez e governança.",
+        "produtos": [
+            "Brand Publishing",
+            "Fóruns de Liderança Setorial",
+            "White Papers de Mercado"
+        ],
+        "link_noticia": "https://cenarioenergia.com.br/2026/08/03/mercado-libre-de-energia-entra-en-nueva-fase-y-empresas-amplian-criterios-para-migracion/",
+        "data": "03/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=600"
     }
 ]
