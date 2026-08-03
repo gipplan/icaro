@@ -1691,5 +1691,151 @@
         "link_noticia": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE02IR-bSUItYDHE7JSKLKgaFpfWONFK4AWfJMDnSohwhKqLKeyns-wJi1rP8fkVicv2MymKC83Oj9kQ4vfWFEqbDQ8571DnU4sw7aa-PYHftt03l9CnzEZvCd3pBC9pLbZCxpTurTGmfzlPDSPxeEwQYfqqFwGsubFqw1xyhAP_A3Qt0HHHfp0osAseP-DtuZy9FTkfhVDmnsH3gKfAvXxqAwYXeInBOAJA8bWiwBZi2qx5EiLBZ_EfxT_d8WJHu8nmew6_3NglNYARfPzPegF",
         "data": "31/07/2026",
         "imagem": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: O iFood anunciou planos de expansão agressivos para triplicar o tamanho de sua operação de mercado e farmácia, focando em digitalizar o varejo físico tradicional brasileiro. Tática: Desenvolvendo uma estratégia de Brand Publishing por meio de um portal de notícias mantido pela marca para educar pequenos e médios varejistas sobre as vantagens da digitalização, gerando autoridade no setor e impulsionando a atração orgânica de novos parceiros comerciais sem depender exclusivamente da imprensa tradicional.",
+        "produtos": [
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://www.infomoney.com.br/business/a-fome-do-ifood-empresa-expande-raio-de-atuacao-e-quer-triplicar-de-tamanho/",
+        "data": "03/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "Fato: O Mercado Livre investiu fortemente em social commerce ao enviar 30 influenciadores latinos (sendo 17 brasileiras) para o festival Cannes Lions vestindo acessórios amarelos da marca para promover seu programa de afiliados. Tática: Executando um PR Stunt em Dark Social por meio de vazamentos intencionais de cupons de desconto e conteúdos exclusivos em comunidades fechadas de WhatsApp e Discord dos criadores parceiros, gerando escassez e impulsionando as taxas de conversão de vendas diretamente na plataforma.",
+        "produtos": [
+            "PR Stunt em Dark Social"
+        ],
+        "link_noticia": "https://www.dgabc.com.br/Noticia/4153920/plataformas-investem-em-afiliados-nas-redes-para-vender-mais",
+        "data": "03/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "Fato: A Ambev registrou lucro líquido de R$ 3,47 bilhões no segundo trimestre de 2026, uma alta de 24,5% impulsionada pelo crescimento de cervejas premium e ativações da Copa do Mundo. Tática: Posicionando o CFO e o CEO por meio de Op-Eds Híbridos no Valor Econômico e Exame, casados com impulsionamento estratégico no LinkedIn Pulse, para demonstrar como a inovação digital (via plataforma BEES) e a premiumização do portfólio garantem a resiliência financeira da companhia mesmo diante de oscilações climáticas.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://www.estadao.com.br/economia/venda-de-cerveja-no-pais-faz-lucro-da-ambev-crescer-23-ja-com-impacto-da-copa-do-mundo/",
+        "data": "03/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1566633806327-68e152aaf26d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "Fato: A Vale divulgou lucro de USD 3,26 bilhões no primeiro semestre de 2026 e anunciou que a mina de cobre de Sossego passará por 110 dias de manutenção a partir de agosto, o que deve impactar custos e volumes no segundo semestre. Tática: Implementando uma estratégia de Dark Site Preparations com a criação de landing pages invisíveis contendo Q&As detalhados sobre as medidas de mitigação financeira e segurança operacional, preparando a empresa para responder de forma imediata e transparente caso ocorram especulações negativas no mercado financeiro.",
+        "produtos": [
+            "Dark Site Preparations"
+        ],
+        "link_noticia": "https://www.investing.com/news/company-news/vale-earnings-report-lower-eps-in-q2-2026-but-improves-production-and-cash-flow-93CH-3547167",
+        "data": "03/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Seara"
+        ],
+        "descricao": "Fato: A Seara Gourmet marcou presença como patrocinadora na Churrascada 2026 em São Paulo, apresentando receitas exclusivas inspiradas no tema 'Fogo Sem Fronteiras' assinadas por chefs renomados. Tática: Desenvolvendo uma estratégia de Brand Publishing através da criação de um portal de notícias e cultura gastronômica mantido pela marca para produzir conteúdos ricos sobre churrasco premium e técnicas de assado, reduzindo a dependência de mídia paga e gerando engajamento orgânico de longo prazo com a comunidade de entusiastas.",
+        "produtos": [
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://www.cidademarketing.com.br/marketing/2026/08/01/friboi-seara-gourmet-e-swift-levam-portfolio-premium-ao-festival-churrascada-2026/",
+        "data": "03/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "Fato: A Samsung registrou um salto de 15 vezes em seu lucro líquido no segundo trimestre de 2026 devido à alta nos preços de chips de memória para IA, mas alertou que a escassez global de fornecimento deve persistir até 2029, encarecendo os dispositivos. Tática: Posicionando os executivos da divisão de semicondutores por meio de Op-Eds Híbridos em veículos Tier 1 de negócios para explicar o desequilíbrio global de chips e apresentar a visão de longo prazo da IA, fortalecendo a autoridade da marca e preparando o mercado para a flutuação de preços dos eletrônicos.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://theobjective.com/tecnologia/2026-07-31/samsung-beneficio-chips-dispositivos-moviles/",
+        "data": "03/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Google"
+        ],
+        "descricao": "Fato: O Google, juntamente com Meta, TikTok e Snap, enfrenta uma ação judicial conjunta de 'wrongful death' movida por quatro famílias que alegam danos causados pelas redes sociais à saúde mental de seus filhos. Tática: Estruturando uma Shadow Banning Strategy focada em SEO positivo e na publicação de conteúdos institucionais robustos sobre segurança digital e ferramentas de controle parental, empurrando as notícias negativas sobre o processo judicial para a página 3 dos buscadores e protegendo a reputação da marca.",
+        "produtos": [
+            "Shadow Banning Strategy"
+        ],
+        "link_noticia": "https://www.wwwhatsnew.com/2026/08/01/wwwhats-new-noticias-de-tecnologia/",
+        "data": "03/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Entrada em Vigor de Novas Disposições da CBS e do IBS na Reforma Tributária",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Mercado Pago",
+            "Americanas"
+        ],
+        "descricao": "Fato: No dia 1º de agosto de 2026, entraram em vigor disposições específicas relacionadas à CBS e ao IBS, exigindo que as empresas adaptem seus sistemas de validação fiscal e faturamento. Tática: Criando um Fórum Proprietário focado em conformidade fiscal e tecnologia para reunir diretores financeiros e de tecnologia do varejo, posicionando as marcas parceiras como líderes na transição regulatória e facilitadoras de soluções corporativas.",
+        "produtos": [
+            "Fóruns Proprietários"
+        ],
+        "link_noticia": "https://www.gov.br/fazenda/pt-br/assuntos/reforma-tributaria",
+        "data": "03/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Tomada de Subsídios da Anatel sobre o Uso de Inteligência Artificial nas Telecomunicações",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Google",
+            "Samsung"
+        ],
+        "descricao": "Fato: A Anatel abriu consulta pública (Tomada de Subsídios nº 6/2026) para discutir o uso ético, governança e proteção de dados na aplicação de Inteligência Artificial no setor de telecomunicações. Tática: Criando um Fórum Proprietário focado em IA e Ética Regulatória para reunir líderes de tecnologia, reguladores e especialistas do setor, permitindo que as marcas influenciem o debate público e demonstrem compromisso com a governança tecnológica antes da definição de regras rígidas.",
+        "produtos": [
+            "Fóruns Proprietários"
+        ],
+        "link_noticia": "https://teletime.com.br/2026/07/13/anatel-abre-consulta-para-discutir-uso-de-ia-na-regulacao-das-telecomunicacoes/",
+        "data": "03/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80"
     }
 ]
