@@ -1982,5 +1982,144 @@
         "data": "13/07/2026",
         "imagem": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600",
         "tipo": "marca"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: O iFood participa como patrocinador da SP Climate Week 2026 (de 3 a 7 de agosto), apresentando suas iniciativas de mobilidade sustentável e descarbonização de frotas de entrega. Tática: Estruturando Op-Eds Híbridos assinados pelo CEO Diego Barreto em veículos de grande circulação (como Valor Econômico e Exame), integrados a impulsionamentos estratégicos no LinkedIn Pulse, para consolidar o iFood como líder em transição ecológica na logística urbana.",
+        "produtos": [
+            "Op-Eds Híbridos",
+            "LinkedIn Pulse Amplification"
+        ],
+        "link_noticia": "https://www.ifood.com.br/",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "Fato: A Samsung lançou no Brasil os smart speakers Music Studio 7 e Music Studio 5, que combinam design assinado por Erwan Bouroullec e inteligência artificial para otimização acústica. Tática: Coordenando um PR Stunt em Dark Social através de vazamentos intencionais de especificações e áudios de teste em comunidades fechadas de WhatsApp e Discord voltadas para audiófilos e entusiastas de design, gerando escassez e desejo antes do início oficial das vendas.",
+        "produtos": [
+            "PR Stunt em Dark Social",
+            "Community Seeding"
+        ],
+        "link_noticia": "https://www.samsung.com/br/",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "Fato: A Ambev divulgou seu balanço do 2T26 com lucro líquido ajustado de R$ 3,49 bilhões (alta de 23,3%), impulsionado pela venda de cervejas premium e ativações da Copa do Mundo de 2026. Tática: Criando uma estratégia de Brand Publishing por meio de um portal de notícias mantido pela marca para detalhar a tese de premiumização e inovação em canais digitais (como Zé Delivery e BEES), reduzindo a dependência exclusiva da cobertura da imprensa tradicional e pautando o mercado de forma proprietária.",
+        "produtos": [
+            "Brand Publishing",
+            "Proprietary Content Hub"
+        ],
+        "link_noticia": "https://ri.ambev.com.br/",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1566633806327-68e152aaf26d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Saúde / Inovação",
+        "marcas": [
+            "Albert Einstein"
+        ],
+        "descricao": "Fato: O Hospital Israelita Albert Einstein conquistou o 2º lugar geral no ranking Valor Inovação 2026, sendo reconhecido pelo uso de novas tecnologias e avanços na terapia CAR-T Cell. Tática: Estruturando Fóruns Proprietários, como um Summit de Inovação em Saúde liderado pelo Einstein, para debater as dores do mercado de biotecnologia e medicina de precisão com players globais, posicionando a marca como a autoridade máxima do setor sem depender de eventos de terceiros.",
+        "produtos": [
+            "Fóruns Proprietários",
+            "C-Level Thought Leadership"
+        ],
+        "link_noticia": "https://valor.globo.com/inovacao/noticia/2026/08/03/valor-inovacao-einstein-hospital-israelita-e-a-2a-empresa-mais-inovadora-do-pais.ghtml",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Claro"
+        ],
+        "descricao": "Fato: A Claro Brasil conquistou a 3ª posição geral no prêmio Valor Inovação 2026, destacando-se por sua estratégia de inovação ambidestra que equilibra conectividade e hubs de valor. Tática: Implementando Op-Eds Híbridos assinados pelo presidente José Félix em veículos Tier 1 (como Valor Econômico), casados com impulsionamento de alta precisão no LinkedIn Pulse, para detalhar como a Claro utiliza hubs de inovação para transformar a experiência do cliente e liderar o setor de telecomunicações.",
+        "produtos": [
+            "Op-Eds Híbridos",
+            "LinkedIn Pulse Campaign"
+        ],
+        "link_noticia": "https://valor.globo.com/inovacao/noticia/2026/08/03/valor-inovacao-claro-reforca-conexao-com-os-clientes-e-e-a-3a-mais-inovadora.ghtml",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Bens de Consumo / Inovação",
+        "marcas": [
+            "Natura"
+        ],
+        "descricao": "Fato: A Natura conquistou o 5º lugar no ranking Valor Inovação 2026, sendo celebrada por seus investimentos em pesquisa aplicada à sociobiodiversidade e novas tecnologias sustentáveis. Tática: Desenvolvendo uma plataforma de Brand Publishing focada em bioeconomia e ciência cosmética sustentável, permitindo que a Natura divulgue de forma direta e proprietária seus avanços em P&D para a COP30 e métodos alternativos de testes, sem depender exclusivamente de press releases tradicionais.",
+        "produtos": [
+            "Brand Publishing",
+            "Sociobiodiversity Content Strategy"
+        ],
+        "link_noticia": "https://valor.globo.com/inovacao/noticia/2026/08/03/valor-inovacao-no-5o-lugar-natura-mantem-olfato-fino-para-novas-tendencias.ghtml",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Primeiro voo de transição do eVTOL da Eve Air Mobility",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Aviação e Turismo",
+        "marcas": [
+            "Eve Air Mobility",
+            "Embraer"
+        ],
+        "descricao": "Fato: A Eve Air Mobility, subsidiária da Embraer, realizou com sucesso o primeiro voo de transição parcial de seu protótipo de engenharia eVTOL na Flórida, ativando a hélice propulsora traseira. Tática: Estruturando Fóruns Proprietários, como um simpósio de mobilidade aérea urbana liderado pela Eve, para debater a regulação e a infraestrutura de vertiportos com autoridades globais, posicionando a empresa como pioneira e líder absoluta na transição para o voo horizontal comercial.",
+        "produtos": [
+            "Fóruns Proprietários",
+            "Regulatory Affairs Summit"
+        ],
+        "link_noticia": "https://www.infomoney.com.br/negocios/carro-voador-da-eve-subsidiaria-da-embraer-realiza-primeiro-voo-de-transicao/",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Aprovação do investimento da American Airlines na Azul pelo CADE",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Aviação e Turismo",
+        "marcas": [
+            "Azul",
+            "American Airlines",
+            "GOL"
+        ],
+        "descricao": "Fato: O CADE aprovou sem restrições o investimento de US$ 100 milhões da American Airlines na Azul, rejeitando as objeções do Grupo Abra (controlador da GOL e Avianca). Tática: Implementando uma Shadow Banning Strategy focada em SEO positivo e assessoria de imprensa proativa para empurrar notícias sobre a disputa concorrencial para as páginas secundárias de busca, enquanto se destaca a complementaridade das malhas aéreas e os benefícios aos passageiros.",
+        "produtos": [
+            "Shadow Banning Strategy",
+            "SEO Positivo"
+        ],
+        "link_noticia": "https://www.estadao.com.br/economia/cade-aprova-investimento-da-american-airlines-na-azul/",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
     }
 ]
