@@ -2121,5 +2121,123 @@
         "data": "13/07/2026",
         "imagem": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600",
         "tipo": "marca"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: O iFood anunciou o lançamento da Bag Pro e de uma operação logística especializada para a entrega de pizzas em São Paulo, desenvolvida em parceria com a tradicional pizzaria Bráz, visando reduzir em até 80% as ocorrências de transporte de alimentos sensíveis. Tática: Criando um Fórum Proprietário focado no futuro do delivery de alimentos sensíveis para reunir chefs, donos de restaurantes e especialistas em logística, posicionando o iFood como o principal desenvolvedor de tecnologia e infraestrutura para a preservação da experiência gastronômica em casa.",
+        "produtos": [
+            "Fóruns Proprietários",
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://clientesa.com.br/gestao/ifood-anuncia-bag-e-operacao-especializada-para-entregas-de-alimentos-que-exigem-cuidados/",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "Fato: A Stone anunciou a integração da solução de pagamentos online Pagar.me diretamente à sua plataforma tradicional de adquirência (maquininhas), consolidando sua estratégia de se posicionar como um banco completo para empreendedores. Tática: Posicionando o C-level por meio de Op-Eds Híbridos em veículos Tier 1 de economia casados com impulsionamento no LinkedIn Pulse, debatendo como a unificação de canais físicos e digitais é o verdadeiro motor de crescimento e eficiência para as PMEs brasileiras.",
+        "produtos": [
+            "Op-Eds Híbridos",
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://www.estadao.com.br/economia/coluna-do-broad/stone-integra-solucao-de-pagamentos-online-a-operacao-das-maquininhas/",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "Fato: A Ambev reportou um lucro líquido ajustado de R$ 3,49 bilhões no segundo trimestre de 2026, representando uma alta de 23,3% impulsionada pelas vendas de cervejas premium e ativações de marketing voltadas para a Copa do Mundo de 2026. Tática: Publicando Op-Eds Híbridos assinados pelo CEO Carlos Lisboa em veículos como Valor Econômico e Exame, detalhando como a estratégia de premiumização e a digitalização via Zé Delivery blindaram a companhia contra oscilações macroeconômicas, ampliando a percepção de solidez financeira entre investidores.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://exame.com.br/investimentos/btg-troca-ambev-e-allos-por-gerdau-e-copasa-na-carteira-de-acoes-de-agosto/",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1566633806327-68e152aaf26d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "Fato: A Samsung anunciou que o Prime Video será o primeiro serviço de streaming a oferecer o padrão HDR10+ ADVANCED globalmente a partir de agosto de 2026, estreando em sua linha de TVs de 2026, enquanto encerra a pré-venda de seus novos dobráveis Galaxy Z Fold8 e Z Flip8. Tática: Orquestrando um PR Stunt em Dark Social por meio de vazamentos intencionais em comunidades fechadas de entusiastas de tecnologia e cinema no WhatsApp e Discord, gerando escassez e curiosidade sobre a qualidade de imagem do HDR10+ ADVANCED antes do lançamento oficial das TVs.",
+        "produtos": [
+            "PR Stunt em Dark Social"
+        ],
+        "link_noticia": "https://news.samsung.com/global/samsung-launches-worlds-first-hdr10-plus-advanced-streaming-experience-on-prime-video",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "Fato: A Shein está buscando uma avaliação de US$ 30 bilhões a US$ 40 bilhões para seu IPO em Hong Kong, planejado para meados de agosto de 2026, o que representa um forte desconto em relação às suas avaliações privadas anteriores devido a pressões regulatórias e desaceleração do crescimento. Tática: Adotando uma Shadow Banning Strategy focada em SEO positivo e na criação de conteúdos de governança corporativa para empurrar as discussões sobre a desvalorização do IPO e pressões regulatórias para a página 3 do Google, enquanto se prepara um Dark Site com Q&As detalhados sobre a sustentabilidade do modelo de negócios.",
+        "produtos": [
+            "Shadow Banning Strategy",
+            "Dark Site Preparations"
+        ],
+        "link_noticia": "https://www.reuters.com/markets/deals/shein-seeks-30-40-billion-valuation-august-hong-kong-ipo-sources-2026-08-04/",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Exigência de Qualidade de Dados do Banco Central Pressiona Bancos e Fintechs",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Sicredi",
+            "Mastercard",
+            "Mercado Pago"
+        ],
+        "descricao": "Fato: O Banco Central do Brasil impôs um prazo de menos de cinco meses para que bancos, cooperativas e fintechs comprovem a qualidade e a auditabilidade dos dados enviados ao regulador, sob risco de processos administrativos sancionadores severos. Tática: Desenvolvendo Dark Site Preparations com Q&As prontos e posicionamentos técnicos sobre governança de dados para mitigar riscos de imagem caso as instituições enfrentem questionamentos públicos do Banco Central, garantindo resposta ágil à imprensa.",
+        "produtos": [
+            "Dark Site Preparations"
+        ],
+        "link_noticia": "https://finsidersbrasil.com.br/regulacao/bancos-e-fintechs-correm-contra-o-tempo-para-atender-exigencia-de-dados-do-bc/",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Mercado Livre Consolida Liderança Absoluta no Prêmio E-Commerce Brasil 2026",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre",
+            "Mercado Pago"
+        ],
+        "descricao": "Fato: O Mercado Livre foi o grande vencedor do Prêmio E-Commerce Brasil 2026, conquistando as principais categorias como Grande Marketplace, Melhor Experiência de Compra, Inovação, Logística e Solução de Pagamentos com o Mercado Pago. Tática: Criando um portal de Brand Publishing focado em inteligência de varejo e logística para divulgar os cases de sucesso que renderam os prêmios, consolidando a liderança intelectual da marca no setor sem depender exclusivamente de mídia espontânea.",
+        "produtos": [
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://varejosa.com.br/premio-e-commerce-brasil-retorna-ao-forum-e-reconhece-empresas-e-liderancas/",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
     }
 ]
