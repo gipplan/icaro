@@ -2239,5 +2239,146 @@
         "link_noticia": "https://varejosa.com.br/premio-e-commerce-brasil-retorna-ao-forum-e-reconhece-empresas-e-liderancas/",
         "data": "04/08/2026",
         "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood",
+            "Caixa Econômica Federal"
+        ],
+        "descricao": "Fato: O iFood e a Caixa Econômica Federal anunciaram uma parceria inédita para facilitar o acesso de entregadores ao financiamento de veículos elétricos com juros reduzidos e modelo inovador de comprovação de ganhos. Tática: Posicionando o C-level do iFood através de Op-Eds Híbridos em veículos Tier 1 (como Valor Econômico ou Exame) para debater a inclusão financeira e a transição para a mobilidade sustentável de trabalhadores de aplicativos, ampliando o alcance via LinkedIn Pulse para consolidar a liderança em ESG e responsabilidade social, gerando impacto positivo na reputação corporativa e na atração de novos parceiros de entrega.",
+        "produtos": [
+            "Op-Ed Híbrido",
+            "LinkedIn Pulse Campaign"
+        ],
+        "link_noticia": "https://news.ifood.com.br/ifood-e-caixa-lancam-parceria-inedita-para-facilitar-acesso-de-entregadores-ao-financiamento-de-veiculos/",
+        "data": "05/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "Fato: A Vale avançou com o projeto Serra Sul +20 para ampliar a produção de mineral de ferro no complexo S11D, iniciando o comissionamento do transportador de correia de longa distância (TCLD). Tática: Criando um Fórum Proprietário (Summit de Mineração do Futuro) focado em debater a eficiência operacional e a descarbonização na cadeia de mineração, reunindo stakeholders do setor para destacar o avanço tecnológico do projeto Serra Sul +20 e mitigar discussões sobre impacto ambiental, fortalecendo a confiança de investidores e parceiros comerciais de longo prazo.",
+        "produtos": [
+            "Fórum Proprietário",
+            "Relatório de Impacto Setorial"
+        ],
+        "link_noticia": "https://www.bnamericas.com/es/noticias/vale-avanza-con-el-proyecto-serra-sul-20-para-ampliar-la-produccion-de-mineral-de-hierro-en-brasil",
+        "data": "05/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1578319439584-104c94d37305?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "Fato: A Shein reduziu seu valuation para a faixa de US$ 30 bilhões a US$ 40 bilhões às vésperas de seu IPO em Hong Kong e propôs compensações financeiras para investidores de estágio avançado. Tática: Estruturando Dark Site Preparations com Q&As detalhados sobre a saúde financeira global da empresa, o impacto da redução de valuation e a sustentabilidade do modelo de negócios no Brasil pós-fim da 'taxa das blusinhas', antecipando questionamentos da imprensa nacional durante o período de silêncio do IPO para blindar a reputação da marca e evitar ruídos no mercado local.",
+        "produtos": [
+            "Dark Site Preparations",
+            "Q&A de Crise Financeira"
+        ],
+        "link_noticia": "https://exame.com.br/negocios/ipo-da-shein-empresa-reduz-valuation-as-vesperas-da-estreia-na-bolsa/",
+        "data": "05/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "Fato: A Ambev reportou lucro líquido de R$ 3,47 bilhões no 2T26 (alta de 24,5%), impulsionado pelo portfólio de cervejas premium e ativações de marketing voltadas para a Copa do Mundo, mas enfrenta volatilidade nas ações pós-balanço. Tática: Desenvolvendo uma plataforma de Brand Publishing focada em tendências de consumo e inovação no setor de bebidas, utilizando dados proprietários do ecossistema BEES e Zé Delivery para neutralizar a volatilidade do mercado financeiro e focar a narrativa no crescimento consistente de market share e inovação digital, gerando valor direto para acionistas e parceiros do varejo.",
+        "produtos": [
+            "Brand Publishing",
+            "Data Report de Tendências de Consumo"
+        ],
+        "link_noticia": "https://www.moneytimes.com.br/ambev-abev3-bate-expectativa-do-mercado-e-lucro-avanca-245-no-2t26-a-r-347-bilhoes/",
+        "data": "05/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1566633806327-68e152aaf26d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Aviação e Turismo",
+        "marcas": [
+            "GOL Linhas Aéreas",
+            "KLM"
+        ],
+        "descricao": "Fato: A GOL realizou ações especiais para o 'Festivalzinho 2026' no Parque Villa-Lobos (SP), incluindo um show infantil surpresa com 'Beatles para Crianças' a bordo de um voo Fortaleza-São Paulo e ativações lúdicas de marca. Tática: Implementando um PR Stunt em Dark Social através do vazamento intencional de vídeos de bastidor e reações das famílias a bordo do voo com show surpresa em comunidades fechadas de mães e pais no WhatsApp e canais de Telegram, gerando engajamento orgânico e desejo de marca de forma espontânea e altamente qualificada, o que impulsionará a venda de passagens para o público familiar.",
+        "produtos": [
+            "PR Stunt em Dark Social",
+            "Vídeo Case de Ativação"
+        ],
+        "link_noticia": "https://www.aeroin.net/com-toddynho-no-embarque-e-livro-para-colorir-gol-faz-acao-para-festival-infantil-a-bordo-de-seus-aivoes/",
+        "data": "05/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "Fato: A Samsung divulgou detalhes de sua atualização de segurança de agosto de 2026 para dispositivos Galaxy (corrigindo 56 vulnerabilidades) antes do anúncio oficial do Google, priorizando os novos dobráveis Galaxy Z Fold 8 e Flip 8. Tática: Executando um PR Stunt em Dark Social com o vazamento controlado de detalhes técnicos e benefícios de segurança da nova One UI em fóruns fechados de tecnologia e comunidades de desenvolvedores (Discord/WhatsApp), gerando buzz orgânico e reforçando a autoridade da marca em segurança cibernética antes do roll-out global para impulsionar as vendas da nova linha premium.",
+        "produtos": [
+            "PR Stunt em Dark Social",
+            "Tech Briefing Exclusivo"
+        ],
+        "link_noticia": "https://www.notebookcheck.info/A-Samsung-divulga-detalhes-sobre-a-atualizacao-de-seguranca-de-agosto-de-2026-para-dispositivos-Galaxy-antes-do-Google.872847.0.html",
+        "data": "05/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Reforma Tributária do Consumo",
+        "agencia": null,
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Receita Federal",
+            "Comitê Gestor do IBS"
+        ],
+        "descricao": "Fato: O novo marco da Reforma Tributária entrou em vigor em 3 de agosto de 2026, exigindo obrigatoriamente o preenchimento dos novos campos relativos ao IBS e à CBS em documentos fiscais eletrônicos (BP-e, CT-e, MDF-e), sob pena de rejeição automática pelo sistema. Tática: Implementando uma estratégia de Brand Publishing por meio de um portal de notícias mantido pela marca para educar e orientar o ecossistema de parceiros e clientes sobre as novas regras de emissão do IBS/CBS, reduzindo o risco de rejeição de notas fiscais e posicionando a empresa como autoridade técnica na transição tributária, o que minimiza impactos operacionais e atritos comerciais.",
+        "produtos": [
+            "Brand Publishing",
+            "Guia de Transição Tributária"
+        ],
+        "link_noticia": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/julho/receita-federal-e-comite-gestor-do-ibs-publicam-o-cronograma-de-implementacao-dos-documentos-fiscais-eletronicos-da-reforma-tributaria-do-consumo",
+        "data": "05/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Consolidação do Agentic Commerce no Varejo",
+        "agencia": null,
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Lojas Renner",
+            "Yuno",
+            "Adyen"
+        ],
+        "descricao": "Fato: A consolidação do 'agentic commerce' (comércio agêntico, onde agentes autônomos de IA realizam pesquisas, recomendam e finalizam compras) foi apontada como a principal tendência tecnológica e 'virada de chave' para o varejo digital brasileiro no Fórum E-Commerce Brasil 2026. Tática: Promovendo um Fórum Proprietário (Summit de Agentic Commerce) para debater a integração de agentes autônomos de IA no checkout e na jornada de compra, reunindo líderes do varejo e de tecnologia para posicionar a marca como pioneira na orquestração dessa nova era do e-commerce, gerando novas oportunidades de negócios e parcerias estratégicas.",
+        "produtos": [
+            "Fórum Proprietário",
+            "Whitepaper de Tendências de IA no Varejo"
+        ],
+        "link_noticia": "https://www.ecommercebrasil.com.br/noticias/varejo-se-prepara-para-redesenhar-operacoes-e-checkout-com-agentic-commerce/",
+        "data": "05/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
     }
 ]
