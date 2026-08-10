@@ -2492,5 +2492,129 @@
         "link_noticia": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0D7AwArM99aTds9eDp_ifOc6ABQc0X7Y2u9AeItYivpGtiTbCo1Srvc35nh0IFBrFlSGKT1IcFEEqTm5SexI7jvH4oexCpSv-s1He6ulg5fyCQDGYRJg6czaN5SV-nAgdB5q9Z0vxNV7GCqBU79-XaFbypqE7IdPpvPwr_1MQW4yw-R__omP6A-bPllF-97nF50XhDS0=",
         "data": "07/08/2026",
         "imagem": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "FATO: A Justiça da Bahia determinou, por liminar de alcance nacional, que o INSS não negue automaticamente pedidos de auxílio-doença de entregadores do iFood acidentados, o que pode gerar um custo anual de até R$ 189 milhões para a Previdência Social. O iFood recorreu da decisão. TÁTICA: Implementando uma estratégia de Dark Site Preparations para antecipar o debate sobre a segurança jurídica e previdenciária dos entregadores, criando uma plataforma invisível com Q&As detalhados sobre os seguros privados já oferecidos pela marca, mitigando o impacto reputacional da liminar judicial.",
+        "produtos": [
+            "Dark Site Preparations",
+            "Q&A de Crise",
+            "Mapeamento de Stakeholders"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/08/gastos-do-inss-com-auxilio-doenca-para-entregador-do-ifood-podem-chegar-a-r-189-milhoes-por-ano.shtml",
+        "data": "10/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "FATO: A StoneCo se prepara para divulgar seus resultados financeiros do segundo trimestre de 2026 no dia 13 de agosto, sob forte expectativa do mercado e análises que apontam pressão operacional, enquanto a empresa foca em sua transição estratégica para se tornar um banco para PMEs. TÁTICA: Desenvolvendo uma campanha de Op-Eds Híbridos assinados pelo CEO Mateus Scherer em veículos Tier 1, casados com impulsionamento no LinkedIn Pulse, para posicionar a Stone de forma proativa antes da divulgação de resultados do 2T26, focando na narrativa de transição estratégica de adquirente para banco digital de PMEs.",
+        "produtos": [
+            "Op-Ed Híbrido",
+            "LinkedIn Executive Positioning",
+            "Media Training de Porta-Vozes"
+        ],
+        "link_noticia": "https://neofeed.com.br/negocios/stone-quer-ir-alem-da-maquininha-e-define-sua-nova-avenida-de-crescimento-virar-banco/",
+        "data": "10/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Google"
+        ],
+        "descricao": "FATO: O CEO do Google, Sundar Pichai, anunciou mudanças na liderança do Google DeepMind, com Demis Hassabis assumindo como Chair do GDM e Chief Scientist da Alphabet para focar ativamente no avanço da Inteligência Artificial Geral (AGI) e da ciência. TÁTICA: Criando um Fórum Proprietário focado em Inteligência Artificial Geral (AGI) e ciência no Brasil, reunindo a academia e líderes de tecnologia para debater os impactos das novas lideranças globais do Google DeepMind no desenvolvimento de soluções locais.",
+        "produtos": [
+            "Fórum Proprietário",
+            "Relações com a Mídia",
+            "Painel de Debates"
+        ],
+        "link_noticia": "https://blog.google/inside-google/message-sundar-pichai-demis-hassabis-deepmind-update-august-2026/",
+        "data": "10/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "FATO: A Samsung atingiu o recorde histórico de 5,2 milhões de unidades encomendadas na pré-venda global da linha Galaxy Z Fold 8, gerando desafios logísticos para suprir a demanda que superou as projeções iniciais. TÁTICA: Orquestrando um PR Stunt em Dark Social através de vazamentos intencionais e conteúdos exclusivos em comunidades fechadas do WhatsApp e Discord, gerando escassez e engajamento orgânico para gerenciar a expectativa de entrega do Galaxy Z Fold 8 diante dos desafios logísticos.",
+        "produtos": [
+            "PR Stunt em Dark Social",
+            "Estratégia de Influenciadores de Tech",
+            "Comunicação de Produto"
+        ],
+        "link_noticia": "https://www.tudocelular.com/samsung/noticias/n224567/samsung-galaxy-z-fold-8-pre-venda-recorde.html",
+        "data": "10/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "BBCE"
+        ],
+        "descricao": "FATO: Os preços de energia no mercado livre de curto prazo despencaram até 44% devido à recuperação dos reservatórios no Sul com as chuvas do El Niño, enquanto os contratos de longo prazo (a partir de 2027) subiram, gerando uma 'torção de curva' inédita apontada por dados da BBCE. TÁTICA: Estruturando um portal de Brand Publishing mantido pela BBCE para analisar a volatilidade de preços gerada pelo El Niño, consolidando a marca como a principal fonte de inteligência de mercado para geradores e comercializadores de energia sem depender exclusivamente da imprensa tradicional.",
+        "produtos": [
+            "Portal de Brand Publishing",
+            "Relatório de Inteligência de Mercado",
+            "Relações com Imprensa Setorial"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/08/el-nino-ja-mexe-com-precos-no-mercado-livre-de-energia.shtml",
+        "data": "10/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Americanas"
+        ],
+        "descricao": "FATO: A Americanas anunciou a divulgação de seus resultados financeiros do segundo trimestre de 2026 (2T26) para o dia 12 de agosto, após o fechamento do mercado, seguido de teleconferência no dia 13 de agosto, marcando um momento crucial de sua recuperação judicial. TÁTICA: Implementando uma estratégia de Dark Site Preparations com Q&As detalhados e simulações de cenários de crise antes da divulgação dos resultados do 2T26, blindando a reputação da Americanas contra possíveis ruídos de mercado sobre o andamento de sua reestruturação financeira.",
+        "produtos": [
+            "Dark Site Preparations",
+            "Q&A Financeiro de Crise",
+            "Media Training de Porta-Vozes"
+        ],
+        "link_noticia": "https://ri.americanas.com.br/",
+        "data": "10/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Brasil Lidera Crescimento Global de Viagens Corporativas em 2026",
+        "agencia": "",
+        "setor": "Aviação e Turismo",
+        "marcas": [],
+        "descricao": "FATO: O Brasil lidera o crescimento global das viagens corporativas em 2026, com uma expansão projetada de 13,8% no turismo de negócios, superando os demais 15 maiores mercados globais e devendo movimentar US$ 35,8 bilhões até o fim do ano, segundo o relatório Business Travel Index (BTI) da GBTA. TÁTICA: Promovendo um Fórum Proprietário focado no boom do turismo de negócios no Brasil, reunindo os principais players de aviação, hotelaria e tecnologia para debater como o país pode capitalizar a liderança global em viagens corporativas projetada pela GBTA.",
+        "produtos": [
+            "Fórum Proprietário",
+            "Estratégia de Relações Públicas Setorial",
+            "White Paper de Tendências de Viagens"
+        ],
+        "link_noticia": "https://www.panrotas.com.br/viagens-corporativas/pesquisas-e-estatisticas/2026/08/viagens-corporativas-movimentam-us-17-trilhao-no-mundo-brasil-lidera-alta-em-2026_202456.html",
+        "data": "10/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=600"
     }
 ]
