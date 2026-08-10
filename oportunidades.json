@@ -7,6 +7,346 @@
         "marcas": [
             "iFood"
         ],
+        "descricao": "FATO: A Justiça da Bahia determinou, por liminar de alcance nacional, que o INSS não negue automaticamente pedidos de auxílio-doença de entregadores do iFood acidentados, o que pode gerar um custo anual de até R$ 189 milhões para a Previdência Social. O iFood recorreu da decisão.  TÁTICA: Implementando uma estratégia de Dark Site Preparations para antecipar o debate sobre a segurança jurídica e previdenciária dos entregadores, criando uma plataforma invisível com Q&As detalhados sobre os seguros privados já oferecidos pela marca, mitigando o impacto reputacional da liminar judicial.",
+        "produtos": [
+            "Dark Site Preparations",
+            "Q&A de Crise",
+            "Mapeamento de Stakeholders"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/08/gastos-do-inss-com-auxilio-doenca-para-entregador-do-ifood-podem-chegar-a-r-189-milhoes-por-ano.shtml",
+        "data": "10/08/2026",
+        "imagem": "https://previdenciarista.com/_next/image/?url=https%3A%2F%2Fprevidenciarista.com%2Fblog%2Fwp-content%2Fuploads%2F2025%2F02%2FINSS-Foto-Rafa-Neddemeyer-Agencia-Brasil.jpg&w=1200&q=75"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "FATO: A StoneCo se prepara para divulgar seus resultados financeiros do segundo trimestre de 2026 no dia 13 de agosto, sob forte expectativa do mercado e análises que apontam pressão operacional, enquanto a empresa foca em sua transição estratégica para se tornar um banco para PMEs. TÁTICA: Desenvolvendo uma campanha de Op-Eds Híbridos assinados pelo CEO Mateus Scherer em veículos Tier 1, casados com impulsionamento no LinkedIn Pulse, para posicionar a Stone de forma proativa antes da divulgação de resultados do 2T26, focando na narrativa de transição estratégica de adquirente para banco digital de PMEs.",
+        "produtos": [
+            "Op-Ed Híbrido",
+            "LinkedIn Executive Positioning",
+            "Media Training de Porta-Vozes"
+        ],
+        "link_noticia": "https://neofeed.com.br/negocios/stone-quer-ir-alem-da-maquininha-e-define-sua-nova-avenida-de-crescimento-virar-banco/",
+        "data": "10/08/2026",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR293N-6aZCLbx6bqpxunX6oUz6VZaWp_0yUJDtLktAc34vts55GLDKbsM&s=10"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Google"
+        ],
+        "descricao": "FATO: O CEO do Google, Sundar Pichai, anunciou mudanças na liderança do Google DeepMind, com Demis Hassabis assumindo como Chair do GDM e Chief Scientist da Alphabet para focar ativamente no avanço da Inteligência Artificial Geral (AGI) e da ciência. TÁTICA: Criando um Fórum Proprietário focado em Inteligência Artificial Geral (AGI) e ciência no Brasil, reunindo a academia e líderes de tecnologia para debater os impactos das novas lideranças globais do Google DeepMind no desenvolvimento de soluções locais.",
+        "produtos": [
+            "Fórum Proprietário",
+            "Relações com a Mídia",
+            "Painel de Debates"
+        ],
+        "link_noticia": "https://blog.google/inside-google/message-sundar-pichai-demis-hassabis-deepmind-update-august-2026/",
+        "data": "10/08/2026",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5e53b75jSC4saKLXxGzt7rxvbcphw90LlvSU3HctQhA&s"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "FATO: A Samsung atingiu o recorde histórico de 5,2 milhões de unidades encomendadas na pré-venda global da linha Galaxy Z Fold 8, gerando desafios logísticos para suprir a demanda que superou as projeções iniciais. TÁTICA: Orquestrando um PR Stunt em Dark Social através de vazamentos intencionais e conteúdos exclusivos em comunidades fechadas do WhatsApp e Discord, gerando escassez e engajamento orgânico para gerenciar a expectativa de entrega do Galaxy Z Fold 8 diante dos desafios logísticos.",
+        "produtos": [
+            "PR Stunt em Dark Social",
+            "Estratégia de Influenciadores de Tech",
+            "Comunicação de Produto"
+        ],
+        "link_noticia": "https://www.tudocelular.com/samsung/noticias/n224567/samsung-galaxy-z-fold-8-pre-venda-recorde.html",
+        "data": "10/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "BBCE"
+        ],
+        "descricao": "FATO: Os preços de energia no mercado livre de curto prazo despencaram até 44% devido à recuperação dos reservatórios no Sul com as chuvas do El Niño, enquanto os contratos de longo prazo (a partir de 2027) subiram, gerando uma 'torção de curva' inédita apontada por dados da BBCE. TÁTICA: Estruturando um portal de Brand Publishing mantido pela BBCE para analisar a volatilidade de preços gerada pelo El Niño, consolidando a marca como a principal fonte de inteligência de mercado para geradores e comercializadores de energia sem depender exclusivamente da imprensa tradicional.",
+        "produtos": [
+            "Portal de Brand Publishing",
+            "Relatório de Inteligência de Mercado",
+            "Relações com Imprensa Setorial"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/08/el-nino-ja-mexe-com-precos-no-mercado-livre-de-energia.shtml",
+        "data": "10/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Americanas"
+        ],
+        "descricao": "FATO: A Americanas anunciou a divulgação de seus resultados financeiros do segundo trimestre de 2026 (2T26) para o dia 12 de agosto, após o fechamento do mercado, seguido de teleconferência no dia 13 de agosto, marcando um momento crucial de sua recuperação judicial. TÁTICA: Implementando uma estratégia de Dark Site Preparations com Q&As detalhados e simulações de cenários de crise antes da divulgação dos resultados do 2T26, blindando a reputação da Americanas contra possíveis ruídos de mercado sobre o andamento de sua reestruturação financeira.",
+        "produtos": [
+            "Dark Site Preparations",
+            "Q&A Financeiro de Crise",
+            "Media Training de Porta-Vozes"
+        ],
+        "link_noticia": "https://ri.americanas.com.br/",
+        "data": "10/08/2026",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIm-Wy-LXcum-hXz4B0_QI2Xqo_Wm-hbYF0Qb7wz65s529gHBWDFpzFDE&s=10"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Brasil Lidera Crescimento Global de Viagens Corporativas em 2026",
+        "agencia": "",
+        "setor": "Aviação e Turismo",
+        "marcas": [],
+        "descricao": "FATO: O Brasil lidera o crescimento global das viagens corporativas em 2026, com uma expansão projetada de 13,8% no turismo de negócios, superando os demais 15 maiores mercados globais e devendo movimentar US$ 35,8 bilhões até o fim do ano, segundo o relatório Business Travel Index (BTI) da GBTA. TÁTICA: Promovendo um Fórum Proprietário focado no boom do turismo de negócios no Brasil, reunindo os principais players de aviação, hotelaria e tecnologia para debater como o país pode capitalizar a liderança global em viagens corporativas projetada pela GBTA.",
+        "produtos": [
+            "Fórum Proprietário",
+            "Estratégia de Relações Públicas Setorial",
+            "White Paper de Tendências de Viagens"
+        ],
+        "link_noticia": "https://www.panrotas.com.br/viagens-corporativas/pesquisas-e-estatisticas/2026/08/viagens-corporativas-movimentam-us-17-trilhao-no-mundo-brasil-lidera-alta-em-2026_202456.html",
+        "data": "10/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "Mercado Livre supera a marca histórica de US$ 10 bilhões em receita líquida trimestral no 2T26, impulsionado pela eficiência de sua malha logística que realiza 77% das entregas no Brasil em até 48 horas, embora registre queda no lucro líquido devido aos pesados investimentos em frete grátis e experiência do cliente. Sugere-se blindar a percepção dos investidores e do mercado financeiro publicando Op-Eds Híbridos assinados pelo CEO no Valor Econômico, justificando a compressão temporária de margens como um investimento estratégico indispensável para consolidar a liderança absoluta no varejo digital latino-americano.",
+        "produtos": [
+            "Op-Eds Híbridos",
+            "Relações com Investidores",
+            "Corporate Communications"
+        ],
+        "link_noticia": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJ2k-UM6prF0jmf3ZWoC7VdeSKlWuGP7JZ7VlBlTSZ-kEUbhzlBGWfq-MYoSzA_BdlwUA72GextWsD5QjZV60pFX8JtW7MSeOKK-CuG-OTfSKG_FgCvVRJC6ZFb5neEOpyISP5iPyWfrb-i1z-X-mMPvVXAtxgYbHNN_s=",
+        "data": "07/08/2026",
+        "imagem": "https://static.ecommercebrasil.com.br/wp-content/uploads/2026/05/63-mercado-livre-pacote-embalagem-entrega.jpg.webp"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Aviação e Turismo",
+        "marcas": [
+            "GOL/Smiles"
+        ],
+        "descricao": "GOL Smiles anuncia reformulação nos benefícios de seus cartões de crédito para setembro de 2026, beneficiando a categoria Visa Infinite com despacho de bagagem extra, mas reduzindo vantagens em outras variantes, o que pode gerar ruído e insatisfação na base de clientes. Sugere-se conter possíveis crises de imagem realizando Dark Site Preparations, estruturando landing pages ocultas com Q&As detalhados e transparentes sobre as novas regras de transição para serem ativadas imediatamente caso o volume de menções negativas ultrapasse o limite crítico.",
+        "produtos": [
+            "Dark Site Preparations",
+            "Gestão de Crise",
+            "Monitoramento de Redes"
+        ],
+        "link_noticia": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEctPlSm2wQ2KKZNWw0XQ-glgb4C_la99rwN9kelz2q5IdCKjviSUvKFtF1B_lB67W6xYCW9a_4n1ntmNgIYUAZmo-HVfDtqYDNLmVqv-uYi9PkQBqqK1wZCFjZpRQc7iGU8hCPArbAzEQbjCbl0VYtFsNodsBdQ0LkDp5z1YpR",
+        "data": "07/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Consolidação no Mercado de Pagamentos Latino-Americano",
+        "agencia": "N/A",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Mastercard",
+            "Mercado Pago"
+        ],
+        "descricao": "A revelação de que a FTV Capital colocou a fintech curitibana Ebanx à venda por US$ 4 bilhões agita o mercado financeiro e sinaliza uma consolidação iminente no setor de pagamentos transfronteiriços na América Latina. Sugere-se aproveitar o vácuo de liderança de pensamento organizando Fóruns Proprietários, reunindo executivos de fintechs parceiras e analistas de mercado para debater o futuro dos meios de pagamento e a atratividade do ecossistema de investimentos na região, posicionando as marcas patrocinadoras como referências intelectuais do setor.",
+        "produtos": [
+            "Fóruns Proprietários",
+            "Thought Leadership",
+            "Relações com a Imprensa"
+        ],
+        "link_noticia": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPor2_ZxFcQChmADhjwnVIaWp5aQBOzX3s_1e985a7PmiIOL6cC1YM_XwzsrsopZMyGHkOjVdlVkbu18gDyVALcSSP1GUVe80R_S6FLCWQAR1XDYgaVLpxtPI9WhgndOTQf45TRbKSm96fXDqh4dDbBw==",
+        "data": "07/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "A Era das Buscas Sem Clique com Google AI Overviews",
+        "agencia": "N/A",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Google",
+            "Samsung",
+            "AWS"
+        ],
+        "descricao": "Relatório de agosto de 2026 revela que o Google AI Overviews já responde diretamente a 47% das buscas no Brasil, reduzindo drasticamente os cliques orgânicos tradicionais e forçando marcas a repensarem suas estratégias de SEO para focar em otimização para mecanismos de IA (GEO). Sugere-se mitigar a perda de tráfego orgânico de terceiros investindo em Brand Publishing, criando portais de conteúdo proprietários altamente especializados e otimizados para alimentar diretamente os modelos de linguagem do Google, garantindo que a marca continue sendo citada como fonte primária nas respostas geradas por IA.",
+        "produtos": [
+            "Brand Publishing",
+            "Estratégia de SEO de IA (GEO)",
+            "Content Marketing"
+        ],
+        "link_noticia": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0D7AwArM99aTds9eDp_ifOc6ABQc0X7Y2u9AeItYivpGtiTbCo1Srvc35nh0IFBrFlSGKT1IcFEEqTm5SexI7jvH4oexCpSv-s1He6ulg5fyCQDGYRJg6czaN5SV-nAgdB5q9Z0vxNV7GCqBU79-XaFbypqE7IdPpvPwr_1MQW4yw-R__omP6A-bPllF-97nF50XhDS0=",
+        "data": "07/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood",
+            "Caixa Econômica Federal"
+        ],
+        "descricao": "Fato: O iFood e a Caixa Econômica Federal anunciaram uma parceria inédita para facilitar o acesso de entregadores ao financiamento de veículos elétricos com juros reduzidos e modelo inovador de comprovação de ganhos. Tática: Posicionando o C-level do iFood através de Op-Eds Híbridos em veículos Tier 1 (como Valor Econômico ou Exame) para debater a inclusão financeira e a transição para a mobilidade sustentável de trabalhadores de aplicativos, ampliando o alcance via LinkedIn Pulse para consolidar a liderança em ESG e responsabilidade social, gerando impacto positivo na reputação corporativa e na atração de novos parceiros de entrega.",
+        "produtos": [
+            "Op-Ed Híbrido",
+            "LinkedIn Pulse Campaign"
+        ],
+        "link_noticia": "https://news.ifood.com.br/ifood-e-caixa-lancam-parceria-inedita-para-facilitar-acesso-de-entregadores-ao-financiamento-de-veiculos/",
+        "data": "05/08/2026",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSupVG4HBR8EhS5HRdV1HGEUGuE7fhTjFBulmPiyc0yTuglAiijJ1U8PaOR&s=10"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "Fato: A Vale avançou com o projeto Serra Sul +20 para ampliar a produção de mineral de ferro no complexo S11D, iniciando o comissionamento do transportador de correia de longa distância (TCLD). Tática: Criando um Fórum Proprietário (Summit de Mineração do Futuro) focado em debater a eficiência operacional e a descarbonização na cadeia de mineração, reunindo stakeholders do setor para destacar o avanço tecnológico do projeto Serra Sul +20 e mitigar discussões sobre impacto ambiental, fortalecendo a confiança de investidores e parceiros comerciais de longo prazo.",
+        "produtos": [
+            "Fórum Proprietário",
+            "Relatório de Impacto Setorial"
+        ],
+        "link_noticia": "https://www.bnamericas.com/es/noticias/vale-avanza-con-el-proyecto-serra-sul-20-para-ampliar-la-produccion-de-mineral-de-hierro-en-brasil",
+        "data": "05/08/2026",
+        "imagem": "https://caetiteacontece.com.br/uploads/images/image_750x_6a6caf6625610.jpg"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "Fato: A Shein reduziu seu valuation para a faixa de US$ 30 bilhões a US$ 40 bilhões às vésperas de seu IPO em Hong Kong e propôs compensações financeiras para investidores de estágio avançado. Tática: Estruturando Dark Site Preparations com Q&As detalhados sobre a saúde financeira global da empresa, o impacto da redução de valuation e a sustentabilidade do modelo de negócios no Brasil pós-fim da 'taxa das blusinhas', antecipando questionamentos da imprensa nacional durante o período de silêncio do IPO para blindar a reputação da marca e evitar ruídos no mercado local.",
+        "produtos": [
+            "Dark Site Preparations",
+            "Q&A de Crise Financeira"
+        ],
+        "link_noticia": "https://exame.com.br/negocios/ipo-da-shein-empresa-reduz-valuation-as-vesperas-da-estreia-na-bolsa/",
+        "data": "05/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "Fato: A Ambev reportou lucro líquido de R$ 3,47 bilhões no 2T26 (alta de 24,5%), impulsionado pelo portfólio de cervejas premium e ativações de marketing voltadas para a Copa do Mundo, mas enfrenta volatilidade nas ações pós-balanço. Tática: Desenvolvendo uma plataforma de Brand Publishing focada em tendências de consumo e inovação no setor de bebidas, utilizando dados proprietários do ecossistema BEES e Zé Delivery para neutralizar a volatilidade do mercado financeiro e focar a narrativa no crescimento consistente de market share e inovação digital, gerando valor direto para acionistas e parceiros do varejo.",
+        "produtos": [
+            "Brand Publishing",
+            "Data Report de Tendências de Consumo"
+        ],
+        "link_noticia": "https://www.moneytimes.com.br/ambev-abev3-bate-expectativa-do-mercado-e-lucro-avanca-245-no-2t26-a-r-347-bilhoes/",
+        "data": "05/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1566633806327-68e152aaf26d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Aviação e Turismo",
+        "marcas": [
+            "GOL Linhas Aéreas",
+            "KLM"
+        ],
+        "descricao": "Fato: A GOL realizou ações especiais para o 'Festivalzinho 2026' no Parque Villa-Lobos (SP), incluindo um show infantil surpresa com 'Beatles para Crianças' a bordo de um voo Fortaleza-São Paulo e ativações lúdicas de marca. Tática: Implementando um PR Stunt em Dark Social através do vazamento intencional de vídeos de bastidor e reações das famílias a bordo do voo com show surpresa em comunidades fechadas de mães e pais no WhatsApp e canais de Telegram, gerando engajamento orgânico e desejo de marca de forma espontânea e altamente qualificada, o que impulsionará a venda de passagens para o público familiar.",
+        "produtos": [
+            "PR Stunt em Dark Social",
+            "Vídeo Case de Ativação"
+        ],
+        "link_noticia": "https://www.aeroin.net/com-toddynho-no-embarque-e-livro-para-colorir-gol-faz-acao-para-festival-infantil-a-bordo-de-seus-aivoes/",
+        "data": "05/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "Fato: A Samsung divulgou detalhes de sua atualização de segurança de agosto de 2026 para dispositivos Galaxy (corrigindo 56 vulnerabilidades) antes do anúncio oficial do Google, priorizando os novos dobráveis Galaxy Z Fold 8 e Flip 8. Tática: Executando um PR Stunt em Dark Social com o vazamento controlado de detalhes técnicos e benefícios de segurança da nova One UI em fóruns fechados de tecnologia e comunidades de desenvolvedores (Discord/WhatsApp), gerando buzz orgânico e reforçando a autoridade da marca em segurança cibernética antes do roll-out global para impulsionar as vendas da nova linha premium.",
+        "produtos": [
+            "PR Stunt em Dark Social",
+            "Tech Briefing Exclusivo"
+        ],
+        "link_noticia": "https://www.notebookcheck.info/A-Samsung-divulga-detalhes-sobre-a-atualizacao-de-seguranca-de-agosto-de-2026-para-dispositivos-Galaxy-antes-do-Google.872847.0.html",
+        "data": "05/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Reforma Tributária do Consumo",
+        "agencia": null,
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Receita Federal",
+            "Comitê Gestor do IBS"
+        ],
+        "descricao": "Fato: O novo marco da Reforma Tributária entrou em vigor em 3 de agosto de 2026, exigindo obrigatoriamente o preenchimento dos novos campos relativos ao IBS e à CBS em documentos fiscais eletrônicos (BP-e, CT-e, MDF-e), sob pena de rejeição automática pelo sistema. Tática: Implementando uma estratégia de Brand Publishing por meio de um portal de notícias mantido pela marca para educar e orientar o ecossistema de parceiros e clientes sobre as novas regras de emissão do IBS/CBS, reduzindo o risco de rejeição de notas fiscais e posicionando a empresa como autoridade técnica na transição tributária, o que minimiza impactos operacionais e atritos comerciais.",
+        "produtos": [
+            "Brand Publishing",
+            "Guia de Transição Tributária"
+        ],
+        "link_noticia": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/julho/receita-federal-e-comite-gestor-do-ibs-publicam-o-cronograma-de-implementacao-dos-documentos-fiscais-eletronicos-da-reforma-tributaria-do-consumo",
+        "data": "05/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Consolidação do Agentic Commerce no Varejo",
+        "agencia": null,
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Lojas Renner",
+            "Yuno",
+            "Adyen"
+        ],
+        "descricao": "Fato: A consolidação do 'agentic commerce' (comércio agêntico, onde agentes autônomos de IA realizam pesquisas, recomendam e finalizam compras) foi apontada como a principal tendência tecnológica e 'virada de chave' para o varejo digital brasileiro no Fórum E-Commerce Brasil 2026. Tática: Promovendo um Fórum Proprietário (Summit de Agentic Commerce) para debater a integração de agentes autônomos de IA no checkout e na jornada de compra, reunindo líderes do varejo e de tecnologia para posicionar a marca como pioneira na orquestração dessa nova era do e-commerce, gerando novas oportunidades de negócios e parcerias estratégicas.",
+        "produtos": [
+            "Fórum Proprietário",
+            "Whitepaper de Tendências de IA no Varejo"
+        ],
+        "link_noticia": "https://www.ecommercebrasil.com.br/noticias/varejo-se-prepara-para-redesenhar-operacoes-e-checkout-com-agentic-commerce/",
+        "data": "05/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
         "descricao": "Fato: O iFood participa como patrocinador da SP Climate Week 2026 (de 3 a 7 de agosto), apresentando suas iniciativas de mobilidade sustentável e descarbonização de frotas de entrega. Tática: Estruturando Op-Eds Híbridos assinados pelo CEO Diego Barreto em veículos de grande circulação (como Valor Econômico e Exame), integrados a impulsionamentos estratégicos no LinkedIn Pulse, para consolidar o iFood como líder em transição ecológica na logística urbana.",
         "produtos": [
             "Op-Eds Híbridos",
@@ -137,6 +477,124 @@
         "link_noticia": "https://www.estadao.com.br/economia/cade-aprova-investimento-da-american-airlines-na-azul/",
         "data": "04/08/2026",
         "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: O iFood anunciou o lançamento da Bag Pro e de uma operação logística especializada para a entrega de pizzas em São Paulo, desenvolvida em parceria com a tradicional pizzaria Bráz, visando reduzir em até 80% as ocorrências de transporte de alimentos sensíveis. Tática: Criando um Fórum Proprietário focado no futuro do delivery de alimentos sensíveis para reunir chefs, donos de restaurantes e especialistas em logística, posicionando o iFood como o principal desenvolvedor de tecnologia e infraestrutura para a preservação da experiência gastronômica em casa.",
+        "produtos": [
+            "Fóruns Proprietários",
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://clientesa.com.br/gestao/ifood-anuncia-bag-e-operacao-especializada-para-entregas-de-alimentos-que-exigem-cuidados/",
+        "data": "04/08/2026",
+        "imagem": "https://entregador.ifood.com.br/wp-content/uploads/2024/10/escolha-bag-1200x900.png"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "Fato: A Stone anunciou a integração da solução de pagamentos online Pagar.me diretamente à sua plataforma tradicional de adquirência (maquininhas), consolidando sua estratégia de se posicionar como um banco completo para empreendedores. Tática: Posicionando o C-level por meio de Op-Eds Híbridos em veículos Tier 1 de economia casados com impulsionamento no LinkedIn Pulse, debatendo como a unificação de canais físicos e digitais é o verdadeiro motor de crescimento e eficiência para as PMEs brasileiras.",
+        "produtos": [
+            "Op-Eds Híbridos",
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://www.estadao.com.br/economia/coluna-do-broad/stone-integra-solucao-de-pagamentos-online-a-operacao-das-maquininhas/",
+        "data": "04/08/2026",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeaKbTOHo39CByJxaztqXOEdkNcXGSaJdh_UZ0gGg1NdxdHc5YMY6R6y5y&s=10"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "Fato: A Ambev reportou um lucro líquido ajustado de R$ 3,49 bilhões no segundo trimestre de 2026, representando uma alta de 23,3% impulsionada pelas vendas de cervejas premium e ativações de marketing voltadas para a Copa do Mundo de 2026. Tática: Publicando Op-Eds Híbridos assinados pelo CEO Carlos Lisboa em veículos como Valor Econômico e Exame, detalhando como a estratégia de premiumização e a digitalização via Zé Delivery blindaram a companhia contra oscilações macroeconômicas, ampliando a percepção de solidez financeira entre investidores.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://exame.com.br/investimentos/btg-troca-ambev-e-allos-por-gerdau-e-copasa-na-carteira-de-acoes-de-agosto/",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1566633806327-68e152aaf26d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "Fato: A Samsung anunciou que o Prime Video será o primeiro serviço de streaming a oferecer o padrão HDR10+ ADVANCED globalmente a partir de agosto de 2026, estreando em sua linha de TVs de 2026, enquanto encerra a pré-venda de seus novos dobráveis Galaxy Z Fold8 e Z Flip8. Tática: Orquestrando um PR Stunt em Dark Social por meio de vazamentos intencionais em comunidades fechadas de entusiastas de tecnologia e cinema no WhatsApp e Discord, gerando escassez e curiosidade sobre a qualidade de imagem do HDR10+ ADVANCED antes do lançamento oficial das TVs.",
+        "produtos": [
+            "PR Stunt em Dark Social"
+        ],
+        "link_noticia": "https://news.samsung.com/global/samsung-launches-worlds-first-hdr10-plus-advanced-streaming-experience-on-prime-video",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "Fato: A Shein está buscando uma avaliação de US$ 30 bilhões a US$ 40 bilhões para seu IPO em Hong Kong, planejado para meados de agosto de 2026, o que representa um forte desconto em relação às suas avaliações privadas anteriores devido a pressões regulatórias e desaceleração do crescimento. Tática: Adotando uma Shadow Banning Strategy focada em SEO positivo e na criação de conteúdos de governança corporativa para empurrar as discussões sobre a desvalorização do IPO e pressões regulatórias para a página 3 do Google, enquanto se prepara um Dark Site com Q&As detalhados sobre a sustentabilidade do modelo de negócios.",
+        "produtos": [
+            "Shadow Banning Strategy",
+            "Dark Site Preparations"
+        ],
+        "link_noticia": "https://www.reuters.com/markets/deals/shein-seeks-30-40-billion-valuation-august-hong-kong-ipo-sources-2026-08-04/",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Exigência de Qualidade de Dados do Banco Central Pressiona Bancos e Fintechs",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Sicredi",
+            "Mastercard",
+            "Mercado Pago"
+        ],
+        "descricao": "Fato: O Banco Central do Brasil impôs um prazo de menos de cinco meses para que bancos, cooperativas e fintechs comprovem a qualidade e a auditabilidade dos dados enviados ao regulador, sob risco de processos administrativos sancionadores severos. Tática: Desenvolvendo Dark Site Preparations com Q&As prontos e posicionamentos técnicos sobre governança de dados para mitigar riscos de imagem caso as instituições enfrentem questionamentos públicos do Banco Central, garantindo resposta ágil à imprensa.",
+        "produtos": [
+            "Dark Site Preparations"
+        ],
+        "link_noticia": "https://finsidersbrasil.com.br/regulacao/bancos-e-fintechs-correm-contra-o-tempo-para-atender-exigencia-de-dados-do-bc/",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Mercado Livre Consolida Liderança Absoluta no Prêmio E-Commerce Brasil 2026",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre",
+            "Mercado Pago"
+        ],
+        "descricao": "Fato: O Mercado Livre foi o grande vencedor do Prêmio E-Commerce Brasil 2026, conquistando as principais categorias como Grande Marketplace, Melhor Experiência de Compra, Inovação, Logística e Solução de Pagamentos com o Mercado Pago. Tática: Criando um portal de Brand Publishing focado em inteligência de varejo e logística para divulgar os cases de sucesso que renderam os prêmios, consolidando a liderança intelectual da marca no setor sem depender exclusivamente de mídia espontânea.",
+        "produtos": [
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://varejosa.com.br/premio-e-commerce-brasil-retorna-ao-forum-e-reconhece-empresas-e-liderancas/",
+        "data": "04/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
     },
     {
         "tipo": "marca",
@@ -2121,500 +2579,5 @@
         "data": "13/07/2026",
         "imagem": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600",
         "tipo": "marca"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "iFood"
-        ],
-        "descricao": "Fato: O iFood anunciou o lançamento da Bag Pro e de uma operação logística especializada para a entrega de pizzas em São Paulo, desenvolvida em parceria com a tradicional pizzaria Bráz, visando reduzir em até 80% as ocorrências de transporte de alimentos sensíveis. Tática: Criando um Fórum Proprietário focado no futuro do delivery de alimentos sensíveis para reunir chefs, donos de restaurantes e especialistas em logística, posicionando o iFood como o principal desenvolvedor de tecnologia e infraestrutura para a preservação da experiência gastronômica em casa.",
-        "produtos": [
-            "Fóruns Proprietários",
-            "Brand Publishing"
-        ],
-        "link_noticia": "https://clientesa.com.br/gestao/ifood-anuncia-bag-e-operacao-especializada-para-entregas-de-alimentos-que-exigem-cuidados/",
-        "data": "04/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "Finanças e Fintechs",
-        "marcas": [
-            "Stone"
-        ],
-        "descricao": "Fato: A Stone anunciou a integração da solução de pagamentos online Pagar.me diretamente à sua plataforma tradicional de adquirência (maquininhas), consolidando sua estratégia de se posicionar como um banco completo para empreendedores. Tática: Posicionando o C-level por meio de Op-Eds Híbridos em veículos Tier 1 de economia casados com impulsionamento no LinkedIn Pulse, debatendo como a unificação de canais físicos e digitais é o verdadeiro motor de crescimento e eficiência para as PMEs brasileiras.",
-        "produtos": [
-            "Op-Eds Híbridos",
-            "Brand Publishing"
-        ],
-        "link_noticia": "https://www.estadao.com.br/economia/coluna-do-broad/stone-integra-solucao-de-pagamentos-online-a-operacao-das-maquininhas/",
-        "data": "04/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "Ambev"
-        ],
-        "descricao": "Fato: A Ambev reportou um lucro líquido ajustado de R$ 3,49 bilhões no segundo trimestre de 2026, representando uma alta de 23,3% impulsionada pelas vendas de cervejas premium e ativações de marketing voltadas para a Copa do Mundo de 2026. Tática: Publicando Op-Eds Híbridos assinados pelo CEO Carlos Lisboa em veículos como Valor Econômico e Exame, detalhando como a estratégia de premiumização e a digitalização via Zé Delivery blindaram a companhia contra oscilações macroeconômicas, ampliando a percepção de solidez financeira entre investidores.",
-        "produtos": [
-            "Op-Eds Híbridos"
-        ],
-        "link_noticia": "https://exame.com.br/investimentos/btg-troca-ambev-e-allos-por-gerdau-e-copasa-na-carteira-de-acoes-de-agosto/",
-        "data": "04/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1566633806327-68e152aaf26d?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "Tecnologia, IA e Eletroeletrônicos",
-        "marcas": [
-            "Samsung"
-        ],
-        "descricao": "Fato: A Samsung anunciou que o Prime Video será o primeiro serviço de streaming a oferecer o padrão HDR10+ ADVANCED globalmente a partir de agosto de 2026, estreando em sua linha de TVs de 2026, enquanto encerra a pré-venda de seus novos dobráveis Galaxy Z Fold8 e Z Flip8. Tática: Orquestrando um PR Stunt em Dark Social por meio de vazamentos intencionais em comunidades fechadas de entusiastas de tecnologia e cinema no WhatsApp e Discord, gerando escassez e curiosidade sobre a qualidade de imagem do HDR10+ ADVANCED antes do lançamento oficial das TVs.",
-        "produtos": [
-            "PR Stunt em Dark Social"
-        ],
-        "link_noticia": "https://news.samsung.com/global/samsung-launches-worlds-first-hdr10-plus-advanced-streaming-experience-on-prime-video",
-        "data": "04/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "Shein"
-        ],
-        "descricao": "Fato: A Shein está buscando uma avaliação de US$ 30 bilhões a US$ 40 bilhões para seu IPO em Hong Kong, planejado para meados de agosto de 2026, o que representa um forte desconto em relação às suas avaliações privadas anteriores devido a pressões regulatórias e desaceleração do crescimento. Tática: Adotando uma Shadow Banning Strategy focada em SEO positivo e na criação de conteúdos de governança corporativa para empurrar as discussões sobre a desvalorização do IPO e pressões regulatórias para a página 3 do Google, enquanto se prepara um Dark Site com Q&As detalhados sobre a sustentabilidade do modelo de negócios.",
-        "produtos": [
-            "Shadow Banning Strategy",
-            "Dark Site Preparations"
-        ],
-        "link_noticia": "https://www.reuters.com/markets/deals/shein-seeks-30-40-billion-valuation-august-hong-kong-ipo-sources-2026-08-04/",
-        "data": "04/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "setor",
-        "titulo": "Exigência de Qualidade de Dados do Banco Central Pressiona Bancos e Fintechs",
-        "agencia": "FleishmanHillard",
-        "setor": "Finanças e Fintechs",
-        "marcas": [
-            "Sicredi",
-            "Mastercard",
-            "Mercado Pago"
-        ],
-        "descricao": "Fato: O Banco Central do Brasil impôs um prazo de menos de cinco meses para que bancos, cooperativas e fintechs comprovem a qualidade e a auditabilidade dos dados enviados ao regulador, sob risco de processos administrativos sancionadores severos. Tática: Desenvolvendo Dark Site Preparations com Q&As prontos e posicionamentos técnicos sobre governança de dados para mitigar riscos de imagem caso as instituições enfrentem questionamentos públicos do Banco Central, garantindo resposta ágil à imprensa.",
-        "produtos": [
-            "Dark Site Preparations"
-        ],
-        "link_noticia": "https://finsidersbrasil.com.br/regulacao/bancos-e-fintechs-correm-contra-o-tempo-para-atender-exigencia-de-dados-do-bc/",
-        "data": "04/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "setor",
-        "titulo": "Mercado Livre Consolida Liderança Absoluta no Prêmio E-Commerce Brasil 2026",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "Mercado Livre",
-            "Mercado Pago"
-        ],
-        "descricao": "Fato: O Mercado Livre foi o grande vencedor do Prêmio E-Commerce Brasil 2026, conquistando as principais categorias como Grande Marketplace, Melhor Experiência de Compra, Inovação, Logística e Solução de Pagamentos com o Mercado Pago. Tática: Criando um portal de Brand Publishing focado em inteligência de varejo e logística para divulgar os cases de sucesso que renderam os prêmios, consolidando a liderança intelectual da marca no setor sem depender exclusivamente de mídia espontânea.",
-        "produtos": [
-            "Brand Publishing"
-        ],
-        "link_noticia": "https://varejosa.com.br/premio-e-commerce-brasil-retorna-ao-forum-e-reconhece-empresas-e-liderancas/",
-        "data": "04/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "iFood",
-            "Caixa Econômica Federal"
-        ],
-        "descricao": "Fato: O iFood e a Caixa Econômica Federal anunciaram uma parceria inédita para facilitar o acesso de entregadores ao financiamento de veículos elétricos com juros reduzidos e modelo inovador de comprovação de ganhos. Tática: Posicionando o C-level do iFood através de Op-Eds Híbridos em veículos Tier 1 (como Valor Econômico ou Exame) para debater a inclusão financeira e a transição para a mobilidade sustentável de trabalhadores de aplicativos, ampliando o alcance via LinkedIn Pulse para consolidar a liderança em ESG e responsabilidade social, gerando impacto positivo na reputação corporativa e na atração de novos parceiros de entrega.",
-        "produtos": [
-            "Op-Ed Híbrido",
-            "LinkedIn Pulse Campaign"
-        ],
-        "link_noticia": "https://news.ifood.com.br/ifood-e-caixa-lancam-parceria-inedita-para-facilitar-acesso-de-entregadores-ao-financiamento-de-veiculos/",
-        "data": "05/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "Energia, Mineração e Siderurgia (ESG)",
-        "marcas": [
-            "Vale"
-        ],
-        "descricao": "Fato: A Vale avançou com o projeto Serra Sul +20 para ampliar a produção de mineral de ferro no complexo S11D, iniciando o comissionamento do transportador de correia de longa distância (TCLD). Tática: Criando um Fórum Proprietário (Summit de Mineração do Futuro) focado em debater a eficiência operacional e a descarbonização na cadeia de mineração, reunindo stakeholders do setor para destacar o avanço tecnológico do projeto Serra Sul +20 e mitigar discussões sobre impacto ambiental, fortalecendo a confiança de investidores e parceiros comerciais de longo prazo.",
-        "produtos": [
-            "Fórum Proprietário",
-            "Relatório de Impacto Setorial"
-        ],
-        "link_noticia": "https://www.bnamericas.com/es/noticias/vale-avanza-con-el-proyecto-serra-sul-20-para-ampliar-la-produccion-de-mineral-de-hierro-en-brasil",
-        "data": "05/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1578319439584-104c94d37305?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "Shein"
-        ],
-        "descricao": "Fato: A Shein reduziu seu valuation para a faixa de US$ 30 bilhões a US$ 40 bilhões às vésperas de seu IPO em Hong Kong e propôs compensações financeiras para investidores de estágio avançado. Tática: Estruturando Dark Site Preparations com Q&As detalhados sobre a saúde financeira global da empresa, o impacto da redução de valuation e a sustentabilidade do modelo de negócios no Brasil pós-fim da 'taxa das blusinhas', antecipando questionamentos da imprensa nacional durante o período de silêncio do IPO para blindar a reputação da marca e evitar ruídos no mercado local.",
-        "produtos": [
-            "Dark Site Preparations",
-            "Q&A de Crise Financeira"
-        ],
-        "link_noticia": "https://exame.com.br/negocios/ipo-da-shein-empresa-reduz-valuation-as-vesperas-da-estreia-na-bolsa/",
-        "data": "05/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "Ambev"
-        ],
-        "descricao": "Fato: A Ambev reportou lucro líquido de R$ 3,47 bilhões no 2T26 (alta de 24,5%), impulsionado pelo portfólio de cervejas premium e ativações de marketing voltadas para a Copa do Mundo, mas enfrenta volatilidade nas ações pós-balanço. Tática: Desenvolvendo uma plataforma de Brand Publishing focada em tendências de consumo e inovação no setor de bebidas, utilizando dados proprietários do ecossistema BEES e Zé Delivery para neutralizar a volatilidade do mercado financeiro e focar a narrativa no crescimento consistente de market share e inovação digital, gerando valor direto para acionistas e parceiros do varejo.",
-        "produtos": [
-            "Brand Publishing",
-            "Data Report de Tendências de Consumo"
-        ],
-        "link_noticia": "https://www.moneytimes.com.br/ambev-abev3-bate-expectativa-do-mercado-e-lucro-avanca-245-no-2t26-a-r-347-bilhoes/",
-        "data": "05/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1566633806327-68e152aaf26d?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "Aviação e Turismo",
-        "marcas": [
-            "GOL Linhas Aéreas",
-            "KLM"
-        ],
-        "descricao": "Fato: A GOL realizou ações especiais para o 'Festivalzinho 2026' no Parque Villa-Lobos (SP), incluindo um show infantil surpresa com 'Beatles para Crianças' a bordo de um voo Fortaleza-São Paulo e ativações lúdicas de marca. Tática: Implementando um PR Stunt em Dark Social através do vazamento intencional de vídeos de bastidor e reações das famílias a bordo do voo com show surpresa em comunidades fechadas de mães e pais no WhatsApp e canais de Telegram, gerando engajamento orgânico e desejo de marca de forma espontânea e altamente qualificada, o que impulsionará a venda de passagens para o público familiar.",
-        "produtos": [
-            "PR Stunt em Dark Social",
-            "Vídeo Case de Ativação"
-        ],
-        "link_noticia": "https://www.aeroin.net/com-toddynho-no-embarque-e-livro-para-colorir-gol-faz-acao-para-festival-infantil-a-bordo-de-seus-aivoes/",
-        "data": "05/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "Tecnologia, IA e Eletroeletrônicos",
-        "marcas": [
-            "Samsung"
-        ],
-        "descricao": "Fato: A Samsung divulgou detalhes de sua atualização de segurança de agosto de 2026 para dispositivos Galaxy (corrigindo 56 vulnerabilidades) antes do anúncio oficial do Google, priorizando os novos dobráveis Galaxy Z Fold 8 e Flip 8. Tática: Executando um PR Stunt em Dark Social com o vazamento controlado de detalhes técnicos e benefícios de segurança da nova One UI em fóruns fechados de tecnologia e comunidades de desenvolvedores (Discord/WhatsApp), gerando buzz orgânico e reforçando a autoridade da marca em segurança cibernética antes do roll-out global para impulsionar as vendas da nova linha premium.",
-        "produtos": [
-            "PR Stunt em Dark Social",
-            "Tech Briefing Exclusivo"
-        ],
-        "link_noticia": "https://www.notebookcheck.info/A-Samsung-divulga-detalhes-sobre-a-atualizacao-de-seguranca-de-agosto-de-2026-para-dispositivos-Galaxy-antes-do-Google.872847.0.html",
-        "data": "05/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "setor",
-        "titulo": "Reforma Tributária do Consumo",
-        "agencia": null,
-        "setor": "Finanças e Fintechs",
-        "marcas": [
-            "Receita Federal",
-            "Comitê Gestor do IBS"
-        ],
-        "descricao": "Fato: O novo marco da Reforma Tributária entrou em vigor em 3 de agosto de 2026, exigindo obrigatoriamente o preenchimento dos novos campos relativos ao IBS e à CBS em documentos fiscais eletrônicos (BP-e, CT-e, MDF-e), sob pena de rejeição automática pelo sistema. Tática: Implementando uma estratégia de Brand Publishing por meio de um portal de notícias mantido pela marca para educar e orientar o ecossistema de parceiros e clientes sobre as novas regras de emissão do IBS/CBS, reduzindo o risco de rejeição de notas fiscais e posicionando a empresa como autoridade técnica na transição tributária, o que minimiza impactos operacionais e atritos comerciais.",
-        "produtos": [
-            "Brand Publishing",
-            "Guia de Transição Tributária"
-        ],
-        "link_noticia": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/julho/receita-federal-e-comite-gestor-do-ibs-publicam-o-cronograma-de-implementacao-dos-documentos-fiscais-eletronicos-da-reforma-tributaria-do-consumo",
-        "data": "05/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "setor",
-        "titulo": "Consolidação do Agentic Commerce no Varejo",
-        "agencia": null,
-        "setor": "Tecnologia, IA e Eletroeletrônicos",
-        "marcas": [
-            "Lojas Renner",
-            "Yuno",
-            "Adyen"
-        ],
-        "descricao": "Fato: A consolidação do 'agentic commerce' (comércio agêntico, onde agentes autônomos de IA realizam pesquisas, recomendam e finalizam compras) foi apontada como a principal tendência tecnológica e 'virada de chave' para o varejo digital brasileiro no Fórum E-Commerce Brasil 2026. Tática: Promovendo um Fórum Proprietário (Summit de Agentic Commerce) para debater a integração de agentes autônomos de IA no checkout e na jornada de compra, reunindo líderes do varejo e de tecnologia para posicionar a marca como pioneira na orquestração dessa nova era do e-commerce, gerando novas oportunidades de negócios e parcerias estratégicas.",
-        "produtos": [
-            "Fórum Proprietário",
-            "Whitepaper de Tendências de IA no Varejo"
-        ],
-        "link_noticia": "https://www.ecommercebrasil.com.br/noticias/varejo-se-prepara-para-redesenhar-operacoes-e-checkout-com-agentic-commerce/",
-        "data": "05/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "iFood"
-        ],
-        "descricao": "iFood anuncia parcerias estratégicas com a Caixa Econômica Federal para facilitar o acesso de entregadores ao financiamento de veículos elétricos e com a Iguatemi para um circuito de experiências presenciais, ao mesmo tempo em que lida com o risco de uma decisão judicial que estima gastos de até R$ 189 milhões anuais ao INSS com auxílio-doença para motociclistas. Sugere-se mitigar o impacto reputacional implementando a tática de Op-Eds Híbridos, posicionando os principais porta-vozes da marca em veículos Tier 1 para defender o modelo de microcrédito e transição verde como alternativa sustentável de amparo ao trabalhador, casando com impulsionamento no LinkedIn Pulse para neutralizar debates sobre precarização.",
-        "produtos": [
-            "Op-Eds Híbridos",
-            "Gestão de Crise",
-            "Media Training"
-        ],
-        "link_noticia": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrZvDjyPvBnrQC6tgtQXeex9NGZWMZG2a7WEYIhj-992YGOYcvT1eWTv8Wyhi1mW5eDrEMWSEFS8f4NWJoMXiiCOs3AS7I4TmkJExG43SjzSTI6inu00-g8ik43-pGGtWPgGZqc6wgDz7QBaGm0QzNXrChGIgoinQu5Vh8AOg6",
-        "data": "07/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "Tecnologia, IA e Eletroeletrônicos",
-        "marcas": [
-            "Samsung",
-            "Google"
-        ],
-        "descricao": "Samsung lança oficialmente no Brasil a nova geração de celulares dobráveis Galaxy Z Fold8 e Z Flip8, integrando recursos avançados de inteligência artificial e oferecendo até seis meses de assinatura do Google AI Pro para os compradores. Sugere-se potencializar o engajamento de early adopters estruturando um PR Stunt em Dark Social, realizando vazamentos intencionais de cupons exclusivos e bastidores de desenvolvimento em comunidades fechadas de WhatsApp e Discord para gerar escassez e desejo orgânico antes da abertura geral das vendas.",
-        "produtos": [
-            "PR Stunt em Dark Social",
-            "Influencer Marketing",
-            "Lançamento de Produto"
-        ],
-        "link_noticia": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErtwp1YzQOschrTPC6h1CrJjkGD0U6qWBKH6frvZATB7VbUCVoL1S-amom6Du3oKUFn3pasfMiDKMOMLtWAdP1ILQSjWF9w4CeSdqy8ekzXO-ciX8rglchJSxAvvD-PL8y9tKaOEKm2vFB54deVvrRfJnuFkFnPXn3azJFxSDka42-3EuKpzRWRNmU6p6Toc5bFJc8J9TjMZJLa5Y=",
-        "data": "07/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "Mercado Livre"
-        ],
-        "descricao": "Mercado Livre supera a marca histórica de US$ 10 bilhões em receita líquida trimestral no 2T26, impulsionado pela eficiência de sua malha logística que realiza 77% das entregas no Brasil em até 48 horas, embora registre queda no lucro líquido devido aos pesados investimentos em frete grátis e experiência do cliente. Sugere-se blindar a percepção dos investidores e do mercado financeiro publicando Op-Eds Híbridos assinados pelo CEO no Valor Econômico, justificando a compressão temporária de margens como um investimento estratégico indispensável para consolidar a liderança absoluta no varejo digital latino-americano.",
-        "produtos": [
-            "Op-Eds Híbridos",
-            "Relações com Investidores",
-            "Corporate Communications"
-        ],
-        "link_noticia": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJ2k-UM6prF0jmf3ZWoC7VdeSKlWuGP7JZ7VlBlTSZ-kEUbhzlBGWfq-MYoSzA_BdlwUA72GextWsD5QjZV60pFX8JtW7MSeOKK-CuG-OTfSKG_FgCvVRJC6ZFb5neEOpyISP5iPyWfrb-i1z-X-mMPvVXAtxgYbHNN_s=",
-        "data": "07/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1553413719-87587121d7db?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "Aviação e Turismo",
-        "marcas": [
-            "GOL/Smiles"
-        ],
-        "descricao": "GOL Smiles anuncia reformulação nos benefícios de seus cartões de crédito para setembro de 2026, beneficiando a categoria Visa Infinite com despacho de bagagem extra, mas reduzindo vantagens em outras variantes, o que pode gerar ruído e insatisfação na base de clientes. Sugere-se conter possíveis crises de imagem realizando Dark Site Preparations, estruturando landing pages ocultas com Q&As detalhados e transparentes sobre as novas regras de transição para serem ativadas imediatamente caso o volume de menções negativas ultrapasse o limite crítico.",
-        "produtos": [
-            "Dark Site Preparations",
-            "Gestão de Crise",
-            "Monitoramento de Redes"
-        ],
-        "link_noticia": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEctPlSm2wQ2KKZNWw0XQ-glgb4C_la99rwN9kelz2q5IdCKjviSUvKFtF1B_lB67W6xYCW9a_4n1ntmNgIYUAZmo-HVfDtqYDNLmVqv-uYi9PkQBqqK1wZCFjZpRQc7iGU8hCPArbAzEQbjCbl0VYtFsNodsBdQ0LkDp5z1YpR",
-        "data": "07/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "setor",
-        "titulo": "Consolidação no Mercado de Pagamentos Latino-Americano",
-        "agencia": "N/A",
-        "setor": "Finanças e Fintechs",
-        "marcas": [
-            "Mastercard",
-            "Mercado Pago"
-        ],
-        "descricao": "A revelação de que a FTV Capital colocou a fintech curitibana Ebanx à venda por US$ 4 bilhões agita o mercado financeiro e sinaliza uma consolidação iminente no setor de pagamentos transfronteiriços na América Latina. Sugere-se aproveitar o vácuo de liderança de pensamento organizando Fóruns Proprietários, reunindo executivos de fintechs parceiras e analistas de mercado para debater o futuro dos meios de pagamento e a atratividade do ecossistema de investimentos na região, posicionando as marcas patrocinadoras como referências intelectuais do setor.",
-        "produtos": [
-            "Fóruns Proprietários",
-            "Thought Leadership",
-            "Relações com a Imprensa"
-        ],
-        "link_noticia": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPor2_ZxFcQChmADhjwnVIaWp5aQBOzX3s_1e985a7PmiIOL6cC1YM_XwzsrsopZMyGHkOjVdlVkbu18gDyVALcSSP1GUVe80R_S6FLCWQAR1XDYgaVLpxtPI9WhgndOTQf45TRbKSm96fXDqh4dDbBw==",
-        "data": "07/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "setor",
-        "titulo": "A Era das Buscas Sem Clique com Google AI Overviews",
-        "agencia": "N/A",
-        "setor": "Tecnologia, IA e Eletroeletrônicos",
-        "marcas": [
-            "Google",
-            "Samsung",
-            "AWS"
-        ],
-        "descricao": "Relatório de agosto de 2026 revela que o Google AI Overviews já responde diretamente a 47% das buscas no Brasil, reduzindo drasticamente os cliques orgânicos tradicionais e forçando marcas a repensarem suas estratégias de SEO para focar em otimização para mecanismos de IA (GEO). Sugere-se mitigar a perda de tráfego orgânico de terceiros investindo em Brand Publishing, criando portais de conteúdo proprietários altamente especializados e otimizados para alimentar diretamente os modelos de linguagem do Google, garantindo que a marca continue sendo citada como fonte primária nas respostas geradas por IA.",
-        "produtos": [
-            "Brand Publishing",
-            "Estratégia de SEO de IA (GEO)",
-            "Content Marketing"
-        ],
-        "link_noticia": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0D7AwArM99aTds9eDp_ifOc6ABQc0X7Y2u9AeItYivpGtiTbCo1Srvc35nh0IFBrFlSGKT1IcFEEqTm5SexI7jvH4oexCpSv-s1He6ulg5fyCQDGYRJg6czaN5SV-nAgdB5q9Z0vxNV7GCqBU79-XaFbypqE7IdPpvPwr_1MQW4yw-R__omP6A-bPllF-97nF50XhDS0=",
-        "data": "07/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "iFood"
-        ],
-        "descricao": "FATO: A Justiça da Bahia determinou, por liminar de alcance nacional, que o INSS não negue automaticamente pedidos de auxílio-doença de entregadores do iFood acidentados, o que pode gerar um custo anual de até R$ 189 milhões para a Previdência Social. O iFood recorreu da decisão. TÁTICA: Implementando uma estratégia de Dark Site Preparations para antecipar o debate sobre a segurança jurídica e previdenciária dos entregadores, criando uma plataforma invisível com Q&As detalhados sobre os seguros privados já oferecidos pela marca, mitigando o impacto reputacional da liminar judicial.",
-        "produtos": [
-            "Dark Site Preparations",
-            "Q&A de Crise",
-            "Mapeamento de Stakeholders"
-        ],
-        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/08/gastos-do-inss-com-auxilio-doenca-para-entregador-do-ifood-podem-chegar-a-r-189-milhoes-por-ano.shtml",
-        "data": "10/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=600"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "Finanças e Fintechs",
-        "marcas": [
-            "Stone"
-        ],
-        "descricao": "FATO: A StoneCo se prepara para divulgar seus resultados financeiros do segundo trimestre de 2026 no dia 13 de agosto, sob forte expectativa do mercado e análises que apontam pressão operacional, enquanto a empresa foca em sua transição estratégica para se tornar um banco para PMEs. TÁTICA: Desenvolvendo uma campanha de Op-Eds Híbridos assinados pelo CEO Mateus Scherer em veículos Tier 1, casados com impulsionamento no LinkedIn Pulse, para posicionar a Stone de forma proativa antes da divulgação de resultados do 2T26, focando na narrativa de transição estratégica de adquirente para banco digital de PMEs.",
-        "produtos": [
-            "Op-Ed Híbrido",
-            "LinkedIn Executive Positioning",
-            "Media Training de Porta-Vozes"
-        ],
-        "link_noticia": "https://neofeed.com.br/negocios/stone-quer-ir-alem-da-maquininha-e-define-sua-nova-avenida-de-crescimento-virar-banco/",
-        "data": "10/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=600"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "Tecnologia, IA e Eletroeletrônicos",
-        "marcas": [
-            "Google"
-        ],
-        "descricao": "FATO: O CEO do Google, Sundar Pichai, anunciou mudanças na liderança do Google DeepMind, com Demis Hassabis assumindo como Chair do GDM e Chief Scientist da Alphabet para focar ativamente no avanço da Inteligência Artificial Geral (AGI) e da ciência. TÁTICA: Criando um Fórum Proprietário focado em Inteligência Artificial Geral (AGI) e ciência no Brasil, reunindo a academia e líderes de tecnologia para debater os impactos das novas lideranças globais do Google DeepMind no desenvolvimento de soluções locais.",
-        "produtos": [
-            "Fórum Proprietário",
-            "Relações com a Mídia",
-            "Painel de Debates"
-        ],
-        "link_noticia": "https://blog.google/inside-google/message-sundar-pichai-demis-hassabis-deepmind-update-august-2026/",
-        "data": "10/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=600"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "FleishmanHillard",
-        "setor": "Tecnologia, IA e Eletroeletrônicos",
-        "marcas": [
-            "Samsung"
-        ],
-        "descricao": "FATO: A Samsung atingiu o recorde histórico de 5,2 milhões de unidades encomendadas na pré-venda global da linha Galaxy Z Fold 8, gerando desafios logísticos para suprir a demanda que superou as projeções iniciais. TÁTICA: Orquestrando um PR Stunt em Dark Social através de vazamentos intencionais e conteúdos exclusivos em comunidades fechadas do WhatsApp e Discord, gerando escassez e engajamento orgânico para gerenciar a expectativa de entrega do Galaxy Z Fold 8 diante dos desafios logísticos.",
-        "produtos": [
-            "PR Stunt em Dark Social",
-            "Estratégia de Influenciadores de Tech",
-            "Comunicação de Produto"
-        ],
-        "link_noticia": "https://www.tudocelular.com/samsung/noticias/n224567/samsung-galaxy-z-fold-8-pre-venda-recorde.html",
-        "data": "10/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&q=80&w=600"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "Energia, Mineração e Siderurgia (ESG)",
-        "marcas": [
-            "BBCE"
-        ],
-        "descricao": "FATO: Os preços de energia no mercado livre de curto prazo despencaram até 44% devido à recuperação dos reservatórios no Sul com as chuvas do El Niño, enquanto os contratos de longo prazo (a partir de 2027) subiram, gerando uma 'torção de curva' inédita apontada por dados da BBCE. TÁTICA: Estruturando um portal de Brand Publishing mantido pela BBCE para analisar a volatilidade de preços gerada pelo El Niño, consolidando a marca como a principal fonte de inteligência de mercado para geradores e comercializadores de energia sem depender exclusivamente da imprensa tradicional.",
-        "produtos": [
-            "Portal de Brand Publishing",
-            "Relatório de Inteligência de Mercado",
-            "Relações com Imprensa Setorial"
-        ],
-        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/08/el-nino-ja-mexe-com-precos-no-mercado-livre-de-energia.shtml",
-        "data": "10/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=600"
-    },
-    {
-        "tipo": "marca",
-        "titulo": "",
-        "agencia": "In Press Porter Novelli",
-        "setor": "E-commerce, Varejo e Logística",
-        "marcas": [
-            "Americanas"
-        ],
-        "descricao": "FATO: A Americanas anunciou a divulgação de seus resultados financeiros do segundo trimestre de 2026 (2T26) para o dia 12 de agosto, após o fechamento do mercado, seguido de teleconferência no dia 13 de agosto, marcando um momento crucial de sua recuperação judicial. TÁTICA: Implementando uma estratégia de Dark Site Preparations com Q&As detalhados e simulações de cenários de crise antes da divulgação dos resultados do 2T26, blindando a reputação da Americanas contra possíveis ruídos de mercado sobre o andamento de sua reestruturação financeira.",
-        "produtos": [
-            "Dark Site Preparations",
-            "Q&A Financeiro de Crise",
-            "Media Training de Porta-Vozes"
-        ],
-        "link_noticia": "https://ri.americanas.com.br/",
-        "data": "10/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&q=80&w=600"
-    },
-    {
-        "tipo": "setor",
-        "titulo": "Brasil Lidera Crescimento Global de Viagens Corporativas em 2026",
-        "agencia": "",
-        "setor": "Aviação e Turismo",
-        "marcas": [],
-        "descricao": "FATO: O Brasil lidera o crescimento global das viagens corporativas em 2026, com uma expansão projetada de 13,8% no turismo de negócios, superando os demais 15 maiores mercados globais e devendo movimentar US$ 35,8 bilhões até o fim do ano, segundo o relatório Business Travel Index (BTI) da GBTA. TÁTICA: Promovendo um Fórum Proprietário focado no boom do turismo de negócios no Brasil, reunindo os principais players de aviação, hotelaria e tecnologia para debater como o país pode capitalizar a liderança global em viagens corporativas projetada pela GBTA.",
-        "produtos": [
-            "Fórum Proprietário",
-            "Estratégia de Relações Públicas Setorial",
-            "White Paper de Tendências de Viagens"
-        ],
-        "link_noticia": "https://www.panrotas.com.br/viagens-corporativas/pesquisas-e-estatisticas/2026/08/viagens-corporativas-movimentam-us-17-trilhao-no-mundo-brasil-lidera-alta-em-2026_202456.html",
-        "data": "10/08/2026",
-        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=600"
     }
 ]
