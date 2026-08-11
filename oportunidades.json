@@ -2579,5 +2579,120 @@
         "data": "13/07/2026",
         "imagem": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600",
         "tipo": "marca"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Implementando a tática de Op-Eds Híbridos por meio de artigos assinados pela liderança do iFood em veículos Tier 1 como Valor Econômico e Exame, casados com impulsionamento estratégico no LinkedIn Pulse, para consolidar a reputação da marca como um ecossistema de saúde confiável e acelerar a adoção do novo serviço de delivery de farma, aproveitando que a Anvisa revogou as restrições de comercialização, distribuição e publicidade de medicamentos por plataformas digitais.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://www.cnnbrasil.com.br/economia/mercado/ifood-e-mercado-livre-entenda-decisao-da-anvisa-sobre-entrega-de-remedios/",
+        "data": "11/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "Criando um Fórum Proprietário focado em debater a conformidade sanitária e a eficiência logística na distribuição de medicamentos no Brasil, reunindo reguladores da Anvisa, líderes do setor farmacêutico e executivos da marca, para estabelecer o Mercado Livre como o parceiro logístico mais seguro e robusto do país, capitalizando sobre a recente decisão da Anvisa de liberar a entrega de remédios por e-commerce.",
+        "produtos": [
+            "Fóruns Proprietários"
+        ],
+        "link_noticia": "https://www.cnnbrasil.com.br/economia/mercado/ifood-e-mercado-livre-entenda-decisao-da-anvisa-sobre-entrega-de-remedios/",
+        "data": "11/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "Estruturando uma estratégia de Brand Publishing com a criação de um portal de notícias independente mantido pela marca para debater saudabilidade, consumo moderado e o estilo de vida das cervejas sem álcool, reduzindo a dependência de veículos tradicionais e gerando um canal direto de engajamento com o consumidor moderno, impulsionado pelo lançamento da campanha global 'Cheers to Beer' e pelo crescimento de 30% nas vendas de cervejas zero álcool.",
+        "produtos": [
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://www.updateordie.com/2026/08/10/ambev-celebra-cerveja-como-elo-universal-em-cheers-to-beer/",
+        "data": "11/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1567696911980-2eed69a46042?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "Orquestrando um PR Stunt em Dark Social por meio de vazamentos intencionais e controlados de teasers e especificações técnicas exclusivas do ecossistema gamer da marca em comunidades fechadas de Discord e WhatsApp voltadas para pro-players, gerando escassez e buzz orgânico de alto impacto antes da abertura oficial da Gamescom 2026, onde a Samsung apresentará sua visão integrada de jogos conectando PCs, consoles e o novo Galaxy Z Fold8 Ultra.",
+        "produtos": [
+            "PR Stunt em Dark Social"
+        ],
+        "link_noticia": "https://news.samsung.com/global/samsung-to-showcase-latest-gaming-innovations-at-gamescom-2026",
+        "data": "11/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Mastercard"
+        ],
+        "descricao": "Elaborando artigos de opinião por meio de Op-Eds Híbridos assinados pelo presidente da Mastercard Brasil no Valor Econômico, combinados com impulsionamento no LinkedIn Pulse, para discutir a evolução regulatória das stablecoins e o futuro dos pagamentos híbridos, posicionando a marca como líder intelectual na transição para a Web3 após a conclusão da aquisição da BVNK por US$ 1,8 bilhão.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://www.gate.io/pt/gatenews/article/43315",
+        "data": "11/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Internacionalização do Pix e Pressão Comercial dos EUA",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Mastercard",
+            "Banco Central do Brasil"
+        ],
+        "descricao": "Desenvolvendo uma estratégia de Dark Site Preparations com a criação de landing pages invisíveis contendo Q&As detalhados e posicionamentos jurídicos prontos sobre a segurança e conformidade regulatória do Pix, para mitigar riscos de imagem e preparar respostas rápidas diante de potenciais crises tarifárias ou disputas comerciais com os EUA, que recentemente colocaram o sistema sob escrutínio sob alegação de prática comercial desleal.",
+        "produtos": [
+            "Dark Site Preparations"
+        ],
+        "link_noticia": "https://www.reuters.com/business/finance/brazil-central-bank-eyes-expansion-pix-payment-system-us-trade-scrutiny-2026-08-10/",
+        "data": "11/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Impacto do El Niño no Mercado Livre de Energia",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "BBCE",
+            "Engie",
+            "Vibra"
+        ],
+        "descricao": "Criando um Fórum Proprietário focado em transição energética e resiliência climática para reunir geradores, comercializadores e grandes indústrias de alta tensão, para debater estratégias de hedge e mitigação de riscos diante da volatilidade de preços, aproveitando que os efeitos do El Niño provocaram uma torção de curva incomum no mercado livre de energia, derrubando os preços de curto prazo em até 44% na BBCE enquanto os de longo prazo subiram.",
+        "produtos": [
+            "Fóruns Proprietários"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/08/el-nino-ja-mexe-com-precos-no-mercado-livre-de-energia-e-deixa-cenario-futuro-incerto.shtml",
+        "data": "11/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80"
     }
 ]
