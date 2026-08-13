@@ -2810,5 +2810,119 @@
         "link_noticia": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOywGzLETbVTdKTV0SxXH9wb1DaM6LUfnfZUnXfRf49C2sGJWyMIT2XP2apUgQ-miaAdfZ38RD8xZST_QKtgn19Oe6xDxFtfDbqWqFYbyHbAKJCIRJOOTZfZTl1m6eSal1EobEnWY1hsivbeLWj2qnEcYJRpXu55jwskYsUP75TRzV58qlMKKk7cD5uELiQw4j-lXnQk9MqncRA_G-oQ8ck5K1onI=",
         "data": "12/08/2026",
         "imagem": "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: A Anvisa revogou medidas preventivas e abriu caminho para que aplicativos de delivery como o iFood possam vender e entregar medicamentos, em conformidade com a Lei nº 15.357/2026. Embora a venda dependa de regulamentação específica e as farmácias continuem sendo as únicas autorizadas a dispensar os remédios, a decisão representa um marco regulatório histórico para a vertical de saúde da plataforma. Tática: Desenvolvendo um Fórum Proprietário focado em 'O Futuro da Logística de Saúde Digital' para reunir representantes da Anvisa, do Conselho Federal de Farmácia e executivos do setor, posicionando o iFood como o parceiro tecnológico mais seguro e preparado para essa transição regulatória, mitigando ruídos de segurança sanitária antes mesmo da regulamentação final.",
+        "produtos": [
+            "Fóruns Proprietários"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/equilibrioesaude/2026/08/anvisa-abre-caminho-para-farmacias-venderem-remedios-no-ifood-rappi-e-marketplaces.shtml",
+        "data": "13/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "Fato: A StoneCo divulga hoje, 13 de agosto de 2026, após o fechamento do mercado, seus resultados financeiros do segundo trimestre de 2026 (2T26). O mercado acompanha com extrema atenção as métricas de inadimplência na carteira de micro e pequenas empresas e a evolução do ROE, fatores que limitaram a visibilidade e pressionaram as ações nos trimestres anteriores. Tática: Elaborando Op-Eds Híbridos assinados pelo CEO no Valor Econômico e na Exame, combinados com impulsionamento estratégico no LinkedIn Pulse, justificando como a transição da Stone para se consolidar como um banco completo para PMEs está gerando valor sustentável de longo prazo, blindando a marca contra a volatilidade imediata das ações pós-balanço.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://www.stone.co",
+        "data": "13/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "Fato: O Mercado Livre anunciou uma reestruturação em suas tabelas de custos de venda e envio (Envios Flex, Full Supermercado e Frete Grátis Rápido) a partir de 24 de agosto de 2026. Paralelamente, análises do BTG Pactual apontam que a empresa continua sacrificando margens de curto prazo em prol de investimentos massivos em crescimento e logística no Brasil. Tática: Implementando uma estratégia de Brand Publishing por meio do portal de notícias proprietário da marca para educar os vendedores parceiros (sellers) sobre como as novas tarifas se revertem em maior conversão de vendas e eficiência logística, neutralizando potenciais crises de reputação em fóruns de sellers e redes sociais.",
+        "produtos": [
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://vendedores.mercadolivre.com.br/ajuda/48556",
+        "data": "13/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "Fato: A Vale conquistou oito categorias no prestigiado ranking Extel 2026 Latin America Executive Team, incluindo Melhor CEO para Gustavo Pimenta, Melhor CFO para Marcelo Bacci e Melhor Atuação em ESG. O reconhecimento reflete a sólida percepção do mercado financeiro global sobre a governança e transparência da mineradora. Tática: Veiculando Op-Eds Híbridos assinados pelo CFO Marcelo Bacci em veículos Tier 1 de finanças, detalhando como a excelência em relações com investidores e as práticas rigorosas de ESG estão diretamente conectadas à resiliência operacional e à atração de capital estrangeiro de longo prazo para o Brasil.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://www.vale.com",
+        "data": "13/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Varejo e Logística",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "Fato: A Ambev abriu inscrições para seus programas de Trainee e Estágio 2027 com salários de até R$ 9.500 para trainees, além de prometer imersão e rotação internacional. A campanha, sob o conceito 'Sede de crescer, garra pra fazer', visa atrair talentos de alta performance em um mercado de trabalho cada vez mais competitivo. Tática: Realizando um PR Stunt em Dark Social através de vazamentos intencionais de pílulas de conteúdo sobre a rotina dos trainees internacionais em comunidades fechadas de estudantes de engenharia e negócios no WhatsApp e Discord, gerando escassez e um pico de inscrições qualificadas sem depender unicamente de canais tradicionais.",
+        "produtos": [
+            "PR Stunt em Dark Social"
+        ],
+        "link_noticia": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/08/12/ambev-abre-vagas-de-estagio-e-trainee-com-salario-ate-r-95-mil-e-imersao-internacional-veja-como-participar.ghtml",
+        "data": "13/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "Fato: A Samsung detalhou seu pacote de segurança de agosto de 2026 com 56 correções de vulnerabilidades para dispositivos Galaxy. Paralelamente, foi revelado que a divisão de semicondutores da empresa está utilizando a inteligência artificial Claude Code para acelerar o design de novos chips, reduzindo o tempo de desenvolvimento de um mês para apenas um dia. Tática: Publicando Op-Eds Híbridos assinados pelo Diretor de Tecnologia e Inovação da Samsung América Latina, explicando como a integração pioneira de IA generativa no desenvolvimento de hardware redefine a eficiência da indústria, fortalecendo a reputação da marca como líder absoluta na era da inteligência artificial.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://www.tudocelular.com/samsung/noticias/n224922/samsung-galaxy-a37-recebe-pacote-julho-2026.html",
+        "data": "13/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Regulamentação do Mercado Livre de Energia para Baixa Tensão",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Engie",
+            "RZK Energia",
+            "Siemens Energy"
+        ],
+        "descricao": "Fato: O presidente Lula assinou o decreto que regulamenta a abertura do mercado livre de energia para consumidores de baixa tensão (comércios e indústrias a partir de 2027; residências a partir de 2028). A medida promete reduzir a conta de luz em até 22% na parcela de compra de energia, desencadeando uma corrida de comercializadoras e geradoras para conquistar o consumidor final. Tática: Estruturando Dark Site Preparations com Q&As completos sobre migração tarifária, segurança de fornecimento e transição para fontes limpas para clientes de energia como Engie e RZK Energia, antecipando-se ao enorme volume de dúvidas que inundará o mercado e posicionando as marcas como referências de transparência.",
+        "produtos": [
+            "Dark Site Preparations"
+        ],
+        "link_noticia": "https://www.poder360.com.br/infraestrutura/governo-regulamenta-mercado-livre-de-energia-a-pequenos-consumidores/",
+        "data": "13/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80"
     }
 ]
