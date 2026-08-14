@@ -2924,5 +2924,112 @@
         "link_noticia": "https://www.poder360.com.br/infraestrutura/governo-regulamenta-mercado-livre-de-energia-a-pequenos-consumidores/",
         "data": "13/08/2026",
         "imagem": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone",
+            "StoneCo"
+        ],
+        "descricao": "Fato: A StoneCo registrou lucro líquido ajustado de R$ 582,7 milhões no segundo trimestre de 2026, com destaque para o crescimento de 44,3% no volume de Pix QR Code, atingindo R$ 30,7 bilhões. Tática: Aproveitando o forte desempenho operacional do Pix para consolidar o novo posicionamento de banco do empreendedor, por meio de Op-Eds Híbridos assinados pelo CEO Pedro Zinner no Valor Econômico e Exame, casados com impulsionamento estratégico no LinkedIn Pulse para atrair novos clientes PMEs e impulsionar a credibilidade institucional.",
+        "produtos": [
+            "Op-Eds Híbridos",
+            "Fóruns Proprietários"
+        ],
+        "link_noticia": "https://www.estadao.com.br/economia/stone-stoc31-lucro-cai-26-clientes-e-volume-de-pagamentos-avancam/",
+        "data": "14/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: A Anvisa abriu caminho para que farmácias físicas vendam medicamentos em marketplaces como iFood e Rappi, atualizando o marco regulatório de saúde digital. Tática: Liderando a narrativa de conveniência e saúde no ecossistema digital ao criar um Fórum Proprietário focado em debater o futuro do varejo farmacêutico e a segurança do paciente com grandes redes de farmácias e reguladores, posicionando o iFood como o principal ecossistema de Quick Commerce do país e gerando novos fluxos de receita.",
+        "produtos": [
+            "Fóruns Proprietários",
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/08/anvisa-abre-caminho-para-farmacias-venderem-remedios-no-ifood-rappi-e-marketplaces.shtml",
+        "data": "14/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Aviação e Turismo",
+        "marcas": [
+            "GOL",
+            "Smiles"
+        ],
+        "descricao": "Fato: O Grupo Abra anunciou André Fehlauer (ex-Smiles e Livelo) como o novo CEO da GOL Linhas Aéreas a partir de setembro de 2026, substituindo Celso Ferrer, que assumirá a presidência da Boeing para América Latina e Caribe. Tática: Estruturando a transição de liderança por meio de Op-Eds Híbridos no Valor Econômico e Exame focados na visão estratégica de Fehlauer para a saída do Chapter 11 e a integração com a Smiles, garantindo a confiança do mercado financeiro e dos parceiros comerciais.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://exame.com/bussiness/andre-fehlauer-e-nomeado-novo-ceo-da-gol-veja-trajetoria-do-executivo/",
+        "data": "14/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "Fato: A Shein sofreu uma derrota judicial no Reino Unido contra a rival Temu sobre o uso de fotos de produtos, em um momento delicado em que a empresa reduz seu valuation para o IPO em Hong Kong. Tática: Mitigando os riscos reputacionais associados à disputa jurídica e ao IPO por meio de uma Shadow Banning Strategy focada em SEO positivo, destacando as iniciativas de sustentabilidade e conformidade da Shein no Brasil para empurrar as notícias negativas sobre a disputa para as páginas secundárias de busca.",
+        "produtos": [
+            "Shadow Banning Strategy",
+            "Dark Site Preparations"
+        ],
+        "link_noticia": "https://exame.com/invest/shein-perde-na-justica-batalha-que-ela-mesma-iniciou-contra-a-temu/",
+        "data": "14/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre",
+            "Mercado Pago"
+        ],
+        "descricao": "Fato: O Mercado Livre registrou receita recorde de US$ 10,2 bilhões no segundo trimestre de 2026, impulsionado pelo mercado brasileiro, consolidando sua transição de e-commerce para um ecossistema completo de varejo, fintech e logística. Tática: Consolidando o posicionamento de liderança em inovação no varejo e finanças por meio de Brand Publishing, criando um portal de conteúdo proprietário voltado a PMEs para educar o mercado sobre o uso de IA e logística avançada, reduzindo a dependência de mídia tradicional.",
+        "produtos": [
+            "Brand Publishing",
+            "Fóruns Proprietários"
+        ],
+        "link_noticia": "https://exame.com/invest/quanto-eu-teria-hoje-se-tivesse-investido-r-10-mil-em-acoes-do-mercado-livre-ha-5-anos/",
+        "data": "14/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1521898284481-a5ec348cb555?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Decretos de Descarbonização e Abertura do Mercado Livre de Energia",
+        "agencia": "Setorial",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Engie",
+            "RZK Energia",
+            "Siemens Energy",
+            "Vibra"
+        ],
+        "descricao": "Fato: O presidente Lula assinou um pacote de decretos regulando o combustível sustentável de aviação (SAF), captura de carbono, hidrogênio de baixa emissão e a abertura do mercado livre de energia para consumidores de baixa tensão da indústria e comércio a partir de agosto de 2026. Tática: Posicionando as marcas de energia na vanguarda da transição energética por meio de Op-Eds Híbridos assinados por seus CEOs no Valor Econômico, analisando os impactos práticos dos novos decretos de descarbonização e atraindo investimentos verdes.",
+        "produtos": [
+            "Op-Eds Híbridos",
+            "Fóruns Proprietários"
+        ],
+        "link_noticia": "https://exame.com/esg/lula-assina-pacote-da-transicao-mas-o-corte-de-carbono-depende-do-que-vem-depois/",
+        "data": "14/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80"
     }
 ]
