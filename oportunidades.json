@@ -3031,5 +3031,127 @@
         "link_noticia": "https://exame.com/esg/lula-assina-pacote-da-transicao-mas-o-corte-de-carbono-depende-do-que-vem-depois/",
         "data": "14/08/2026",
         "imagem": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Tecnologia e Delivery",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: Entregadores de aplicativos acionaram a Justiça do Trabalho em ações coletivas contra o iFood e concorrentes, exigindo a criação de pontos de apoio físicos e indenizações por danos morais coletivos. Tática: Estruturando Dark Site Preparations com Q&As detalhados sobre as políticas de apoio e investimentos em infraestrutura urbana já realizados pela marca, garantindo que a equipe de comunicação esteja munida de respostas rápidas e alinhadas juridicamente antes que o tema ganhe maior tração na mídia de massa, protegendo a reputação corporativa e mitigando riscos de boicote.",
+        "produtos": [
+            "Dark Site Preparations",
+            "Q&A de Gestão de Crise"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/08/entregadores-processam-ifood-uber-e-99food-por-falta-de-ponto-de-apoio-e-querem-indenizacao.shtml",
+        "data": "19/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "Fato: A registradora de recebíveis TAG, controlada pela Stone, detectou e evitou uma tentativa de fraude de R$ 350 milhões envolvendo transações de cartões de crédito. Tática: Veiculando Op-Eds Híbridos assinados pelo C-level de tecnologia e segurança da Stone em veículos Tier 1 de finanças e negócios, combinados com impulsionamento estratégico no LinkedIn Pulse, para demonstrar a robustez e a confiabilidade dos sistemas de segurança da companhia, transformando um potencial escândalo de segurança em um forte ativo de autoridade e atração de novos clientes corporativos.",
+        "produtos": [
+            "Op-Ed Híbrido",
+            "LinkedIn Pulse Campaign"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/08/empresa-da-stone-e-alvo-de-tentativa-de-fraude-de-r-350-milhoes-em-pagamentos-de-cartao.shtml",
+        "data": "19/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Vale"
+        ],
+        "descricao": "Fato: O presidente da Vale, Gustavo Pimenta, defendeu publicamente a modernização das regras de preservação de cavidades de baixa relevância biológica para destravar projetos críticos de cobre e ferro. Tática: Viabilizando Op-Eds Híbridos assinados pelo CEO no Valor Econômico e replicados no LinkedIn Pulse, justificando como a flexibilização regulatória de áreas sem biodiversidade única, mediante compensação ambiental rigorosa, é essencial para acelerar a transição energética global e manter a competitividade mineral do Brasil.",
+        "produtos": [
+            "Op-Ed Híbrido",
+            "LinkedIn Pulse Campaign"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/ambiente/2026/08/falta-de-decreto-sobre-cavidades-afeta-producao-de-cobre-e-ferro-diz-presidente-da-vale.shtml",
+        "data": "19/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Bebidas e Consumo",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "Fato: A Ambev aprovou o cancelamento de 279 milhões de ações ordinárias em tesouraria e encerrou seu programa de recompra, concentrando a participação dos acionistas sem alterar o capital social. Tática: Implementando uma estratégia de Brand Publishing por meio da criação de uma seção dedicada a finanças e governança no portal de conteúdo da marca, explicando de forma didática o impacto positivo dessa movimentação na valorização do patrimônio dos acionistas minoritários, reduzindo a dependência de cobertura da imprensa tradicional e fortalecendo a relação com investidores.",
+        "produtos": [
+            "Brand Publishing",
+            "Q&A de Relações com Investidores"
+        ],
+        "link_noticia": "https://forbes.com.br/forbes-money/2026/08/ambev-abev3-cancela-279-milhoes-de-acoes-em-tesouraria-e-encerra-recompra/",
+        "data": "19/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1566633806327-68e152aaf26d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "Fato: O Mercado Livre inaugurou um megacentro de distribuição de mais de 200 mil m² em Franco da Rocha (SP), consolidando o maior hub de ultra-triagem da América Latina. Tática: Orquestrando um PR Stunt em Dark Social por meio de vazamentos intencionais de dados de performance e bastidores da nova operação em grupos fechados de WhatsApp e Discord voltados para e-commerce e tecnologia, gerando escassez e forte engajamento orgânico sobre a capacidade logística imbatível da marca às vésperas da Black Friday 2026.",
+        "produtos": [
+            "PR Stunt em Dark Social",
+            "Press Tour Exclusivo"
+        ],
+        "link_noticia": "https://www.mercadolivre.com.br/institucional/centro-distribuicao-franco-da-rocha",
+        "data": "19/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Google"
+        ],
+        "descricao": "Fato: Ferramentas de monitoramento registraram forte oscilação nos rankings de busca do Google, resultando em quedas de até 70% no tráfego do Google Discover para portais brasileiros. Tática: Executando uma Shadow Banning Strategy focada em SEO positivo e na disseminação de conteúdos técnicos de autoridade para empurrar as reclamações e discussões negativas de webmasters para as páginas secundárias dos buscadores, enquanto se estabilizam os testes internos do algoritmo, preservando a reputação de confiabilidade das ferramentas de busca da companhia.",
+        "produtos": [
+            "Shadow Banning Strategy",
+            "Guia Técnico de SEO para Imprensa"
+        ],
+        "link_noticia": "https://imasters.com.br/google/volatilidade-no-ranking-do-google-em-agosto-derruba-trafego-de-sites-brasileiros-no-discover",
+        "data": "19/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Abertura do Mercado Livre de Energia para Baixa Tensão",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Engie",
+            "RZK Energia",
+            "TAESA",
+            "Vibra"
+        ],
+        "descricao": "Fato: O governo federal regulamentou a abertura gradual do mercado livre de energia elétrica para consumidores de baixa tensão, permitindo a migração de comércios e residências a partir de 2027. Tática: Promovendo Fóruns Proprietários organizados pelas marcas de energia do portfólio para debater a transição regulatória e educar o mercado, reunindo reguladores, indústrias e especialistas para posicionar os clientes da agência como os principais facilitadores da portabilidade de energia no país, gerando novos leads de negócios.",
+        "produtos": [
+            "Fórum Proprietário",
+            "Whitepaper Setorial"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/08/veja-quando-e-como-clientes-residenciais-e-negocios-vao-poder-migrar-para-o-mercado-livre-de-energia.shtml",
+        "data": "19/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80"
     }
 ]
