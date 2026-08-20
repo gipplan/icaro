@@ -3153,5 +3153,150 @@
         "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/08/veja-quando-e-como-clientes-residenciais-e-negocios-vao-poder-migrar-para-o-mercado-livre-de-energia.shtml",
         "data": "19/08/2026",
         "imagem": "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone"
+        ],
+        "descricao": "Fato: A TAG, registradora de recebíveis controlada pela Stone, foi alvo de uma tentativa de fraude de R$ 350 milhões envolvendo a alteração de titularidade de recebíveis de cartões, que foi contida sem perdas financeiras ou vazamento de dados de clientes. Tática: Estruturando Dark Site Preparations com comunicados técnicos e Q&As detalhados sobre segurança de dados para conter preventivamente qualquer narrativa de vulnerabilidade sistêmica, assegurando a reputação de solidez e confiabilidade da marca perante o mercado financeiro e lojistas.",
+        "produtos": [
+            "Dark Site Preparation",
+            "Q&A de Crise",
+            "Media Training de Porta-Vozes"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/08/empresa-da-stone-e-alvo-de-tentativa-de-fraude-de-r-350-milhoes-em-pagamentos-de-cartao.shtml",
+        "data": "20/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: O iFood lançou uma grande promoção de sorteio de ingressos e experiências VIP para o Rock in Rio Brasil 2026, oferecendo aos fãs uma última chance de comparecer ao festival que já está com os ingressos esgotados. Tática: Orquestrando um PR Stunt em Dark Social por meio de vazamentos intencionais de pistas e códigos promocionais exclusivos em grupos fechados de WhatsApp e Discord, gerando escassez e engajamento viral orgânico entre os fãs que buscam ingressos esgotados para o festival.",
+        "produtos": [
+            "PR Stunt em Dark Social",
+            "Estratégia de Influenciadores",
+            "Social Listening"
+        ],
+        "link_noticia": "https://www.promoview.com.br/categoria/promocoes/ingressos-esgotados-ifood-ainda-da-chance-de-fas-irem-ao-rock-in-rio-brasil-2026/",
+        "data": "20/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Aviação e Turismo",
+        "marcas": [
+            "GOL"
+        ],
+        "descricao": "Fato: A GOL anunciou uma transição de liderança histórica, com Celso Ferrer deixando o cargo de CEO para assumir a presidência da Boeing para a América Latina e Caribe, sendo sucedido por André Fehlauer, executivo com ampla experiência no mercado de fidelidade e ex-CEO da Smiles. Tática: Posicionando Op-Eds Híbridos assinados pelo novo CEO André Fehlauer em veículos Tier 1 (como Valor Econômico e Exame), casados com impulsionamento estratégico no LinkedIn Pulse, para apresentar sua visão de crescimento e sinergia com o Grupo Abra, mitigando incertezas do mercado sobre a transição de liderança.",
+        "produtos": [
+            "Op-Ed Híbrido",
+            "LinkedIn Executive Positioning",
+            "Encontro com Editores Tier 1"
+        ],
+        "link_noticia": "https://www.aerolatinnews.com/destacado/gol-announces-leadership-changes-appoints-andre-fehlauer-as-new-ceo-and-albert-perez-as-president-and-coo/",
+        "data": "20/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Samsung"
+        ],
+        "descricao": "Fato: A Samsung anunciou o 'Evento Galaxy - Agosto de 2026' para o dia 27 de agosto, focado em apresentar o mais novo integrante da família Galaxy S26 focado em recursos essenciais de IA e câmera, logo após o lançamento de seus novos dobráveis Z Fold8 e Flip8 no Brasil. Tática: Implementando uma estratégia de Brand Publishing através de um portal proprietário de conteúdo focado em desmistificar o uso prático de inteligência artificial no cotidiano, posicionando os novos recursos do ecossistema Galaxy de forma educativa e independente da cobertura da imprensa tradicional.",
+        "produtos": [
+            "Brand Publishing Portal",
+            "Press Trip de Tecnologia",
+            "Fórum de Influenciadores de IA"
+        ],
+        "link_noticia": "https://news.samsung.com/br/convite-evento-galaxy-agosto-de-2026",
+        "data": "20/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Google"
+        ],
+        "descricao": "Fato: O Google iniciou globalmente o 'August 2026 Spam Update', uma atualização de seus sistemas de combate a spam na busca que afeta todos os idiomas e está gerando oscilações significativas de tráfego e posicionamento de sites. Tática: Criando Fóruns Proprietários (como um 'Google Search & SEO Summit') para reunir os principais especialistas de marketing digital e SEO do Brasil, debatendo as novas diretrizes de qualidade de busca e mitigando o ruído e a ansiedade do mercado gerados pela volatilidade do novo algoritmo.",
+        "produtos": [
+            "Fórum Proprietário",
+            "Q&A Técnico para Desenvolvedores",
+            "Estratégia de PR Educativo"
+        ],
+        "link_noticia": "https://www.conversion.com.br/blog/google-inicia-august-2026-spam-update/",
+        "data": "20/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "Fato: O Mercado Livre expandiu sua presença no setor automotivo ao ocupar uma área exclusiva de 15 mil m² no Festival Interlagos 2026, reunindo mais de 40 marcas parceiras em uma estratégia de exposição física integrada a negócios e mídia digital. Tática: Consolidando Fóruns Proprietários dentro do Espaço Mercado Livre no Festival Interlagos, promovendo painéis de debate com CEOs de montadoras e autopeças sobre o futuro do e-commerce automotivo, fortalecendo a autoridade da marca como o principal hub de negócios do setor.",
+        "produtos": [
+            "Fórum Proprietário",
+            "Painel de Debates B2B",
+            "Press Tour com Jornalistas de Negócios"
+        ],
+        "link_noticia": "https://www.meioemensagem.com.br/marketing/mercado-livre-ocupa-15-mil-m-no-festival-interlagos-com-mais-de-40-marcas",
+        "data": "20/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Shein"
+        ],
+        "descricao": "Fato: A Shein reduziu sua meta de valuation para a faixa de US$ 25 bilhões a US$ 27 bilhões às vésperas de seu IPO em Hong Kong, refletindo a desaceleração de vendas globais e a forte concorrência de plataformas como a Temu. Tática: Executando uma Shadow Banning Strategy focada em otimização de SEO positivo e geração de conteúdo institucional sobre investimentos locais e parcerias com fabricantes brasileiros, com o objetivo de empurrar as notícias negativas sobre a desvalorização do valuation para as páginas secundárias dos buscadores.",
+        "produtos": [
+            "Shadow Banning Strategy",
+            "SEO Reputacional",
+            "Artigo de Opinião sobre Impacto Local"
+        ],
+        "link_noticia": "https://www.poder360.com.br/economia/shein-mira-avaliacao-de-us-25-bi-em-ipo-em-hong-kong/",
+        "data": "20/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Aceleração do Empreendedorismo via Pix e Infraestrutura de Pagamentos",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Banco Central",
+            "Abecs"
+        ],
+        "descricao": "Fato: Um estudo econométrico recente apontou que o Pix e os avanços na infraestrutura de pagamentos no Brasil foram fatores determinantes para a expansão do empreendedorismo no país, registrando forte impacto estatístico positivo. Tática: Criando Fóruns Proprietários focados em debater o impacto das fintechs no desenvolvimento econômico regional, posicionando as marcas do setor como parceiras estratégicas do crescimento de pequenos negócios e gerando valor de marca institucional.",
+        "produtos": [
+            "Fórum Proprietário",
+            "Estudo de Impacto Econômico",
+            "Media Relations"
+        ],
+        "link_noticia": "https://www.veronoticias.com.br/pix-impulsiona-empreendedorismo-no-brasil-aponta-estudo/",
+        "data": "20/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
     }
 ]
