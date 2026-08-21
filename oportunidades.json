@@ -3298,5 +3298,131 @@
         "link_noticia": "https://www.veronoticias.com.br/pix-impulsiona-empreendedorismo-no-brasil-aponta-estudo/",
         "data": "20/08/2026",
         "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Stone",
+            "StoneCo"
+        ],
+        "descricao": "Fato: Em 16 de agosto de 2026, foi revelado que uma empresa controlada pela Stone foi alvo de uma tentativa de fraude massiva de R$ 350 milhões em pagamentos de cartão. Paralelamente, a Stone divulgou seus resultados do 2T26 com queda de 2,6% no lucro líquido ajustado, mas com forte expansão de depósitos e clientes ativos. Tática: Implementando uma Shadow Banning Strategy focada em SEO positivo para empurrar as notícias sobre a tentativa de fraude de R$ 350 milhões para a página 3 do Google, inundando os mecanismos de busca com análises aprofundadas sobre o crescimento de 22,3% nos depósitos bancários (R$ 10,8 bilhões) e a expansão da base de clientes ativos para 4,8 milhões no 2T26.",
+        "produtos": [
+            "Shadow Banning Strategy",
+            "Dark Site Preparations"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/08/empresa-da-stone-e-alvo-de-tentativa-de-fraude-de-r-350-milhoes-em-pagamentos-de-cartao.shtml",
+        "data": "21/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: Em 20 de agosto de 2026, o iFood anunciou uma parceria exclusiva com a hamburgueria Patties Burger para a venda do 'Lanches do Gu by Patties' até 26 de agosto, revertendo toda a renda para a vaquinha de Gustavo, um menino de 11 anos. A ação faz parte da campanha 'O Brasil que faz o iFood'. Tática: Desenvolvendo uma estratégia de Brand Publishing através da criação de um hub de conteúdo proprietário focado em contar histórias reais de microempreendedores brasileiros que cresceram com a plataforma, reduzindo a dependência de mídia tradicional e gerando forte conexão emocional com a base de clientes.",
+        "produtos": [
+            "Brand Publishing",
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://www.mundodomarketing.com.br/noticias-corporativas/ifood-se-junta-a-patties-em-acao-exclusiva-para-a-vaquinha-do-gu/",
+        "data": "21/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "Fato: Em 19 de agosto de 2026, o Mercado Livre promoveu em Brasília a 3ª edição do 'Privacy Connection', em parceria com o Serur Advogados, reunindo autoridades da ANPD, Ministério da Justiça e Anatel para debater os desafios regulatórios da inteligência artificial, proteção de dados e o ECA Digital. Tática: Consolidando o 'Privacy Connection' como um Fórum Proprietário anual de referência em governança digital, posicionando o Mercado Livre como o principal interlocutor privado junto a órgãos reguladores e governo federal sobre regulação de IA e e-commerce.",
+        "produtos": [
+            "Fóruns Proprietários",
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://www.migalhas.com.br/quentes/413654/serur-e-mercado-livre-promovem-3-edicao-do-privacy-connection",
+        "data": "21/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Ambev"
+        ],
+        "descricao": "Fato: Em 19 de agosto de 2026, foi noticiado que a Ambev está acelerando seu portfólio de cervejas zero álcool (alta de 30% no 2T26) e wellness (alta de 60%), adaptando-se à tendência de moderação e bem-estar dos consumidores brasileiros. Tática: Veiculando um Op-Ed Híbrido assinado pelo CEO ou Diretor de Categoria da Ambev no Valor Econômico abordando a 'revolução da moderação' e o papel da indústria na promoção do consumo responsável, com impulsionamento direcionado no LinkedIn Pulse para investidores focados em ESG.",
+        "produtos": [
+            "Op-Eds Híbridos",
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://www.baladain.com.br/negocios/ambev-acelera-em-cervejas-sem-alcool-e-premium-diante-de-novos-habitos-de-consumo/",
+        "data": "21/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1600788886242-5c96aabe3757?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Guerra Comercial e Diplomática: Escrutínio dos EUA sobre o Pix do Banco Central do Brasil",
+        "agencia": "FleishmanHillard",
+        "setor": "Finanças e Fintechs",
+        "marcas": [
+            "Banco Central do Brasil",
+            "Mastercard",
+            "Google"
+        ],
+        "descricao": "Fato: Em agosto de 2026, o Pix se tornou o centro de uma disputa comercial e diplomática entre o Brasil e os Estados Unidos. A administração americana (USTR) incluiu o Pix em investigações de práticas que prejudicam empresas de cartões americanas (como Visa e Mastercard), gerando tensões bilaterais e ameaças de tarifas. Tática: Preparando Dark Site Preparations com Q&As detalhados e posicionamentos jurídicos/técnicos sobre a neutralidade e a segurança do Pix, antecipando possíveis crises reputacionais ou retaliações comerciais que possam impactar as operações de meios de pagamento no Brasil.",
+        "produtos": [
+            "Dark Site Preparations",
+            "Shadow Banning Strategy"
+        ],
+        "link_noticia": "https://www.canal26.com/internacionales/estados-unidos-vs-brasil-pix-y-la-guerra-de-los-qr--387654",
+        "data": "21/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Decreto Presidencial Regulamenta Abertura do Mercado Livre de Energia para Baixa Tensão",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Engie",
+            "Eneva",
+            "CCEE"
+        ],
+        "descricao": "Fato: Em agosto de 2026, o presidente Lula assinou o Decreto nº 13.097/2026, que regulamenta a abertura do Mercado Livre de Energia para consumidores de baixa tensão (comerciais/industriais em novembro de 2027 e residenciais em novembro de 2028). Agentes do setor destacam o desafio de educar e 'popularizar' o ambiente de contratação livre. Tática: Lançando um Fórum Proprietário (como um 'Low Voltage Energy Summit') promovido pelas marcas de energia para educar pequenos comércios e indústrias sobre as regras de migração, estabelecendo as marcas como líderes de pensamento e parceiras de transição energética antes do prazo de 2027.",
+        "produtos": [
+            "Fóruns Proprietários",
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://www.poder360.com.br/infraestrutura/setor-ve-necessidade-de-explicar-mercado-libre-de-energia-ao-consumidor",
+        "data": "21/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Início da Fiscalização e Obrigatoriedade do IBS e CBS nos Documentos Fiscais Eletrônicos",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Americanas",
+            "Mercado Livre",
+            "Unilever"
+        ],
+        "descricao": "Fato: Em agosto de 2026, iniciou-se oficialmente a obrigatoriedade de preenchimento dos campos de IBS e CBS (alíquota teste de 1%) nos documentos fiscais eletrônicos para empresas do regime regular, marcando o fim do período de tolerância e o início da fiscalização assistida pela Receita Federal e CGIBS. Tática: Desenvolvendo Dark Site Preparations com guias de conformidade tributária e Q&As internos para blindar a reputação das marcas de varejo e e-commerce contra eventuais falhas operacionais ou rejeições automáticas de notas fiscais pelos novos sistemas do governo.",
+        "produtos": [
+            "Dark Site Preparations",
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/agosto/receita-federal-e-cgibs-regulamentam-programa-nacional-de-conformidade-tributaria",
+        "data": "21/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80"
     }
 ]
