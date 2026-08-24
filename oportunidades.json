@@ -3424,5 +3424,122 @@
         "link_noticia": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/agosto/receita-federal-e-cgibs-regulamentam-programa-nacional-de-conformidade-tributaria",
         "data": "21/08/2026",
         "imagem": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "iFood"
+        ],
+        "descricao": "Fato: O iFood anunciou uma parceria estratégica com o Banco do Brasil para facilitar o acesso de seus entregadores parceiros à linha de crédito Move Brasil Motos, voltada ao financiamento de motocicletas e bicicletas novas. Tática de PR: Implementando uma estratégia de Brand Publishing para criar um portal de conteúdo proprietário focado em histórias de impacto social e inclusão financeira dos entregadores, reduzindo a dependência de canais de mídia tradicionais para divulgar ações ESG e fortalecendo a reputação da marca diretamente junto à comunidade de parceiros.",
+        "produtos": [
+            "Brand Publishing"
+        ],
+        "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/08/banco-do-brasil-anuncia-parceria-com-ifood-para-ampliar-financiamentos-no-move-brasil.shtml",
+        "data": "24/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "E-commerce, Varejo e Logística",
+        "marcas": [
+            "Mercado Livre"
+        ],
+        "descricao": "Fato: O Mercado Livre revelou que reduziu a participação dos Correios em suas entregas de 95% para menos de 5%, impulsionado pela expansão de sua rede logística própria, que deve atingir 42 centros de distribuição no Brasil até o fim de 2026. Tática de PR: Viabilizando Op-Eds Híbridos assinados pelo Diretor Sênior de Logística no Valor Econômico e Exame, integrados a um forte impulsionamento no LinkedIn Pulse, para posicionar a marca como líder incontestável em infraestrutura logística e eficiência operacional na América Latina.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://transportemoderno.com.br/2026/08/21/mercado-livre-reduz-correios-a-menos-de-5-das-entregas/",
+        "data": "24/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Aviação e Turismo",
+        "marcas": [
+            "GOL",
+            "Smiles"
+        ],
+        "descricao": "Fato: A Justiça do Paraná determinou que a GOL restitua mais de 80 mil milhas a um cliente Smiles devido à falta de comunicação prévia sobre mudanças restritivas nas regras de benefícios da categoria Ouro. Tática de PR: Estruturando Dark Site Preparations com landing pages invisíveis contendo Q&As detalhados e transparentes sobre as regras de fidelidade, antecipando-se a possíveis crises de imagem e garantindo respostas rápidas caso a repercussão negativa se espalhe nas redes sociais.",
+        "produtos": [
+            "Dark Site Preparations"
+        ],
+        "link_noticia": "https://www.migalhas.com.br/quentes/413788/gol-deve-devolver-80-mil-milhas-apos-alterar-regra-do-smiles",
+        "data": "24/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "FleishmanHillard",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Votorantim"
+        ],
+        "descricao": "Fato: A Votorantim Cimentos registrou um crescimento de 16% na receita líquida global no segundo trimestre de 2026, atingindo R$ 8,2 bilhões, impulsionada pelo desempenho operacional e pelo avanço de sua agenda de descarbonização e investimentos estruturais. Tática de PR: Organizando Fóruns Proprietários no formato de um Summit de Descarbonização Industrial liderado pelo CEO Global da companhia, reunindo os principais players do setor para debater a transição ecológica e consolidar a marca como referência em ESG e inovação sustentável.",
+        "produtos": [
+            "Fóruns Proprietários"
+        ],
+        "link_noticia": "https://www.brasilmineral.com.br/noticias/receita-liquida-global-da-votorantim-cimentos-cresce-16",
+        "data": "24/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "marca",
+        "titulo": "",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "AWS"
+        ],
+        "descricao": "Fato: Pesquisadores de segurança revelaram que mais de 9.300 chaves de acesso da Amazon Web Services (AWS) expostas publicamente nos últimos anos continuam ativas e válidas, representando um risco crítico de invasão a contas corporativas. Tática de PR: Executando uma Shadow Banning Strategy focada em SEO positivo e na publicação de guias de boas práticas de segurança em nuvem para empurrar as notícias sobre a vulnerabilidade para as páginas secundárias de busca, mitigando o impacto reputacional na marca.",
+        "produtos": [
+            "Shadow Banning Strategy"
+        ],
+        "link_noticia": "https://www.bleepingcomputer.com/news/security/hundreds-of-leaked-aws-keys-give-full-control-over-corporate-accounts/",
+        "data": "24/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "Regulamentação e Abertura do Mercado Livre de Energia",
+        "agencia": "In Press Porter Novelli",
+        "setor": "Energia, Mineração e Siderurgia (ESG)",
+        "marcas": [
+            "Engie",
+            "RZK Energia",
+            "Siemens Energy",
+            "TAESA"
+        ],
+        "descricao": "Fato: O governo federal regulamentou a abertura total do mercado livre de energia elétrica para consumidores de baixa tensão (Decreto 13.097/26), permitindo a migração de comércios e indústrias a partir de 2027 e de residências em 2028. Tática de PR: Desenvolvendo Op-Eds Híbridos assinados pelos líderes das empresas de energia parceiras (como Engie e RZK Energia) para explicar o impacto da portabilidade de energia na redução de custos e na adoção de fontes renováveis, impulsionando os artigos no LinkedIn Pulse para atrair clientes corporativos de baixa tensão.",
+        "produtos": [
+            "Op-Eds Híbridos"
+        ],
+        "link_noticia": "https://www.migalhas.com.br/quentes/413693/decreto-regulamenta-abertura-do-mercado-de-energia-eletrica-a-partir-de-2027",
+        "data": "24/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "tipo": "setor",
+        "titulo": "O Impacto da Inteligência Artificial na Indústria da Música e Streaming",
+        "agencia": "FleishmanHillard",
+        "setor": "Tecnologia, IA e Eletroeletrônicos",
+        "marcas": [
+            "Google",
+            "Samsung"
+        ],
+        "descricao": "Fato: O sucesso viral da cantora virtual gerada por IA Nyla Stone, que alcançou quase 1 milhão de ouvintes mensais no Spotify, gerou um intenso debate na indústria, levando plataformas de streaming a prepararem etiquetas de identificação de 'AI Persona' para limitar recomendações algorítmicas. Tática de PR: Orquestrando um PR Stunt em Dark Social através do vazamento intencional de faixas musicais geradas por IA em grupos fechados de WhatsApp e Discord para debater a ética da criação artística sintética, gerando engajamento orgânico e posicionando os clientes de tecnologia como líderes na discussão ética sobre IA generativa.",
+        "produtos": [
+            "PR Stunt em Dark Social"
+        ],
+        "link_noticia": "https://www.que.es/tecnologia/nyla-stone-cantante-virtual-ia.html",
+        "data": "24/08/2026",
+        "imagem": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80"
     }
 ]
