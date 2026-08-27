@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inteligência Reputacional - Grupo In Press</title>
+    <title>Radar Reputacional - Grupo In Press</title>
     <!-- Google Fonts: Lora (Serif) & Plus Jakarta Sans (Sans-serif) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,19 +92,9 @@
                         Radar Reputacional &<br> <span class="text-inpress-red">Inteligência Criativa</span>
                     </h1>
                     
-                    <p class="text-sm md:text-base text-stone-300 font-sans-custom tracking-wide leading-relaxed max-w-3xl mb-6">
+                    <p class="text-sm md:text-base text-stone-300 font-sans-custom tracking-wide leading-relaxed max-w-3xl mb-2">
                         O Í.C.A.R.O. monitora assuntos e temas relevantes para os clientes do Grupo In Press, e apoia nossos times com recomendações táticas, criativas ou comerciais.
                     </p>
-                    
-                    <!-- Aviso de Alucinação IA -->
-                    <div class="inline-flex items-start md:items-center gap-3 bg-inpress-red/10 border border-inpress-red/30 text-stone-300 px-4 py-3 rounded-lg backdrop-blur-sm max-w-2xl text-left">
-                        <svg class="h-5 w-5 text-inpress-red flex-shrink-0 mt-0.5 md:mt-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                        </svg>
-                        <span class="text-[10px] md:text-xs font-medium tracking-wide leading-snug">
-                            O Sistema utiliza IA para automação e pode conter alucinações. Lembre-se de conferir os dados antes de usá-los e alerte o time de planejamento.
-                        </span>
-                    </div>
                 </div>
             </div>
         </header>
@@ -184,13 +174,24 @@
             </div>
         </div>
 
-        <!-- Sub-Header Editorial (Contador e Filtros de Data) -->
+        <!-- Sub-Header Editorial (Dropdown Itens por Página e Filtros de Data) -->
         <div class="max-w-6xl mx-auto px-4 mt-8">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-stone-300 pb-3 gap-4 sm:gap-0">
                 
-                <!-- Contador de Pautas Exibidas -->
-                <div class="text-xs font-bold text-inpress-chumbo tracking-wider uppercase font-sans-custom bg-stone-200 px-3 py-1.5 rounded-md">
-                    Exibir: <span id="contadorPautas" class="text-inpress-red text-sm ml-1">0</span>
+                <!-- Dropdown de Exibição e Contador Total -->
+                <div class="flex items-center gap-3">
+                    <div class="text-xs font-bold text-inpress-chumbo tracking-wider uppercase font-sans-custom bg-stone-200 px-3 py-1.5 rounded-md flex items-center gap-1.5 shadow-sm">
+                        EXIBIR: 
+                        <select id="itensPorPagina" onchange="mudarItensPorPagina()" class="bg-transparent font-bold text-inpress-red outline-none cursor-pointer focus:ring-0">
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                            <option value="all">TODAS</option>
+                        </select>
+                    </div>
+                    <div class="text-[10px] text-stone-500 font-bold uppercase tracking-widest hidden sm:block">
+                        Total Encontrado: <span id="totalPautas" class="text-inpress-dark">0</span>
+                    </div>
                 </div>
 
                 <!-- Filtros de Tempo -->
@@ -210,14 +211,28 @@
 
         <!-- Container Principal (Briefing Grid) -->
         <main class="max-w-6xl mx-auto px-4 py-8">
+            <div id="alvoScrollTop"></div> <!-- Âncora invisível para voltar ao topo da paginação -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="timelineContainer">
                 <p class="text-stone-400 italic text-center col-span-full py-12">Carregando curadoria de inteligência...</p>
+            </div>
+            
+            <!-- Controles de Paginação -->
+            <div id="paginacaoContainer" class="flex justify-center items-center gap-4 mt-12 hidden">
+                <button onclick="mudarPagina('prev')" id="btnPrev" class="px-5 py-2 bg-white border border-stone-200 shadow-sm rounded-md text-xs font-bold uppercase tracking-widest text-stone-500 hover:text-inpress-red hover:border-inpress-red transition-all disabled:opacity-30 disabled:cursor-not-allowed">
+                    Anterior
+                </button>
+                <span id="infoPagina" class="text-[11px] font-bold tracking-widest uppercase text-inpress-chumbo px-2">
+                    Página 1 de 1
+                </span>
+                <button onclick="mudarPagina('next')" id="btnNext" class="px-5 py-2 bg-white border border-stone-200 shadow-sm rounded-md text-xs font-bold uppercase tracking-widest text-stone-500 hover:text-inpress-red hover:border-inpress-red transition-all disabled:opacity-30 disabled:cursor-not-allowed">
+                    Próxima
+                </button>
             </div>
         </main>
     </div>
 
     <!-- Rodapé -->
-    <footer class="bg-white border-t border-stone-200 py-8 px-8 text-center mt-16 shadow-sm">
+    <footer class="bg-white border-t border-stone-200 py-8 px-8 text-center mt-12 shadow-sm">
         <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-inpress-chumbo tracking-wider">
             <p>© 2026 Grupo In Press | I.C.A.R.O. Todos os direitos reservados.</p>
             <a href="busca.html" class="inline-flex items-center gap-1.5 text-inpress-chumbo hover:text-inpress-red transition-colors font-bold uppercase tracking-wider">
@@ -281,7 +296,12 @@
         document.getElementById('dropdownMenuTipos').addEventListener('click', (event) => { event.stopPropagation(); });
 
         let dadosOportunidades = [];
+        let pautasFiltradasAtuais = [];
         let filtroTempoAtual = 'todas';
+        
+        // Configurações de Paginação
+        let currentPage = 1;
+        let itemsPerPage = 25;
 
         document.addEventListener("DOMContentLoaded", () => {
             if (sessionStorage.getItem("site_desbloqueado") === "true") {
@@ -292,7 +312,6 @@
             });
             document.getElementById('filtroAgencia').addEventListener('change', filtrarGeral);
 
-            // Adicionado parâmetro de tempo (?t=) para quebrar o cache do navegador e garantir os dados mais recentes
             fetch(`oportunidades.json?t=${new Date().getTime()}`)
                 .then(response => {
                     if (!response.ok) throw new Error('Arquivo JSON inacessível.');
@@ -310,7 +329,7 @@
                     if (container) {
                         container.innerHTML = `<p class="text-red-500 italic text-center col-span-full py-12">Nenhuma oportunidade registrada na curadoria.</p>`;
                     }
-                    document.getElementById('contadorPautas').innerText = "0";
+                    document.getElementById('totalPautas').innerText = "0";
                 });
         });
 
@@ -437,17 +456,69 @@
             return { fato: fato.trim(), rec: rec.trim() };
         }
 
-        function renderizarTimeline(dados) {
+        // --- SISTEMA DE PAGINAÇÃO E RENDERIZAÇÃO ---
+        
+        function mudarItensPorPagina() {
+            const val = document.getElementById('itensPorPagina').value;
+            itemsPerPage = val === 'all' ? 99999 : parseInt(val);
+            currentPage = 1; 
+            renderizarPaginaAtual();
+        }
+
+        function mudarPagina(direction) {
+            const totalPages = Math.ceil(pautasFiltradasAtuais.length / itemsPerPage);
+            if (direction === 'prev' && currentPage > 1) {
+                currentPage--;
+            } else if (direction === 'next' && currentPage < totalPages) {
+                currentPage++;
+            }
+            renderizarPaginaAtual();
+            
+            // Rola suavemente de volta para o topo do grid
+            const ancor = document.getElementById('alvoScrollTop');
+            if (ancor) {
+                const offset = 100; // Desconta a barra de filtros sticky
+                const topPos = ancor.getBoundingClientRect().top + window.scrollY - offset;
+                window.scrollTo({ top: topPos, behavior: 'smooth' });
+            }
+        }
+
+        function renderizarPaginaAtual() {
+            const totalItems = pautasFiltradasAtuais.length;
+            document.getElementById('totalPautas').innerText = totalItems;
+            
+            const totalPages = Math.ceil(totalItems / itemsPerPage) || 1;
+            
+            // Recorta o array para mostrar apenas os itens da página atual
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const itensParaRenderizar = pautasFiltradasAtuais.slice(startIndex, endIndex);
+            
+            renderizarTimeline(itensParaRenderizar);
+            
+            // Controla a exibição e bloqueio dos botões de paginação
+            const pagContainer = document.getElementById('paginacaoContainer');
+            if (totalItems > itemsPerPage && itemsPerPage !== 99999) {
+                pagContainer.classList.remove('hidden');
+                document.getElementById('infoPagina').innerText = `Página ${currentPage} de ${totalPages}`;
+                document.getElementById('btnPrev').disabled = currentPage === 1;
+                document.getElementById('btnNext').disabled = currentPage === totalPages;
+            } else {
+                pagContainer.classList.add('hidden');
+            }
+        }
+
+        function renderizarTimeline(dadosRecortados) {
             const container = document.getElementById('timelineContainer');
             if (!container) return;
             container.innerHTML = '';
 
-            if (dados.length === 0) {
+            if (dadosRecortados.length === 0) {
                 container.innerHTML = `<p class="text-stone-400 italic text-center col-span-full py-12">Nenhuma oportunidade disponível para os critérios filtrados.</p>`;
                 return;
             }
 
-            dados.forEach(item => {
+            dadosRecortados.forEach(item => {
                 const isMacro = (item.tipo === 'setor');
                 
                 const textoOriginal = item.descricao ? item.descricao : "";
@@ -608,7 +679,8 @@
             const fBusca = document.getElementById('campoBusca');
             const termoBusca = fBusca ? fBusca.value.toLowerCase().trim() : "";
 
-            const dadosFiltrados = dadosOportunidades.filter(item => {
+            // FILTRA OS DADOS E SALVA NA VARIÁVEL GLOBAL PARA A PAGINAÇÃO
+            pautasFiltradasAtuais = dadosOportunidades.filter(item => {
                 let bateTipo = true;
                 if (tiposSelecionados.length === 1) {
                     bateTipo = item.tipo === tiposSelecionados[0] || (!item.tipo && tiposSelecionados[0] === 'marca'); 
@@ -643,12 +715,12 @@
                 return bateTipo && bateAgencia && bateCliente && bateServico && bateTempo && bateTextoBusca;
             });
 
-            dadosFiltrados.sort((a, b) => calcularDiferencaDias(a.data) - calcularDiferencaDias(b.data));
+            // ORDENA DO MAIS RECENTE PARA O MAIS ANTIGO
+            pautasFiltradasAtuais.sort((a, b) => calcularDiferencaDias(a.data) - calcularDiferencaDias(b.data));
 
-            // ATUALIZADOR DO CONTADOR:
-            document.getElementById('contadorPautas').innerText = dadosFiltrados.length;
-
-            renderizarTimeline(dadosFiltrados);
+            // RESETAR PARA A PÁGINA 1 SEMPRE QUE UM NOVO FILTRO FOR APLICADO
+            currentPage = 1;
+            renderizarPaginaAtual();
         }
     </script>
 </body>
