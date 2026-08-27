@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Briefing de Inteligência - Grupo In Press</title>
+    <title>Radar Reputacional - Grupo In Press</title>
     <!-- Google Fonts: Lora (Serif) & Plus Jakarta Sans (Sans-serif) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,8 +28,8 @@
     </script>
 
     <style>
-        .font-editorial { font-family: 'Fraunces', Georgia, serif; }
-        .font-sans-custom { font-family: 'Montserrat', sans-serif; }
+        .font-editorial { font-family: 'Fraunces', 'Lora', Georgia, serif; }
+        .font-sans-custom { font-family: 'Plus Jakarta Sans', 'Montserrat', sans-serif; }
     </style>
 </head>
 <body class="bg-stone-50 text-inpress-dark font-sans-custom min-h-screen flex flex-col justify-between">
@@ -62,9 +62,9 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <div>
         <!-- Header Editorial Corporativo -->
-        <header class="relative py-8 px-8 bg-cover bg-center z-30" style="background-image: linear-gradient(rgba(17, 17, 17, 0.8), rgba(28, 25, 23, 0.95)), url('http://googleusercontent.com/image_collection/image_retrieval/1646351935261000525_0');">
+        <header class="relative py-8 px-8 bg-cover bg-center z-30" style="background-image: linear-gradient(rgba(17, 17, 17, 0.85), rgba(28, 25, 23, 0.98)), url('http://googleusercontent.com/image_collection/image_retrieval/1646351935261000525_0');">
             <div class="absolute inset-0 overflow-hidden pointer-events-none">
-                <svg class="absolute -right-12 -top-12 h-56 w-56 text-stone-100/10 pointer-events-none hidden md:block" viewBox="0 0 100 100">
+                <svg class="absolute -right-12 -top-12 h-56 w-56 text-stone-100/5 pointer-events-none hidden md:block" viewBox="0 0 100 100">
                     <circle cx="100" cy="0" r="15" fill="none" stroke="currentColor" stroke-width="0.4"/>
                     <circle cx="100" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="0.4"/>
                     <circle cx="100" cy="0" r="45" fill="none" stroke="currentColor" stroke-width="0.4"/>
@@ -75,36 +75,41 @@
                 </svg>
             </div>
 
-            <div class="max-w-6xl mx-auto flex flex-col items-center relative z-10">
-                <div class="w-full flex justify-start items-center mb-6">
-                    <img src="logo.png" alt="Grupo In Press" class="h-10 md:h-12 object-contain brightness-0 invert" onerror="this.style.display='none'; document.getElementById('fallbackTitle').classList.remove('hidden')">
-                    <span id="fallbackTitle" class="hidden text-base font-bold text-white tracking-widest uppercase font-sans-custom">Grupo <span class="text-inpress-red">In</span> Press</span>
+            <div class="max-w-6xl mx-auto flex flex-col relative z-10">
+                <!-- Topo: Logo In Press + ICARO -->
+                <div class="w-full flex justify-start items-center mb-12 gap-4">
+                    <img src="logo.png" alt="Grupo In Press" class="h-8 md:h-10 object-contain brightness-0 invert" onerror="this.style.display='none'; document.getElementById('fallbackTitle').classList.remove('hidden')">
+                    <span id="fallbackTitle" class="hidden text-sm md:text-base font-bold text-white tracking-widest uppercase font-sans-custom">Grupo <span class="text-inpress-red">In</span> Press</span>
+                    
+                    <div class="h-6 w-px bg-stone-600"></div>
+                    
+                    <span class="text-lg md:text-xl font-bold font-editorial text-stone-300 tracking-widest uppercase">I.C.A.R.O.</span>
                 </div>
                 
-                <div class="flex flex-col items-center text-center max-w-3xl w-full pb-4">
-                    <div class="pt-2">
-                        <h2 class="text-5xl md:text-7xl font-extrabold font-editorial text-white tracking-widest leading-none mb-4">
-                            I.C.A.R.O.
-                        </h2>
-                        <p class="text-[10px] md:text-xs text-stone-300 font-bold tracking-widest uppercase leading-tight border-t border-white/20 pt-4 pb-2 w-full">
-                            Inteligência em Comunicação, Análise, Riscos e Oportunidades
-                        </p>
-                        
-                        <!-- Aviso de Alucinação IA -->
-                        <div class="mt-2 inline-flex items-center gap-2 bg-inpress-red/10 border border-inpress-red/30 text-stone-300 px-4 py-2 rounded-lg backdrop-blur-sm max-w-2xl text-left">
-                            <svg class="h-5 w-5 text-inpress-red flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                            </svg>
-                            <span class="text-[9px] md:text-[10px] font-medium tracking-wide leading-snug">
-                                O Sistema I.C.A.R.O. utiliza o Gemini para automação e pode conter alucinações. Lembre-se de conferir os dados antes de usá-los e alerte o time de planejamento.
-                            </span>
-                        </div>
+                <!-- Centro: Título e Linha Fina -->
+                <div class="flex flex-col text-left md:text-center items-start md:items-center max-w-4xl w-full mx-auto pb-6">
+                    <h1 class="text-4xl md:text-6xl font-extrabold font-editorial text-white tracking-wide leading-tight mb-6">
+                        Radar Reputacional &<br> <span class="text-inpress-red">Inteligência Criativa</span>
+                    </h1>
+                    
+                    <p class="text-sm md:text-base text-stone-300 font-sans-custom tracking-wide leading-relaxed max-w-3xl mb-6">
+                        O Í.C.A.R.O. monitora assuntos e temas relevantes para os clientes do Grupo In Press, e apoia nossos times com recomendações táticas, criativas ou comerciais.
+                    </p>
+                    
+                    <!-- Aviso de Alucinação IA -->
+                    <div class="inline-flex items-start md:items-center gap-3 bg-inpress-red/10 border border-inpress-red/30 text-stone-300 px-4 py-3 rounded-lg backdrop-blur-sm max-w-2xl text-left">
+                        <svg class="h-5 w-5 text-inpress-red flex-shrink-0 mt-0.5 md:mt-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                        </svg>
+                        <span class="text-[10px] md:text-xs font-medium tracking-wide leading-snug">
+                            O Sistema utiliza IA para automação e pode conter alucinações. Lembre-se de conferir os dados antes de usá-los e alerte o time de planejamento.
+                        </span>
                     </div>
                 </div>
             </div>
         </header>
 
-        <!-- NOVO: Barra de Filtros FIXA NO TOPO (Sticky) -->
+        <!-- Barra de Filtros FIXA NO TOPO (Sticky) -->
         <div class="sticky top-0 z-[100] w-full bg-[#292929] border-b border-stone-800 shadow-xl py-4 px-4 transition-all">
             <div class="max-w-6xl mx-auto flex flex-wrap gap-3 justify-center items-center">
                 
@@ -179,9 +184,16 @@
             </div>
         </div>
 
-        <!-- Sub-Header Editorial (Filtros de Data Interativos) -->
+        <!-- Sub-Header Editorial (Contador e Filtros de Data) -->
         <div class="max-w-6xl mx-auto px-4 mt-8">
-            <div class="flex justify-end border-b border-stone-300 pb-2">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-stone-300 pb-3 gap-4 sm:gap-0">
+                
+                <!-- Contador de Pautas Exibidas -->
+                <div class="text-xs font-bold text-inpress-chumbo tracking-wider uppercase font-sans-custom bg-stone-200 px-3 py-1.5 rounded-md">
+                    Exibir: <span id="contadorPautas" class="text-inpress-red text-sm ml-1">0</span>
+                </div>
+
+                <!-- Filtros de Tempo -->
                 <div class="flex flex-wrap items-center gap-6 text-[10px] font-bold uppercase tracking-wider font-sans-custom select-none" id="filtrosTempo">
                     <button onclick="setFiltroTempo('hoje')" id="btn-hoje" class="flex items-center gap-1.5 transition-all text-stone-400 hover:text-inpress-dark">
                         <div class="w-2.5 h-2.5 rounded-full bg-inpress-red"></div> Hoje
@@ -298,6 +310,7 @@
                     if (container) {
                         container.innerHTML = `<p class="text-red-500 italic text-center col-span-full py-12">Nenhuma oportunidade registrada na curadoria.</p>`;
                     }
+                    document.getElementById('contadorPautas').innerText = "0";
                 });
         });
 
@@ -631,6 +644,9 @@
             });
 
             dadosFiltrados.sort((a, b) => calcularDiferencaDias(a.data) - calcularDiferencaDias(b.data));
+
+            // ATUALIZADOR DO CONTADOR:
+            document.getElementById('contadorPautas').innerText = dadosFiltrados.length;
 
             renderizarTimeline(dadosFiltrados);
         }
