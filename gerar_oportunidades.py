@@ -1,126 +1,164 @@
 import os
 import json
-import re
+import difflib
+from datetime import datetime
 from google import genai
 from google.genai import types
 
 def carregar_playbook():
-    try:
-        with open('playbook.md', 'r', encoding='utf-8') as f:
+    path = "playbook.md"
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as f:
             return f.read()
-    except FileNotFoundError:
-        return "Nenhum playbook personalizado encontrado. Siga as diretrizes de Diretor Sênior de PR."
+    return "Nenhum playbook personalizado encontrado. Siga as diretrizes de Diretor Sênior de PR."
 
-def gerar_oportunidades():
+def carregar_oportunidades_existentes():
+    path = "oportunidades.json"
+    if os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return []
+    return []
+
+def sao_similares(texto1, texto2, limite=0.70):
+    """
+    Motor anti-repetição: Calcula a similaridade entre duas strings.
+    Se forem mais de 70% iguais, consideramos como a mesma notícia.
+    """
+    return difflib.SequenceMatcher(None, texto1, texto2).ratio() > limite
+
+def executar_varredura():
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         raise ValueError("Chave da API não encontrada nas variáveis de ambiente.")
     
     client = genai.Client(api_key=api_key)
-    
-    print("🔍 Diagnosticando modelos disponíveis para a sua chave de API...")
-    try:
-        modelos_disponiveis = [m.name for m in client.models.list() if "gemini" in m.name]
-        print(f"Modelos encontrados: {modelos_disponiveis}")
-    except Exception as e:
-        print(f"Aviso: Não foi possível listar os modelos. Erro: {e}")
-    
-    playbook_texto = carregar_playbook()
+    playbook_context = carregar_playbook()
+    hoje = datetime.now()
+    data_hoje_str = hoje.strftime("%d/%m/%Y")
+
+    print(f"🚀 Iniciando motor Í.C.A.R.O. Master (Data: {data_hoje_str})...")
 
     prompt = f"""
-Atue como Í.C.A.R.O., o motor de inteligência e curadoria editorial corporativa. Execute a varredura comercial diária e cruzamento de dados de hoje, identificando riscos e oportunidades de relações públicas e comunicação corporativa. Foque nas 5 a 10 pautas mais quentes do dia no total.
+    Atue como Í.C.A.R.O., o motor de inteligência e curadoria editorial corporativa. Execute a varredura comercial diária identificando riscos e oportunidades de relações públicas. Foque nas 5 a 10 pautas mais quentes do dia.
+    Data da varredura: {data_hoje_str}
 
-⚠️ PRIORIDADE DE BUSCA: Dê prioridade máxima na varredura para identificar notícias reais sobre **iFood** e **Stone**. 
-**REGRA DE VERACIDADE ESTRITA:** Você SÓ deve incluir pautas para essas marcas se houver fatos factuais e comprovados na mídia nas últimas 48h. Se não houver nenhum fato real e noticioso sobre elas, **NÃO INVENTE, NÃO ALUCINE e NÃO AS INCLUA no JSON final**. Prefira entregar um JSON sem iFood e Stone a entregar um fato fictício. Preencha a cota de 5 a 10 pautas com outras marcas da lista que tenham notícias reais.
+    ⚠️ PRIORIDADE DE BUSCA: Dê prioridade máxima na varredura para identificar notícias reais sobre **iFood** e **Stone**. 
+    **REGRA DE VERACIDADE ESTRITA:** Você SÓ deve incluir pautas para essas marcas se houver fatos factuais e comprovados na mídia nas últimas 48h. Se não houver fato noticioso sobre elas, NÃO INVENTE. Preencha a cota de pautas com outras marcas da lista que tenham notícias reais.
 
-Você deve executar OBRIGATORIAMENTE duas frentes de busca:
+    Você deve executar OBRIGATORIAMENTE duas frentes de busca:
 
-**FRENTE 1: Radar de Marcas**
-Busque fatos relevantes ocorridos nas últimas 24/48 horas estritamente para a seguinte lista de clientes (utilize a categoria para preencher o campo 'agencia' no JSON):
+    **FRENTE 1: Radar de Marcas**
+    Busque fatos relevantes ocorridos nas últimas 24/48 horas estritamente para a seguinte lista de clientes:
+    - In Press: Canais Globo, Editora Globo, IDB Maraey, Maratona do Rio, Rio Open, Sail GP, ICT Costa Rica, Globo Internacional, Globo Portugal, Riot Games, Seara, happn, Fundação Mapfre, MAPFRE, Open Society, Fundação Ford Foundation, Sony Music, Taboaço, Reyou, Engie, Yara, RZK Energia, Siemens Energy, Abihpec, DSM, Bunge, Matrix, Agrolend, Ambev, Electrolux, Emma Colchões, Gallo, General Mills, Randstad, Unilever, Rexona, Americanas, Betano, Caixa Consórcio, Caixa Seguradora, Chevron, CNP, FenaSaúde, Firjan, IBS Energy, Karoon, Naturgy, Rio Mais, Prio, Seadrill, TAESA, Vibra, White Martins, Abecs, Atos, AWS, Black Rock, Banco Mercantil, BBCE, Cisco, CLARO, Equinix, FICO, HPE, Intelbras, Mercado Bitcoin, Iron Mountain, Madrona Advogados, Sicredi, Solis Investimentos, JOVI, PhizChat, Wiz, Cidade Center Norte, Mercado Livre, Mercado Pago, Natura, Avon, São Leopoldo Mandic, McDonalds, Compra Agora, Senac SP, SAEA, Insper, iFood, Klabin, Abasp, Penske, Bla Bla Car, IBJR, Corteva, ArcelorMittal, Localiza, Belgo Arames, Direcional, Farmax, Norsk Hydro, Grupo Sada, Vale, Veolia, GSK, Afya, Servier, Roche farma, Roche Dia, MV, Medsenior, Johnson & Johnson, Henkel, TIC Trens, Motiva (CCR), GOL/Smiles, IBGC, eureciclo, Mattel, Royal Canin, PepsiCo, Herbalife.
+    - FleishmanHillard: Abrintel, Harsco, ICC, LANXESS, Oz, Bayer, HCor, Albert Einstein, Philips do Brasil, Philips Medical, Samsung, Stone, Kellanova, Google, Mastercard, Shein, State Grid, Hitachi, McKinsey, Abrabe, General Motors, Sicredi Brasília, ABDE, Belo Sun, Beiersdorf, Cury Construtora, Newell, Onçafari, Votorantim, Veracel, Softys, Guerbet.
 
-**Clientes In Press Porter Novelli:**
-Canais Globo, Editora Globo, IDB Maraey, Maratona do Rio, Rio Open, Sail GP, ICT Costa Rica, Globo Internacional, Globo Portugal, Riot Games, Seara, happn, Fundação Mapfre, MAPFRE, Open Society, Fundação Ford Foundation, Sony Music, Taboaço, Reyou, Engie, Yara, RZK Energia, Siemens Energy, Abihpec, DSM, Bunge, Matrix, Agrolend, Ambev, Electrolux, Emma Colchões, Gallo, General Mills, Randstad, Unilever, Rexona, Americanas, Betano, Caixa Consórcio, Caixa Seguradora, Chevron, CNP, FenaSaúde, Firjan, IBS Energy, Karoon, Naturgy, Rio Mais, Prio, Seadrill, TAESA, Vibra, White Martins, Abecs, Atos, AWS, Black Rock, Banco Mercantil, BBCE, Cisco, CLARO, Equinix, FICO, HPE, Intelbras, Mercado Bitcoin, Iron Mountain, Madrona Advogados, Sicredi, Solis Investimentos, JOVI, PhizChat, Wiz, Cidade Center Norte, Mercado Livre, Mercado Pago, Natura, Avon, São Leopoldo Mandic, McDonalds, Compra Agora, Senac SP, SAEA, Insper, iFood, Klabin, Abasp, Penske, Bla Bla Car, IBJR, Corteva, ArcelorMittal, Localiza, Belgo Arames, Direcional, Farmax, Norsk Hydro, Grupo Sada, Vale, Veolia, GSK, Afya, Servier, Roche farma, Roche Dia, MV, Medsenior, Johnson & Johnson, Henkel, TIC Trens, Motiva (CCR), GOL/Smiles, IBGC, eureciclo, Mattel, Royal Canin, PepsiCo, Herbalife.
+    **FRENTE 2: Radar Macroeconômico (Setorial)**
+    Identifique movimentações que gerem impacto crítico para os setores:
+    - Tecnologia, IA e Eletroeletrônicos
+    - E-commerce, Varejo e Logística
+    - Energia, Mineração e Siderurgia (ESG)
+    - Finanças e Fintechs
+    - Aviação e Turismo
 
-**Clientes FleishmanHillard:**
-Abrintel, Harsco, ICC, LANXESS, Oz, Bayer, HCor, Albert Einstein, Philips do Brasil, Philips Medical, Samsung, Stone, Kellanova, Google, Mastercard, Shein, State Grid, Hitachi, McKinsey, Abrabe, General Motors, Sicredi Brasília, ABDE, Belo Sun, Beiersdorf, Cury Construtora, Newell, Onçafari, Votorantim, Veracel, Softys, Guerbet.
+    **DIRETRIZES DA TÁTICA SUGERIDA:**
+    Atue como um Diretor Sênior de Comunicação Corporativa. Use EXCLUSIVAMENTE as estratégias do playbook. 
+    FUJA DO ÓBVIO: NUNCA sugira "fazer press release" ou "postar nas redes". Comece a recomendação com um verbo no gerúndio e justifique o impacto no negócio.
 
-**FRENTE 2: Radar Macroeconômico (Setorial)**
-Identifique movimentações governamentais, regulatórias ou de mercado que gerem impacto crítico para os setores:
-- Tecnologia, IA e Eletroeletrônicos
-- E-commerce, Varejo e Logística
-- Energia, Mineração e Siderurgia (ESG)
-- Finanças e Fintechs
-- Aviação e Turismo
+    --- INÍCIO DO PLAYBOOK ---
+    {playbook_context}
+    --- FIM DO PLAYBOOK ---
 
-**DIRETRIZES PARA A "TÁTICA SUGERIDA" (NÍVEL DIRETOR DE PR):**
-Atue como um Diretor Sênior de Comunicação Corporativa. Suas recomendações não podem ser óbvias ou operacionais (NUNCA sugira "fazer press release" ou "postar nas redes").
-Sua tática sempre deve começar com um verbo no gerúndio e justificar o impacto no negócio.
-Use EXCLUSIVAMENTE as estratégias e gatilhos listados no playbook da agência abaixo para formular as recomendações:
+    FORMATO DE SAÍDA OBRIGATÓRIO (JSON Puro):
+    Retorne APENAS uma lista JSON válida. Não use markdown fora do bloco JSON.
+    [
+      {{
+        "titulo": "Título conciso da pauta (ou do tema macro)",
+        "resumo_fato": "Resumo executivo do fato ou tendência identificada.",
+        "recomendacao": "Sua tática estratégica baseada no playbook (verbo no gerúndio).",
+        "tipo": "regulacao" | "tecnologia" | "operacao" | "concorrencia" | "esg" | "crise",
+        "data": "{data_hoje_str}",
+        "setor": "Setor do cliente ou macroeconomia",
+        "marcas": ["Marcas envolvidas (Deixe vazio se for apenas setorial)"],
+        "produtos": ["Entregáveis de PR baseados no playbook"],
+        "link_noticia": "URL real da fonte",
+        "imagem": ""
+      }}
+    ]
+    """
 
---- INÍCIO DO PLAYBOOK ---
-{playbook_texto}
---- FIM DO PLAYBOOK ---
-
-**DIRETRIZES DE SAÍDA (JSON STRICT):**
-1. Para as notícias da Frente 1, adicione o campo "tipo": "marca". O campo "titulo" deve ser vazio.
-2. Para as notícias da Frente 2, adicione o campo "tipo": "setor" e preencha o campo "titulo" com o tema macro.
-3. Entregue a resposta EXCLUSIVAMENTE em formato de array JSON válido, sem markdown, sem textos antes ou depois.
-4. Estrutura do objeto: tipo, titulo (se macro), agencia, setor, marcas (array), descricao (Fato + Tática baseada no playbook), produtos (array com 1 a 3 produtos de PR), link_noticia, data (formato DD/MM/AAAA usando a data de hoje) e imagem (URL - busque fotos realistas de bancos de imagens gratuitos se não tiver a fonte).
-"""
-
-    print("Enviando requisição para a API do Gemini usando o modelo 3.5 Flash...")
-    
+    print("Enviando requisição (Gemini Native Search ativado)...")
     response = client.models.generate_content(
-        model='gemini-3.5-flash',
+        model="gemini-3.5-flash",
         contents=prompt,
         config=types.GenerateContentConfig(
-            temperature=0.4,
-            tools=[{"google_search": {}}]
+            tools=[types.Tool(google_search=types.GoogleSearch())],
+            temperature=0.4 
         )
     )
+
+    texto_resposta = response.text.strip()
     
-    texto_resposta = response.text
-    
-    if "```json" in texto_resposta:
-        texto_resposta = texto_resposta.split("```json")[1].split("```")[0].strip()
-    elif "```" in texto_resposta:
-        texto_resposta = texto_resposta.split("```")[1].split("```")[0].strip()
-        
+    # Tratamento de formatação Markdown do Gemini
+    if texto_resposta.startswith("```json"):
+        texto_resposta = texto_resposta[7:]
+    elif texto_resposta.startswith("```"):
+        texto_resposta = texto_resposta[3:]
+
+    if texto_resposta.endswith("```"):
+        texto_resposta = texto_resposta[:-3]
+
     texto_resposta = texto_resposta.strip()
 
     try:
-        # 1. Transforma o resultado de hoje em uma lista Python
-        novas_oportunidades = json.loads(texto_resposta)
-        
-        # 2. Prepara uma lista vazia para o histórico
-        historico = []
-        
-        # 3. Se o arquivo já existir, lê o que tem lá dentro e guarda na lista de histórico
-        if os.path.exists('oportunidades.json'):
-            with open('oportunidades.json', 'r', encoding='utf-8') as f:
-                conteudo = f.read()
-                if conteudo.strip():
-                    try:
-                        historico = json.loads(conteudo)
-                    except json.JSONDecodeError:
-                        print("Aviso: O arquivo antigo estava vazio ou inválido. Iniciando um novo.")
-        
-        # 4. Junta as duas listas (a velha e a nova)
-        if isinstance(historico, list) and isinstance(novas_oportunidades, list):
-            historico.extend(novas_oportunidades)
-        else:
-            historico = novas_oportunidades
-            
-        # 5. Salva a lista gigante e atualizada de volta no arquivo json, usando formatação bonita
-        with open('oportunidades.json', 'w', encoding='utf-8') as f:
-            json.dump(historico, f, ensure_ascii=False, indent=4)
-            
-        print("Sucesso! As novas pautas foram adicionadas ao histórico do oportunidades.json.")
-        
-    except json.JSONDecodeError:
-        print("Erro: A resposta da API não foi um JSON válido. Veja a resposta crua:")
+        novas_pautas = json.loads(texto_resposta)
+    except json.JSONDecodeError as e:
+        print("Erro ao decodificar JSON retornado pelo Gemini:", e)
+        print("Conteúdo recebido:")
         print(texto_resposta)
-        raise
+        return
+
+    pautas_existentes = carregar_oportunidades_existentes()
+    
+    # ---------------------------------------------------------
+    # MOTOR DE BLOQUEIO POR SIMILARIDADE COM JANELA DE 75 DIAS
+    # ---------------------------------------------------------
+    textos_recentes = []
+    for p in pautas_existentes:
+        texto_limpo = f"{p.get('titulo', '')} {p.get('resumo_fato', '')}".strip().lower()
+        data_str = p.get("data", "")
+        
+        try:
+            data_pauta = datetime.strptime(data_str, "%d/%m/%Y")
+            diff_dias = (hoje - data_pauta).days
+            if diff_dias <= 75:
+                textos_recentes.append(texto_limpo)
+        except ValueError:
+            textos_recentes.append(texto_limpo)
+
+    pautas_adicionadas = 0
+    for pauta in novas_pautas:
+        texto_novo = f"{pauta.get('titulo', '')} {pauta.get('resumo_fato', '')}".strip().lower()
+        
+        eh_duplicada = False
+        for txt_ext in textos_recentes:
+            if sao_similares(texto_novo, txt_ext, limite=0.70):
+                eh_duplicada = True
+                print(f"Bloqueado por similaridade (>70%): {pauta.get('titulo')}")
+                break
+                
+        if not eh_duplicada:
+            pautas_existentes.insert(0, pauta) # Adiciona no topo da lista
+            textos_recentes.append(texto_novo)
+            pautas_adicionadas += 1
+
+    # Salvando 100% do histórico (sem limite de corte)
+    with open("oportunidades.json", "w", encoding="utf-8") as f:
+        json.dump(pautas_existentes, f, ensure_ascii=False, indent=2)
+
+    print(f"Sucesso! {pautas_adicionadas} novas pautas integradas ao histórico completo do oportunidades.json.")
 
 if __name__ == "__main__":
-    gerar_oportunidades()
+    executar_varredura()
