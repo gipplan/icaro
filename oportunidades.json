@@ -1,5 +1,118 @@
 [
   {
+    "titulo": "Vale esclarece boatos e reforça segurança preventiva na barragem B3/B4 em Macacos (MG)",
+    "resumo_fato": "A Vale emitiu comunicado esclarecendo que a barragem B3/B4 foi totalmente desativada e removida em 2024. As obras atuais no local são de natureza preventiva para drenagem e estabilização de encostas antes do período chuvoso, desmentindo boatos de novos riscos.",
+    "recomendacao": "Desenvolvendo uma estratégia de Dark Site Preparations com Q&As dinâmicos e monitoramento em tempo real para conter boatos sobre segurança de barragens, garantindo que as comunidades locais e investidores tenham acesso imediato a fatos técnicos auditados, mitigando riscos de pânico.",
+    "tipo": "crise",
+    "data": "03/09/2026",
+    "setor": "Energia, Mineração e Siderurgia (ESG)",
+    "marcas": [
+      "Vale"
+    ],
+    "produtos": [
+      "Dark Site Preparations"
+    ],
+    "link_noticia": "https://brasilmineral.com.br/minas-gerais/vale-esclarece-sobre-barragem-b3-b4-em-macacos",
+    "imagem": ""
+  },
+  {
+    "titulo": "Parceria entre TSE e Google amplia proteção contra uso indevido de IA nas Eleições 2026",
+    "resumo_fato": "O Tribunal Superior Eleitoral (TSE) e o Google lançaram uma campanha para incentivar candidatos das Eleições de 2026 a utilizarem a ferramenta Likeness ID do YouTube, visando identificar e conter conteúdos sintéticos e deepfakes não autorizados.",
+    "recomendacao": "Veiculando Op-Eds Híbridos do Diretor de Relações Governamentais do Google no Brasil para debater a responsabilidade das big techs na integridade eleitoral e o uso ético da IA, mitigando pressões regulatórias e fortalecendo a reputação institucional da empresa.",
+    "tipo": "regulacao",
+    "data": "03/09/2026",
+    "setor": "Tecnologia, IA e Eletroeletrônicos",
+    "marcas": [
+      "Google"
+    ],
+    "produtos": [
+      "Op-Eds Híbridos"
+    ],
+    "link_noticia": "https://www.tre-sp.jus.br/comunicacao/noticias/2026/Setembro/parceria-entre-tse-e-google-amplia-protecao-contra-uso-indevido-de-ia-nas-eleicoes-2026",
+    "imagem": "https://www.tre-sp.jus.br/imagens/fotos/lancamento-da-parceria-do-tse-com-google-brasil-para-incentivo-de-tecnologia-de-deteccao-por-semelhanca-no-youtube/@@images/image-0-8b8f53031b74d324a9203043b0b610d4.jpeg"
+  },
+  {
+    "titulo": "Shein estreia na Bolsa de Hong Kong com IPO de US$ 1,7 bilhão em meio a desafios de tarifas",
+    "resumo_fato": "A gigante de fast-fashion Shein estreou na Bolsa de Hong Kong com captação de US$ 1,7 bilhão, mas suas ações fecharam o primeiro dia com leve queda de 0,1%, refletindo o impacto de novas tarifas globais e custos crescentes de logística.",
+    "recomendacao": "Aplicando uma Shadow Banning Strategy com foco em SEO positivo para destacar as iniciativas de sustentabilidade, produção local e conformidade fiscal da marca no Brasil, empurrando as análises negativas do IPO para páginas secundárias de busca e protegendo a reputação da operação nacional.",
+    "tipo": "concorrencia",
+    "data": "03/09/2026",
+    "setor": "E-commerce, Varejo e Logística",
+    "marcas": [
+      "Shein"
+    ],
+    "produtos": [
+      "Shadow Banning Strategy"
+    ],
+    "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/09/shein-arrecada-us-17-bilhao-em-ipo-e-fecha-estreia-na-bolsa-com-queda-de-01.shtml",
+    "imagem": ""
+  },
+  {
+    "titulo": "André Fehlauer assume oficialmente como novo CEO do Grupo GOL",
+    "resumo_fato": "André Fehlauer iniciou sua gestão como CEO do Grupo GOL após oito anos à frente da Smiles. O executivo assume com o compromisso claro de fortalecer a presença regional e internacional da companhia aérea na América Latina.",
+    "recomendacao": "Lançando um projeto de Brand Publishing focado em aviação regional e turismo latino-americano para dar voz à nova liderança e construir autoridade orgânica em torno dos planos de expansão da GOL, reduzindo a dependência de mídia paga.",
+    "tipo": "operacao",
+    "data": "03/09/2026",
+    "setor": "Aviação e Turismo",
+    "marcas": [
+      "GOL/Smiles"
+    ],
+    "produtos": [
+      "Brand Publishing"
+    ],
+    "link_noticia": "https://brasilturis.com.br/andre-fehlauer-inicia-gestao-como-ceo-do-grupo-gol/",
+    "imagem": "https://brasilturis.com.br/wp-content/smush-webp/2026/09/fundo-desfocado-72-696x522.png.webp"
+  },
+  {
+    "titulo": "Parceria histórica: Magalu passa a vender 27 mil produtos de estoque próprio no Mercado Livre",
+    "resumo_fato": "O Magazine Luiza fechou um acordo comercial para ofertar produtos de estoque próprio (1P), incluindo itens do KaBuM! e Época Cosméticos, no marketplace do Mercado Livre. A entrega será realizada pelo Magalog, gerando forte alta nas ações do Magalu.",
+    "recomendacao": "Veiculando Op-Eds Híbridos assinados pelos CEOs de ambas as empresas em veículos Tier 1 (como Valor Econômico e Exame) casados com impulsionamento no LinkedIn Pulse, para explicar a sinergia estratégica e o impacto de longo prazo no ecossistema de e-commerce brasileiro, atraindo novos investidores.",
+    "tipo": "concorrencia",
+    "data": "03/09/2026",
+    "setor": "E-commerce, Varejo e Logística",
+    "marcas": [
+      "Mercado Livre"
+    ],
+    "produtos": [
+      "Op-Eds Híbridos"
+    ],
+    "link_noticia": "https://www.seudinheiro.com/2026/empresas/magazine-luiza-mglu3-se-junta-ao-mercado-livre-meli34-para-recuperar-vendas-online-mas-fred-trajano-tem-outra-aposta-para-o-longo-prazo-baza/",
+    "imagem": "https://www.seudinheiro.com/uploads/2024/10/Magalu-715x402.jpg"
+  },
+  {
+    "titulo": "Stone leva soluções e dados inéditos do Índice Abrasel-Stone para o Salão Abrasel 2026",
+    "resumo_fato": "A Stone anunciou sua participação como principal apoiadora no Salão Abrasel 2026, onde apresentará dados inéditos de consumo de agosto e soluções financeiras integradas, reforçando seu rebranding focado em se consolidar como o banco dos empreendedores.",
+    "recomendacao": "Estruturando um Fórum Proprietário ou painel de liderança no evento para debater a saúde financeira do setor de alimentação fora do lar, posicionando o C-level da Stone como autoridade máxima em dados econômicos de varejo e gerando leads qualificados no segmento B2B.",
+    "tipo": "operacao",
+    "data": "03/09/2026",
+    "setor": "Finanças e Fintechs",
+    "marcas": [
+      "Stone"
+    ],
+    "produtos": [
+      "Fórum Proprietário"
+    ],
+    "link_noticia": "https://radardigitalbrasilia.com.br/noticias-corporativas/stone-leva-solucoes-e-dados-ineditos-para-o-salao-abrasel/",
+    "imagem": "https://radardigitalbrasilia.com.br/wp-content/uploads/2026/09/26eca1cc-3a10-48c4-8a14-1a08be03f7ef.jpeg"
+  },
+  {
+    "titulo": "Greve nacional de entregadores pressiona iFood e Mercado Livre por reajustes",
+    "resumo_fato": "Entregadores de aplicativos iniciaram o movimento 'Breque Geral dos Apps' em São Paulo, Goiânia e Anápolis, cobrando taxa mínima de R$ 10 por corrida, pagamento por quilômetro rodado e o fim de modelos de entrega pré-definidos como o '+Entregas'.",
+    "recomendacao": "Implementando uma estratégia de Dark Site Preparations com Q&As dinâmicos e canais de atendimento dedicados para mitigar o impacto reputacional da greve e esclarecer as políticas de remuneração de forma transparente, evitando a propagação de desinformação e blindando a imagem institucional das marcas.",
+    "tipo": "crise",
+    "data": "03/09/2026",
+    "setor": "E-commerce, Varejo e Logística",
+    "marcas": [
+      "iFood",
+      "Mercado Livre"
+    ],
+    "produtos": [
+      "Dark Site Preparations"
+    ],
+    "link_noticia": "https://brasildotrecho.com.br/entregadores-de-ifood-e-mercado-livre-pressionam-por-reajustes-e-discutem-novas-paralisacoes/",
+    "imagem": "https://brasildotrecho.com.br/wp-content/uploads/2026/09/ENTREGADORES-820x470.jpg"
+  },
+  {
     "titulo": "Vale realiza pagamento bilionário de dividendos e JCP aos acionistas",
     "resumo_fato": "No dia 02/09/2026, a Vale realiza o pagamento de R$ 8,64 bilhões em proventos (dividendos e Juros sobre Capital Próprio), equivalente a R$ 2,03 por ação, para investidores com posição acionária em 11 de agosto de 2026.",
     "recomendacao": "Desenvolvendo um Op-Ed Híbrido assinado pelo CFO da Vale em veículos Tier 1 de finanças, conectando o pagamento bilionário de dividendos à disciplina de alocação de capital e ao progresso das metas ESG da companhia, seguido de impulsionamento no LinkedIn Pulse para reforçar a confiança de investidores institucionais.",
