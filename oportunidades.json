@@ -1,5 +1,100 @@
 [
   {
+    "titulo": "Descompasso na percepção econômica: 52% dos eleitores avaliam economia como ruim",
+    "resumo_fato": "Uma pesquisa de opinião aponta que 52% dos eleitores brasileiros classificam a economia do país como ruim ou péssima. Esse dado contrasta com indicadores oficiais positivos (como o PIB e a leve melhora na projeção de inflação do Boletim Focus de hoje para 5,00%), criando um desafio de narrativa para marcas de varejo e fintechs que precisam lidar com o mau humor do consumidor.",
+    "recomendacao": "Implementando uma Shadow Banning Strategy focada em SEO positivo para empurrar discussões puramente políticas e pessimistas para as páginas secundárias de busca, enquanto se promove conteúdos proprietários baseados em dados reais de consumo e empregabilidade para neutralizar o viés negativo.",
+    "tipo": "esg",
+    "data": "08/09/2026",
+    "setor": "Finanças e Fintechs",
+    "marcas": [],
+    "produtos": [
+      "Shadow Banning Strategy"
+    ],
+    "link_noticia": "https://www.tribunadonorte.com.br/economia/52-dos-eleitores-avaliam-economia-do-brasil-como-ruim-ou-pessima-aponta-pesquisa/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Mercado Livre acelera engajamento para a edição de 10 anos do MLXP",
+    "resumo_fato": "O Mercado Livre está intensificando as ações de comunicação para o Mercado Livre Experience 2026 (MLXP26), que ocorre em 24 e 25 de setembro em São Paulo. O evento de 10 anos focará fortemente em IA aplicada aos negócios, logística automatizada e social commerce, servindo como o principal motor de preparação dos vendedores para a Black Friday.",
+    "recomendacao": "Criando uma estratégia de Brand Publishing por meio de um portal de notícias proprietário focado em e-commerce e logística ('Mercado Insights'), reduzindo a dependência da mídia tradicional e gerando autoridade contínua sobre tendências de varejo digital.",
+    "tipo": "operacao",
+    "data": "08/09/2026",
+    "setor": "E-commerce, Varejo e Logística",
+    "marcas": [
+      "Mercado Livre",
+      "Mercado Pago"
+    ],
+    "produtos": [
+      "Brand Publishing"
+    ],
+    "link_noticia": "https://mercadolivreexperience.mercadolivre.com.br/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Google enfrenta denúncia de alucinação grave em IA sobre o Bolsa Família",
+    "resumo_fato": "Foi registrada uma denúncia formal na comunidade do Google apontando que o modelo de IA do Google validou e confirmou uma desinformação viral de que o aplicativo Bolsa Família seria o '3º mais baixado do Brasil'. A IA utilizou postagens informais de redes sociais sem cruzar dados reais da Play Store, gerando riscos de trust & safety em período eleitoral.",
+    "recomendacao": "Ativando Dark Site Preparations com landing pages invisíveis contendo Q&As detalhados sobre as políticas de moderação de IA, auditoria de dados e o compromisso do Google com a integridade informacional, preparando a marca para responder imediatamente caso o tema ganhe tração na imprensa tradicional.",
+    "tipo": "crise",
+    "data": "08/09/2026",
+    "setor": "Tecnologia, IA e Eletroeletrônicos",
+    "marcas": [
+      "Google"
+    ],
+    "produtos": [
+      "Dark Site Preparations"
+    ],
+    "link_noticia": "https://support.google.com/websearch/thread/294977465/modo-ia-google-confirma-informa%C3%A7%C3%B5es-distorcida-sobre-app-bolsa-familia",
+    "imagem": ""
+  },
+  {
+    "titulo": "Samsung SDS anuncia investimento bilionário em IA e Robótica com a KKR",
+    "resumo_fato": "A Samsung SDS anunciou um plano de investimento estratégico de 1,22 trilhão de wons em parceria com a gigante de private equity KKR. O aporte financeiro será direcionado para acelerar o desenvolvimento de soluções avançadas de Inteligência Artificial e robótica corporativa.",
+    "recomendacao": "Desenvolvendo um PR Stunt em Dark Social com vazamentos intencionais de protótipos e conceitos de robôs integrados com IA em comunidades fechadas de desenvolvedores no Discord e WhatsApp, gerando escassez e buzz orgânico antes do anúncio oficial para o mercado B2B brasileiro.",
+    "tipo": "tecnologia",
+    "data": "08/09/2026",
+    "setor": "Tecnologia, IA e Eletroeletrônicos",
+    "marcas": [
+      "Samsung"
+    ],
+    "produtos": [
+      "PR Stunt em Dark Social"
+    ],
+    "link_noticia": "https://gatenews.pt/a-samsung-sds-anuncia-a-8-de-setembro-um-plano-de-investimento-de-122-bilioes-de-wons-em-parceria-com-a-kkr-destinado-a-ia-e-a-robotica/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Shein busca aquisições globais após IPO em Hong Kong e queda nas ações",
+    "resumo_fato": "A Shein planeja utilizar seu caixa de US$ 15 bilhões (somado a US$ 1,74 bilhão captados no IPO) para uma fase agressiva de aquisições de marcas (como a Everlane por US$ 80 milhões). A estratégia visa retomar o crescimento de vendas, que desacelerou para 1,1% no 1T26, e mitigar o impacto do fim da isenção tributária ('de minimis') nos EUA, após suas ações estrearem em Hong Kong com queda de 20%.",
+    "recomendacao": "Estruturando um Fórum Proprietário ('Shein Retail Future Summit') voltado a debater a integração de marcas tradicionais à cadeia de suprimentos ultra-rápida e sustentável da plataforma, posicionando a Shein como parceira estratégica de digitalização e não apenas uma varejista de fast-fashion.",
+    "tipo": "concorrencia",
+    "data": "08/09/2026",
+    "setor": "E-commerce, Varejo e Logística",
+    "marcas": [
+      "Shein"
+    ],
+    "produtos": [
+      "Fóruns Proprietários"
+    ],
+    "link_noticia": "https://www.borsatalkhaleej.com/shein-seeks-fast-fashion-deals-to-spur-growth-after-ipo/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Vale reitera à B3 que não há decisão sobre IPO da Vale Base Metals",
+    "resumo_fato": "A Vale foi questionada pela B3 após notícias na imprensa internacional de que teria arquivado os planos de IPO de sua unidade de metais básicos (Vale Base Metals) devido a pressões políticas no Brasil. Em resposta oficial, a mineradora reiterou que não há nenhuma decisão ou estudo em andamento pela administração envolvendo uma potencial oferta pública de ações ou transação específica na estrutura de capital da unidade.",
+    "recomendacao": "Elaborando Op-Eds Híbridos assinados pelo C-level da Vale Base Metals em veículos Tier 1 (como Valor Econômico e Exame) combinados com impulsionamento estratégico no LinkedIn Pulse, visando esclarecer a visão de longo prazo da unidade de transição energética e blindar a percepção de governança corporativa diante de especulações políticas.",
+    "tipo": "regulacao",
+    "data": "08/09/2026",
+    "setor": "Energia, Mineração e Siderurgia (ESG)",
+    "marcas": [
+      "Vale"
+    ],
+    "produtos": [
+      "Op-Eds Híbridos"
+    ],
+    "link_noticia": "https://br.advfn.com/jornal/2026/09/vale-e-questionada-pela-b3-apos-noticia-sobre-fim-de-ipo-da-vale-base-metals",
+    "imagem": ""
+  },
+  {
     "titulo": "Mercado Livre Experience 2026 celebra 10 anos com foco em Inteligência Artificial e Social Commerce",
     "resumo_fato": "O Mercado Livre prepara a edição comemorativa de 10 anos do Mercado Livre Experience (MLXP26), que ocorrerá nos dias 24 e 25 de setembro no São Paulo Expo. O evento de e-commerce debaterá as principais tendências de automação logística, aplicações de Inteligência Artificial generativa para anúncios e o avanço do social commerce no ecossistema latino-americano.",
     "recomendacao": "Consolidando a liderança do Mercado Livre no e-commerce latino-americano através do MLXP26 como um fórum proprietário de altíssimo impacto, debatendo as dores logísticas e de IA diretamente com milhares de vendedores e parceiros estratégicos, eliminando a dependência de eventos de terceiros e gerando insights valiosos para o ecossistema Mercado Pago.",
