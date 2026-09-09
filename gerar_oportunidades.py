@@ -150,6 +150,13 @@ def executar_varredura():
                 break
                 
         if not eh_duplicada:
+            # --- TRAVA DE SEGURANÇA DE IMAGEM NO BACKEND ---
+            # Verifica se a IA trouxe um link válido. Se vier vazio ou quebrado, injeta o fallback.
+            imagem_ia = pauta.get('imagem', '').strip()
+            if not imagem_ia or not imagem_ia.startswith('http'):
+                # Imagem corporativa neutra padrão para cobrir os "buracos"
+                pauta['imagem'] = "[https://images.unsplash.com/photo-1614064641913-6b71f301683b?q=80&w=600&auto=format&fit=crop](https://images.unsplash.com/photo-1614064641913-6b71f301683b?q=80&w=600&auto=format&fit=crop)"
+            
             pautas_existentes.insert(0, pauta) # Adiciona no topo da lista
             textos_recentes.append(texto_novo)
             pautas_adicionadas += 1
