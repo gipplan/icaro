@@ -1,5 +1,90 @@
 [
-{
+  {
+    "titulo": "Vale nega à B3 planos de IPO para subsidiária de metais básicos após rumores",
+    "resumo_fato": "Em resposta a questionamentos da B3 e da CVM em 08/09/2026, a Vale negou que existam estudos ou decisões em andamento para realizar uma oferta pública inicial de ações (IPO) da Vale Base Metals (VBM), após rumores na imprensa internacional de que os planos teriam sido arquivados por pressões políticas no Brasil.",
+    "recomendacao": "Desenvolvendo Dark Site Preparations com páginas invisíveis contendo Q&As detalhados sobre a estrutura de capital da Vale Base Metals e a governança de ativos de transição energética, preparando a equipe de comunicação para responder instantaneamente a novas especulações políticas ou vazamentos na imprensa sem impactar a volatilidade das ações VALE3.",
+    "tipo": "crise",
+    "data": "09/09/2026",
+    "setor": "Energia, Mineração e Siderurgia (ESG)",
+    "marcas": [
+      "Vale"
+    ],
+    "produtos": [
+      "Dark Site Preparations",
+      "Q&A de Crise Financial"
+    ],
+    "link_noticia": "https://www.folha.uol.com.br/mercado/2026/09/vale-nega-estudos-ou-decisao-sobre-ipo-de-subsidiaria.shtml",
+    "imagem": "[https://images.unsplash.com/photo-1614064641913-6b71f301683b?q=80&w=600&auto=format&fit=crop](https://images.unsplash.com/photo-1614064641913-6b71f301683b?q=80&w=600&auto=format&fit=crop)"
+  },
+  {
+    "titulo": "GOL confirma uso temporário de aviões de corredor duplo Airbus A330 em voos nacionais",
+    "resumo_fato": "A GOL confirmou em 08/09/2026 que operará temporariamente aeronaves Airbus A330neo em voos domésticos (como Galeão-Salvador e Galeão-Belém) para treinamento de tripulação antes da estreia de sua rota histórica Rio-Lisboa em 16 de setembro de 2026.",
+    "recomendacao": "Orquestrando um PR Stunt em Dark Social ao vazar intencionalmente em comunidades fechadas de WhatsApp e Discord de milheiros e entusiastas de aviação os números de voo e datas exatas das operações domésticas do A330, gerando um sentimento de escassez e exclusividade que impulsionará reservas orgânicas imediatas para experimentar a cabine de fuselagem larga.",
+    "tipo": "operacao",
+    "data": "09/09/2026",
+    "setor": "Aviação e Turismo",
+    "marcas": [
+      "GOL"
+    ],
+    "produtos": [
+      "PR Stunt em Dark Social",
+      "Vazamento Controlado de Informações"
+    ],
+    "link_noticia": "https://www.melhoresdestinos.com.br/a330-gol-voos-nacionais.html",
+    "imagem": "[https://images.unsplash.com/photo-1614064641913-6b71f301683b?q=80&w=600&auto=format&fit=crop](https://images.unsplash.com/photo-1614064641913-6b71f301683b?q=80&w=600&auto=format&fit=crop)"
+  },
+  {
+    "titulo": "Mercado Livre inaugura estúdio exclusivo em SP para impulsionar live commerce",
+    "resumo_fato": "O Mercado Livre inaugurou em 08/09/2026 o 'Estúdio Mercado Livre' na Vila Leopoldina (SP), um complexo de 193 m² com nove estúdios voltados para a capacitação e produção de transmissões ao vivo de seus criadores, afiliados e vendedores, surfando na marca de 208 mil vendas por minuto registradas no Brasil.",
+    "recomendacao": "Implementando uma estratégia de Brand Publishing por meio de um portal de notícias proprietário focado em Creator Economy e Social Commerce, onde a marca publica de forma autônoma os insights, dados de conversão e cases de sucesso gerados no novo estúdio, reduzindo a dependência da imprensa tradicional para atrair novos afiliados e educar o mercado de varejo digital.",
+    "tipo": "tecnologia",
+    "data": "09/09/2026",
+    "setor": "E-commerce, Varejo e Logística",
+    "marcas": [
+      "Mercado Livre"
+    ],
+    "produtos": [
+      "Brand Publishing",
+      "Portal de Conteúdo Proprietário"
+    ],
+    "link_noticia": "https://mercadoeconsumo.com.br/09/09/2026/e-commerce/com-280-mil-vendas-de-creators-por-minuto-mercado-livre-avanca-com-estudio-de-live-commerce/",
+    "imagem": "[https://images.unsplash.com/photo-1614064641913-6b71f301683b?q=80&w=600&auto=format&fit=crop](https://images.unsplash.com/photo-1614064641913-6b71f301683b?q=80&w=600&auto=format&fit=crop)"
+  },
+  {
+    "titulo": "Estudo inédito da Stone e Insper revela impacto alarmante das apostas online na inadimplência",
+    "resumo_fato": "Um estudo conjunto de pesquisadores do Insper e da Stone divulgado em 08/09/2026 aponta que apostadores de 'bets' registram, em média, um aumento de 20% na inadimplência e de 38,7% no atraso das faturas de cartão de crédito no primeiro ano de apostas, acendendo um alerta vermelho para o setor financeiro.",
+    "recomendacao": "Criando um Fórum Proprietário (ex: 'Stone Credit & Tech Summit') focado em debater a dor do mercado de crédito diante da febre das apostas online, reunindo acadêmicos do Insper, reguladores do Banco Central e lideranças do varejo para posicionar a Stone como a autoridade máxima em inteligência de dados financeiros e concessão de crédito responsável no Brasil.",
+    "tipo": "regulacao",
+    "data": "09/09/2026",
+    "setor": "Finanças e Fintechs",
+    "marcas": [
+      "Stone"
+    ],
+    "produtos": [
+      "Fórum Proprietário",
+      "Painel de Debates com Stakeholders"
+    ],
+    "link_noticia": "https://tvtnews.com.br/bets-levam-a-inadimplencia-e-reduzem-acesso-ao-credito-aponta-estudo/",
+    "imagem": "[https://images.unsplash.com/photo-1614064641913-6b71f301683b?q=80&w=600&auto=format&fit=crop](https://images.unsplash.com/photo-1614064641913-6b71f301683b?q=80&w=600&auto=format&fit=crop)"
+  },
+  {
+    "titulo": "iFood avança em ESG com 16 mil bolsas de estudo e destaque em premiação global de cultura",
+    "resumo_fato": "No dia 08/09/2026, o iFood anunciou uma parceria com a Unico Skill para oferecer 16 mil licenças de educação gratuita para entregadores e suas famílias. No mesmo dia, a empresa foi confirmada como a única da América Latina finalista em duas categorias do prestigiado prêmio internacional Business Culture Awards 2026, consolidando suas práticas de cultura organizacional.",
+    "recomendacao": "Publicando um Op-Ed Híbrido assinado pelo CEO Diego Barreto em veículos Tier 1 (como Valor Econômico ou Exame) abordando como a cultura corporativa de impacto social e a educação de trabalhadores de plataforma sustentam o crescimento do ecossistema, combinando a publicação com impulsionamento estratégico no LinkedIn Pulse para blindar a reputação da marca contra pressões regulatórias trabalhistas e atrair talentos de alta performance.",
+    "tipo": "esg",
+    "data": "09/09/2026",
+    "setor": "E-commerce, Varejo e Logística",
+    "marcas": [
+      "iFood"
+    ],
+    "produtos": [
+      "Op-Ed Híbrido",
+      "LinkedIn Pulse Boost"
+    ],
+    "link_noticia": "https://55content.com.br/noticia/ifood-e-unica-empresa-da-america-latina-finalista-em-duas-categorias-do-business-culture-awards-2026/",
+    "imagem": "[https://images.unsplash.com/photo-1614064641913-6b71f301683b?q=80&w=600&auto=format&fit=crop](https://images.unsplash.com/photo-1614064641913-6b71f301683b?q=80&w=600&auto=format&fit=crop)"
+  },
+  {
     "titulo": "Samsung anuncia lançamento do Galaxy S26 FE no Brasil e detalha correções de segurança",
     "resumo_fato": "A Samsung confirmou o evento de lançamento do Galaxy S26 FE no Brasil para o dia 16 de setembro, destacando os recursos de Galaxy AI. Paralelamente, a fabricante detalhou o pacote de segurança de setembro de 2026, corrigindo 90 vulnerabilidades em dispositivos Galaxy.",
     "recomendacao": "Realizando um PR Stunt em Dark Social com o vazamento controlado de teasers interativos e demonstrações exclusivas dos recursos de Galaxy AI do novo Galaxy S26 FE em comunidades fechadas de tecnologia no Discord e WhatsApp, criando escassez e engajamento orgânico antes do evento oficial de lançamento no Brasil.",
