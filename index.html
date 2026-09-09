@@ -241,6 +241,21 @@
     </footer>
 
     <script>
+        // --- FUNÇÕES DE SEGURANÇA E HIGIENIZAÇÃO DE DADOS DA IA ---
+        function obterMarcasSeguro(item) {
+            if (!item.marcas) return [];
+            if (Array.isArray(item.marcas)) return item.marcas;
+            if (typeof item.marcas === 'string') return [item.marcas];
+            return [];
+        }
+
+        function obterProdutosSeguro(item) {
+            if (!item.produtos) return [];
+            if (Array.isArray(item.produtos)) return item.produtos;
+            if (typeof item.produtos === 'string') return [item.produtos];
+            return [];
+        }
+
         // --- SISTEMA DE SEGURANÇA ---
         function gerarHash(str) {
             let hash = 0;
@@ -340,9 +355,8 @@
             if (!container) return;
             const marcasUnicas = new Set();
             dados.forEach(item => {
-                if (item.marcas) {
-                    item.marcas.forEach(marca => marcasUnicas.add(limparMarca(marca)));
-                }
+                const marcasSeguras = obterMarcasSeguro(item);
+                marcasSeguras.forEach(marca => marcasUnicas.add(limparMarca(marca)));
             });
             const listaOrdenada = Array.from(marcasUnicas).sort((a, b) => a.localeCompare(b));
             if (listaOrdenada.length === 0) return;
@@ -360,9 +374,8 @@
             if (!container) return;
             const servicosUnicos = new Set();
             dados.forEach(item => {
-                if (item.produtos) {
-                    item.produtos.forEach(servico => servicosUnicos.add(servico.trim()));
-                }
+                const produtosSeguros = obterProdutosSeguro(item);
+                produtosSeguros.forEach(servico => servicosUnicos.add(servico.trim()));
             });
             const listaOrdenada = Array.from(servicosUnicos).sort((a, b) => a.localeCompare(b));
             if (listaOrdenada.length === 0) return;
@@ -472,10 +485,9 @@
             }
             renderizarPaginaAtual();
             
-            // Rola suavemente de volta para o topo do grid
             const ancor = document.getElementById('alvoScrollTop');
             if (ancor) {
-                const offset = 100; // Desconta a barra de filtros sticky
+                const offset = 100; 
                 const topPos = ancor.getBoundingClientRect().top + window.scrollY - offset;
                 window.scrollTo({ top: topPos, behavior: 'smooth' });
             }
@@ -487,14 +499,12 @@
             
             const totalPages = Math.ceil(totalItems / itemsPerPage) || 1;
             
-            // Recorta o array para mostrar apenas os itens da página atual
             const startIndex = (currentPage - 1) * itemsPerPage;
             const endIndex = startIndex + itemsPerPage;
             const itensParaRenderizar = pautasFiltradasAtuais.slice(startIndex, endIndex);
             
             renderizarTimeline(itensParaRenderizar);
             
-            // Controla a exibição e bloqueio dos botões de paginação
             const pagContainer = document.getElementById('paginacaoContainer');
             if (totalItems > itemsPerPage && itemsPerPage !== 99999) {
                 pagContainer.classList.remove('hidden');
@@ -519,15 +529,30 @@
             dadosRecortados.forEach(item => {
                 const isMacro = (item.tipo === 'setor');
                 
-                const textoOriginal = item.descricao ? item.descricao : "";
-                const { fato, rec } = separarContextoERecomendacao(textoOriginal);
+                // Trata a retrocompatibilidade (Formato Novo vs Legado)
+                let fato = item.resumo_fato || "";
+                let rec = item.recomendacao || "";
+
+                if (!fato && !rec && item.descricao) {
+                    const extraido = separarContextoERecomendacao(item.descricao);
+                    fato = extraido.fato;
+                    rec = extraido.rec;
+                }
                 
-                const tagsServicos = item.produtos ? item.produtos.map(p => `
+                const marcasArray = obterMarcasSeguro(item);
+                const produtosArray = obterProdutosSeguro(item);
+
+                const tagsServicos = produtosArray.length > 0 ? produtosArray.map(p => `
                     <span class="bg-inpress-dark text-white px-2 py-0.5 rounded-sm">${p}</span>
                 `).join('') : "";
                 
-                const marcasTexto = item.marcas ? item.marcas.map(m => limparMarca(m)).join(', ') : "Sem marcas";
-                const linkValidado = item.link_noticia || (item.marcas ? `https://news.google.com/search?q=${encodeURIComponent(item.marcas.map(m => limparMarca(m)).join('+'))}+when:7d` : "#");
+                const marcasTexto = marcasArray.length > 0 ? marcasArray.map(m => limparMarca(m)).join(', ') : "Sem marcas";
+                
+                // Link fallback seguro
+                let linkValidado = item.link_noticia || "#";
+                if (linkValidado === "#" && marcasArray.length > 0) {
+                    linkValidado = `https://news.google.com/search?q=${encodeURIComponent(marcasArray.map(m => limparMarca(m)).join('+'))}+when:7d`;
+                }
 
                 const diferencaDias = calcularDiferencaDias(item.data);
                 const classeBordaCard = determinarBordaCard(diferencaDias);
@@ -543,7 +568,7 @@
                     </div>
                 ` : '';
 
-                const marcaPrincipal = item.marcas && item.marcas.length > 0 ? limparMarca(item.marcas[0]) : "business";
+                const marcaPrincipal = marcasArray.length > 0 ? limparMarca(marcasArray[0]) : "business";
                 const seedMarca = Math.abs(gerarHash(marcaPrincipal)) % 1000;
                 const setorLimpo = item.setor ? item.setor.toLowerCase().split(' ')[0].replace(/[^a-z]/g, '') : "office";
                 const termoBuscaImagem = isMacro ? "economy,business" : `${marcaPrincipal.toLowerCase().replace(/[^a-z0-9]/g, '')},${setorLimpo}`;
@@ -684,9 +709,12 @@
                     bateTipo = item.tipo === tiposSelecionados[0] || (!item.tipo && tiposSelecionados[0] === 'marca'); 
                 }
 
+                const marcasSeguras = obterMarcasSeguro(item);
+                const produtosSeguros = obterProdutosSeguro(item);
+
                 const bateAgencia = agencia === "" || item.agencia === agencia;
-                const bateCliente = clientesSelecionados.length === 0 || (item.marcas && item.marcas.some(m => clientesSelecionados.includes(limparMarca(m))));
-                const bateServico = servicosSelecionados.length === 0 || (item.produtos && item.produtos.some(s => servicosSelecionados.includes(s.trim())));
+                const bateCliente = clientesSelecionados.length === 0 || marcasSeguras.some(m => clientesSelecionados.includes(limparMarca(m)));
+                const bateServico = servicosSelecionados.length === 0 || produtosSeguros.some(s => servicosSelecionados.includes(s.trim()));
                 
                 let bateTempo = true;
                 const diasDiferenca = calcularDiferencaDias(item.data);
@@ -700,12 +728,16 @@
                 let bateTextoBusca = true;
                 if (termoBusca !== "") {
                     const tituloStr = (item.titulo || "").toLowerCase();
-                    const descStr = (item.descricao || "").toLowerCase();
+                    const descOriginalStr = (item.descricao || "").toLowerCase();
+                    const resumoStr = (item.resumo_fato || "").toLowerCase();
+                    const recStr = (item.recomendacao || "").toLowerCase();
                     const setorStr = (item.setor || "").toLowerCase();
-                    const marcasStr = item.marcas ? item.marcas.join(" ").toLowerCase() : "";
+                    const marcasStr = marcasSeguras.join(" ").toLowerCase();
                     
                     bateTextoBusca = tituloStr.includes(termoBusca) || 
-                                     descStr.includes(termoBusca) || 
+                                     descOriginalStr.includes(termoBusca) || 
+                                     resumoStr.includes(termoBusca) || 
+                                     recStr.includes(termoBusca) || 
                                      setorStr.includes(termoBusca) || 
                                      marcasStr.includes(termoBusca);
                 }
